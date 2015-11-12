@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.util.*;
 import java.util.regex.Matcher;
 
@@ -154,6 +156,43 @@ Example2: x = -123, return -321
         else {
             return (int)result;
         }
+    }
+
+
+    /*
+    Problem 9:
+    Determine whether an integer is a palindrome. Do this without extra space.
+     */
+    //Palindrome means that the parameter is symmetrical
+    public boolean isPalindrome(int x) {
+        // if x is overflowed
+        long xLong = x;
+        if (xLong >= Integer.MAX_VALUE || xLong <= Integer.MIN_VALUE) {
+            return false;
+        }
+        /*
+        if x is less than 0, it must not be palindrome
+        if x is times by 10 the num will be length - 1, and 10 times must not be palindrome
+        a special case is that 0 is 0 time of 10, and 0 is palindrome
+         */
+        if (x < 0 || (x != 0 && x % 10 == 0)) {
+            return false;
+        }
+        //if x is one digit and it bigger than 0, it must be palindrome
+        else if (x < 10) {
+            return true;
+        }
+        //make num as half length of x and be reverse order
+        int num = 0;
+        while (num < x ) {
+            num *= 10;
+            num += x % 10;
+            x /= 10;
+        }
+
+        //if the length of x is even the result depends on the first part, and if it's odd number, depends on the second part
+        return (num == x || num/10 == x);
+
     }
 
 
