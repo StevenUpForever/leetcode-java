@@ -158,6 +158,60 @@ Example2: x = -123, return -321
         }
     }
 
+    /*
+    Problem 8:
+    Implement atoi to convert a string to an integer.
+
+Hint: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.
+
+Notes: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
+     */
+
+    /*
+    The whole conditions include:
+    1. if str is null, return 0;
+    2. Except the first character is '+' or '-', Fetch the number until met the character not a number
+       char to number should be int num = '6' - '0' because of ASCII
+    3. if result larger tha Integer.MAX_VALUE or smaller than Integer_MIN_VALUE should return MAX_VALUE or MIN_VALUE
+    4. The blank ' ' before the first character should be ignored and blank after character should be ended
+     */
+    public int myAtoi(String str) {
+        //if str is null, return 0, judge it by the length not equal to "", because null used to judge if use this object
+        if (str.length() == 0){
+            return 0;
+        }
+        long result = 0;
+        int index = 0;
+        boolean firstNum = true;
+        //Ignore all blanks before the first available character
+        while (str.charAt(index) == ' ' && index < str.length())
+        {
+                index ++;
+        }
+        //if the first available character is '+' or '-', give a boolean value to store the status of number
+        if (str.charAt(index) == '+' || str.charAt(index) == '-') {
+            firstNum = str.charAt(index) == '+' ? true: false;
+            index ++;
+        }
+        while (index < str.length()) {
+            int digit = 0;
+            //if met the non-number character, break the loop
+            if (str.charAt(index) - '0' < 0 || str.charAt(index) - '0' > 9) {
+                break;
+            }
+            /*Judge MAX_VALUE and MIN_VALUE here because Max is 2147483647 and Min is -2147483648, it's not the same
+            and before the final return, only one result shown, cannot judge for two conditions once
+            */
+            if (result > Integer.MAX_VALUE/10 || (result == Integer.MAX_VALUE/10 && str.charAt(index) - '0' > Integer.MAX_VALUE % 10)){
+                return firstNum ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            }
+            //Similar to reverse a number in Math way
+            result = result*10 + (str.charAt(index) - '0');
+            index ++;
+        }
+        return firstNum ? (int)result : -(int)result;
+    }
+
 
     /*
     Problem 9:
