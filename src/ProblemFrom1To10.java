@@ -1,7 +1,9 @@
+import com.sun.org.apache.bcel.internal.generic.FieldObserver;
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
+import java.lang.reflect.Array;
 import java.util.*;
-import java.util.regex.Matcher;
 
 /*
 Problem 1:
@@ -45,7 +47,7 @@ Output: 7 -> 0 -> 8
     class ListNode {
         int val;
         ListNode next;
-        ListNode(int x){
+        ListNode(int x) {
             val = x;
         }
     }
@@ -89,6 +91,40 @@ Output: 7 -> 0 -> 8
         }
         return maxLen;
     }
+
+    /*
+    Problem 5:
+    Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
+     */
+    //Learned from discussion, previous solution makes over time limit, but more clear
+    //previous one list all possible substring first and test them from max length to min one, when find palindrome, jump out the loop and return the result
+    private int resultStart, resultLen;
+
+    public String longestPalindrome(String s) {
+        //if string is null or 1 character, just return itself
+        if (s.length() < 2)
+            return s;
+        //try to extend substring from i as center, try both odd and even situation
+        for (int i = 0; i < s.length() - 1; i++) {
+            extendResult(s, i, i);
+            extendResult(s, i, i + 1);
+        }
+        return s.substring(resultStart, resultStart + resultLen);
+    }
+
+    private void extendResult(String s, int j, int k) {
+        //search by move start to the left and end to the right, to find the longest proper substring
+        while (j >= 0 && k < s.length() && s.charAt(j) == s.charAt(k)) {
+            j--;
+            k++;
+        }
+        //if new proper substring is longer than former record, replace the result record with the new one
+        if (resultLen < k - j - 1) {
+            resultStart = j + 1;
+            resultLen = k - j - 1;
+        }
+    }
+
 
 
     /*
@@ -194,7 +230,6 @@ Notes: It is intended for this problem to be specified vaguely (ie, no given inp
             index ++;
         }
         while (index < str.length()) {
-            int digit = 0;
             //if met the non-number character, break the loop
             if (str.charAt(index) - '0' < 0 || str.charAt(index) - '0' > 9) {
                 break;
@@ -246,7 +281,6 @@ Notes: It is intended for this problem to be specified vaguely (ie, no given inp
 
         //if the length of x is even the result depends on the first part, and if it's odd number, depends on the second part
         return (num == x || num/10 == x);
-
     }
 
 
