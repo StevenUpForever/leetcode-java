@@ -1,8 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.FieldObserver;
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import java.lang.reflect.Array;
 import java.util.*;
 
 /*
@@ -44,7 +39,8 @@ public class ProblemFrom1To10 {
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
      */
-    class ListNode {
+    //The linkedList of this problem is implemented by the class ListNode, reference by LeetCode discussion
+    private class ListNode {
         int val;
         ListNode next;
         ListNode(int x) {
@@ -53,15 +49,35 @@ Output: 7 -> 0 -> 8
     }
 
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-            ListNode result = new ListNode(0);
+            //Here temp is the final linkedList, result is the linkedList which in processing
+            ListNode temp = new ListNode(0);
+            ListNode result = temp;
             int nodeSum = 0;
+            //If over the last node (null node), jump out the loop
             while (l1 != null || l2 != null)
             {
-
+                //Because two list may not has the same length
+                //At the beginning of the loop, nodeSum must be one digit, so nodeSum /= 10 is to clean it
+                nodeSum /= 10;
+                //If l1 is not over
+               if (l1 != null) {
+                   nodeSum += l1.val;
+                   l1 = l1.next;
+               }
+                //If l2 is not over
+                if (l2 != null) {
+                    nodeSum += l2.val;
+                    l2 = l2.next;
+                }
+                //Keep the node value in result be one digit and go next
+                result.next = new ListNode(nodeSum % 10);
+                result = result.next;
             }
-
-
-            return result.next;
+            //If l1 value + l2 value over 9, make the result next node original value be 1
+            if (nodeSum / 10 == 1)
+                result.next = new ListNode(1);
+            //If immediately return result, result.next will be the next of the last node, it must be null, so return a equalled linkedList temp and from the first node
+            return temp.next;
         }
 
 
