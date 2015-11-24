@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 /*
@@ -156,15 +157,35 @@ Write the code that will take a string and make this conversion given a number o
 string convert(string text, int nRows);
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
      */
+    //This problem seems wired at first, put this pattern in several horizontal Strings, it will looks simple
     public String convert(String s, int numRows) {
         if (s.length() <= 1)
         {
             return s;
         }
-        StringBuffer result = new StringBuffer();
+        //Create number of numRows StringBuffers to store characters
+        StringBuffer total[] = new StringBuffer[numRows];
+        for (int i = 0; i < numRows; i ++) {
+            total[i] = new StringBuffer();
+        }
+        int index = 0;
+        while(index < s.length()) {
+            //This is vertical part in the pattern, make sure not over the length
+            for (int appendIndex = 0; appendIndex < numRows && index < s.length(); appendIndex ++) {
+                //Append one character in the vertical line to different stringBuffers, then go to second for loop
+                total[appendIndex].append(s.charAt(index++));
+            }
+            //Append character in the Slash line form bottom to top to different stringBuffer then go to next while loop
+            for (int appendIndex = numRows - 2; appendIndex >=1 && index < s.length(); appendIndex --) {
+                total[appendIndex].append(s.charAt(index++));
+            }
+        }
+        //After all append works to numRows StringBuffers, append the first StringBuffer with other ones and get the result
+        for (int i = 1; i < total.length; i ++) {
+            total[0] = total[0].append(total[i]);
+        }
 
-
-        return s;
+        return total[0].toString();
     }
 
     /*
@@ -242,7 +263,7 @@ Notes: It is intended for this problem to be specified vaguely (ie, no given inp
         }
         //if the first available character is '+' or '-', give a boolean value to store the status of number
         if (str.charAt(index) == '+' || str.charAt(index) == '-') {
-            firstNum = str.charAt(index) == '+' ? true: false;
+            firstNum = str.charAt(index) == '+';
             index ++;
         }
         while (index < str.length()) {
