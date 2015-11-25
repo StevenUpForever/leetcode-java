@@ -110,6 +110,33 @@ Output: 7 -> 0 -> 8
     }
 
     /*
+    Problem 4:
+    There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+     */
+    //Due to the time complexity limit, we should choose the most efficient sort Algorithm, because of two sorted array, we should choose merge sort
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int[] result = new int[nums1.length + nums2.length];
+        //Merge sort part
+        int m = 0, n = 0, len = 0;
+        while (m < nums1.length && n < nums2.length) {
+            if (nums1[m] <= nums2[n]) {
+                result[len++] = nums1[m++];
+            }
+            else {
+                result[len++] = nums2[n++];
+            }
+        }
+        while (m < nums1.length) {
+            result[len++] = nums1[m++];
+        }
+        while (n < nums2.length) {
+            result[len++] = nums2[n++];
+        }
+        //Decide whether result length is odd or even
+        return result.length % 2 == 0 ? (double)(result[result.length/2] + result[result.length/2 - 1])/2: (double)result[(result.length - 1)/2];
+    }
+
+    /*
     Problem 5:
     Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.
      */
