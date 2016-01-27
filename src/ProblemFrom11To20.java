@@ -1,3 +1,8 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ProblemFrom11To20 {
 
@@ -42,6 +47,87 @@ Note: You may not slant the container.
         return maxArea;
     }
 
+//    Problem 12 Integer to Roman:
+//    Given an integer, convert it to a roman numeral.
+//    Input is guaranteed to be within the range from 1 to 3999.
+//    public String intToRoman(int num) { Memory limit exceed
+//        StringBuilder resultString = new StringBuilder();
+//        resultString.append(romanNumbers(num/1000 % 10, "M", "", ""));
+//        resultString.append(romanNumbers(num/100 % 10, "C", "D", "M"));
+//        resultString.append(romanNumbers(num/10 % 10, "X", "L", "C"));
+//        resultString.append(romanNumbers(num % 10, "I", "V", "X"));
+//        return resultString.toString();
+//    }
+//    private String romanNumbers(int input, String one, String five, String ten) {
+//        if (input == 0) {
+//            return "";
+//        }
+//        else if (input > 0 && input < 4) {
+//            StringBuilder result = new StringBuilder();
+//            while (input > 0) {
+//                result.append(one);
+//                input --;
+//            }
+//            return result.toString();
+//        }
+//        else if (input == 4) {
+//            return one + five;
+//        }
+//        else if (input > 4 && input < 9) {
+//            StringBuilder result = new StringBuilder();
+//            result.append(five);
+//            while (input - 5 > 0) {
+//                result.append(one);
+//            }
+//            return result.toString();
+//        }
+//        else if (input == 9) {
+//            return one + ten;
+//        }
+//        else {
+//            return "";
+//        }
+//    }
+    public String intToRoman(int num) {
+        String thousand[] = {"", "M", "MM", "MMM"};
+        String hundred[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        String ten[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+        String one[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        return thousand[num/1000%10] + hundred[num/100%10] + ten[num/10%10] + one[num%10];
+    }
+
+    /*Problem 13 Roman to Integer:
+    Given a roman numeral, convert it to an integer.
+
+Input is guaranteed to be within the range from 1 to 3999.
+     */
+    public int romanToInt(String s) {
+        if (s.length() == 0) {
+            return 0;
+        }
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+        int result = map.get(s.charAt(s.length() - 1));
+        int tempNum = result;
+        for (int index = s.length() - 2; index >= 0; index --) {
+            int innerTempNum = map.get(s.charAt(index));
+            if (innerTempNum >= tempNum) {
+                result += innerTempNum;
+            }
+            else {
+                result -= innerTempNum;
+            }
+            tempNum = innerTempNum;
+        }
+        return result;
+    }
+
     /*Problem 14 Longest comment prefix:
     Write a function to find the longest common prefix string amongst an array of strings.
      */
@@ -70,13 +156,5 @@ Note: You may not slant the container.
         }
         return minStr;
     }
-
-
-
-
-
-
-
-
 
 }

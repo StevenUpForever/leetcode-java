@@ -95,17 +95,16 @@ Output: 7 -> 0 -> 8
 
         int lenNow = 0, maxLen = 0;
         HashMap<Integer, Integer> noRepeat = new HashMap<>();
-        for (int index = 0; index < s.length(); index ++)
-        {
-            lenNow ++;
-            if (noRepeat.containsKey(s.codePointAt(index)) && lenNow > index - noRepeat.get(s.codePointAt(index)))
-            {
+        for (int index = 0; index < s.length(); index ++) {
+            lenNow++;
+            if (noRepeat.containsKey(s.codePointAt(index)) && lenNow > index - noRepeat.get(s.codePointAt(index))) {
                 lenNow = index - noRepeat.get(s.codePointAt(index));
             }
 
-                maxLen = Math.max(lenNow, maxLen);
-                noRepeat.put(s.codePointAt(index), index);
+            maxLen = Math.max(lenNow, maxLen);
+            noRepeat.put(s.codePointAt(index), index);
         }
+                    
         return maxLen;
     }
 
