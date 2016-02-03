@@ -1,8 +1,5 @@
 import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ProblemFrom11To20 {
 
@@ -155,6 +152,40 @@ Input is guaranteed to be within the range from 1 to 3999.
             }
         }
         return minStr;
+    }
+
+    /*
+    Problem 15 3Sum:
+    Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
+Note:
+Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
+The solution set must not contain duplicate triplets.
+    For example, given array S = {-1 0 1 2 -1 -4},
+
+    A solution set is:
+    (-1, 0, 1)
+    (-1, -1, 2)
+     */
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+        List<List<Integer>> result = new ArrayList<>();
+        for (int index1 = 0; index1 < nums.length - 2; index1 ++) {
+            if (index1 > 0 && nums[index1 - 1] == nums[index1]) continue;
+            int index2 = index1 + 1, index3 = nums.length - 1, temp = -nums[index1];
+            while (index2 < index3) {
+                if (nums[index2] + nums[index3] == temp) {
+                    result.add(Arrays.asList(nums[index1], nums[index2], nums[index3]));
+                    while (index2 < index3 && nums[index2] == nums[index2 + 1]) index2++;
+                    while (index3 > index2 && nums[index3 - 1] == nums[index3]) index3--;
+                    index2 ++;
+                    index3 --;
+                }
+                else if (nums[index2] + nums[index3] > temp) index3--;
+                else index2++;
+            }
+        }
+        return result;
     }
 
 }
