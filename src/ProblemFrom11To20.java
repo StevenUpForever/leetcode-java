@@ -188,4 +188,184 @@ The solution set must not contain duplicate triplets.
         return result;
     }
 
+    /*
+    Problem 16 3Sum Closest:
+    Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+
+    For example, given array S = {-1 2 1 -4}, and target = 1.
+
+    The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+     */
+    public int threeSumClosest(int[] nums, int target) {
+        if (nums.length < 3) return 0;
+        Arrays.sort(nums);
+        int result = nums[0] + nums[1] + nums[2], compareNum = Math.abs(result - target);
+        for (int index1 = 0; index1 < nums.length - 2; index1 ++) {
+            if (index1 > 0 && nums[index1] == nums[index1 - 1]) continue;
+            int index2 = index1 + 1, index3 = nums.length - 1;
+            while (index2 < index3) {
+                int temp = nums[index1] + nums[index2] + nums[index3];
+                int tempNum = Math.abs(temp - target);
+                if (tempNum < compareNum) {
+                    compareNum = tempNum;
+                    result = temp;
+                }
+                while (index2 < index3 && nums[index2] == nums[index2 + 1]) index2++;
+                while (index3 > index2 && nums[index3 - 1] == nums[index3]) index3--;
+                if (temp < target) index2++;
+                else if (temp > target) index3 --;
+                else break;
+            }
+        }
+        return result;
+    }
+
+    /*
+    Problem 17 Letter Combinations of a Phone Number:
+    Given a digit string, return all possible letter combinations that the number could represent.
+
+A mapping of digit to letters (just like on the telephone buttons) is given below.
+
+
+
+Input:Digit string "23"
+Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+     */
+    public List<String> letterCombinations(String digits) {
+        List<String> result = new ArrayList<>();
+        if (digits.length() == 0) return result;
+        String[] str = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        result.add("");
+        for (char c: digits.toCharArray()) {
+            int indexC = c - '0';
+            List<String> tempList = new ArrayList<>();
+            for (char c2: str[indexC].toCharArray()) {
+                    for (String resStr: result) {
+                        tempList.add(resStr + c2);
+                    }
+            }
+            result = tempList;
+        }
+        return result;
+    }
+
+    /*
+    Problem 18 4Sum:
+    Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+
+Note:
+Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ≤ b ≤ c ≤ d)
+The solution set must not contain duplicate quadruplets.
+    For example, given array S = {1 0 -1 0 -2 2}, and target = 0.
+
+    A solution set is:
+    (-1,  0, 0, 1)
+    (-2, -1, 1, 2)
+    (-2,  0, 0, 2)
+     */
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (nums.length < 4) return result;
+        Arrays.sort(nums);
+        for (int index1 = 0; index1 < nums.length - 3; index1 ++) {
+            if (index1 > 0 && nums[index1 - 1] == nums[index1]) continue;
+            for (int index2 = index1 + 1; index2 < nums.length - 2; index2 ++) {
+                if (index2 > index1 + 1 && nums[index2 - 1] == nums[index2]) continue;
+                int tempTarget = target - nums[index1] - nums[index2];
+                int index3 = index2 + 1, index4 = nums.length - 1;
+                while (index3 < index4) {
+                    if (nums[index3] + nums[index4] == tempTarget) {
+                        result.add(Arrays.asList(nums[index1], nums[index2], nums[index3], nums[index4]));
+                        while (index3 < index4 && nums[index3] == nums[index3 + 1]) index3 ++;
+                        while (index3 < index4 && nums[index4 - 1] == nums[index4]) index4 --;
+                        index3 ++;
+                        index4 --;
+                    }
+                    else if (nums[index3] + nums[index4] < tempTarget) index3++;
+                    else index4 --;
+                }
+            }
+        }
+        return result;
+    }
+
+    /*
+    Problem 19 Remove Nth Node From End of List:
+    Given a linked list, remove the nth node from the end of list and return its head.
+
+For example,
+
+   Given linked list: 1->2->3->4->5, and n = 2.
+
+   After removing the second node from the end, the linked list becomes 1->2->3->5.
+Note:
+Given n will always be valid.
+Try to do this in one pass.
+     */
+    private class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
+
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        LinkedList<Integer> tempList = new LinkedList<>();
+        while (head != null) {
+            tempList.add(head.val);
+            head = head.next;
+        }
+        tempList.remove(tempList.size() - n);
+        ListNode temp1 = new ListNode(0);
+        ListNode temp2 = temp1;
+        for (Integer i: tempList) {
+            temp1.next = new ListNode(i);
+            temp1 = temp1.next;
+        }
+        return temp2.next;
+    }
+
+    /*
+    Problem 20 Valid Parentheses:
+    Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.\
+My code, could pass
+ public boolean isValid(String s) {
+        if (s.length() < 2) return false;
+        StringBuilder resultStr = new StringBuilder(s);
+        ArrayList<Character> characterArray = new ArrayList<>(Arrays.asList('{', '[', '(', '}', ']', ')'));
+        if (characterArray.indexOf(resultStr.charAt(0)) > 2) return false;
+        int index = 0;
+        while (index < resultStr.length()){
+            int index2 = characterArray.indexOf(resultStr.charAt(index));
+            if (index2 > 2 && index > 0) {
+                int index3 = characterArray.indexOf(resultStr.charAt(index - 1));
+                if (index2 == index3 + 3) {
+                    resultStr.delete(index - 1, index + 1);
+                    index = index - 1;
+                    continue;
+                } else return false;
+            }
+            index ++;
+        }
+        System.out.print(resultStr);
+        return resultStr.length() == 0;
+    }
+     */
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<Character>();
+        for(int i = 0; i<s.length(); i++) {
+            if(s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{')
+                stack.push(s.charAt(i));
+            else if(s.charAt(i) == ')' && !stack.empty() && stack.peek() == '(')
+                stack.pop();
+            else if(s.charAt(i) == ']' && !stack.empty() && stack.peek() == '[')
+                stack.pop();
+            else if(s.charAt(i) == '}' && !stack.empty() && stack.peek() == '{')
+                stack.pop();
+            else
+                return false;
+        }
+        return stack.empty();
+    }
 }
