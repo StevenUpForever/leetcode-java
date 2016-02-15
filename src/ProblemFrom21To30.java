@@ -1,7 +1,6 @@
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by ChengzhiJia on 16/2/12.
@@ -78,4 +77,56 @@ For example, given n = 3, a solution set is:
         if(close < open)
             backtrack(list, str+")", open, close+1, max);
     }
+
+    /*
+    23. Merge k Sorted Lists
+    Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+     */
+    public ListNode mergeKLists(ListNode[] lists) {
+        if (lists == null || lists.length == 0) return null;
+        PriorityQueue<ListNode> priQueue = new PriorityQueue<>(lists.length, new Comparator<ListNode>() {
+            @Override
+            public int compare(ListNode o1, ListNode o2) {
+                return o1.val - o2.val;
+            }
+        });
+        for (ListNode node : lists) {
+            if (node != null) priQueue.add(node);
+        }
+        ListNode temp = new ListNode(0);
+        ListNode result = temp;
+        while (!priQueue.isEmpty()) {
+            temp.next = priQueue.poll();
+            temp = temp.next;
+            if (temp.next != null) priQueue.add(temp.next);
+        }
+        return result.next;
+    }
+
+        /*
+        24. Swap Nodes in Pairs
+        Given a linked list, swap every two adjacent nodes and return its head.
+
+For example,
+Given 1->2->3->4, you should return the list as 2->1->4->3.
+
+Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+         */
+        public ListNode swapPairs(ListNode head) {
+            if (head == null) return null;
+            ListNode result = new ListNode(0);
+            result.next = head;
+            ListNode temp = result;
+            while (temp.next != null && temp.next.next != null) {
+                ListNode one = temp.next;
+                ListNode two = temp.next.next;
+                one.next = two.next;
+                temp.next = two;
+                temp.next.next = one;
+                temp = temp.next.next;
+            }
+            return result.next;
+        }
+
+
 }
