@@ -1,4 +1,6 @@
 import com.sun.org.apache.bcel.internal.generic.LSUB;
+import com.sun.org.apache.xerces.internal.impl.dv.xs.BooleanDV;
+import com.sun.org.apache.xml.internal.security.algorithms.implementations.IntegrityHmac;
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.util.*;
@@ -166,6 +168,148 @@ For k = 3, you should return: 3->2->1->4->5
                 head = curr;
             }
             return head;
+    }
+
+    /*
+    26. Remove Duplicates from Sorted Array
+    Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
+
+Do not allocate extra space for another array, you must do this in place with constant memory.
+
+For example,
+Given input array nums = [1,1,2],
+
+Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
+     */
+    public int removeDuplicates(int[] nums) {
+        int i = 0;
+        for (int n : nums)
+            if (i == 0 || n > nums[i-1]) {
+                nums[i] = n;
+                i++;
+            }
+        return i;
+    }
+
+    /*
+    27. Remove Element
+    Given an array and a value, remove all instances of that value in place and return the new length.
+
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+     */
+    public int removeElement(int[] nums, int val) {
+        int result = 0;
+        for (int index = 0; index < nums.length; index++) {
+            if (nums[index] != val) {
+                nums[result] = nums[index];
+                result++;
+            }
+        }
+        return result;
+    }
+
+    /*
+    28. Implement strStr()
+    Implement strStr().
+
+Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+     */
+    public int strStr(String haystack, String needle) {
+        return (haystack.contains(needle)) ? haystack.indexOf(needle) : -1;
+    }
+
+    /*
+    29. Divide Two Integers
+    Divide two integers without using multiplication, division and mod operator.
+
+If it is overflow, return MAX_INT.
+     */
+    public int divide(int dividend, int divisor) {
+//        dividend = (long)dividend > Integer.MAX_VALUE ? Integer.MAX_VALUE : dividend;
+//        divisor = (long)divisor > Integer.MAX_VALUE ? Integer.MAX_VALUE : divisor;
+//        int times = 0;
+//        if (divisor > dividend) return times;
+//        Boolean flag = true;
+//        if (divisor < 0) {
+//        }
+//        while (divisor <= dividend) {
+//            divisor += divisor;
+//            times++;
+//        }
+//        return times;
+        if (divisor == 0 || (dividend == Integer.MIN_VALUE && divisor == -1)) return Integer.MAX_VALUE;
+        int flag = ((dividend < 0) ^ (divisor < 0)) ? -1 : 1;
+        long dvd = dividend < 0 ? -dividend : dividend;
+        long dvs = divisor < 0 ? -divisor : divisor;
+        int res = 1;
+        while (dvd >= dvs) {
+            long temp = dvs, multiple = 1;
+            while (dvd >= (temp << 1)) {
+                temp <<= 1;
+                multiple <<= 1;
+            }
+            dvd -= temp;
+            res += multiple;
+        }
+        return flag == 1 ? res : -res;
+    }
+
+    /*
+    30. Substring with Concatenation of All Words
+    You are given a string, s, and a list of words, words, that are all of the same length. Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters.
+
+For example, given:
+s: "barfoothefoobarman"
+words: ["foo", "bar"]
+
+You should return the indices: [0,9].
+(order does not matter).
+     */
+    public List<Integer> findSubstring(String s, String[] words) {
+        List<Integer> result = new ArrayList<Integer>();
+        if (s==null || words.length == 0){
+            return result;
+        }
+        HashMap<String, Integer> allWords = new HashMap<String, Integer>();
+        for (int i=0;i<words.length;i++){
+            String w = words[i];
+            if (!allWords.containsKey(w)){
+                allWords.put(w, 1);
+            }
+            else{
+                Integer count = allWords.get(w);
+                count++;
+                allWords.put(w, count);
+            }
+        }
+        int wordLength = words[0].length();
+        int length = words.length*wordLength;
+        for (int i=0;i<=s.length()-length;i++){
+            boolean b = findWords(s, i, (Map)allWords.clone(), wordLength);
+            if (b){
+                result.add(i);
+            }
+        }
+        return result;
+    }
+
+    private boolean findWords(String s, int startIndex, Map<String, Integer> allWords, int wordLength){
+        if (allWords.isEmpty()){
+            return true;
+        }
+        String s1 = s.substring(startIndex, startIndex+wordLength);
+        if (allWords.containsKey(s1)){
+            int result = allWords.get(s1);
+            result--;
+            if (result == 0){
+                allWords.remove(s1);
+            }
+            else{
+                allWords.put(s1, result);
+            }
+            return findWords(s, startIndex+wordLength, allWords, wordLength);
+        }
+        return false;
     }
 
 
