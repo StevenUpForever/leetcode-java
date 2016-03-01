@@ -9,6 +9,8 @@ public class Main {
 //        ProblemFrom21To30 mySolveThree = new ProblemFrom21To30();
         ProblemFrom31To40 mySolveFour = new ProblemFrom31To40();
 
+        String testStr = "abcde".substring(0, 2);
+        System.out.print(testStr);
 
 
 
