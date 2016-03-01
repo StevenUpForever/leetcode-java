@@ -99,5 +99,65 @@ Another example is ")()())", where the longest valid parentheses substring is "(
         return result;
     }
 
+    /*
+    33. Search in Rotated Sorted Array
+    Suppose a sorted array is rotated at some pivot unknown to you beforehand.
+
+(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
+
+You are given a target value to search. If found in the array return its index, otherwise return -1.
+
+You may assume no duplicate exists in the array.
+     */
+    public int search(int[] nums, int target) {
+        if (nums.length == 0) return -1;
+        int index = 0;
+        if (nums[0] <= target) {
+            while (index < nums.length) {
+                if (nums[index] < target) index++;
+                else if (nums[index] == target) return index;
+                else return -1;
+            }
+        }
+        else {
+            index = nums.length - 1;
+            while (index >= 0) {
+                if (nums[index] > target) index--;
+                else if (nums[index] == target) return index;
+                else return -1;
+            }
+        }
+        return -1;
+    }
+
+    /*
+    34. Search for a Range
+    Given a sorted array of integers, find the starting and ending position of a given target value.
+
+Your algorithm's runtime complexity must be in the order of O(log n).
+
+If the target is not found in the array, return [-1, -1].
+
+For example,
+Given [5, 7, 7, 8, 8, 10] and target value 8,
+return [3, 4].
+     */
+        public int[] searchRange(int[] nums, int target) {
+            int[] result = {-1, -1};
+            if (nums.length == 0) return result;
+            int index1 = 0, index2 = 0;
+            if (nums[0] <= target && nums[nums.length - 1] >= target) {
+                while (index1 < nums.length && nums[index1] <= target) {
+                    if (nums[index1] < target) index1++;
+                    else if (nums[index1] == target) {
+                        index2++;
+                        index1++;
+                    }
+                }
+                if (index2 != 0) result = new int[]{index1 - index2, index1 - 1};
+            }
+            return result;
+        }
+
 
 }

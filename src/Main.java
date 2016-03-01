@@ -8,9 +8,11 @@ public class Main {
 //        ProblemFrom11To20 mySolveTwo = new ProblemFrom11To20();
 //        ProblemFrom21To30 mySolveThree = new ProblemFrom21To30();
         ProblemFrom31To40 mySolveFour = new ProblemFrom31To40();
+        int testArray[] = {1};
 
-        String testStr = "abcde".substring(0, 2);
-        System.out.print(testStr);
+        System.out.print(mySolveFour.search(testArray, 2));
+//        String testStr = "abcde".substring(0, 2);
+//        System.out.print(testStr);
 
 
 
