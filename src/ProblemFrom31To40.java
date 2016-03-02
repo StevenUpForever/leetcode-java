@@ -159,5 +159,55 @@ return [3, 4].
             return result;
         }
 
+    /*
+    35. Search Insert Position
+    Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+You may assume no duplicates in the array.
+
+Here are few examples.
+[1,3,5,6], 5 → 2
+[1,3,5,6], 2 → 1
+[1,3,5,6], 7 → 4
+[1,3,5,6], 0 → 0
+     */
+    public int searchInsert(int[] nums, int target) {
+        int index = 0;
+        while (index < nums.length) {
+            if (nums[index] < target) index++;
+            else return index;
+        }
+        return index;
+    }
+
+    /*
+    36. Valid Sudoku
+    Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
+
+The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
+
+
+A partially filled sudoku which is valid.
+
+Note:
+A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
+     */
+    public boolean isValidSudoku(char[][] board) {
+        for(int i = 0; i < 9; i++) {
+            if(!isValid(board, i, i, 0, 8) || !isValid(board, 0, 8, i, i) || !isValid(board, i / 3 * 3, i / 3 * 3 + 2, i % 3 * 3, i % 3 * 3 + 2)) return false;
+        }
+
+        return true;
+    }
+
+    private boolean isValid(char[][] board, int xStart, int xEnd, int yStart, int yEnd) {
+        HashSet set = new HashSet();
+        for(int x = xStart; x <= xEnd; x++) {
+            for(int y = yStart; y <= yEnd; y++) {
+                if(board[x][y] != '.' && !set.add(board[x][y])) return false;
+            }
+        }
+        return true;
+    }
 
 }
