@@ -10,7 +10,10 @@ public class Main {
         ProblemFrom31To40 mySolveFour = new ProblemFrom31To40();
         int testArray[] = {1};
 
-        System.out.print(mySolveFour.search(testArray, 2));
+        System.out.print(mySolveFour.countAndSay(4));
+        StringBuilder builder = new StringBuilder();
+        builder.append(1 + "1".charAt(0));
+        System.out.print(builder);
 //        String testStr = "abcde".substring(0, 2);
 //        System.out.print(testStr);
 

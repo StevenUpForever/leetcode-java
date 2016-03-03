@@ -210,4 +210,104 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
         return true;
     }
 
+    /*
+    37. Sudoku Solver
+    Write a program to solve a Sudoku puzzle by filling the empty cells.
+
+Empty cells are indicated by the character '.'.
+
+You may assume that there will be only one unique solution.
+
+
+A sudoku puzzle...
+
+
+...and its solution numbers marked in red.
+     */
+    public void solveSudoku(char[][] board) {
+        if(board == null || board.length == 0)
+            return;
+        solve(board);
+    }
+
+    private boolean solve(char[][] board){
+        for(int i = 0; i < board.length; i++){
+            for(int j = 0; j < board[0].length; j++){
+                if(board[i][j] == '.'){
+                    for(char c = '1'; c <= '9'; c++){//trial. Try 1 through 9 for each cell
+                        if(isValid(board, i, j, c)){
+                            board[i][j] = c; //Put c for this cell
+
+                            if(solve(board))
+                                return true; //If it's the solution return true
+                            else
+                                board[i][j] = '.'; //Otherwise go back
+                        }
+                    }
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    private boolean isValid(char[][] board, int i, int j, char c){
+        //Check colum
+        for(int row = 0; row < 9; row++)
+            if(board[row][j] == c)
+                return false;
+
+        //Check row
+        for(int col = 0; col < 9; col++)
+            if(board[i][col] == c)
+                return false;
+
+        //Check 3 x 3 block
+        for(int row = (i / 3) * 3; row < (i / 3) * 3 + 3; row++)
+            for(int col = (j / 3) * 3; col < (j / 3) * 3 + 3; col++)
+                if(board[row][col] == c)
+                    return false;
+        return true;
+    }
+
+    /*
+    38. Count and Say
+    The count-and-say sequence is the sequence of integers beginning as follows:
+1, 11, 21, 1211, 111221, ...
+
+1 is read off as "one 1" or 11.
+11 is read off as "two 1s" or 21.
+21 is read off as "one 2, then one 1" or 1211.
+Given an integer n, generate the nth sequence.
+
+Note: The sequence of integers will be represented as a string.
+     */
+    public String countAndSay(int n) {
+        if(n <= 0) return "-1";
+        String result = "1";
+
+        for(int i = 1; i < n; i ++) {
+            result = build(result);
+        }
+        return result;
+    }
+
+    private String build(String result) {
+        StringBuilder builder = new StringBuilder();
+        int p = 0;
+        while(p < result.length()) {
+            char val = result.charAt(p);
+            int count = 0;
+
+            while(p < result.length() &&
+                    result.charAt(p) == val){
+                p ++;
+                count ++;
+            }
+            builder.append(String.valueOf(count));
+            builder.append(val);
+        }
+        return builder.toString();
+    }
+
 }
