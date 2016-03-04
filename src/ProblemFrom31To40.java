@@ -310,4 +310,78 @@ Note: The sequence of integers will be represented as a string.
         return builder.toString();
     }
 
+    /*
+    39. Combination Sum
+    Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+
+The same repeated number may be chosen from C unlimited number of times.
+
+Note:
+All numbers (including target) will be positive integers.
+Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
+The solution set must not contain duplicate combinations.
+For example, given candidate set 2,3,6,7 and target 7,
+A solution set is:
+[7]
+[2, 2, 3]
+     */
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> ret = new LinkedList<List<Integer>>();
+        Arrays.sort(candidates);
+        recurse(new ArrayList<Integer>(), target, candidates, 0, ret);
+        return ret;
+    }
+
+    private void recurse(List<Integer> list, int target, int[] candidates, int index, List<List<Integer>> ret) {
+        if (target == 0) {
+            ret.add(list);
+            return;
+        }
+        for (int i = index; i < candidates.length; i++) {
+            int newTarget = target - candidates[i];
+            if (newTarget >= 0) {
+                List<Integer> copy = new ArrayList<Integer>(list);
+                copy.add(candidates[i]);
+                recurse(copy, newTarget, candidates, i, ret);
+            } else break;
+        }
+    }
+
+    /*
+    40. Combination Sum II
+    Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+
+Each number in C may only be used once in the combination.
+
+Note:
+All numbers (including target) will be positive integers.
+Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
+The solution set must not contain duplicate combinations.
+For example, given candidate set 10,1,2,7,6,1,5 and target 8,
+A solution set is:
+[1, 7]
+[1, 2, 5]
+[2, 6]
+[1, 1, 6]
+     */
+    public List<List<Integer>> combinationSum2(int[] cand, int target) {
+        Arrays.sort(cand);
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        List<Integer> path = new ArrayList<Integer>();
+        dfs_com(cand, 0, target, path, res);
+        return res;
+    }
+    void dfs_com(int[] cand, int cur, int target, List<Integer> path, List<List<Integer>> res) {
+        if (target == 0) {
+            res.add(new ArrayList<Integer>(path));
+            return ;
+        }
+        if (target < 0) return;
+        for (int i = cur; i < cand.length; i++){
+            if (i > cur && cand[i] == cand[i-1]) continue;
+            path.add(path.size(), cand[i]);
+            dfs_com(cand, i+1, target - cand[i], path, res);
+            path.remove(path.size()-1);
+        }
+    }
 }
