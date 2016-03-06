@@ -368,35 +368,35 @@ isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
      */
 //Copied from discussion, not exactly undertand the while part, review at 2nd tire or more
-    public boolean isMatch(String s, String p) {
-        //If p has no element, decide by s.length()
-        if (p.isEmpty()) {
-            return s.isEmpty();
-        }
-        //If p has only one elements or the second is not support by '*'
-        if (p.length() == 1 || p.charAt(1) != '*') {
-            //If s is empty or not support by . or just not equal to each other, return false
-            if (s.isEmpty() || (p.charAt(0) != '.' && p.charAt(0) != s.charAt(0))) {
-                return false;
-            } else {
-                //Recursion the substring beside the math character
-                return isMatch(s.substring(1), p.substring(1));
+        public boolean isMatch(String s, String p) {
+            //If p has no element, decide by s.length()
+            if (p.isEmpty()) {
+                return s.isEmpty();
             }
-        }
+            //If p has only one elements or the second is not support by '*'
+            if (p.length() == 1 || p.charAt(1) != '*') {
+                //If s is empty or not support by . or just not equal to each other, return false
+                if (s.isEmpty() || (p.charAt(0) != '.' && p.charAt(0) != s.charAt(0))) {
+                    return false;
+                } else {
+                    //Recursion the substring beside the math character
+                    return isMatch(s.substring(1), p.substring(1));
+                }
+            }
 
-        //Main part, keep recursive until met two conditions before
-        //Ignore s.length() due to if so, goto the last return and met the first two conditions at next recursive, also euqal to each other at the indicated index or supported by '.'
-        while (!s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.')) {
-            //Because p.length() is bigger than 2, reach here due to skip first two conditions so of course math s with substring(2)
-            if (isMatch(s, p.substring(2))) {
-                return true;
+            //Main part, keep recursive until met two conditions before
+            //Ignore s.length() due to if so, goto the last return and met the first two conditions at next recursive, also euqal to each other at the indicated index or supported by '.'
+            while (!s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.')) {
+                //Because p.length() is bigger than 2, reach here due to skip first two conditions so of course math s with substring(2)
+                if (isMatch(s, p.substring(2))) {
+                    return true;
+                }
+                //Make s forward one character
+                s = s.substring(1);
             }
-            //Make s forward one character
-            s = s.substring(1);
+            //If not match all conditions before, keep matching s with p.substring(2)
+            return isMatch(s, p.substring(2));
         }
-        //If not match all conditions before, keep matching s with p.substring(2)
-        return isMatch(s, p.substring(2));
-    }
 
 
 

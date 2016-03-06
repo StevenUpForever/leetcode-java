@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 /**
@@ -60,4 +61,67 @@ The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In th
         }
         return max;
     }
+
+    /*
+    43. Multiply Strings
+    Given two numbers represented as strings, return multiplication of the numbers as a string.
+
+Note: The numbers can be arbitrarily large and are non-negative.
+     */
+    public String multiply(String num1, String num2) {
+        BigDecimal decimalOne = new BigDecimal(num1);
+        BigDecimal decimalTwo = new BigDecimal(num2);
+        return decimalOne.multiply(decimalTwo).toString();
+    }
+
+    /*
+    44. Wildcard Matching
+    Implement wildcard pattern matching with support for '?' and '*'.
+
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+
+The matching should cover the entire input string (not partial).
+
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "*") → true
+isMatch("aa", "a*") → true
+isMatch("ab", "?*") → true
+isMatch("aab", "c*a*b") → false
+     */
+    public boolean isMatch(String s, String p) {
+        int m = s.length(), n = p.length();
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (p.charAt(i) == '*') count++;
+        }
+        if (count==0 && m != n) return false;
+        else if (n - count > m) return false;
+
+        boolean[] match = new boolean[m+1];
+        match[0] = true;
+        for (int i = 0; i < m; i++) {
+            match[i+1] = false;
+        }
+        for (int i = 0; i < n; i++) {
+            if (p.charAt(i) == '*') {
+                for (int j = 0; j < m; j++) {
+                    match[j+1] = match[j] || match[j+1];
+                }
+            } else {
+                for (int j = m-1; j >= 0; j--) {
+                    match[j+1] = (p.charAt(i) == '?' || p.charAt(i) == s.charAt(j)) && match[j];
+                }
+                match[0] = false;
+            }
+        }
+        return match[m];
+    }
+
 }
