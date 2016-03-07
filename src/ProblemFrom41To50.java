@@ -1,5 +1,5 @@
 import java.math.BigDecimal;
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Created by ChengzhiJia on 16/3/5.
@@ -122,6 +122,67 @@ isMatch("aab", "c*a*b") → false
             }
         }
         return match[m];
+    }
+
+    /*
+    45. Jump Game II
+    Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Your goal is to reach the last index in the minimum number of jumps.
+
+For example:
+Given array A = [2,3,1,1,4]
+
+The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
+
+Note:
+You can assume that you can always reach the last index.
+     */
+    public int jump(int[] nums) {
+        int count = 0, max = 0;
+        for (int i = 0, nextMax = 0; i <= max && i < nums.length - 1; i++) {
+            nextMax = Math.max(nextMax, i + nums[i]);
+            if (i == max) {
+                max = nextMax;
+                count++;
+            }
+        }
+        return max >= nums.length - 1 ? count : -1;
+    }
+
+    /*
+    46. Permutations
+    Given a collection of distinct numbers, return all possible permutations.
+
+For example,
+[1,2,3] have the following permutations:
+[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
+     */
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> permutations = new ArrayList<>();
+        if (nums.length == 0) {
+            return permutations;
+        }
+
+        collectPermutations(nums, 0, new ArrayList<>(), permutations);
+        return permutations;
+    }
+
+    private void collectPermutations(int[] nums, int start, List<Integer> permutation,
+                                     List<List<Integer>>  permutations) {
+
+        if (permutation.size() == nums.length) {
+            permutations.add(permutation);
+            return;
+        }
+
+        for (int i = 0; i <= permutation.size(); i++) {
+            List<Integer> newPermutation = new ArrayList<>(permutation);
+            newPermutation.add(i, nums[start]);
+            collectPermutations(nums, start + 1, newPermutation, permutations);
+        }
     }
 
 }
