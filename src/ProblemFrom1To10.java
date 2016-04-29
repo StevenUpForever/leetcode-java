@@ -168,6 +168,22 @@ Output: 7 -> 0 -> 8
         }
     }
 
+    public static String interleave(String str1, String str2) {
+        StringBuilder resultString = new StringBuilder();
+        int i = 0;
+        while (i < str1.length() && i < str2.length()) {
+            resultString.append(str1.charAt(i));
+            resultString.append(str2.charAt(i));
+        }
+        if (i < str2.length()) {
+            resultString.append(str2.substring(i));
+        }
+        if (i < str1.length()) {
+            resultString.append(str1.substring(i));
+        }
+        return resultString.toString();
+    }
+
 
 
     /*
