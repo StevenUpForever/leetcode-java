@@ -9,8 +9,7 @@ public class Main {
 //        ProblemFrom21To30 mySolveThree = new ProblemFrom21To30();
         //ProblemFrom31To40 mySolveFour = new ProblemFrom31To40();
         ProblemFrom41To50 mySolve5 = new ProblemFrom41To50();
-        System.out.print();
-
+        System.out.print(mySolve.lengthOfLongestSubstring());
 
 
 
