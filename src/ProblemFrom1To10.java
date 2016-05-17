@@ -3,35 +3,32 @@ import java.util.*;
 
 /*
 Problem 1 Two Sum:
- Given an array of integers, find two numbers such that they add up to a specific target number.
-
-The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+ Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution.
 
-Input: numbers={2, 7, 11, 15}, target=9
-Output: index1=1, index2=2
+Example:
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+UPDATE (2016/2/13):
+The return format had been changed to zero-based indices. Please read the above updated description carefully.
+
+Subscribe to see which companies asked this question
+
  */
 public class ProblemFrom1To10 {
 
     public int[] twoSum(int[] nums, int target) {
-
-        int result[] = new int[2];
-        //Pay attention for time limit
-        for (int numA = 1; numA < nums.length; numA++) {
-            for (int numB = 0; numB < numA; numB++) {
-                if (nums[numA] + nums[numB] == target) {
-                    if (numA <= numB) {
-                        result[0] = numA + 1;//Not zero based
-                        result[1] = numB + 1;
-                    } else {
-                        result[0] = numB + 1;
-                        result[1] = numA + 1;
-                    }
+        for (int index1 = 0; index1 < nums.length - 1; index1++) {
+            for (int index2 = index1 + 1; index2 < nums.length; index2++) {
+                if (nums[index1] + nums[index2] == target) {
+                    return new int[]{index1, index2};
                 }
             }
         }
-        return result;
+        return new int[]{0, 0};
     }
 
     /*
