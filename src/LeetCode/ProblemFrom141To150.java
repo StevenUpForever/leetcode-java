@@ -1,63 +1,89 @@
 package LeetCode;
 
-import java.awt.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+import java.util.Hashtable;
 
 /**
  * Created by ChengzhiJia on 5/29/16.
  */
 public class ProblemFrom141To150 {
 
-    private class RandomListNode {
-        int label;
-        RandomListNode next, random;
-        RandomListNode(int x) { this.label = x; }
-    };
     /*
-    138. Copy List with Random Pointer
-    A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
+    146. LRU Cache
+    Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and set.
 
-Return a deep copy of the list.
+get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
      */
-    public RandomListNode copyRandomList(RandomListNode head) {
-        HashMap<RandomListNode, RandomListNode> map = new HashMap<RandomListNode, RandomListNode>();
-        RandomListNode temp = head;
-        while (temp != null) {
-            map.put(temp, new RandomListNode(temp.label));
-            temp = temp.next;
-        }
-        temp = head;
-        while (temp != null) {
-            map.get(temp).next = map.get(temp.next);
-            map.get(temp).random = map.get(temp.random);
-            temp = temp.next;
-        }
-        return map.get(head);
-    }
 
-    public RandomListNode copyRandomList2(RandomListNode head) {
-        RandomListNode result = new RandomListNode(0);
-        RandomListNode temp = result;
-        RandomListNode tempHead = head;
-        ArrayList<RandomListNode> tempList = new ArrayList<>();
-        ArrayList<RandomListNode> tempList2 = new ArrayList<>();
-        while (tempHead != null) {
-            temp.next = new RandomListNode(tempHead.label);
-            temp = temp.next;
-            tempList.add(temp);
-            tempList2.add(tempHead);
-            tempHead = tempHead.next;
+    class LRUCache {
+
+        private class doubleListNode {
+            int key;
+            int value;
+            doubleListNode pre;
+            doubleListNode next;
+            doubleListNode(int newKey, int newValue) {
+                key = newKey;
+                value = newValue;
+            }
         }
-        temp = result.next;
-        tempHead = head;
-        while (tempHead != null) {
-            if (tempHead.random != null) temp.random = tempList.get(tempList2.indexOf(tempHead.random));
-            temp = temp.next;
-            tempHead = tempHead.next;
+
+        HashMap<Integer, doubleListNode> map = new HashMap<>();
+
+        doubleListNode head, tail;
+
+        int count, TempCapacity;
+
+        public LRUCache(int capacity) {
+            head = new doubleListNode(0, 0);
+            tail = new doubleListNode(0, 0);
+            head.pre = null;
+            head.next = tail;
+            tail.pre = head;
+            tail.next = null;
+            count = 0;
+            TempCapacity = capacity;
         }
-        return result.next;
+
+        public int get(int key) {
+            doubleListNode result = map.get(key);
+            if (result == null) return -1;
+            deleteNode(result);
+            insertNode(result);
+            return result.value;
+        }
+
+        public void set(int key, int value) {
+            doubleListNode node = map.get(key);
+            if (node != null) {
+                node.value = value;
+                deleteNode(node);
+                insertNode(node);
+            } else {
+                node = new doubleListNode(key, value);
+                map.put(key, node);
+                insertNode(node);
+                count++;
+                if (count > TempCapacity) {
+                    map.remove(tail.pre.key);
+                    deleteNode(tail.pre);
+                    --count;
+                }
+            }
+        }
+
+        private void deleteNode(doubleListNode node) {
+            node.pre.next = node.next;
+            node.next.pre = node.pre;
+        }
+
+        private void insertNode(doubleListNode node) {
+            node.pre = head;
+            node.next = head.next;
+            head.next.pre = node;
+            head.next = node;
+        }
     }
 
 }
