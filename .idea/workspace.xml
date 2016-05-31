@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="11 finished">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LeetCode/ProblemFrom131To140.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCodeInJava/Main.class" afterPath="$PROJECT_DIR$/out/production/LeetCodeInJava/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/ProblemFrom141To150.java" afterPath="$PROJECT_DIR$/src/LeetCode/ProblemFrom141To150.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java" afterPath="$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProblemFrom41To50.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProblemFrom41To50.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.59821427">
+              <caret line="271" column="14" selection-start-line="271" selection-start-column="14" selection-end-line="271" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -103,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProblemFrom141To150.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProblemFrom141To150.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/ProblemFrom141To150.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93303573">
+            <state vertical-scroll-proportion="0.0">
               <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -156,11 +152,11 @@
         <option value="$PROJECT_DIR$/src/ProblemFrom1To10.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom1To10.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom11To20.java" />
-        <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom131To140.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/LRUCache.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom141To150.java" />
+        <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java" />
       </list>
     </option>
   </component>
@@ -816,7 +812,7 @@
       <workItem from="1463555326892" duration="228000" />
       <workItem from="1463701686005" duration="1121000" />
       <workItem from="1464566351727" duration="4138000" />
-      <workItem from="1464575994104" duration="8924000" />
+      <workItem from="1464575994104" duration="10168000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -882,10 +878,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224209000" />
+    <option name="totallyTimeSpent" value="225453000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="826" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="826" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1334,14 +1330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1381,11 +1369,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/ProblemFrom141To150.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93303573">
+        <state vertical-scroll-proportion="0.0">
           <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59821427">
+          <caret line="271" column="14" selection-start-line="271" selection-start-column="14" selection-end-line="271" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
