@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Created by ChengzhiJia on 16/3/5.
  */
-public class ProblemFrom41To50 {
+public class Problem41To50 {
 
     /*
     41. First Missing Positive

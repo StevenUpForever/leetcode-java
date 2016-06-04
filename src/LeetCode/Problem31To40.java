@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by ChengzhiJia on 16/2/18.
  */
-public class ProblemFrom31To40 {
+public class Problem31To40 {
     /*
     31. Next Permutation
     Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.

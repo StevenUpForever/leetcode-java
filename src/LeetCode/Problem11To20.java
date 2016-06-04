@@ -3,7 +3,7 @@ package LeetCode;
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class ProblemFrom11To20 {
+public class Problem11To20 {
 
     /*
     Problem 11 Container With Most Water:

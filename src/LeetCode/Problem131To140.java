@@ -6,7 +6,7 @@ import java.util.HashMap;
 /**
  * Created by ChengzhiJia on 5/29/16.
  */
-public class ProblemFrom131To140 {
+public class Problem131To140 {
 
     private class RandomListNode {
         int label;

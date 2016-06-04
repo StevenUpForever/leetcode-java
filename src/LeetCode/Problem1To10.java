@@ -20,7 +20,7 @@ The return format had been changed to zero-based indices. Please read the above 
 Subscribe to see which companies asked this question
 
  */
-public class ProblemFrom1To10 {
+public class Problem1To10 {
 
     public int[] twoSum(int[] nums, int target) {
         for (int index1 = 0; index1 < nums.length - 1; index1++) {

@@ -6,7 +6,7 @@ import java.util.Hashtable;
 /**
  * Created by ChengzhiJia on 5/29/16.
  */
-public class ProblemFrom141To150 {
+public class Problem141To150 {
 
     /*
     146. LRU Cache
