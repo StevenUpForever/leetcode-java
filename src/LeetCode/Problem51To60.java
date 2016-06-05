@@ -6,6 +6,35 @@ import java.util.*;
  * Created by ChengzhiJia on 6/3/16.
  */
 public class Problem51To60 {
+
+    /*
+    56. Merge Intervals
+    Given a collection of intervals, merge all overlapping intervals.
+
+For example,
+Given [1,3],[2,6],[8,10],[15,18],
+return [1,6],[8,10],[15,18].
+     */
+    public List<Interval> merge(List<Interval> intervals) {
+        intervals.sort(new Comparator<Interval>() {
+            @Override
+            public int compare(Interval o1, Interval o2) {
+                return o1.start - o2.start;
+            }
+        });
+        int index = 0;
+        while (index < intervals.size() - 1) {
+            Interval current = intervals.get(index);
+            Interval next = intervals.get(index + 1);
+            if (current.end >= next.start) {
+                current.start = Math.min(current.start, next.start);
+                current.end = Math.max(current.end, next.end);
+                intervals.remove(index + 1);
+            } else index++;
+        }
+        return intervals;
+    }
+
     /*
     57. Insert Interval
     Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).

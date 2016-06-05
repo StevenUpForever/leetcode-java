@@ -400,7 +400,7 @@ isMatch("aab", "c*a*b") → true
             }
 
             //Main part, keep recursive until met two conditions before
-            //Ignore s.length() due to if so, goto the last return and met the first two conditions at next recursive, also euqal to each other at the indicated index or supported by '.'
+            //Ignore s.length() due to if so, goto the last return and met the first two conditions at next recursive, also equal to each other at the indicated index or supported by '.'
             while (!s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.')) {
                 //Because p.length() is bigger than 2, reach here due to skip first two conditions so of course math s with substring(2)
                 if (isMatch(s, p.substring(2))) {
