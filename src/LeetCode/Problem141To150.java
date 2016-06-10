@@ -2,11 +2,56 @@ package LeetCode;
 
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.List;
 
 /**
  * Created by ChengzhiJia on 5/29/16.
  */
 public class Problem141To150 {
+
+    /*
+    141. Linked List Cycle
+    Given a linked list, determine if it has a cycle in it.
+
+Follow up:
+Can you solve it without using extra space?
+
+Subscribe to see which companies asked this question
+     */
+
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
+
+//    public boolean hasCycle(ListNode head) {
+//        HashMap<ListNode, Integer> map = new HashMap<>();
+//        while (head != null) {
+//            if (map.get(head) == null) {
+//                map.put(head, 1);
+//                head = head.next;
+//                continue;
+//            }
+//            if (map.get(head) == 1) return true;
+//        }
+//        return false;
+//    }
+
+    public boolean hasCycle(ListNode head) {
+        if (head == null) return false;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) return true;
+        }
+        return false;
+    }
 
     /*
     146. LRU Cache
