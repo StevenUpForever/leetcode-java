@@ -275,4 +275,13 @@ All inputs will be in lower-case.
         return new ArrayList<>(map.values());
     }
 
+    /*
+    50. Pow(x, n)
+    Implement pow(x, n).
+     */
+
+    public double myPow(double x, int n) {
+        
+    }
+
 }
