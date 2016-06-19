@@ -29,14 +29,6 @@ Subscribe to see which companies asked this question
      */
     public class MinStack {
 
-        private class ListNode {
-            int val;
-            ListNode next;
-            ListNode(int val) {
-                this.val = val;
-            }
-        }
-
         ListNode start = new ListNode(0);
         ArrayList<ListNode> minArray = new ArrayList<>();
         /** initialize your data structure here. */

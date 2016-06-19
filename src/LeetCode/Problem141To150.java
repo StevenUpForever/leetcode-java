@@ -19,15 +19,6 @@ Can you solve it without using extra space?
 Subscribe to see which companies asked this question
      */
 
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
-
 //    public boolean hasCycle(ListNode head) {
 //        HashMap<ListNode, Integer> map = new HashMap<>();
 //        while (head != null) {

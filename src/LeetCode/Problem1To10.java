@@ -40,13 +40,6 @@ Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
      */
     //The linkedList of this problem is implemented by the class ListNode, reference by LeetCode discussion
-    private class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             //Here temp is the final linkedList, result is the linkedList which in processing

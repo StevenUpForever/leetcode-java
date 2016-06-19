@@ -23,14 +23,6 @@ All root-to-leaf paths are:
 
 ["1->2->5", "1->3"]
      */
-    public class TreeNode {
-        public int val;
-        public TreeNode left, right;
-        public TreeNode(int val) {
-            this.val = val;
-            this.left = this.right = null;
-        }
-    }
 
     public List<String> binaryTreePaths(TreeNode root) {
         ArrayList<String> result = new ArrayList<>();

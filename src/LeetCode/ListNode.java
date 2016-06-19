@@ -1,0 +1,22 @@
+package LeetCode;
+
+/**
+ * Created by ChengzhiJia on 6/19/16.
+ */
+
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+    }
+}
+
+class TreeNode {
+    public int val;
+    public TreeNode left, right;
+    public TreeNode(int val) {
+        this.val = val;
+        this.left = this.right = null;
+    }
+}

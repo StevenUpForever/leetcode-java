@@ -1,9 +1,26 @@
 package LeetCode;
 import java.util.HashMap;
+import java.util.List;
+
 /**
  * Created by ChengzhiJia on 6/5/16.
  */
 public class Problem201To210 {
+
+    /*
+    206. Reverse Linked List
+    Reverse a singly linked list.
+     */
+    public ListNode reverseList(ListNode head) {
+        ListNode node = null;
+        while (head != null) {
+            ListNode next = head.next;
+            head.next = node;
+            node = head;
+            head = next;
+        }
+        return node;
+    }
 
     /*
     208. Implement Trie (Prefix Tree)
