@@ -1,5 +1,8 @@
 package LeetCode;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+
 /**
  * Created by ChengzhiJia on 6/18/16.
  */
@@ -35,6 +38,7 @@ Subscribe to see which companies asked this question
         }
 
         ListNode start = new ListNode(0);
+        ArrayList<ListNode> minArray = new ArrayList<>();
         /** initialize your data structure here. */
         public MinStack() {
         }
@@ -43,12 +47,14 @@ Subscribe to see which companies asked this question
             ListNode newNode = new ListNode(x);
             newNode.next = start.next;
             start.next = newNode;
+            if (minArray.isEmpty() || minArray.get(minArray.size() - 1).val >= newNode.val) minArray.add(newNode);
         }
 
         public void pop() {
             if (start.next != null) {
                 ListNode next = start.next;
                 start.next = next.next;
+                if (!minArray.isEmpty() && minArray.get(minArray.size() - 1).val == next.val) minArray.remove(minArray.size() - 1);
                 next = null;
             }
         }
@@ -58,13 +64,8 @@ Subscribe to see which companies asked this question
         }
 
         public int getMin() {
-            ListNode node = start.next;
-            int minVal = node.val;
-            while (node != null) {
-                minVal = Math.min(minVal, node.val);
-                node = node.next;
-            }
-            return minVal;
+            if (minArray.size() > 0) return minArray.get(minArray.size() - 1).val;
+            else return 0;
         }
     }
 

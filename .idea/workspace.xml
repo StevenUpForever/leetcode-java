@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="11 finished">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LeetCode/Problem151To160.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/Problem151To160.java" afterPath="$PROJECT_DIR$/src/LeetCode/Problem151To160.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,13 +63,14 @@
       <file leaf-file-name="Problem151To160.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem151To160.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6480938">
-              <caret line="61" column="34" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.516129">
+              <caret line="56" column="42" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="42" />
               <folding>
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1484#1485#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#1777#1778#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -850,7 +850,7 @@
       <workItem from="1465542390164" duration="7914000" />
       <workItem from="1465628095576" duration="2000" />
       <workItem from="1465964918909" duration="923000" />
-      <workItem from="1466318119692" duration="1339000" />
+      <workItem from="1466318119692" duration="3239000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -916,7 +916,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258767000" />
+    <option name="totallyTimeSpent" value="260667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
@@ -1410,13 +1410,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem151To160.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6480938">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.516129">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="42" />
           <folding>
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
