@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="11 finished" />
+    <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="11 finished">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" afterPath="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" />
+    </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Problem1To10.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Problem1To10.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem1To10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="318" column="5" selection-start-line="284" selection-start-column="3" selection-end-line="318" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5808824">
+              <caret line="377" column="26" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -85,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Problem11To20.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Problem11To20.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem11To20.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6260997">
+            <state vertical-scroll-proportion="0.0">
               <caret line="238" column="88" selection-start-line="238" selection-start-column="24" selection-end-line="238" selection-end-column="88" />
               <folding>
                 <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
@@ -167,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/LeetCode/Problem71To80.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem311To320.java" />
-        <option value="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem151To160.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem251To260.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ListNode.java" />
@@ -177,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/LeetCode/Problem141To150.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem201To210.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem121To130.java" />
+        <option value="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" />
       </list>
     </option>
   </component>
@@ -219,8 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,6 +314,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -865,7 +868,8 @@
       <workItem from="1465628095576" duration="2000" />
       <workItem from="1465964918909" duration="923000" />
       <workItem from="1466318119692" duration="7365000" />
-      <workItem from="1466705767390" duration="2605000" />
+      <workItem from="1466705767390" duration="3203000" />
+      <workItem from="1466747869072" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -931,7 +935,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267398000" />
+    <option name="totallyTimeSpent" value="268993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
@@ -1408,21 +1412,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem1To10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="318" column="5" selection-start-line="284" selection-start-column="3" selection-end-line="318" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem11To20.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6260997">
+        <state vertical-scroll-proportion="0.0">
           <caret line="238" column="88" selection-start-line="238" selection-start-column="24" selection-end-line="238" selection-end-column="88" />
           <folding>
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem1To10.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5808824">
+          <caret line="377" column="26" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
