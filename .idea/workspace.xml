@@ -32,7 +32,12 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#934#935#0" expanded="false" />
+                <element signature="e#979#980#0" expanded="false" />
+                <element signature="e#1063#1064#0" expanded="false" />
+                <element signature="e#1116#1117#0" expanded="false" />
+                <element signature="e#1209#1210#0" expanded="false" />
+                <element signature="e#1261#1262#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -43,7 +48,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +58,8 @@
       <file leaf-file-name="Problem1To10.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem1To10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5808824">
-              <caret line="377" column="26" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="26" />
+            <state vertical-scroll-proportion="-0.80351907">
+              <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="307" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -63,7 +70,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-              <folding />
+              <folding>
+                <element signature="e#492#493#0" expanded="false" />
+                <element signature="e#550#551#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +83,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="284" selection-end-column="7" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,7 +95,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#3084#3085#0" expanded="false" />
+                <element signature="e#3138#3139#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +108,9 @@
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem11To20.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="238" column="88" selection-start-line="238" selection-start-column="24" selection-end-line="238" selection-end-column="88" />
+              <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
               </folding>
             </state>
@@ -105,7 +122,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,9 +334,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,7 +343,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LintCodeInJava" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
@@ -869,7 +888,8 @@
       <workItem from="1465964918909" duration="923000" />
       <workItem from="1466318119692" duration="7365000" />
       <workItem from="1466705767390" duration="3203000" />
-      <workItem from="1466747869072" duration="997000" />
+      <workItem from="1466747869072" duration="2469000" />
+      <workItem from="1468004622804" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -935,7 +955,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268993000" />
+    <option name="totallyTimeSpent" value="273278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
@@ -1031,6 +1051,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="121" selection-start-line="24" selection-start-column="121" selection-end-line="24" selection-end-column="121" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1066,6 +1087,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1101,6 +1123,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1129,6 +1152,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1358,15 +1382,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="284" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem21To30.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1374,7 +1392,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,7 +1403,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#934#935#0" expanded="false" />
+            <element signature="e#979#980#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1261#1262#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1392,7 +1417,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#492#493#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1400,7 +1428,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1415,17 +1445,30 @@
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem11To20.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="238" column="88" selection-start-line="238" selection-start-column="24" selection-end-line="238" selection-end-column="88" />
+          <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem21To30.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3084#3085#0" expanded="false" />
+            <element signature="e#3138#3139#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem1To10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5808824">
-          <caret line="377" column="26" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="26" />
+        <state vertical-scroll-proportion="-0.80351907">
+          <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="307" selection-end-column="14" />
           <folding />
         </state>
       </provider>

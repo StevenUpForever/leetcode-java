@@ -17,8 +17,6 @@ return [0, 1].
 UPDATE (2016/2/13):
 The return format had been changed to zero-based indices. Please read the above updated description carefully.
 
-Subscribe to see which companies asked this question
-
  */
 public class Problem1To10 {
 
@@ -311,7 +309,6 @@ Notes: It is intended for this problem to be specified vaguely (ie, no given inp
             if (result > Integer.MAX_VALUE/10 || (result == Integer.MAX_VALUE/10 && str.charAt(index) - '0' > Integer.MAX_VALUE % 10)){
                 return firstNum ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             }
-            //Similar to reverse a number in Math way
             result = result*10 + (str.charAt(index) - '0');
             index ++;
         }
@@ -325,32 +322,22 @@ Notes: It is intended for this problem to be specified vaguely (ie, no given inp
      */
     //Palindrome means that the parameter is symmetrical
     public boolean isPalindrome(int x) {
-        // if x is overflowed
         long xLong = x;
         if (xLong >= Integer.MAX_VALUE || xLong <= Integer.MIN_VALUE) {
             return false;
         }
-        /*
-        if x is less than 0, it must not be palindrome
-        if x is times by 10 the num will be length - 1, and 10 times must not be palindrome
-        a special case is that 0 is 0 time of 10, and 0 is palindrome
-         */
         if (x < 0 || (x != 0 && x % 10 == 0)) {
             return false;
         }
-        //if x is one digit and it bigger than 0, it must be palindrome
         else if (x < 10) {
             return true;
         }
-        //make num as half length of x and be reverse order
         int num = 0;
         while (num < x ) {
             num *= 10;
             num += x % 10;
             x /= 10;
         }
-
-        //if the length of x is even the result depends on the first part, and if it's odd number, depends on the second part
         return (num == x || num/10 == x);
     }
 
