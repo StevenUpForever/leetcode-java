@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="11 finished">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" afterPath="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/Problem231To240.java" afterPath="$PROJECT_DIR$/src/LeetCode/Problem231To240.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,14 +31,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
-              <folding>
-                <element signature="e#934#935#0" expanded="false" />
-                <element signature="e#979#980#0" expanded="false" />
-                <element signature="e#1063#1064#0" expanded="false" />
-                <element signature="e#1116#1117#0" expanded="false" />
-                <element signature="e#1209#1210#0" expanded="false" />
-                <element signature="e#1261#1262#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,18 +41,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Problem1To10.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Problem1To10.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem1To10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.80351907">
+            <state vertical-scroll-proportion="0.0">
               <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="307" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Problem231To240.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem231To240.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28592375">
+              <caret line="12" column="7" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -70,10 +71,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-              <folding>
-                <element signature="e#492#493#0" expanded="false" />
-                <element signature="e#550#551#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,9 +81,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="284" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,11 +91,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#3084#3085#0" expanded="false" />
-                <element signature="e#3138#3139#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,7 +102,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
               </folding>
             </state>
@@ -122,9 +113,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,16 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Problem31To40.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem31To40.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="204" column="55" selection-start-line="204" selection-start-column="55" selection-end-line="204" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -182,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom141To150.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom31To40.java" />
-        <option value="$PROJECT_DIR$/src/LeetCode/Problem231To240.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem161To170.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem51To60.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem61To70.java" />
@@ -199,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/LeetCode/Problem201To210.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem121To130.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" />
+        <option value="$PROJECT_DIR$/src/LeetCode/Problem231To240.java" />
       </list>
     </option>
   </component>
@@ -241,7 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,8 +314,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -889,7 +868,9 @@
       <workItem from="1466318119692" duration="7365000" />
       <workItem from="1466705767390" duration="3203000" />
       <workItem from="1466747869072" duration="2469000" />
-      <workItem from="1468004622804" duration="2813000" />
+      <workItem from="1468004622804" duration="2869000" />
+      <workItem from="1468044410969" duration="60000" />
+      <workItem from="1468472699341" duration="957000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -955,7 +936,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273278000" />
+    <option name="totallyTimeSpent" value="274351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
@@ -1051,7 +1032,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="121" selection-start-line="24" selection-start-column="121" selection-end-line="24" selection-end-column="121" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1087,7 +1067,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1123,7 +1102,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1152,7 +1130,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1333,13 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem231To240.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="7" selection-start-line="7" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem161To170.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1366,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,9 +1351,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="284" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,9 +1359,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1402,14 +1367,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="31" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="e#934#935#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1063#1064#0" expanded="false" />
-            <element signature="e#1116#1117#0" expanded="false" />
-            <element signature="e#1209#1210#0" expanded="false" />
-            <element signature="e#1261#1262#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1417,10 +1375,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="e#492#493#0" expanded="false" />
-            <element signature="e#550#551#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,9 +1383,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1447,7 +1400,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1465068929000" expanded="true" signature="9429:9608" placeholder="..." />
           </folding>
         </state>
@@ -1457,18 +1409,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
-            <element signature="e#3138#3139#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem1To10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.80351907">
+        <state vertical-scroll-proportion="0.0">
           <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="307" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem231To240.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28592375">
+          <caret line="12" column="7" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="7" />
           <folding />
         </state>
       </provider>
