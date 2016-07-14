@@ -1,5 +1,6 @@
 package LeetCode;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
@@ -120,6 +121,14 @@ set(key, value) - Set or insert the value if the key is not already present. Whe
             head.next.pre = node;
             head.next = node;
         }
+    }
+
+    /*
+    149. Max Points on a Line
+    Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
+     */
+    public int maxPoints(Point[] points) {
+        return 0;
     }
 
 }
