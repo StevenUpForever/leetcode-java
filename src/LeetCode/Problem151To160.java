@@ -9,6 +9,27 @@ import java.util.Comparator;
 public class Problem151To160 {
 
     /*
+    151. Reverse Words in a String
+    Given an input string, reverse the string word by word.
+
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+
+Update (2015-02-12):
+For C programmers: Try to solve it in-place in O(1) space.
+     */
+    public String reverseWords(String s) {
+        String[] words = s.trim().split(" +");
+        for (int i = 0; i < words.length/2; i++) {
+            String w = words[i];
+            words[i] = words[words.length - i - 1];
+            words[words.length - i - 1] = w;
+        }
+        return String.join(" ", words);
+    }
+
+    /*
     155. Min Stack
     Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
