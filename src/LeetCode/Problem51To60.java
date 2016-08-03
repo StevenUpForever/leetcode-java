@@ -27,6 +27,38 @@ the contiguous subarray [4,−1,2,1] has the largest sum = 6.
     }
 
     /*
+    54. Spiral Matrix
+    Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+
+For example,
+Given the following matrix:
+
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+You should return [1,2,3,6,9,8,7,4,5].
+     */
+    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> result = new ArrayList();
+        if (matrix.length == 0) return result;
+        int x = 0, y = 0;
+        int lenX = matrix.length, lenY = matrix[0].length;
+        while (x < lenX && y < lenY) {
+            for (int i = y; i < lenY; i++) result.add(matrix[x][i]);
+            x++;
+            for (int j = x; j < lenX; j++) result.add(matrix[j][lenY - 1]);
+            lenY--;
+            for (int m = lenY - 1; x < lenX && m >= y; m--) result.add(matrix[lenX - 1][m]);
+            lenX--;
+            for (int n = lenX - 1; y < lenY && n >= x; n--) result.add(matrix[n][y]);
+            y++;
+        }
+        return result;
+    }
+
+    /*
     56. Merge Intervals
     Given a collection of intervals, merge all overlapping intervals.
 
