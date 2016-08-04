@@ -7,6 +7,9 @@ public class Main {
         Problem311To320 problem311To320 = new Problem311To320();
         System.out.println(problem311To320.removeDuplicateLetters("cbacdcbc"));
         Problem141To150 aa = new Problem141To150();
+
+        String temp = "" + "a".charAt(0) + ("a".length() - 2) + "a".charAt("a".length() - 1);
+        System.out.println(temp);
     }
 
 
