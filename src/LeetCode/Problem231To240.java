@@ -9,6 +9,13 @@ public class Problem231To240 {
     231. Power of Two
     Given an integer, write a function to determine if it is a power of two.
      */
+
+    //Binary manipulation solution from leetCode, great one
+
+//    bool isPowerOfTwo(int n) {
+//        return (n>0&&((n&(n-1))==0));
+//    }
+
     public boolean isPowerOfTwo(int n) {
         if (n <= 0) return false;
         if (n <= 2) return true;
