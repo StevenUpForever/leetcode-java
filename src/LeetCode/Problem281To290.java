@@ -50,7 +50,7 @@ isUnique("make") -> true
         }
 
         public boolean isUnique(String word) {
-            return !map.containsKey(getKey(word))||map.get(getKey(word)).equals(word);
+            return !map.containsKey(getKey(word)) || map.get(getKey(word)).equals(word);
         }
 
         String getKey(String str){
