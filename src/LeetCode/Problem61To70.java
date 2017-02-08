@@ -36,6 +36,43 @@ The digits are stored such that the most significant digit is at the head of the
     }
 
     /*
+    67. Add Binary
+    Given two binary strings, return their sum (also a binary string).
+
+For example,
+a = "11"
+b = "1"
+Return "100".
+     */
+    /*
+    Approach: use normal binary calculation from the end to front
+    Time: O(Math.max(a.length(), b.length()))
+    Spance: O(Math.max(a.length(), b.length()))
+     */
+    public String addBinary(String a, String b) {
+        if (a == null || a.length() == 0) return b;
+        else if (b == null || b.length() == 0) return a;
+        int lena = a.length() - 1, lenb = b.length() - 1;
+        int goesUp = 0;
+        StringBuilder builder = new StringBuilder();
+        while (lena >= 0 || lenb >= 0) {
+            int cur = goesUp;
+            if (lena >= 0) {
+                cur += a.charAt(lena) - '0';
+                lena--;
+            }
+            if (lenb >= 0) {
+                cur += b.charAt(lenb) - '0';
+                lenb--;
+            }
+            builder.append(cur % 2);
+            goesUp = cur / 2;
+        }
+        if (goesUp != 0) builder.append(goesUp);
+        return builder.reverse().toString();
+    }
+
+    /*
     70. Climbing Stairs
     You are climbing a stair case. It takes n steps to reach to the top.
 
