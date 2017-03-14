@@ -25,11 +25,16 @@ This is an invalid board that you will not receive - as battleships will always 
 Follow up:
 Could you do it in one-pass, using only O(1) extra memory and without modifying the value of the board?
      */
+
+    /*
+    Approach: for loop once from left to right, top to bottom, so each time, just verify the left element and top element to see if current is part of existed battleship
+     */
     public int countBattleships(char[][] board) {
         if (board == null || board.length == 0 || board[0].length == 0) return 0;
         int res = 0;
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
+                //If current element is X, do detailed verify
                 if (board[i][j] == 'X') {
                     if (i == 0 && j == 0) {
                         res++;
