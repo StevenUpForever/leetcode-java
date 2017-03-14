@@ -26,6 +26,34 @@ public class Problem231To240 {
     }
 
     /*
+    235. Lowest Common Ancestor of a Binary Search Tree
+    Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
+
+        _______6______
+       /              \
+    ___2__          ___8__
+   /      \        /      \
+   0      _4       7       9
+         /  \
+         3   5
+For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+     */
+    /*
+    Approach: Use feature about call stack in recursive method, which each node need its left and right subtree to notify if any p or q found, if so, return itself to its super node, if no nodes found, return null, until the end when root node's call stack finished
+     */
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || root == p || root == q) return root; //Base case of recursion steps, find any node or reach bottom and found no node
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        //Do call stack steps about left subtree search result and right substree search result
+        if (left != null && right != null) return root; 
+        else if (left == null && right == null) return null;
+        else return left == null ? right : left;
+    }
+
+    /*
     237. Delete Node in a Linked List
     Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 
