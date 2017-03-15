@@ -4,16 +4,17 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Main newMain = new Main();
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(5);
-        arr.add(10);
-        arr.add(2);
-        arr.add(1);
-        ArrayList<Integer> B = newMain.performOps(arr);
-        for (int i = 0; i < B.size(); i++) {
-            System.out.print(B.get(i) + " ");
-        }
+//        Main newMain = new Main();
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        arr.add(5);
+//        arr.add(10);
+//        arr.add(2);
+//        arr.add(1);
+//        ArrayList<Integer> B = newMain.performOps(arr);
+//        for (int i = 0; i < B.size(); i++) {
+//            System.out.print(B.get(i) + " ");
+//        }
+        System.out.print("abc".substring(0, "abc".length()));
     }
 
     ArrayList<Integer> performOps(ArrayList<Integer> A) {

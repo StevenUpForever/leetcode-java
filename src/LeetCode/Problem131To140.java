@@ -2,6 +2,7 @@ package LeetCode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.*;
 
 /**
  * Created by ChengzhiJia on 5/29/16.
@@ -58,4 +59,51 @@ Return a deep copy of the list.
         return result.next;
     }
 
+    /*
+    139. Word Break
+    Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented into a space-separated sequence of one or more dictionary words. You may assume the dictionary does not contain duplicate words.
+
+For example, given
+s = "leetcode",
+dict = ["leet", "code"].
+
+Return true because "leetcode" can be segmented as "leet code".
+
+UPDATE (2017/1/4):
+The wordDict parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
+
+Show Company Tags
+Show Tags
+Show Similar Problems
+     */
+    /*
+    Approach: DP problem, which M[0] = dict.contains(first char), M[i] represent if subString(0, i + 1) can be word break
+    case 1: when list contains substring to i, M[i] = true
+    case 2: when for loop 0 to i, if M[0, j] is true and list contains [j + 1, i], M[i] is true
+    otherwise is false
+     */
+    public boolean wordBreak(String s, List<String> wordDict) {
+        if (s == null && wordDict == null) return true;
+        else if (s.length() == 0 && wordDict.size() == 0) return true;
+        else if (s.length() == 0) return false;
+        else if (wordDict == null || wordDict.size() == 0) return false;
+        HashMap<String, Boolean> map = new HashMap<>();
+        for (String str: wordDict) {
+            map.put(str, true);
+        }
+        int len = s.length();
+        boolean[] verify = new boolean[len];
+        for (int i = 0; i < len; i++) {
+            if (map.get(s.substring(0, i + 1)) != null) {
+                verify[i] = true;
+                continue;
+            }
+            for (int j = 0; j < i; j++) {
+                if (verify[j] && map.get(s.substring(j + 1, i + 1)) != null) {
+                    verify[i] = true;
+                }
+            }
+        }
+        return verify[len - 1];
+    }
 }
