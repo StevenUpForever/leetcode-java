@@ -1,5 +1,7 @@
 package LeetCode;
 
+import java.util.HashMap;
+
 /**
  * Created by ChengzhiJia on 7/14/16.
  */
@@ -43,6 +45,23 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
         nums[i] = nums[end];
         nums[end] = temp;
         return i;
+    }
+
+    /*
+    217. Contains Duplicate
+    Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+
+     */
+    public boolean containsDuplicate(int[] nums) {
+        HashMap<Integer, Boolean> map = new HashMap<>();
+        for (int i: nums) {
+            if (map.get(i) == null) {
+                map.put(i, true);
+            } else {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
