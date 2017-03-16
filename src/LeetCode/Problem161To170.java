@@ -28,4 +28,27 @@ For example, in array [1, 2, 3, 1], 3 is a peak element and your function should
         else return searchPeak(nums, start, middle);
     }
 
+    /*
+    168. Excel Sheet Column Title
+    Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+
+For example:
+
+    1 -> A
+    2 -> B
+    3 -> C
+    ...
+    26 -> Z
+    27 -> AA
+    28 -> AB
+     */
+    public String convertToTitle(int n) {
+        StringBuffer builder = new StringBuffer();
+        while (n > 0) {
+            builder.append((char)('A' + (--n)%26)); //Due to 'A' - 'A' = 0 but 'A' need represent 1, no good to insert new char at 0 here, due to will cause extra O(n) time complexity
+            n/=26;
+        }
+        return builder.reverse().toString(); //Due to higer digit is append after lower one, need to call reverse() once
+    }
+
 }

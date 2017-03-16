@@ -10,6 +10,56 @@ import java.util.List;
 public class Problem71To80 {
 
     /*
+    73. Set Matrix Zeroes
+    Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
+
+click to show follow up.
+
+Follow up:
+Did you use extra space?
+A straight forward solution using O(mn) space is probably a bad idea.
+A simple improvement uses O(m + n) space, but still not the best solution.
+Could you devise a constant space solution?
+     */
+    /*
+    Approach 1: after set to 0, record in two sets represent the rows and cols had set to 0, to save set 0 time, Space: O(m + n)
+    Approach 2:
+     */
+    /*
+    Not clear question, not a good question
+     */
+    public void setZeroes(int[][] matrix) {
+        boolean row = false, col = false;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 0) {
+                    if (i == 0) row = true;
+                    if (j == 0) col = true;
+                    matrix[0][j] = 0;
+                    matrix[i][0] = 0;
+                }
+            }
+        }
+        for (int i = 1; i < matrix.length; i++) {
+            for (int j = 1; j < matrix[0].length; j++) {
+                if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+        if (row) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                matrix[0][j] = 0;
+            }
+        }
+        if (col) {
+            for (int i = 0; i < matrix.length; i++) {
+                matrix[i][0] = 0;
+            }
+        }
+    }
+
+    /*
     75. Sort Colors
     Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
 
