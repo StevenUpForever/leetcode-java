@@ -14,14 +14,23 @@ public class Problem51To60 {
 For example, given the array [−2,1,−3,4,−1,2,1,−5,4],
 the contiguous subarray [4,−1,2,1] has the largest sum = 6.
      */
+    /*
+    DP problem, which M[0] = nums[0], M[i] represent the current contribute from o ... i, the keep global max to record the result
+    M[i] = M[i - 1] > 0 ? M[i - 1] + nums[i] : nums[i]
+     */
     public int maxSubArray(int[] nums) {
-        int result = 0;
+        int result = Integer.MIN_VALUE, cur = Integer.MIN_VALUE;
         if (nums.length == 0) return result;
         for (int num: nums) {
-            result += num;
-            if (num >= 0) {
-                result = Math.max(result, num);
+            //If current contribute less than 0, means will decrease result for sure, so replace with num
+            if (cur < 0) {
+                cur = num;
+            } else {
+                //If contribution larger than 0, increase it
+                cur = cur + num;
             }
+            //However current changed, set max to result, set max value as early as possible
+            result = Math.max(result, cur);
         }
         return result;
     }
