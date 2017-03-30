@@ -18,6 +18,7 @@ For example,
 Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
 
 The number of ways decoding "12" is 2.
+<<<<<<< Updated upstream
 
 Show Company Tags
 Show Tags
@@ -39,7 +40,7 @@ Show Tags
         }
         return dp[0];
     }
-
+    
     /*
     98. Validate Binary Search Tree
     Given a binary tree, determine if it is a valid binary search tree (BST).

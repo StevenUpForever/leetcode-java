@@ -49,7 +49,9 @@ Can you do it in O(n) time?
     }
 
     /*
-    Second approach: Use HashMap store all existed elements sum as key, index as value, check current sum equal to k or sum - k key existed
+    Second approach:
+    use concept of sum[j...i] = sum[i] - sum[j], and two sum concept
+    Use HashMap store all existed elements sum as key, index as value, check current sum equal to k or sum - k key existed
     (indicate there's part sum from some start index could have sum equal to k), put key value pair if not existed
     Time: O(n)(+ O(n) containsKey() API)
     Space: O(n)
