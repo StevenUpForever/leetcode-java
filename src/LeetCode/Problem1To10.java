@@ -362,19 +362,51 @@ isMatch("aa", ".*") → true
 isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
      */
+//    public boolean isMatch(String s, String p) {
+//        for(int i = 0; i < p.length(); s = s.substring(1)) {
+//            char c = p.charAt(i);
+//            if(i + 1 >= p.length() || p.charAt(i + 1) != '*')
+//                i++;
+//            else if(isMatch(s, p.substring(i + 2)))
+//                return true;
+//
+//            if(s.isEmpty() || (c != '.' && c != s.charAt(0)))
+//                return false;
+//        }
+//
+//        return s.isEmpty();
+//    }
+
+
+    /*
+    Approach: DP, which M[0][0] = true, "" is matched with "", M[i][j] represent s.subString[0, i] is matched with p.subString[0, j]
+    if s[i] == p[j] || p[j] == '.', this i and j will match, dp[i][j] = dp[i - 1][j - 1]
+    else if p[j] == '*', be aware that * represent any number of pre node, itself do not represent a char, there's multiple conditions
+        1. if p[j - 1] != '.' && s[i] != p[j - 1] it means i j - 1 can not match, dp[i][j] = dp[i][j - 1]
+        2. else
+            dp[i][j] = dp[i][j - 1]   a* * is 1
+            dp[i][j] = dp[i][j - 2]   a* * is 0, match the pre char of a
+            dp[i][j] = dp[i - 1][j]   a* * is larger than 1, it's like a for loop, for every m < i, if m could match at least p[j], means this * works increase by 1, dp[i + 1][j] result is induction from result[i][j] if j == *
+     */
     public boolean isMatch(String s, String p) {
-        for(int i = 0; i < p.length(); s = s.substring(1)) {
-            char c = p.charAt(i);
-            if(i + 1 >= p.length() || p.charAt(i + 1) != '*')
-                i++;
-            else if(isMatch(s, p.substring(i + 2)))
-                return true;
-
-            if(s.isEmpty() || (c != '.' && c != s.charAt(0)))
-                return false;
+        char[] char1 = s.toCharArray(), char2 = p.toCharArray();
+        if (char1.length == 0 && char2.length == 0) return true;
+        boolean[][] dp = new boolean[char1.length + 1][char2.length + 1];
+        dp[0][0] = true;
+        for (int i = 0; i < char2.length; i++) {
+            if (char2[i] == '*' && dp[0][i-1]) dp[0][i + 1] = true;
         }
-
-        return s.isEmpty();
+        for (int i = 1; i <= char1.length; i++) {
+            for (int j = 1; j <= char2.length; j++) {
+                if (char2[j - 1] == '*') {
+                    if (j == 1) dp[i][j] = true;
+                    else if (char2[j - 2] != char1[i - 1] && char2[j - 2] != '.') dp[i][j] = dp[i][j - 2];
+                    else dp[i][j] = dp[i - 1][j] || dp[i][j - 1] || dp[i][j - 2];
+                }
+                else if (char1[i - 1] == char2[j - 1] || char2[j - 1] == '.') dp[i][j] = dp[i - 1][j - 1];
+            }
+        }
+        return dp[char1.length][char2.length];
     }
 
 
