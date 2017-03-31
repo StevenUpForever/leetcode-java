@@ -110,6 +110,33 @@ private String helper(int num) {
     }
 
     /*
+    277. Find the Celebrity
+    Suppose you are at a party with n people (labeled from 0 to n - 1) and among them, there may exist one celebrity. The definition of a celebrity is that all the other n - 1 people know him/her but he/she does not know any of them.
+
+Now you want to find out who the celebrity is or verify that there is not one. The only thing you are allowed to do is to ask questions like: "Hi, A. Do you know B?" to get information of whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).
+
+You are given a helper function bool knows(a, b) which tells you whether A knows B. Implement a function int findCelebrity(n), your function should minimize the number of calls to knows.
+
+Note: There will be exactly one celebrity if he/she is in the party. Return the celebrity's label if there is a celebrity in the party. If there is no celebrity, return -1.
+     */
+    /*
+    answer from leetcode
+    Approach: first find the result, then verify if it's the real one
+     */
+//    public int findCelebrity(int n) {
+//        if (n == 0) return -1;
+//        int res = 0;
+//        //Because result know no one, and others must know this result, so if there's one, it must be this loop
+//        for (int i = 1; i < n; i++) {
+//            if (knows(res, i)) res = i;
+//        }
+//        for (int i = 0; i < n; i++) {
+//            if (i != res && (knows(res, i) || !knows(i, res))) return -1;
+//        }
+//        return res;
+//    }
+
+    /*
     278. First Bad Version
     You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
 

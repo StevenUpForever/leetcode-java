@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="11 finished">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/Problem11To20.java" afterPath="$PROJECT_DIR$/src/LeetCode/Problem11To20.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/Problem271To280.java" afterPath="$PROJECT_DIR$/src/LeetCode/Problem271To280.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Problem11To20.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Problem11To20.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem11To20.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Problem271To280.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Problem271To280.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem271To280.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="128" column="7" lean-forward="true" selection-start-line="119" selection-start-column="6" selection-end-line="128" selection-end-column="7" />
+            <state relative-caret-position="607">
+              <caret line="136" column="7" lean-forward="true" selection-start-line="125" selection-start-column="6" selection-end-line="136" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,11 +204,11 @@
         <option value="$PROJECT_DIR$/src/LeetCode/Problem541To550.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem311To320.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/LeetCode/Problem271To280.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem251To260.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem91To100.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem1To10.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem11To20.java" />
+        <option value="$PROJECT_DIR$/src/LeetCode/Problem271To280.java" />
       </list>
     </option>
   </component>
@@ -1058,7 +1058,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351507000" />
+    <option name="totallyTimeSpent" value="353009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="827" extended-state="6" />
@@ -1483,16 +1483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem271To280.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="128" column="7" lean-forward="true" selection-start-line="119" selection-start-column="6" selection-end-line="128" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem251To260.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -1527,6 +1517,16 @@
         <state relative-caret-position="391">
           <caret line="195" column="7" lean-forward="true" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem271To280.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="136" column="7" lean-forward="true" selection-start-line="125" selection-start-column="6" selection-end-line="136" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
