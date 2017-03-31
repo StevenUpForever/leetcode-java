@@ -169,26 +169,34 @@ The solution set must not contain duplicate triplets.
     (-1, 0, 1)
     (-1, -1, 2)
      */
-    public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> result = new ArrayList<>();
-        for (int index1 = 0; index1 < nums.length - 2; index1 ++) {
-            if (index1 > 0 && nums[index1 - 1] == nums[index1]) continue;
-            int index2 = index1 + 1, index3 = nums.length - 1, temp = -nums[index1];
-            while (index2 < index3) {
-                if (nums[index2] + nums[index3] == temp) {
-                    result.add(Arrays.asList(nums[index1], nums[index2], nums[index3]));
-                    while (index2 < index3 && nums[index2] == nums[index2 + 1]) index2++;
-                    while (index3 > index2 && nums[index3 - 1] == nums[index3]) index3--;
-                    index2 ++;
-                    index3 --;
-                }
-                else if (nums[index2] + nums[index3] > temp) index3--;
-                else index2++;
-            }
-        }
-        return result;
-    }
+//    public List<List<Integer>> threeSum(int[] nums) {
+//        Arrays.sort(nums);
+//        List<List<Integer>> result = new ArrayList<>();
+//        for (int index1 = 0; index1 < nums.length - 2; index1 ++) {
+//            if (index1 > 0 && nums[index1 - 1] == nums[index1]) continue;
+//            int index2 = index1 + 1, index3 = nums.length - 1, temp = -nums[index1];
+//            while (index2 < index3) {
+//                if (nums[index2] + nums[index3] == temp) {
+//                    result.add(Arrays.asList(nums[index1], nums[index2], nums[index3]));
+//                    while (index2 < index3 && nums[index2] == nums[index2 + 1]) index2++;
+//                    while (index3 > index2 && nums[index3 - 1] == nums[index3]) index3--;
+//                    index2 ++;
+//                    index3 --;
+//                }
+//                else if (nums[index2] + nums[index3] > temp) index3--;
+//                else index2++;
+//            }
+//        }
+//        return result;
+//    }
+
+    //TODO: Another two solutions of 15. 3 sum
+    /*
+    Approach 1: sort array first, then could run from begin and end to middle to find target
+     */
+     /*
+     Approach 2: run two loops, which outer loop and inner loop are two sum, and inner loop run another two sum, using HashMap
+      */
 
     /*
     Problem 16 3Sum Closest:
