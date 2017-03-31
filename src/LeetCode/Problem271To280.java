@@ -1,5 +1,7 @@
 package LeetCode;
 
+import java.util.*;
+
 import java.util.HashMap;
 
 /**
@@ -20,7 +22,90 @@ Show Company Tags
 Show Tags
 Show Similar Problems
      */
-//    public String numberToWords(int num) {
-//        HashMap<>
-//    }
+
+    /*
+    ****************clean code sample***********************
+    private final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+private final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+private final String[] THOUSANDS = {"", "Thousand", "Million", "Billion"};
+
+public String numberToWords(int num) {
+    if (num == 0) return "Zero";
+
+    int i = 0;
+    String words = "";
+
+    while (num > 0) {
+        if (num % 1000 != 0)
+    	    words = helper(num % 1000) +THOUSANDS[i] + " " + words;
+    	num /= 1000;
+    	i++;
+    }
+
+    return words.trim();
+}
+
+private String helper(int num) {
+    if (num == 0)
+        return "";
+    else if (num < 20)
+        return LESS_THAN_20[num] + " ";
+    else if (num < 100)
+        return TENS[num / 10] + " " + helper(num % 10);
+    else
+        return LESS_THAN_20[num / 100] + " Hundred " + helper(num % 100);
+}
+     */
+
+
+    public String numberToWords(int num) {
+        if (num == 0) return "Zero";
+        List<String> list = new ArrayList<>();
+        while (num != 0) {
+            list.add(convert3DigitsNum(num % 1000));
+            num /= 1000;
+        }
+        StringBuilder builder = new StringBuilder();
+        for (int i = list.size() - 1; i >= 0; i--) {
+            String str = list.get(i);
+            builder.append(str.equals("") ? "" : str + carryStr[i]);
+        }
+        int resLen = builder.length();
+        if (resLen > 0 && builder.charAt(resLen - 1) == ' ') builder.deleteCharAt(resLen - 1);
+        return builder.toString();
+    }
+
+    String[] carryStr = {"", " Thousand ", " Million ", " Billion "};
+    String[] oneDigit = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
+    String[] twoDigits = {"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+    String[] multiDigits = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+
+    private String convert3DigitsNum(int num) {
+        StringBuilder builder = new StringBuilder();
+        builder.append(num);
+        int len = builder.length();
+        int index = len - 1;
+        StringBuilder res = new StringBuilder();
+        while (index >= 0) {
+            int curNum = builder.charAt(len - 1 - index) - '0';
+            if (curNum != 0) {
+                switch (index) {
+                    case 2:
+                        res.append(oneDigit[curNum] + " Hundred ");
+                        break;
+                    case 1:
+                        if (curNum == 1) return res.append(twoDigits[builder.charAt(len - 1) - '0']).toString();
+                        else res.append(multiDigits[curNum] + " ");
+                        break;
+                    default:
+                         res.append(oneDigit[curNum]);
+                         break;
+                }
+            }
+            index--;
+        }
+        int resLen = res.length();
+        if (resLen > 0 && res.charAt(resLen - 1) == ' ') res.deleteCharAt(resLen - 1);
+        return res.toString();
+    }
 }

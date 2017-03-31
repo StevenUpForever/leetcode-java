@@ -119,6 +119,7 @@ return its vertical order traversal as:
    Sort every list by level
    Add list to final result
 
+    ********************* Optimized solution ************************
    Approach 2: BFS, index is same as separate by node.left and node.right
    But in BFS, do not need to care about level variable, do not need to sort level
    due to all index variables are continuous number, so could keep global min and max as final index bound, which all integer number must be some index in this range, do not need to sort index
