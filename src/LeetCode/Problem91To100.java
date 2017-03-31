@@ -25,8 +25,9 @@ Show Tags
      */
     /*
     Approach: DP problem, M[0] = 0, M[i] represent the max decode ways for substring to i
-    M[i] = max(M[0...j]) + 1 if subString j...i could be encoded, 0 <= j < i
-    111
+    M[i] = s[i] == '0' ? 0 : s[i + 1] + s[i + 2] <= 26 ? M[i + 1] + M[i + 2] : M[i + 1]
+    Why loop from end to front: save a base case when first character is '0'
+    What does induction rule mean: when s[i + 1] + s[i + 2] > 26, there's only one way to separate it, so the same as M[i + 1], otherwise have two conditions, when treat s[i + 1] + s[i + 2] as one part, it's same as > 26, use the M[i + 1], when separate to two parts, treate M[i + 1] as the one part, so use M[i + 2], so use M[i + 1] + M[i + 2]
      */
     public int numDecodings(String s) {
         if (s == null || s.length() == 0) return 0;
