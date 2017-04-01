@@ -111,6 +111,7 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
      */
+
     public int search(int[] nums, int target) {
         if (nums.length == 0) return -1;
         int index = 0;
