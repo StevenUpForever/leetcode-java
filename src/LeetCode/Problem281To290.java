@@ -17,6 +17,7 @@ Note:
 You must do this in-place without making a copy of the array.
 Minimize the total number of operations.
      */
+
     /*
     1 slow pointer and 1 fast pointer go at the same direction, this will not change the original relative order, remember for loop from
     the first element not the second one, make sure slow pointer always point to the next of known non-zero element, in case when set all rest
@@ -34,6 +35,33 @@ Minimize the total number of operations.
             nums[j] = 0;
         }
     }
+
+    /*
+    285. Inorder Successor in BST
+    Given a binary search tree and a node in it, find the in-order successor of that node in the BST.
+
+Note: If the given node has no in-order successor in the tree, return null.
+     */
+    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+        if (root == null) return null;
+        if (root.val <= p.val) return inorderSuccessor(root.right, p);
+         else {
+            TreeNode left = inorderSuccessor(root.left, p);
+            return (left != null) ? left : root;
+        }
+    }
+
+//    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+//        TreeNode res = null;
+//        while(root!=null) {
+//            if(root.val > p.val) {
+//                res = root;
+//                root = root.left;
+//            }
+//            else root = root.right;
+//        }
+//        return res;
+//    }
 
     /*
     288. Unique Word Abbreviation
