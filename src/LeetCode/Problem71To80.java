@@ -170,6 +170,6 @@ word = "ABCB", -> returns false.
         return exist;
     }
 
-    
+
 
 }
