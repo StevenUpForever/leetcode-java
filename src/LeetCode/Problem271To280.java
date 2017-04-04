@@ -123,18 +123,18 @@ Note: There will be exactly one celebrity if he/she is in the party. Return the 
     answer from leetcode
     Approach: first find the result, then verify if it's the real one
      */
-//    public int findCelebrity(int n) {
-//        if (n == 0) return -1;
-//        int res = 0;
-//        //Because result know no one, and others must know this result, so if there's one, it must be this loop
-//        for (int i = 1; i < n; i++) {
-//            if (knows(res, i)) res = i;
-//        }
-//        for (int i = 0; i < n; i++) {
-//            if (i != res && (knows(res, i) || !knows(i, res))) return -1;
-//        }
-//        return res;
-//    }
+            //    public int findCelebrity(int n) {
+            //        if (n == 0) return -1;
+            //        int res = 0;
+            //        //Because result know no one, and others must know this result, so if there's one, it must be this loop
+            //        for (int i = 1; i < n; i++) {
+            //            if (knows(res, i)) res = i;
+            //        }
+            //        for (int i = 0; i < n; i++) {
+            //            if (i != res && (knows(res, i) || !knows(i, res))) return -1;
+            //        }
+            //        return res;
+            //    }
 
     /*
     278. First Bad Version
