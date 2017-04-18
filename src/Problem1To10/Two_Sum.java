@@ -54,16 +54,4 @@ public class Two_Sum {
         return res;
     }
 
-    public int[] twoSum(int[] numbers, int target) {
-        int[] res = new int[2];
-        int i = 0, j = numbers.length - 1;
-        while (i < j) {
-            int curSum = numbers[i] + numbers[j];
-            if (curSum < target) i++;
-            else if (curSum > target) j--;
-            else return new int[]{i + 1, j + 1};
-        }
-        return res;
-    }
-
 }
