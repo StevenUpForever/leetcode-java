@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem1To10/String_to_Integer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem1To10/Palindrome_Number.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="String_to_Integer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="String_to_Integer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem1To10/String_to_Integer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="-5">
+              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Palindrome_Number.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem1To10/Palindrome_Number.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -139,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom41To50.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ProblemFrom31To40.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem21To30.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/ListNode.java" />
@@ -190,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/Problem1To10/Reverse_Integer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Problem1To10/String_to_Integer.java" />
+        <option value="$PROJECT_DIR$/src/Problem1To10/Palindrome_Number.java" />
       </list>
     </option>
   </component>
@@ -972,7 +981,7 @@
       <workItem from="1492533024715" duration="207000" />
       <workItem from="1492533318195" duration="15469000" />
       <workItem from="1492824342204" duration="9000" />
-      <workItem from="1492824433233" duration="3374000" />
+      <workItem from="1492824433233" duration="6065000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1069,7 +1078,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="403143000" />
+    <option name="totallyTimeSpent" value="405834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -1146,13 +1155,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem441To450.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="88" column="35" lean-forward="false" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem81To90.java" />
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem261To270.java" />
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem501To510.java">
@@ -1457,8 +1459,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem1To10/String_to_Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="-5">
+          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem1To10/Palindrome_Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="31" />
           <folding />
         </state>
       </provider>
