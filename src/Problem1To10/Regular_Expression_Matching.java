@@ -30,9 +30,9 @@ public class Regular_Expression_Matching {
      2 dimensional DP question, the sample matrix is as below:
         ""  c   *   a   *   b
      "" T   F   T   F   T   F
-     a  F
-     a  F
-     b  F
+     a  F   F   T   T   T   F
+     a  F   F   T   T   T   F
+     b  F   F   T   F   T   T
 
      which M[0][0] = true, "" is matched with "", M[i][j] represent s.subString[0, i] is matched with p.subString[0, j] or not
      1. base case, when s is "", when current char is *, use pre matrix value i - 1 as current value, otherwise is false
