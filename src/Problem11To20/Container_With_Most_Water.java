@@ -40,6 +40,9 @@ public class Container_With_Most_Water {
      *      1. first set i = 0, j = len - 1, which currently the bottom is the largest, no matter how loop goes, the bottom is decrease by 1 each time
      *      2. About the current height, we want to keep the max number of water, so we skip the current min(height[i], height[j]), move the smaller value within i, j, although don't other values in middle part, but just consider about current known scope, so this is a dp problem
      *      3. keep a global max of current value
+     *
+     * TIme: O(n)
+     * Space: O(1)
      */
 
     public int maxAreaS2(int[] height) {
