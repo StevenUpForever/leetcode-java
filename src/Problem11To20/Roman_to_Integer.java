@@ -19,6 +19,9 @@ public class Roman_to_Integer {
      *      2. when current roman is smaller than pre one, like "IV" 4, "IX" 9, means we decrease pre number 5, 10 by current roman 1 to 4, 9
      * 3. When met the next level number, repeat step 2
      * 4. got final integer and return, not necessary to * 10 + % 10, due to different roman represent already enough bits of 0s [1, 10, 100, 1000]
+     *
+     * Time: O(n)
+     * Space: O(1) constant space for map
      */
 
     public int romanToInt(String s) {
