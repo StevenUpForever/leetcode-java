@@ -26,7 +26,7 @@ public class Three_Sum {
      *      1. for each outer loop, start m = i + 1, j = len - 1, to find triplet number equal to 0, each step skip duplicated elements
      * 3. skip duplicated nums[i] and repeat step 2, when find triplet add to list
      *
-     * Time: O(n^2) no matter how middle and right index move, they iterative all numbers right of left index once, it's O(n - 1) + O(n - 2) + ... + O(1) = O(n^2)
+     * Time: O(nlogn(sort) + n^2) = O(n^2) no matter how middle and right index move, they iterative all numbers right of left index once, it's O(n - 1) + O(n - 2) + ... + O(1) = O(n^2)
      * Space: O(n/3) = O(n) if all numbers could combine a triplet
      *
      */

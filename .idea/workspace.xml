@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem11To20/Three_Sum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem11To20/Three_Sum.java" afterPath="$PROJECT_DIR$/src/Problem11To20/Three_Sum.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +59,18 @@
       <file leaf-file-name="Three_Sum.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Problem11To20/Three_Sum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="109">
+              <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreeSum_Closest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -116,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LeetCode/Problem301To310.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem411To420.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem441To450.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem81To90.java" />
@@ -166,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/Problem11To20/Integer_to_Roman.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Roman_to_Integer.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Longest_Common_Prefix.java" />
+        <option value="$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Three_Sum.java" />
       </list>
     </option>
@@ -954,7 +965,7 @@
       <workItem from="1493066073298" duration="6537000" />
       <workItem from="1493168567441" duration="19000" />
       <workItem from="1493168615888" duration="1766000" />
-      <workItem from="1493239728069" duration="2856000" />
+      <workItem from="1493239728069" duration="3641000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1051,7 +1062,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="421612000" />
+    <option name="totallyTimeSpent" value="422397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -1128,13 +1139,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem151To160.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="112" column="7" lean-forward="false" selection-start-line="110" selection-start-column="6" selection-end-line="112" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem181To190.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1439,10 +1443,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem11To20/Three_Sum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="109">
+          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
           <folding />
         </state>
       </provider>
