@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem11To20/Letter_Combinations_of_a_Phone_Number.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem11To20/FourSum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,18 +59,38 @@
       <file leaf-file-name="Three_Sum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem11To20/Three_Sum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+            <state relative-caret-position="240">
+              <caret line="29" column="66" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="29" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Letter_Combinations_of_a_Phone_Number.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Letter_Combinations_of_a_Phone_Number.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem11To20/Letter_Combinations_of_a_Phone_Number.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-555">
-              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="48" />
+            <state relative-caret-position="15">
+              <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FourSum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem11To20/FourSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,7 +99,7 @@
       <file leaf-file-name="ThreeSum_Closest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="285">
               <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="42" />
               <folding />
             </state>
@@ -95,24 +116,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Problem121To130.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem121To130.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Problem11To20.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem11To20.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1680">
               <caret line="113" column="27" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="113" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LeetCode/Problem441To450.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem81To90.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem231To240.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem261To270.java" />
@@ -178,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/Problem1To10/Longest_Palin_Substr.java" />
         <option value="$PROJECT_DIR$/src/Problem1To10/ZigZag_Conversion.java" />
         <option value="$PROJECT_DIR$/src/Problem1To10/Reverse_Integer.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Problem1To10/String_to_Integer.java" />
         <option value="$PROJECT_DIR$/src/Problem1To10/Palindrome_Number.java" />
         <option value="$PROJECT_DIR$/src/Problem1To10/Regular_Expression_Matching.java" />
@@ -189,6 +196,8 @@
         <option value="$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Three_Sum.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Letter_Combinations_of_a_Phone_Number.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Problem11To20/FourSum.java" />
       </list>
     </option>
   </component>
@@ -294,7 +303,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,6 +385,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -977,6 +986,8 @@
       <workItem from="1493168567441" duration="19000" />
       <workItem from="1493168615888" duration="1766000" />
       <workItem from="1493239728069" duration="7326000" />
+      <workItem from="1493249598441" duration="5000" />
+      <workItem from="1493314090974" duration="4617000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1073,7 +1084,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426082000" />
+    <option name="totallyTimeSpent" value="430704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -1082,13 +1093,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32496697" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1099,13 +1111,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19550858" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1141,7 +1152,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1150,13 +1161,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem171To180.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem91To100.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-71">
@@ -1385,13 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem1To10/Reverse_Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1415,14 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problem11To20/Integer_to_Roman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem11To20/Roman_to_Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1435,9 +1424,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1680">
           <caret line="113" column="27" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="113" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1449,26 +1436,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem11To20/Letter_Combinations_of_a_Phone_Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="285">
           <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem11To20/Integer_to_Roman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem11To20/Three_Sum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state relative-caret-position="240">
+          <caret line="29" column="66" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="29" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problem11To20/Letter_Combinations_of_a_Phone_Number.java">
+    <entry file="file://$PROJECT_DIR$/src/Problem11To20/FourSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-555">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="48" />
+        <state relative-caret-position="85">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="15" />
           <folding />
         </state>
       </provider>
