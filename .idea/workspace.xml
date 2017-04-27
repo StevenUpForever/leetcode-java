@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem11To20/Remove_Nth_Node_From_End_of_List.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem11To20/Valid_Parentheses.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
@@ -30,16 +30,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Roman_to_Integer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem11To20/Roman_to_Integer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -85,11 +75,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Remove_Nth_Node_From_End_of_List.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Remove_Nth_Node_From_End_of_List.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem11To20/Remove_Nth_Node_From_End_of_List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-415">
               <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Valid_Parentheses.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem11To20/Valid_Parentheses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-100">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -146,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LeetCode/Problem231To240.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem261To270.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem181To190.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem51To60.java" />
@@ -197,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/FourSum.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Remove_Nth_Node_From_End_of_List.java" />
+        <option value="$PROJECT_DIR$/src/Problem11To20/Valid_Parentheses.java" />
       </list>
     </option>
   </component>
@@ -1004,7 +1004,7 @@
       <workItem from="1493168615888" duration="1766000" />
       <workItem from="1493239728069" duration="7326000" />
       <workItem from="1493249598441" duration="5000" />
-      <workItem from="1493314090974" duration="6430000" />
+      <workItem from="1493314090974" duration="8238000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1101,7 +1101,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432517000" />
+    <option name="totallyTimeSpent" value="434325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -1178,13 +1178,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem41To50.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="73" column="53" lean-forward="false" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sort/Sort.java" />
     <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem231To240.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1496,8 +1489,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem11To20/Remove_Nth_Node_From_End_of_List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="-415">
           <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem11To20/Valid_Parentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="28" />
           <folding />
         </state>
       </provider>
