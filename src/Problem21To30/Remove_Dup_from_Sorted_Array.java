@@ -17,6 +17,7 @@ public class Remove_Dup_from_Sorted_Array {
     /**
      * solution:
      * use slow and fast index, which fast will go advanced by 1 every time, the number left of slow (include slow) represent the non-repeat numbers
+     *      ****** Why include slow, because we don't know current duplicated value, so slow need to occupy the duplicate value and when fast moved to non-dup value, move slow and set value to slow, so need to include slow ******
      * for loop the nums array once:
      *      1. if nums[slow] != nums[fast], slow++ and fast++
      *      2. if nums[slow] ==  nums[fast], only fast++ until nums[slow] != nums[fast] and then nums[++slow] = nums[fast]
