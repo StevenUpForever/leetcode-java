@@ -17,6 +17,51 @@ public class Substring_with_Concatenation_of_All_Words {
      */
 
     /**
+     * Solution:
+     * be aware that the word in words is the same length, but s may not combine with word length words, so sliding window solution may not work
+     * for loop the s, increase by 1 every time
+     * use a hashmap to record the frequency of word
+     * from each index, try to valid all possible words after it to see is could make a anagram
+     *
+     * Time: O(n^2) = O(n - 1) + O(n - 2) + ... + O(1) = O(n(n + 1)/2)
+     * Space: O(m) m represent the length of words
+     */
+
+    public List<Integer> findSubstring1(String s, String[] words) {
+        List<Integer> list = new ArrayList<>();
+        if (s.length() == 0 || words.length == 0) return list;
+        //Same length for every word
+        int sigLen = words[0].length();
+        int totalLen = sigLen * words.length;
+        if (totalLen > s.length()) return list;
+        HashMap<String, Integer> map = new HashMap<>();
+        for (String str: words) {
+            Integer cur = map.get(str);
+            if (cur == null) map.put(str, 1);
+            else map.put(str, cur + 1);
+        }
+        //Make sure i still could have a total length subString to iterative
+        for (int i = 0; i <= s.length() - totalLen; i++) {
+            HashMap<String, Integer> cloneMap = new HashMap<>();
+            cloneMap.putAll(map);
+            int temp = i, count = 0;
+            //Be aware of the while condition, make sure temp could go the last word possible in current anagram
+            while (temp <= i + totalLen - sigLen) {
+                String curSubstr = s.substring(temp, temp + sigLen);
+                Integer cur = cloneMap.get(curSubstr);
+                if (cur != null && cur > 0) {
+                    cloneMap.put(curSubstr, cur - 1);
+                    //Only when cur == 1, means in the current step, the word verify in map is 0
+                    if (cur == 1) count++;
+                    temp += sigLen;
+                } else break;
+            }
+            if (count == cloneMap.size()) list.add(i);
+        }
+        return list;
+    }
+
+    /**
      * ****** When s are combined with same length word as in words ******
      * Solution:
      * Key point is all words in words array are of the same length

@@ -14,7 +14,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Substring_with_Concatenation_of_All_Words obj = new Substring_with_Concatenation_of_All_Words();
-        System.out.print(obj.findSubstring1("lingmindrabofooowingdingbarrwingmonkeypoundcake", new String[]{"fooo","barr","wing","ding","wing"}));
+        System.out.print(obj.findSubstring1("wordgoodgoodgoodbestword", new String[]{"word","good","best","good"}));
     }
 
 }
