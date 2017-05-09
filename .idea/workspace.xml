@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem31To40/Search_in_Rotated_Sorted_Array.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem31To40/Search_in_Rotated_Sorted_Array.java" afterPath="$PROJECT_DIR$/src/Problem31To40/Search_in_Rotated_Sorted_Array.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,8 +104,8 @@
       <file leaf-file-name="Search_in_Rotated_Sorted_Array.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_in_Rotated_Sorted_Array.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="40" column="86" lean-forward="true" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+            <state relative-caret-position="75">
+              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -1053,7 +1052,7 @@
       <workItem from="1493752777860" duration="5418000" />
       <workItem from="1493847411264" duration="26355000" />
       <workItem from="1493934375972" duration="2233000" />
-      <workItem from="1494181624205" duration="4720000" />
+      <workItem from="1494181624205" duration="4779000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1150,7 +1149,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="497602000" />
+    <option name="totallyTimeSpent" value="497661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -1572,8 +1571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_in_Rotated_Sorted_Array.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="40" column="86" lean-forward="true" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+        <state relative-caret-position="75">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="41" />
           <folding />
         </state>
       </provider>

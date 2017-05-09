@@ -23,6 +23,9 @@ public class Search_in_Rotated_Sorted_Array {
      *              middle < target && right > target left = middle + 1 otherwise right = middle - 1
      *
      * ****** be aware of the corner case if >= or > ******
+     *
+     * Time: O(logn)
+     * Space: O(1)
      */
 
     public int search(int[] nums, int target) {
