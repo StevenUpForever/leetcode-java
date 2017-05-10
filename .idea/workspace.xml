@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem31To40/Search_for_a_Range.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem31To40/Search_Insert_Position.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
@@ -55,19 +55,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Next_Permutation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem31To40/Next_Permutation.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search_for_a_Range.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Search_for_a_Range.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_for_a_Range.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="-185">
               <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search_Insert_Position.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_Insert_Position.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -151,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LeetCode/Problem281To290.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem121To130.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem171To180.java" />
         <option value="$PROJECT_DIR$/src/LeetCode/Problem41To50.java" />
@@ -202,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/Problem31To40/Longest_Valid_Parentheses.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Search_in_Rotated_Sorted_Array.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Search_for_a_Range.java" />
+        <option value="$PROJECT_DIR$/src/Problem31To40/Search_Insert_Position.java" />
       </list>
     </option>
   </component>
@@ -1050,7 +1047,7 @@
       <workItem from="1493847411264" duration="26355000" />
       <workItem from="1493934375972" duration="2233000" />
       <workItem from="1494181624205" duration="5377000" />
-      <workItem from="1494383472919" duration="1005000" />
+      <workItem from="1494383472919" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1147,7 +1144,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="499264000" />
+    <option name="totallyTimeSpent" value="500531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -1227,13 +1224,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/description.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1560,8 +1550,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_for_a_Range.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="-185">
           <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_Insert_Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="33" />
           <folding />
         </state>
       </provider>
