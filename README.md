@@ -20,5 +20,26 @@ Clone from this repo:
 
 ## Current progress
 
-Rebuilding the old solutions from 1 to 100 to new detailed explanation and as many as possible solutions
+Rebuilding the old solutions from 1 to 50 to new detailed explanation and as many as possible solutions
 
+##中文
+
+这个repo是以编号为序的LeetCode Java的解法，类名是当前问题的标题
+
+提供从蛮力法到优化解法的尽可能多种的循序渐进的优化解法 （排序方式按照时间复杂度和实际运行时间）
+
+包含了时间/空间复杂度的分析
+
+## 源代码 
+
+在当前目录的src文件夹下 [./src/](https://github.com/StevenUpForever/LeetCode_Java/tree/master/src)
+
+复制当前repo:
+
+```git clone https://github.com/StevenUpForever/LeetCode_Java.git```
+
+欢迎提出[pull requests](https://github.com/StevenUpForever/LeetCode_Java/pulls) and [Issues](https://github.com/StevenUpForever/LeetCode_Java/issues)
+
+## 当前进度
+
+重新编写和注释1-50题，按照尽可能详细的解释和多的循序渐进的解法
