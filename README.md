@@ -22,7 +22,7 @@ Clone from this repo:
 
 Rebuilding the old solutions from 1 to 50 to new detailed explanation and as many as possible solutions
 
-##  中文
+## 中文
 
 这个repo是以编号为序的LeetCode Java的解法，类名是当前问题的标题
 
