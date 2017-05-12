@@ -2,11 +2,11 @@
 
 The LeetCode implementations in Java sorted by number
 
-problem title as the class name
+problem's title as the class name
 
-With as many possible solutions which from brute force solution to optimized solution (by time complexity and real runtime)
+With as many possible solutions which from brute force to optimized solutions (by time complexity and real runtime)
 
-Include explanations and time/space analysis
+Include explanations and time/space complexity analysis
 
 ## Source code 
 
