@@ -10,6 +10,7 @@ import Problem31To40.Combination_Sum_II;
 import Problem31To40.Count_and_Say;
 import Problem31To40.Longest_Valid_Parentheses;
 import Problem31To40.Next_Permutation;
+import Problem41To50.First_Missing_Positive;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,8 +18,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Combination_Sum_II obj = new Combination_Sum_II();
-        System.out.println(obj.combinationSum2(new int[]{10,1,2,7,6,1,5}, 8));
+        First_Missing_Positive obj = new First_Missing_Positive();
+        System.out.println(obj.firstMissingPositive(new int[]{1,1}));
     }
 
 }
