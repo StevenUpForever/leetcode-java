@@ -11,6 +11,7 @@ import Problem31To40.Count_and_Say;
 import Problem31To40.Longest_Valid_Parentheses;
 import Problem31To40.Next_Permutation;
 import Problem41To50.First_Missing_Positive;
+import Problem41To50.Multiply_Strings;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,8 +19,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        First_Missing_Positive obj = new First_Missing_Positive();
-        System.out.println(obj.firstMissingPositive(new int[]{1,1}));
+        Multiply_Strings obj = new Multiply_Strings();
+        System.out.println(obj.multiplyS2("9", "99"));
     }
 
 }
