@@ -21,9 +21,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Permutations obj = new Permutations();
-        System.out.print(obj.permute(new int[]{1, 2, 3}));
-    }
 
+    }
 }
 
