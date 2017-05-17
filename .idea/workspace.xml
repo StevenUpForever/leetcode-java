@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem41To50/Pow_xn.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/LeetCode/Problem41To50.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,12 +106,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pow_xn.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pow_xn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem41To50/Pow_xn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="20" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="495">
+                <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -177,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/Problem31To40/Sudoku_Solver.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Count_and_Say.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Combination_Sum.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Combination_Sum_II.java" />
         <option value="$USER_HOME$/iOSDevelopments/CZBLEControl/README.md" />
         <option value="$PROJECT_DIR$/src/Problem41To50/First_Missing_Positive.java" />
@@ -191,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/Problem41To50/Group_Anagrams.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Problem41To50/Pow_xn.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1072,7 +1082,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="550966000" />
+    <option name="totallyTimeSpent" value="551551000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1368,16 +1378,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem31To40/Sudoku_Solver.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="268">
-            <caret line="40" column="125" lean-forward="true" selection-start-line="40" selection-start-column="125" selection-end-line="40" selection-end-column="125" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_in_Rotated_Sorted_Array.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-347">
@@ -1508,6 +1508,17 @@
         <state relative-caret-position="75">
           <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="495">
+            <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
