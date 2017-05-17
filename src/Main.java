@@ -14,6 +14,7 @@ import Problem41To50.First_Missing_Positive;
 import Problem41To50.Jump_Game_II;
 import Problem41To50.Multiply_Strings;
 import Problem41To50.Permutations;
+import Problem51To60.N_Queens;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,7 +22,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
+        N_Queens obj = new N_Queens();
+        System.out.print(obj.solveNQueens(4));
     }
 }
 

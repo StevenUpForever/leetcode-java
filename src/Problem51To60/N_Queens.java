@@ -37,7 +37,7 @@ public class N_Queens {
      *      1. for loop every element in this row
      *      2. if met the check condition: there's no element on diagonals and the same column, recursive to next row
      *
-     * Time: O(n!) for each row, will at least have n - 1 options, (for column)
+     * Time: O(n! + n^2(for pass check method)) = O(n!) for each row, will at least have n - 1 options, (for column)
      * Space: O(n)
      */
 
@@ -47,13 +47,15 @@ public class N_Queens {
         return res;
     }
 
+    //Use a integer ArrayList to record the index of 'Q', instead of String list, faster to search for 'Q'
     private void solveQueensHelper(List<List<String>> res, List<Integer> list, int n) {
         if (list.size() == n) {
+            //Convert integer list to string list
             List<String> newList = new ArrayList<>();
             for (int i = 0; i < list.size(); i++) {
                 StringBuilder builder = new StringBuilder();
                 for (int j = 0; j < n; j++) {
-                    if (j == i) builder.append('Q');
+                    if (j == list.get(i)) builder.append('Q');
                     else builder.append('.');
                 }
                 newList.add(builder.toString());
@@ -61,6 +63,7 @@ public class N_Queens {
             res.add(newList);
             return;
         }
+        //For loop current row, and if pass check add current index i to list and recursion to next step
         for (int i = 0; i < n; i++) {
             if (passTheCheck(list, i)) {
                 list.add(i);
@@ -72,7 +75,8 @@ public class N_Queens {
 
     private boolean passTheCheck(List<Integer> list, int col) {
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == col || Math.abs(list.get(i) - i) == list.size() - i) return false;
+            //If previous rows have 'Q' on the same col or the same diagonal, return false
+            if (list.get(i) == col || Math.abs(list.get(i) - col) == list.size() - i) return false;
         }
         return true;
     }
