@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem51To60/Insert_Interval.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem51To60/Length_of_Last_Word.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,16 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="N_Queens.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem51To60/N_Queens.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="74" lean-forward="false" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="N_Queens_II.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem51To60/N_Queens_II.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,14 +110,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Insert_Interval.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Insert_Interval.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem51To60/Insert_Interval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Length_of_Last_Word.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem51To60/Length_of_Last_Word.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problem11To20/Container_With_Most_Water.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Integer_to_Roman.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Roman_to_Integer.java" />
         <option value="$PROJECT_DIR$/src/Problem11To20/Longest_Common_Prefix.java" />
@@ -203,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/PublicClass/Interval.java" />
         <option value="$PROJECT_DIR$/src/Problem51To60/Merge_Intervals.java" />
         <option value="$PROJECT_DIR$/src/Problem51To60/Insert_Interval.java" />
+        <option value="$PROJECT_DIR$/src/Problem51To60/Length_of_Last_Word.java" />
       </list>
     </option>
   </component>
@@ -1072,7 +1073,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="566536000" />
+    <option name="totallyTimeSpent" value="567479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1183,7 +1184,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem11To20.java" />
     <entry file="file://$PROJECT_DIR$/src/Problem11To20/Integer_to_Roman.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1496,11 +1496,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem51To60/Insert_Interval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+        <state relative-caret-position="120">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem51To60/Length_of_Last_Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
