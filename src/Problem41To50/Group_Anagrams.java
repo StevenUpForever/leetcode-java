@@ -1,7 +1,5 @@
 package Problem41To50;
 
-import sun.text.normalizer.Trie;
-
 import java.util.*;
 
 public class Group_Anagrams {
