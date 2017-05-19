@@ -16,6 +16,7 @@ import Problem41To50.Multiply_Strings;
 import Problem41To50.Permutations;
 import Problem51To60.N_Queens;
 import Problem51To60.Permutation_Sequence;
+import Problem61To70.Unique_Paths;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,8 +24,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Permutation_Sequence obj = new Permutation_Sequence();
-        System.out.print(obj.getPermutation(2, 2));
+        
     }
 }
 
