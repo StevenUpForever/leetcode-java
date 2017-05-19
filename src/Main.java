@@ -17,6 +17,7 @@ import Problem41To50.Permutations;
 import Problem51To60.N_Queens;
 import Problem51To60.Permutation_Sequence;
 import Problem61To70.Unique_Paths;
+import Problem61To70.Unique_Paths_II;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +25,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        
+        Unique_Paths_II obj = new Unique_Paths_II();
+        System.out.print(obj.uniquePathsWithObstacles(new int[][]{{1,0}}));
     }
 }
 
