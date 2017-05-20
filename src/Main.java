@@ -16,6 +16,7 @@ import Problem41To50.Multiply_Strings;
 import Problem41To50.Permutations;
 import Problem51To60.N_Queens;
 import Problem51To60.Permutation_Sequence;
+import Problem61To70.Text_Justification;
 import Problem61To70.Unique_Paths;
 import Problem61To70.Unique_Paths_II;
 import Problem61To70.Valid_Number;
@@ -26,8 +27,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Valid_Number obj = new Valid_Number();
-        System.out.print(obj.isNumber(" 0"));
+        Text_Justification obj = new Text_Justification();
+        System.out.print(obj.fullJustify(new String[]{"This", "is", "an", "example", "of", "text", "justification."}, 16));
     }
 }
 
