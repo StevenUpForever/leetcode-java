@@ -16,10 +16,7 @@ import Problem41To50.Multiply_Strings;
 import Problem41To50.Permutations;
 import Problem51To60.N_Queens;
 import Problem51To60.Permutation_Sequence;
-import Problem61To70.Text_Justification;
-import Problem61To70.Unique_Paths;
-import Problem61To70.Unique_Paths_II;
-import Problem61To70.Valid_Number;
+import Problem61To70.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,8 +24,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Text_Justification obj = new Text_Justification();
-        System.out.print(obj.fullJustify(new String[]{"This", "is", "an", "example", "of", "text", "justification."}, 16));
+        Sqrt_x obj = new Sqrt_x();
+        System.out.print(obj.mySqrtS2(2147395599));
     }
 }
 
