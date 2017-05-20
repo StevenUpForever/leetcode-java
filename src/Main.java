@@ -18,6 +18,7 @@ import Problem51To60.N_Queens;
 import Problem51To60.Permutation_Sequence;
 import Problem61To70.Unique_Paths;
 import Problem61To70.Unique_Paths_II;
+import Problem61To70.Valid_Number;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,8 +26,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Unique_Paths_II obj = new Unique_Paths_II();
-        System.out.print(obj.uniquePathsWithObstacles(new int[][]{{1,0}}));
+        Valid_Number obj = new Valid_Number();
+        System.out.print(obj.isNumber(" 0"));
     }
 }
 
