@@ -68,14 +68,20 @@ public class Edit_Distance {
 
     public int minDistanceS2(String word1, String word2) {
         char[] chars1 = word1.toCharArray(), chars2 = word2.toCharArray();
+        //dp[i] represent the dp value at current row and column
         int[] dp = new int[chars2.length + 1];
         //i and j is index + 1 in chars1 and chars2
         int topLeft = 0;
         for (int i = 0; i <= chars1.length; i++) {
             for (int j = 0; j <= chars2.length; j++) {
                 if (i == 0) dp[j] = j;
-                else if (j == 0) dp[0] = i;
+                else if (j == 0) {
+                    //When j go over all chars on current row, topLeft is the last char of the previous row as solution 1 dp[i][chars2.length], this topLeft value is not valid of start char for next row, so need to set to the first topLeft value of the next row
+                    topLeft = dp[0];
+                    dp[0] = i;
+                }
                 else {
+                    //Store a previous value of dp[j] as next dp[j + 1]'s topLeft value and set to topLeft after set this dp[j]
                     int temp = dp[j];
                     //Induction rule as explained above
                     if (chars1[i - 1] == chars2[j - 1]) dp[j] = topLeft;
