@@ -1,9 +1,5 @@
 package Problem71To80;
 
-import org.omg.CORBA.MARSHAL;
-
-import java.util.Arrays;
-
 public class Set_Matrix_Zeroes {
 
     /**
