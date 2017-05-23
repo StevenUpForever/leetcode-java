@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem71To80/Search_a_2D_Matrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem71To80/Sort_Colors.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem71To80/Set_Matrix_Zeroes.java" afterPath="$PROJECT_DIR$/src/Problem71To80/Set_Matrix_Zeroes.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,16 +43,6 @@
               <folding>
                 <marker date="1495479518000" expanded="true" signature="66:72" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Spiral_Matrix_II.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem51To60/Spiral_Matrix_II.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -98,11 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search_a_2D_Matrix.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Search_a_2D_Matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem71To80/Search_a_2D_Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="-469">
+              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sort_Colors.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem71To80/Sort_Colors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -149,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problem21To30/Implement_strStr.java" />
         <option value="$PROJECT_DIR$/src/Problem21To30/Divide_Two_Integers.java" />
         <option value="$PROJECT_DIR$/src/Problem21To30/Substring_with_Concatenation_of_All_Words.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Next_Permutation.java" />
@@ -200,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/Problem71To80/Edit_Distance.java" />
         <option value="$PROJECT_DIR$/src/Problem71To80/Set_Matrix_Zeroes.java" />
         <option value="$PROJECT_DIR$/src/Problem71To80/Search_a_2D_Matrix.java" />
+        <option value="$PROJECT_DIR$/src/Problem71To80/Sort_Colors.java" />
       </list>
     </option>
   </component>
@@ -1073,7 +1072,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="619039000" />
+    <option name="totallyTimeSpent" value="620457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1192,13 +1191,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problem31To40/Valid_Sudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem31To40/Search_Insert_Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1507,8 +1499,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem71To80/Search_a_2D_Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="-469">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem71To80/Sort_Colors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
           <folding />
         </state>
       </provider>
