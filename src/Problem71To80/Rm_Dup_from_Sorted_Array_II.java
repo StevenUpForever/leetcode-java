@@ -14,11 +14,14 @@ public class Rm_Dup_from_Sorted_Array_II {
      */
 
     /**
-     * Solution:
+     * Solution 1:
      * Similar as 26. remove dup (Problem 21 to 30), but at this time, we need another counter to count if could reach to 2 elements, and do same slow/fast steps
+     *
+     * Time: O(n)
+     * Space: O(1)
      */
 
-    public int removeDuplicates(int[] nums) {
+    public int removeDuplicatesS1(int[] nums) {
         int slow = 0, count = 1;
         for (int fast = 1; fast < nums.length; fast++) {
             if (nums[fast] == nums[slow] && count < 2) {
@@ -35,6 +38,22 @@ public class Rm_Dup_from_Sorted_Array_II {
         }
         //Slow is the last index of valid substring (include slow) so slow + 1
         return slow + 1;
+    }
+
+    /**
+     * Solution 2:
+     * we just keep same number twice and it's sorted array, so we could compare nums[fast] and nums[slow - 2], slow represent the first place need be replaced
+     *      1. if slow < 2, no matter if nums[0] == nums[1] or nums[0] < nums[1], we needn't to change them
+     *      2. otherwise nums[slow - 2] is the last start number in pair is smaller than nums[fast], if so, replace to slow index (slow is the place to replace)
+     *      return slow
+     */
+
+    public int removeDuplicatesS2(int[] nums) {
+        int slow = 0;
+        for (int fast = 0; fast < nums.length; fast++) {
+            if (slow < 2 || nums[fast] > nums[slow - 2]) nums[slow++] = nums[fast];
+        }
+        return slow;
     }
 
 }
