@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java" afterPath="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -999,7 +998,7 @@
       <workItem from="1495578833289" duration="9355000" />
       <workItem from="1495600955029" duration="7439000" />
       <workItem from="1495652941418" duration="3922000" />
-      <workItem from="1495780737750" duration="385000" />
+      <workItem from="1495780737750" duration="526000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1096,7 +1095,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="642428000" />
+    <option name="totallyTimeSpent" value="642569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1537,7 +1536,7 @@
     <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding />
         </state>
       </provider>

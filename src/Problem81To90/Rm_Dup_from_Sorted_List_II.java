@@ -20,7 +20,7 @@ public class Rm_Dup_from_Sorted_List_II {
 
     public ListNode deleteDuplicates(ListNode head) {
         ListNode dummy = new ListNode(0);
-        
+        ListNode cur = head, pre = dummy;
     }
 
 }
