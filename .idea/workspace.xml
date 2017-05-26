@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java" afterPath="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,16 +50,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Combinations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem71To80/Combinations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Problem81To90.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem81To90.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,7 +83,7 @@
       <file leaf-file-name="Remove_Dup_from_Sorted_Array.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem21To30/Remove_Dup_from_Sorted_Array.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
+            <state relative-caret-position="30">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
@@ -109,11 +100,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rm_Dup_from_Sorted_List_II.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rm_Dup_from_Sorted_List_II.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="48" />
+            <state relative-caret-position="135">
+              <caret line="8" column="134" lean-forward="true" selection-start-line="8" selection-start-column="134" selection-end-line="8" selection-end-column="134" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rm_Dup_from_Sorted_List.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -150,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problem31To40/Valid_Sudoku.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Sudoku_Solver.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Count_and_Say.java" />
         <option value="$PROJECT_DIR$/src/Problem31To40/Combination_Sum.java" />
@@ -201,6 +201,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Problem81To90/Search_in_Rotated_Sorted_Array_II.java" />
         <option value="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java" />
+        <option value="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List.java" />
       </list>
     </option>
   </component>
@@ -367,6 +368,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Problem81To90" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Problem21To30" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -998,7 +1017,7 @@
       <workItem from="1495578833289" duration="9355000" />
       <workItem from="1495600955029" duration="7439000" />
       <workItem from="1495652941418" duration="3922000" />
-      <workItem from="1495780737750" duration="1141000" />
+      <workItem from="1495780737750" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1095,7 +1114,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="643184000" />
+    <option name="totallyTimeSpent" value="644100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1193,13 +1212,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problem41To50/Wildcard_Matching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem41To50/Permutations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -1525,18 +1537,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="134" lean-forward="true" selection-start-line="8" selection-start-column="134" selection-end-line="8" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem21To30/Remove_Dup_from_Sorted_Array.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
+        <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java">
+    <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="48" />
+        <state relative-caret-position="100">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="45" />
           <folding />
         </state>
       </provider>
