@@ -112,8 +112,8 @@
       <file leaf-file-name="Rm_Dup_from_Sorted_List_II.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="105">
+              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -998,7 +998,7 @@
       <workItem from="1495578833289" duration="9355000" />
       <workItem from="1495600955029" duration="7439000" />
       <workItem from="1495652941418" duration="3922000" />
-      <workItem from="1495780737750" duration="526000" />
+      <workItem from="1495780737750" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1095,7 +1095,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="642569000" />
+    <option name="totallyTimeSpent" value="643184000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1535,8 +1535,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List_II.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="105">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="48" />
           <folding />
         </state>
       </provider>
