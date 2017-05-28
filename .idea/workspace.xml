@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem81To90/Partition_List.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem81To90/Maximal_Rectangle.java" afterPath="$PROJECT_DIR$/src/Problem81To90/Maximal_Rectangle.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,28 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Search_a_2D_Matrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem71To80/Search_a_2D_Matrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Problem81To90.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LeetCode/Problem81To90.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Word_Search.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem71To80/Word_Search.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,11 +58,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Maximal_Rectangle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Maximal_Rectangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem81To90/Maximal_Rectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1250">
+            <state relative-caret-position="105">
               <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Partition_List.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem81To90/Partition_List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PublicClass/ListNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -151,8 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problem31To40/Combination_Sum.java" />
-        <option value="$PROJECT_DIR$/src/Problem31To40/Combination_Sum_II.java" />
         <option value="$USER_HOME$/iOSDevelopments/CZBLEControl/README.md" />
         <option value="$PROJECT_DIR$/src/Problem41To50/First_Missing_Positive.java" />
         <option value="$PROJECT_DIR$/src/Problem41To50/Trapping_Rain_Water.java" />
@@ -202,6 +198,8 @@
         <option value="$PROJECT_DIR$/src/Problem81To90/Rm_Dup_from_Sorted_List.java" />
         <option value="$PROJECT_DIR$/src/Problem81To90/Largest_Rectangle_in_Histogram.java" />
         <option value="$PROJECT_DIR$/src/Problem81To90/Maximal_Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/PublicClass/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/Problem81To90/Partition_List.java" />
       </list>
     </option>
   </component>
@@ -329,6 +327,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeetCode_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PublicClass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -983,7 +999,7 @@
       <workItem from="1495652941418" duration="3922000" />
       <workItem from="1495780737750" duration="2057000" />
       <workItem from="1495907863028" duration="88000" />
-      <workItem from="1495948632078" duration="3550000" />
+      <workItem from="1495948632078" duration="6992000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1080,7 +1096,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="666165000" />
+    <option name="totallyTimeSpent" value="669607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1178,7 +1194,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problem41To50/Pow_xn.java" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1306,13 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="36" column="32" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PublicClass/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1522,8 +1530,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem81To90/Maximal_Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1250">
+        <state relative-caret-position="105">
           <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PublicClass/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem81To90/Partition_List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="25" />
           <folding />
         </state>
       </provider>
