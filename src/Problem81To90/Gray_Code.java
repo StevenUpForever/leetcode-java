@@ -41,7 +41,7 @@ public class Gray_Code {
      * Space: O(O^n) saved array
      */
 
-    public List<Integer> grayCode(int n) {
+    public List<Integer> grayCodeS1(int n) {
         List<Integer> res = new ArrayList<>();
         //Initially add 0 to the list, which when i == 0, 0 | 0 = 0, 0 | 1 = 1, so could have result of when n == 1
         res.add(0);
@@ -60,6 +60,21 @@ public class Gray_Code {
                 res.add(res.get(j) | 1 << i);
             }
         }
+        return res;
+    }
+
+    /**
+     * Solution 2: from LeetCode
+     * This idea is smart, and the explanation of Grey node from https://en.wikipedia.org/wiki/Gray_code
+     * Formula is G(N) = (B(n)/2) XOR B(n)
+     *
+     * Time: O(2^n) for loop from 0 to 2^n
+     * Space: O(2^n)
+     */
+
+    public List<Integer> grayCodeS2(int n) {
+        List<Integer> res = new ArrayList<>();
+        for (int i = 0; i < 1<<n; i++) res.add(i ^ i >> 1);
         return res;
     }
 
