@@ -23,7 +23,10 @@ Clone from this repo:
 05/16/17
 ~~Rebuilding the old solutions from 1 to 50 to new detailed explanation and as many as possible solutions~~
 
-Processing Problem 50-100
+06/02/17
+~~Processing Problem 50-100~~
+
+Processing Problem 100-150
 
 ## 中文
 
@@ -45,6 +48,10 @@ Processing Problem 50-100
 
 ## 当前进度
 
-05/16/17~~重新编写和注释1-50题，按照尽可能详细的解释和多的循序渐进的解法~~
+05/16/17 
+~~重新编写和注释1-50题，按照尽可能详细的解释和多的循序渐进的解法~~
 
-做50-100题
+06/02/17
+~~做50-100题~~
+
+做100-150题
