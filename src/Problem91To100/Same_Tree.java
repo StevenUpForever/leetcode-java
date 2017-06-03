@@ -17,6 +17,9 @@ public class Same_Tree {
      *      one is null and another is not
      *      or the value is not same, return false
      * Otherwise if all traversal done return true
+     *
+     * Time: O(n) n represent total nodes of the tree
+     * Space: O(logn)
      */
 
     public boolean isSameTree(TreeNode p, TreeNode q) {
