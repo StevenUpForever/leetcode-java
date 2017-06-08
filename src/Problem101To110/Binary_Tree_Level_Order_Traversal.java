@@ -25,7 +25,7 @@ public class Binary_Tree_Level_Order_Traversal {
      */
 
     /**
-     * Solution:
+     * Solution 1:
      * Use a FIFO structure (queue) to push and pop numbers, the push order will be left -> right, then pop order is left -> right too
      * for every time, record a current length of current queue (which is the length of nodes on current level), add them to a list and begin next loop
      *
@@ -33,7 +33,7 @@ public class Binary_Tree_Level_Order_Traversal {
      * Space: O(n)
      */
 
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrderS1(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) return res;
         Queue<TreeNode> queue = new LinkedList<>();
@@ -52,6 +52,34 @@ public class Binary_Tree_Level_Order_Traversal {
             res.add(list);
         }
         return res;
+    }
+
+    /**
+     * Solution 2:
+     * Recursion, think about we have a dynamic list which contains lists, and the index of list is the current recursion level
+     * Base case: when current node is null, stop the recursion
+     * Recursion rule:
+     *      recursion from left to right, for each node and current recursion index
+     *          1. if the list is not existed, initialize one and add the current node
+     *          2. otherwise the recursion level is the index of the list which the node should append to
+     *
+     * Time: O(n)
+     * Space: O(n) recursion levels if not balanced + O(n) = O(n)
+     */
+
+    public List<List<Integer>> levelOrderS2(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        levelOrderHelper(res, root, 0);
+        return res;
+    }
+
+    private void levelOrderHelper(List<List<Integer>> res, TreeNode root, int level) {
+        if (root == null) return;
+        //If this the first node of current level, add new list to res
+        if (level >= res.size()) res.add(new ArrayList<>());
+        res.get(level).add(root.val);
+        levelOrderHelper(res, root.left, level + 1);
+        levelOrderHelper(res, root.right, level + 1);
     }
 
 }
