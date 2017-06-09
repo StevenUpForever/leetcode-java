@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal.java" afterPath="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal_II.java" afterPath="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal_II.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +32,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Binary_Tree_Level_Order_Traversal_II.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Binary_Tree_Level_Order_Traversal_II.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal_II.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+            <state relative-caret-position="120">
+              <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Binary_Tree_Level_Order_Traversal.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Binary_Tree_Level_Order_Traversal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-669">
               <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -222,8 +224,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Zigzag_Level_Order_Traversal.java" />
         <option value="$PROJECT_DIR$/src/Problem101To110/Maximum_Depth_of_Binary_Tree.java" />
-        <option value="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal_II.java" />
         <option value="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal.java" />
+        <option value="$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal_II.java" />
       </list>
     </option>
   </component>
@@ -1032,7 +1034,7 @@
       <workItem from="1496452366440" duration="1633000" />
       <workItem from="1496473612136" duration="4361000" />
       <workItem from="1496794999308" duration="666000" />
-      <workItem from="1496888729219" duration="1196000" />
+      <workItem from="1496888729219" duration="3291000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1129,7 +1131,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="700433000" />
+    <option name="totallyTimeSpent" value="702528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1218,7 +1220,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="59" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1430,7 +1432,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1556,20 +1560,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal_II.java">
+    <entry file="file://$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state relative-caret-position="-669">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal.java">
+    <entry file="file://$PROJECT_DIR$/src/Problem101To110/Binary_Tree_Level_Order_Traversal_II.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="45" />
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

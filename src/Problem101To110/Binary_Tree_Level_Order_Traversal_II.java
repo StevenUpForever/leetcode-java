@@ -33,7 +33,7 @@ public class Binary_Tree_Level_Order_Traversal_II {
      * Space: O(n)
      */
 
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+    public List<List<Integer>> levelOrderBottomS1(TreeNode root) {
         List<List<Integer>> res = new LinkedList<>();
         if (root == null) return res;
         Queue<TreeNode> queue = new LinkedList<>();
@@ -50,6 +50,29 @@ public class Binary_Tree_Level_Order_Traversal_II {
             res.add(0, list);
         }
         return res;
+    }
+
+    /**
+     * Solution 2:
+     * Similar as solution 2 in binary_tree_level_order_traversal, diff is every recursion level is the reversed list index in res, means level 0 is the last list, level 1 is the last second list
+     *
+     * Time: O(n)
+     * Space: O(n) + O(n) = O(n)
+     */
+
+    public List<List<Integer>> levelOrderBottomS2(TreeNode root) {
+        List<List<Integer>> res = new LinkedList<>();
+        levelOrderBottomHelper(res, 0, root);
+        return res;
+    }
+
+    private void levelOrderBottomHelper(List<List<Integer>> res, int level, TreeNode root) {
+        if (root == null) return;
+        //level and list index is symmetrical of the middle of res
+        if (level >= res.size()) res.add(0, new ArrayList<>());
+        res.get(res.size() - 1 - level).add(root.val);
+        levelOrderBottomHelper(res, level + 1, root.left);
+        levelOrderBottomHelper(res, level + 1, root.right);
     }
 
 }
