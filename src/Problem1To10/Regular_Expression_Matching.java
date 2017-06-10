@@ -35,8 +35,12 @@ public class Regular_Expression_Matching {
      b  F   F   T   F   T   T
 
      which M[0][0] = true, "" is matched with "", M[i][j] represent s.subString[0, i] is matched with p.subString[0, j] or not
-     1. base case, when s is "", when current char is *, use pre matrix value i - 1 as current value, otherwise is false
-        when p is "", s is true only if when s is "" too, otherwise is false
+     1. base case:
+        when s is ""
+            when current char is *, use pre matrix value i - 1 as current value
+            otherwise is false
+        when p is ""
+            s is true only if when s is "" too, otherwise is false
     1.  if s[i] == p[j] || p[j] == '.', this i and j will match, dp[i][j] = dp[i - 1][j - 1]
     2.  if p[j] == '*', be aware that * represent any number of pre node, itself do not represent a character, there's multiple conditions
         1. if p[j - 1] != '.' && s[i] != p[j - 1] it means s[i] and  p[j - 1] can not match, dp[i][j] = dp[i][j - 1]
@@ -44,7 +48,7 @@ public class Regular_Expression_Matching {
             1. dp[i][j] = dp[i][j - 1]   a* when * is 1
             2. dp[i][j] = dp[i][j - 2]   a* when * is 0
             3. dp[i][j] = dp[i - 1][j]   a* when * is larger than 1, it's like a for loop, for every m < i, if s[m] could match at least p[j - 1], means this * works increase by 1, dp[i + 1][j] result is induction from result[i][j] if j == *
-           dp[i][j] = case 1 || case 2 || case 3
+        dp[i][j] = case 1 || case 2 || case 3
      3. return the right bottom corner value of dp matrix as the result
      */
 
