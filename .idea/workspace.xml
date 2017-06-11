@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java" afterPath="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,17 +106,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shortest_Word_Distance_II.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shortest_Word_Distance_II.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="-604">
+              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shortest_Word_Distance.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Shortest_Word_Distance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-169">
@@ -224,8 +222,8 @@
         <option value="$PROJECT_DIR$/src/Problem1To10/Regular_Expression_Matching.java" />
         <option value="$PROJECT_DIR$/src/Problem1To10/Reverse_Integer.java" />
         <option value="$PROJECT_DIR$/src/Problem331To340/Nested_List_Weight_Sum.java" />
-        <option value="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java" />
         <option value="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance.java" />
+        <option value="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java" />
       </list>
     </option>
   </component>
@@ -1070,7 +1068,7 @@
       <workItem from="1496452366440" duration="1633000" />
       <workItem from="1496473612136" duration="4361000" />
       <workItem from="1496794999308" duration="666000" />
-      <workItem from="1496888729219" duration="13660000" />
+      <workItem from="1496888729219" duration="15867000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1167,7 +1165,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="712897000" />
+    <option name="totallyTimeSpent" value="715104000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1435,7 +1433,7 @@
         <state relative-caret-position="-669">
           <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1445,7 +1443,7 @@
         <state relative-caret-position="120">
           <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1642,18 +1640,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-169">
           <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-604">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
           <folding />
         </state>
       </provider>
