@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem151To160/Binary_Tree_Upside_Down.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem251To260/Paint_House.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
@@ -37,16 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Three_Sum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem11To20/Three_Sum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ThreeSum_Closest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem11To20/ThreeSum_Closest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,11 +112,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Binary_Tree_Upside_Down.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Binary_Tree_Upside_Down.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem151To160/Binary_Tree_Upside_Down.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-274">
               <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Paint_House.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem251To260/Paint_House.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -179,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problem61To70/Minimum_Path_Sum.java" />
         <option value="$PROJECT_DIR$/src/Problem61To70/Valid_Number.java" />
         <option value="$PROJECT_DIR$/src/Problem61To70/Plus_One.java" />
         <option value="$PROJECT_DIR$/src/Problem61To70/Add_Binary.java" />
@@ -230,6 +229,7 @@
         <option value="$PROJECT_DIR$/src/Problem361To370/Nested_List_Weight_Sum_II.java" />
         <option value="$PROJECT_DIR$/src/Problem161To170/Two_Sum_III.java" />
         <option value="$PROJECT_DIR$/src/Problem151To160/Binary_Tree_Upside_Down.java" />
+        <option value="$PROJECT_DIR$/src/Problem251To260/Paint_House.java" />
       </list>
     </option>
   </component>
@@ -1002,7 +1002,7 @@
       <workItem from="1496452366440" duration="1633000" />
       <workItem from="1496473612136" duration="4361000" />
       <workItem from="1496794999308" duration="666000" />
-      <workItem from="1496888729219" duration="24382000" />
+      <workItem from="1496888729219" duration="27828000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1099,7 +1099,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="723619000" />
+    <option name="totallyTimeSpent" value="727065000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1197,13 +1197,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problem81To90/Subsets_II.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem21To30/Reverse_Nodes_in_kGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1593,8 +1586,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem151To160/Binary_Tree_Upside_Down.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-274">
           <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem251To260/Paint_House.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
