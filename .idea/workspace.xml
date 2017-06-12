@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem361To370/Nested_List_Weight_Sum_II.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem161To170/Two_Sum_III.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
@@ -107,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nested_List_Weight_Sum_II.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Nested_List_Weight_Sum_II.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem361To370/Nested_List_Weight_Sum_II.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -117,21 +117,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Two_Sum_III.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem161To170/Two_Sum_III.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="47" />
+              <folding>
+                <element signature="e#1355#1356#0" expanded="true" />
+                <element signature="e#1405#1406#0" expanded="true" />
+                <element signature="e#2109#2110#0" expanded="true" />
+                <element signature="e#2154#2155#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Shortest_Word_Distance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-169">
               <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Remove_Nth_Node_From_End_of_List.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem11To20/Remove_Nth_Node_From_End_of_List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -174,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problem61To70/Unique_Paths.java" />
         <option value="$PROJECT_DIR$/src/Problem61To70/Unique_Paths_II.java" />
         <option value="$PROJECT_DIR$/src/Problem61To70/Minimum_Path_Sum.java" />
         <option value="$PROJECT_DIR$/src/Problem61To70/Valid_Number.java" />
@@ -225,6 +229,7 @@
         <option value="$PROJECT_DIR$/src/Problem241To250/Shortest_Word_Distance_II.java" />
         <option value="$PROJECT_DIR$/src/Problem361To370.java" />
         <option value="$PROJECT_DIR$/src/Problem361To370/Nested_List_Weight_Sum_II.java" />
+        <option value="$PROJECT_DIR$/src/Problem161To170/Two_Sum_III.java" />
       </list>
     </option>
   </component>
@@ -354,60 +359,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Problem361To370" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Problem331To340" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeetCode_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Problem241To250" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1051,7 +1002,7 @@
       <workItem from="1496452366440" duration="1633000" />
       <workItem from="1496473612136" duration="4361000" />
       <workItem from="1496794999308" duration="666000" />
-      <workItem from="1496888729219" duration="19554000" />
+      <workItem from="1496888729219" duration="23026000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1148,7 +1099,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="718791000" />
+    <option name="totallyTimeSpent" value="722263000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1246,13 +1197,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problem71To80/Word_Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem71To80/Subsets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -1638,6 +1582,19 @@
         <state relative-caret-position="105">
           <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem161To170/Two_Sum_III.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <element signature="e#1355#1356#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#2109#2110#0" expanded="true" />
+            <element signature="e#2154#2155#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
