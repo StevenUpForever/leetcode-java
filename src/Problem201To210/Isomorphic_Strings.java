@@ -1,7 +1,5 @@
 package Problem201To210;
 
-import java.util.*;
-
 public class Isomorphic_Strings {
 
     /**
