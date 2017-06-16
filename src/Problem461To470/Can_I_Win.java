@@ -1,5 +1,8 @@
 package Problem461To470;
 
+import java.util.Arrays;
+import java.util.HashMap;
+
 public class Can_I_Win {
 
     /**
@@ -32,12 +35,42 @@ public class Can_I_Win {
      */
 
     /**
-     * Solution:
+     * Solution: DP
+     * Similar to Flip_Game_II (Problem291To300), difference is need to use another way to represent visited number status, use 0 represent current number not visited, 1 represent visited
+     * Use a int[] to store all numbers, and when need to set a key, use string.valueOf(array) to represent the key
      *
+     * Time: O(2^n)
+     * Space: O(n)
      */
 
     public boolean canIWin(int maxChoosableInteger, int desiredTotal) {
-        return true;
+        if (desiredTotal <= 0) return true;
+        //Sum of equal difference series less than desiredTotal, will never reach this number, couldn't win
+        if (maxChoosableInteger*(maxChoosableInteger + 1)/2 < desiredTotal) return false;
+        return canIWinHelper(new HashMap<>(), desiredTotal, new int[maxChoosableInteger]);
+    }
+
+    private boolean canIWinHelper(HashMap<String, Boolean> map, int leftTotal, int[] visited) {
+        //Here's a little trick, the recursion step is for to verify if the other player win, so if leftTotal <= 0, means the other player lose, return false
+        if (leftTotal <= 0) return false;
+        String key = Arrays.toString(visited);
+        if (map.containsKey(key)) return map.get(key);
+        for (int i = 0; i < visited.length; i++) {
+            //Try to give the other player every number which not been used
+            if (visited[i] == 0) {
+                visited[i] = 1;
+                if (!canIWinHelper(map, leftTotal - i - 1, visited)) {
+                    map.put(key, true);
+                    //Reset status here before return
+                    visited[i] = 0;
+                    return true;
+                }
+                //if the other player could win, also reset the status
+                visited[i] = 0;
+            }
+        }
+        map.put(key, false);
+        return false;
     }
 
 }
