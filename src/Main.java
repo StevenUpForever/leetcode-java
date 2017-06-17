@@ -1,13 +1,12 @@
+import Problem141To150.Evaluate_Reverse_Polish_Notation;
 import Problem461To470.Can_I_Win;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Can_I_Win obj = new Can_I_Win();
-        System.out.print(obj.canIWin(10, 40));
-        int[] arr = new int[]{1, 2, 3};
-        System.out.print(Arrays.toString(arr));
+        Evaluate_Reverse_Polish_Notation obj = new Evaluate_Reverse_Polish_Notation();
+        System.out.println(obj.evalRPN(new String[]{"4", "13", "5", "/", "+"}));
     }
 }
 
