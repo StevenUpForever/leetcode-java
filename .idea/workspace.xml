@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3606dfa-f9bf-4276-a27f-e16cdff721dc" name="Default" comment="Add listnode class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem231To240/Lowest_Common_Ancestor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Problem231To240/Product_of_Array_Except_Self.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeetCodeInJava.iws" />
@@ -37,29 +37,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Rotate_Image.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem41To50/Rotate_Image.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#1100#1101#0" expanded="false" />
-                <element signature="e#1139#1140#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pow_xn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Problem41To50/Pow_xn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Maximum_Subarray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem51To60/Maximum_Subarray.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,11 +99,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lowest_Common_Ancestor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lowest_Common_Ancestor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem231To240/Lowest_Common_Ancestor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="51" />
+              <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Minimum_Window_Substring.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Problem71To80/Minimum_Window_Substring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-753">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product_of_Array_Except_Self.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Problem231To240/Product_of_Array_Except_Self.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -179,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Problem71To80/Subsets.java" />
         <option value="$PROJECT_DIR$/src/Problem71To80/Word_Search.java" />
         <option value="$PROJECT_DIR$/src/Problem71To80/Rm_Dup_from_Sorted_Array_II.java" />
         <option value="$PROJECT_DIR$/src/Problem81To90/Search_in_Rotated_Sorted_Array_II.java" />
@@ -230,6 +226,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Problem141To150/Evaluate_Reverse_Polish_Notation.java" />
         <option value="$PROJECT_DIR$/src/Problem231To240/Lowest_Common_Ancestor.java" />
+        <option value="$PROJECT_DIR$/src/Problem231To240/Product_of_Array_Except_Self.java" />
       </list>
     </option>
   </component>
@@ -1059,7 +1056,7 @@
       <workItem from="1496888729219" duration="31530000" />
       <workItem from="1497419700563" duration="4594000" />
       <workItem from="1497494910141" duration="8706000" />
-      <workItem from="1497678841597" duration="2067000" />
+      <workItem from="1497678841597" duration="3070000" />
     </task>
     <task id="LOCAL-00001" summary="Problem 7 finished">
       <created>1447279251239</created>
@@ -1156,7 +1153,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="760017000" />
+    <option name="totallyTimeSpent" value="761020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1254,20 +1251,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Problem1To10/Palindrome_Number.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Problem1To10/Regular_Expression_Matching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Problem1To10/Reverse_Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -1604,7 +1587,23 @@
     <entry file="file://$PROJECT_DIR$/src/Problem231To240/Lowest_Common_Ancestor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="51" />
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem71To80/Minimum_Window_Substring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-753">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem231To240/Product_of_Array_Except_Self.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="40" />
           <folding />
         </state>
       </provider>
