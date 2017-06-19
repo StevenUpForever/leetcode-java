@@ -23,7 +23,7 @@ public class House_Robber {
         for (int i = 0; i < nums.length; i++) {
             int temp = preNot;
             preNot = Math.max(preDone, preNot);
-            preDone = preNot + nums[i];
+            preDone = temp + nums[i];
         }
         //At last we lack of one step to track updated value to preNot, need compare one more time
         return Math.max(preDone, preNot);
