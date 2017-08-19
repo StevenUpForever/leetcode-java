@@ -19,7 +19,7 @@ public class Implement_strStr {
      * Space: O(1)
      */
 
-    public int strStrS1(String haystack, String needle) {
+    public int strStr(String haystack, String needle) {
         if (haystack == null || needle == null) return -1;
         char[] chars1 = haystack.toCharArray(), chars2 = needle.toCharArray();
         //Be aware of <= , simple example, when chars1.len == chars2.len, i should start from 0

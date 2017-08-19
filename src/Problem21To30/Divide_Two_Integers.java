@@ -29,7 +29,7 @@ public class Divide_Two_Integers {
             cur += divs;
             n++;
         }
-        return flag * (divisor == dividend ? n : n - 1);
+        return flag * (cur == divd ? n : n - 1);
     }
 
     /**
