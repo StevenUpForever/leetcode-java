@@ -45,13 +45,3 @@ Processing Problem 100-150
 ```git clone https://github.com/StevenUpForever/LeetCode_Java.git```
 
 欢迎提出[pull requests](https://github.com/StevenUpForever/LeetCode_Java/pulls) and [Issues](https://github.com/StevenUpForever/LeetCode_Java/issues)
-
-## 当前进度
-
-05/16/17 
-~~重新编写和注释1-50题，按照尽可能详细的解释和多的循序渐进的解法~~
-
-06/02/17
-~~做50-100题~~
-
-做100-150题
