@@ -18,16 +18,6 @@ Clone from this repo:
 
 [pull requests](https://github.com/StevenUpForever/LeetCode_Java/pulls) and [Issues](https://github.com/StevenUpForever/LeetCode_Java/issues) are welcome
 
-## Current progress
-
-05/16/17
-~~Rebuilding the old solutions from 1 to 50 to new detailed explanation and as many as possible solutions~~
-
-06/02/17
-~~Processing Problem 50-100~~
-
-Processing Problem 100-150
-
 ## 中文
 
 这个repo是以编号为序的LeetCode Java的解法，类名是当前问题的标题
