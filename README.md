@@ -10,7 +10,7 @@ Include explanations and time/space complexity analysis
 
 ## Source code 
 
-Under the root project URI, under src folder [./src/](https://github.com/StevenUpForever/LeetCode_Java/tree/master/src)
+Under the root/src folder [./src/](https://github.com/StevenUpForever/LeetCode_Java/tree/master/src)
 
 Clone from this repo:
 
