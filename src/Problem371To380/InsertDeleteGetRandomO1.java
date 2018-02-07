@@ -4,7 +4,10 @@ import java.util.*;
 
 public class InsertDeleteGetRandomO1 {
 
-    /*
+    //TAG: Uber
+    //TAG: Data structure
+
+    /**
     380. Insert Delete GetRandom O(1)
 
     Design a data structure that supports all following operations in average O(1) time.
@@ -39,7 +42,7 @@ randomSet.insert(2);
 randomSet.getRandom();
      */
 
-    /*
+    /**
     Solutions:
     Due to O(1) insert and remove, cannot use Array, OR WE CAN ADD AND REMOVE ELM AT LAST INDEX, WHICH RANDOM WILL BE O(1)
     Due to O(1) getRandom, cannot use LinkedList, or at least cannot only use LinkedList
