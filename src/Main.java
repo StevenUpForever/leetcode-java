@@ -1,7 +1,9 @@
+import Recursion.WordPatternII;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println((int)(Math.random() * 1));
+        WordPatternII obj = new WordPatternII();
+        System.out.println(obj.wordPatternMatch("abab", "redblueredblue"));
     }
 }
 
