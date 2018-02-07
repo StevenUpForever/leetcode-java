@@ -29,7 +29,7 @@ public class Combinations {
     }
 
     /**
-     * Solution 1: dfs
+     * Solution 1: depth_first_search
      * Generate all subsets, and if final subset's length is k, add to final list
      *
      * Time: O(2^n)
@@ -49,7 +49,7 @@ public class Combinations {
     }
 
     /**
-     * Solution 1: Optimized dfs
+     * Solution 1: Optimized depth_first_search
      * All subsets will generate subset not only k length, so waste some calculate time
      * We could have another recursion way, from different start, add all rest values until add k values
      *

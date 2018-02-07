@@ -23,7 +23,7 @@ public class Permutation_Sequence {
      */
 
     /**
-     * Soltion 1: dfs
+     * Soltion 1: depth_first_search
      * generate all permutations of array [1...n], and return the array[k]
      *
      * Time: O(n!) for all permutations

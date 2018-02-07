@@ -24,7 +24,7 @@ public class Restore_IP_Addresses {
      */
 
     /**
-     * Solution: dfs
+     * Solution: depth_first_search
      * 3 branch recursion tree, every level represent add how many characters from current index (len < 4)
      * Totally should have 4 levels as when count > 4 will return
      *

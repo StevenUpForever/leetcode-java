@@ -31,7 +31,7 @@ public class N_Queens {
      */
 
     /**
-     * Solution: dfs
+     * Solution: depth_first_search
      * Base case: when filled all n rows, return
      * recursion rule: for each row
      *      1. for loop every element in this row

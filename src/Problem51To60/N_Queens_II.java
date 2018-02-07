@@ -12,8 +12,8 @@ public class N_Queens_II {
      */
 
     /**
-     * Solution 1: dfs
-     * dfs same as N_Queens, no need for a List<List<Integer>>
+     * Solution 1: depth_first_search
+     * depth_first_search same as N_Queens, no need for a List<List<Integer>>
      * have a global res to record the new result
      *
      * Time: O(n!)

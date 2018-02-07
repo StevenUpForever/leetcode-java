@@ -22,7 +22,7 @@ public class Word_Search {
      */
 
     /**
-     * Solution 1: dfs
+     * Solution 1: depth_first_search
      * Use a visit helper matrix to indicate whether current cell is visited
      * Try to recursively go 4 directions which helper matrix is false, then if any path goes all characters in word, return true
      *

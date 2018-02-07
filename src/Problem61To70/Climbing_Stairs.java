@@ -36,7 +36,7 @@ public class Climbing_Stairs {
     }
 
     /**
-     * Solution 2: dfs (not good but a solution)
+     * Solution 2: depth_first_search (not good but a solution)
      * From every index, try to jump 1 or 2 steps to n
      * Base case: if index == n, reach the n, increase the count
      * recursion rule:
