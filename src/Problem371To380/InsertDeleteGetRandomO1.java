@@ -102,5 +102,12 @@ randomSet.getRandom();
  * int param_3 = obj.getRandom();
  */
 
+ /**
+ Follow up, what if the array could contains duplicate numbers
+
+  Change HashMap to <Integer, LinkedList> when insert, always return true, and append index after list
+  when remove, remove any or last index in the list
+  */
+
 
 }
