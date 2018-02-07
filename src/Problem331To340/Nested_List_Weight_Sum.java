@@ -31,9 +31,9 @@ public class Nested_List_Weight_Sum {
     }
 
     /**
-     * Solution 1: Recursion
+     * Solution 1: recursion
      * Base case: if current nestedInteger is integer, add num * weight to res
-     * Recursion rule: current nestedInteger is not integer, it's a list, for loop elements in the list, recursion to next check helper method and increase weight by 1
+     * recursion rule: current nestedInteger is not integer, it's a list, for loop elements in the list, recursion to next check helper method and increase weight by 1
      *
      * Time: O(n) n represent total integers in nestedList
      * Space: O(n) n represent if 1 integer nested by n lists

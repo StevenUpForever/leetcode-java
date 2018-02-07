@@ -35,7 +35,7 @@ public class Combination_Sum_II {
      * base case: when the subsets sum is equal to target, add to final list
      * recursion rule: enum all subsets, which for the recursion tree, every level represent if current character will add to subset or not (every character do have two status in all subsets problem, one is add to subset, one is not add to)
      *      Skip the duplicated start number (while loop) of current recursion step before going through right subtree
-     * Recursion tree ([10, 1, 2, 7, 6, 1, 5]):
+     * recursion tree ([10, 1, 2, 7, 6, 1, 5]):
      *                                  []
      *                               /      \
      *  Add 10 or not              [10]     []
@@ -95,7 +95,7 @@ public class Combination_Sum_II {
             if (i > index && candidates[i] == candidates[i - 1]) continue;
             list.add(candidates[i]);
             /*
-            Recursion arguments:
+            recursion arguments:
                 target became target = cand[i] represent the current rest value
                 index became i + 1, go one direction of cand array, if became index + 1, will have all permutations, next recursion index will less than current level i
              */

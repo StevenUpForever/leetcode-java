@@ -33,7 +33,7 @@ public class N_Queens {
     /**
      * Solution: dfs
      * Base case: when filled all n rows, return
-     * Recursion rule: for each row
+     * recursion rule: for each row
      *      1. for loop every element in this row
      *      2. if met the check condition: there's no element on diagonals and the same column, recursive to next row
      *

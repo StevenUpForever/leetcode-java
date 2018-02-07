@@ -12,7 +12,7 @@ public class Sudoku_Solver {
      */
 
     /**
-     * Solution: Recursion
+     * Solution: recursion
      * 1. for for loop the matrix, find every element equals to '.'
      *      1. for each element which equals to '.', try to fill with 1 - 9, when pass the sudoku check
      *      2. recursion current method, when all passes, this will be the result
@@ -33,7 +33,7 @@ public class Sudoku_Solver {
                 for (char c = '1'; c <= '9'; c++) {
                     if (sudokuCheck(board, i, j, c)) {
                         board[i][j] = c;
-                        //Recursion self to try to verify the sudoku after current fill to see if not fit for other row/column check
+                        //recursion self to try to verify the sudoku after current fill to see if not fit for other row/column check
                         if (sudokuRecursion(board)) return true;
                         //If not, refill to '.' for next possible fill in 1 ~ 9
                         else board[i][j] = '.';

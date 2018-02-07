@@ -25,9 +25,9 @@ public class Rotate_Image {
      */
 
      /**
-      * Solution 1: Recursion
+      * Solution 1: recursion
      * Base case: when the length of current round is 1 or less, stop and return
-     * Recursion rule:
+     * recursion rule:
      *      1. Record a offset which add to start point (0,0) to make a real start point (1,1), (2,2) etc..., also cal the len of current round by len - offset
      *      2. keep a temp first element, rotate the numbers one by one as A -> B -> C -> D, E -> F -> G -> H
      *

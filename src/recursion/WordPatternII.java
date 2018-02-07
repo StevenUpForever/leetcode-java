@@ -1,11 +1,11 @@
-package Recursion;
+package recursion;
 
 import java.util.HashMap;
 
 public class WordPatternII {
 
     //TAG: Uber
-    //TAG: Recursion
+    //TAG: recursion
 
     /**
      * 291. Word Pattern II

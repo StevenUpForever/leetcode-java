@@ -19,7 +19,7 @@ public class Paint_House {
 
     /**
      * Solution 1: Brute force (similar as N Queen)
-     * Recursion every number from row 1 to row n, add all possible sums and update a global min one
+     * recursion every number from row 1 to row n, add all possible sums and update a global min one
      *
      * Time: O(n!) n represent numbers of elements in a row
      * Space: O(n) recursion levels

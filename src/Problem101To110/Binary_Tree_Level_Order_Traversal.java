@@ -56,9 +56,9 @@ public class Binary_Tree_Level_Order_Traversal {
 
     /**
      * Solution 2:
-     * Recursion, think about we have a dynamic list which contains lists, and the index of list is the current recursion level
+     * recursion, think about we have a dynamic list which contains lists, and the index of list is the current recursion level
      * Base case: when current node is null, stop the recursion
-     * Recursion rule:
+     * recursion rule:
      *      recursion from left to right, for each node and current recursion index
      *          1. if the list is not existed, initialize one and add the current node
      *          2. otherwise the recursion level is the index of the list which the node should append to

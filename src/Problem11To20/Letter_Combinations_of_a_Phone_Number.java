@@ -51,7 +51,7 @@ public class Letter_Combinations_of_a_Phone_Number {
      * Base case: when current string is longer or equal to digits
      *      1.  at least length of result string is 2 like 2, 3 to ad, which when pivot + 1 == 3 equal to string length (each string in pad in length 3)
      *      2. when digits is longer than 2, result will longer than 2 either, which result string length > digit length
-     * Recursion rule:
+     * recursion rule:
      *      1. iterative all characters in digit pad string, add new character in this string to a current recursion string
      *      2. bring this current appended string to next recursion step
      *

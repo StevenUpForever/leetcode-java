@@ -22,7 +22,7 @@ public class Unique_Binary_Search_Trees_II {
      */
 
     /**
-     * Solution: Recursion
+     * Solution: recursion
      * Think about a high level recursion, not build a BST recursion, but build all possible BST recursion
      * 1. Have a left min and right max to limit the scope of the value current node could have
      * 2. recursion to get the left node list and right node list which left/right nodes need to fetch from these lists

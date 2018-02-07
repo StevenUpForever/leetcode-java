@@ -44,7 +44,7 @@ public class Swap_Nodes_in_Pairs {
     /**
      * Solution 2: recursion
      * Base case: next and next.next is not null, exchange this pair of nodes
-     * Recursion rule: Do not consider how the detail steps in next recursion step, just connect this pair of node to next recursion step
+     * recursion rule: Do not consider how the detail steps in next recursion step, just connect this pair of node to next recursion step
      * 1 -> 2 -> 3 -> 4 -> 5 => 2 -> 1 -> | next recursion part |
      */
 

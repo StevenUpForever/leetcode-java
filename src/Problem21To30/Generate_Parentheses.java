@@ -39,7 +39,7 @@ public class Generate_Parentheses {
      * /
      *)
      * Base case: when number of added '(' and ')' is n * 2, add current parentheses string
-     * Recursion rule:
+     * recursion rule:
      * 1. 1st recursion no matter how many the ( and ) is, if ( is less than n, add (
      * 2. 2st recursion only if ) is less than ( (of course less than n too), add )
      *

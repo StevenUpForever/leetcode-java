@@ -39,7 +39,7 @@ public class Climbing_Stairs {
      * Solution 2: dfs (not good but a solution)
      * From every index, try to jump 1 or 2 steps to n
      * Base case: if index == n, reach the n, increase the count
-     * Recursion rule:
+     * recursion rule:
      *      if index < n, could finally go 1 step recursion(index + 1)
      *      if index < n - 1 could go 1 or 2 steps recursion(index + 2)
      *

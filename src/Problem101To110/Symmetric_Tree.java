@@ -27,10 +27,10 @@ public class Symmetric_Tree {
 
     /**
      * Solution:
-     * Recursion left node and right node
+     * recursion left node and right node
      *      Base case: if left is null and right is null, return true, current recursion is done
      *      if left is null or right is null only one is null, or value not equal not symmetric
-     *      Recursion rule: recursion left.left, right.right and left.right, right.left
+     *      recursion rule: recursion left.left, right.right and left.right, right.left
      *
      * Time: O(n/2) half nodes times compare O(n)
      * Space: O(logn)

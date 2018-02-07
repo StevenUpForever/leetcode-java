@@ -30,7 +30,7 @@ public class Validate_Binary_Search_Tree {
      * Solution 1: recursion
      * have a min value and max value for current level, if value over scope return false, otherwise recursion to next left subtree and right subtree
      * Base case: if root == null return true means touch the end, all nodes validated (current branch), then it's true
-     * Recursion rule: when recursion the left tree, max = curVal - 1, right tree: min = curval + 1, if any node over the scope return false
+     * recursion rule: when recursion the left tree, max = curVal - 1, right tree: min = curval + 1, if any node over the scope return false
      *
      * Time: O(n) n represent number of nodes in BST
      * Space: O(logn)

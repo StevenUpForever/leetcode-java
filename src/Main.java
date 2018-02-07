@@ -1,4 +1,4 @@
-import Recursion.WordPatternII;
+import recursion.WordPatternII;
 
 public class Main {
     public static void main(String[] args) {

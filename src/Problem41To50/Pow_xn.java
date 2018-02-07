@@ -10,7 +10,7 @@ public class Pow_xn {
     /**
      * Solution 1: recursion
      * Base case: if n == 0, return 1, if n == 1, return x
-     * Recursion rule: recursively divd n by 2 each time, and x^n = x^n/2 * x^n/2
+     * recursion rule: recursively divd n by 2 each time, and x^n = x^n/2 * x^n/2
      *      when n < 0 && n % 2 != 0, multiple by 1/x, when n > 0 && n % 2 != 0 multiple by x
      *
      * Time: O(logn)

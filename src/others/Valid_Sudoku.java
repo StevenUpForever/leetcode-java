@@ -1,9 +1,9 @@
-package Others;
+package others;
 
 public class Valid_Sudoku {
 
     //TAG: Uber
-    //TAG: Others
+    //TAG: others
 
     /**
      * 36. Valid Sudoku

@@ -22,7 +22,7 @@ public class Permutations {
 
     /**
      * Approach:
-     * Recursion problem, swap or add diff char into new list every time, recursion tree as below
+     * recursion problem, swap or add diff char into new list every time, recursion tree as below
      *                         abc
      *                      /   \     \
      *                   a(bc) b(ac) c(ab)
@@ -46,7 +46,7 @@ public class Permutations {
      * Have a list which contains all numbers in nums, swap diff pair of chars every time to make diff order of list
      * *** make sure every diff pair chars exchange once and only once ***
      * Base case: when index == nums.len, means swap all pairs for current for loop, add to res
-     * Recursion rule:
+     * recursion rule:
      *      1. for i = current index to the end, swap index and i
      *      2. recursive to index + 1 level
      *      3. reset to previous status

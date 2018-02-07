@@ -22,13 +22,13 @@ public class Combination_Sum {
      */
 
     /**
-     * Solution: Recursion
-     * Recursion step:
+     * Solution: recursion
+     * recursion step:
      *      Base case: when the value is equal to target or smaller but add one more current value will over target, then return
-     *      Recursion rule:
+     *      recursion rule:
      *          keep track of current rest of value (target - current added)
      *          try to add different numbers of current value into current value, better from large to small values
-     * Recursion tree:
+     * recursion tree:
      *                               ""
      *                  / / / / /       \ \ \ \
      * candidates[0] * 1 2 3  4 5  ......        <= target
