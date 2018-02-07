@@ -30,7 +30,7 @@ For C programmers: Try to solve it in-place in O(1) space.
     }
 
     /*
-    155. Min Stack
+    155. Min stack
     Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 push(x) -- Push element x onto stack.

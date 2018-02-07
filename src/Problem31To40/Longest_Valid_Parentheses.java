@@ -83,7 +83,7 @@ public class Longest_Valid_Parentheses {
     }
 
     /**
-     * Solution 3: Stack
+     * Solution 3: stack
      * Approach: Think about ignore which part is valid parentheses in the whole string, just push/pop them all in stack to validate, when finish, the stack left the characters which could not combine for a valid parentheses either left side or right side, that means all substring between each character in stack are valid parentheses
      * keep a global max to record the max substring length of stack
      */

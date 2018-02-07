@@ -49,7 +49,7 @@ public class Largest_Rectangle_in_Histogram {
      */
 
     public int largestRectangleArea(int[] heights) {
-        //Stack used to store all indices in heights
+        //stack used to store all indices in heights
         Stack<Integer> stack = new Stack<>();
         int i = 0, area = 0;
         //Due to at last when loop is done, we need to consider about last index rectangle, so we add a dummy index which value is 0 to help calculate the last rectangle
