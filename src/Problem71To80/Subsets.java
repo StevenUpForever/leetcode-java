@@ -26,7 +26,7 @@ public class Subsets {
      */
 
     /**
-     * Solution: DFS
+     * Solution: dfs
      * Base case: if recursion index == nums.length, add copy of list to result list
      * Recursion rule: for a recursion tree, each level has two status, add the number or not, so we have the recursion tree as below:
      *              ""

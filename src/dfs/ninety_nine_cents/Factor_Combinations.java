@@ -1,10 +1,12 @@
-package Problem251To260;
-
-import PublicClass.ListNode;
+package dfs.ninety_nine_cents;
 
 import java.util.*;
 
 public class Factor_Combinations {
+
+    //TAG: Uber
+    //TAG: DFS
+    //TAG: 99 cents
 
     /**
      * 254. Factor Combinations
@@ -44,7 +46,7 @@ public class Factor_Combinations {
      */
 
     /**
-     * Solution: DFS
+     * Solution: dfs
      * due to the solution array is sorted list, so every time, when we found a number i which n % i == 0, we could add this i to current list, then recursion the n = n/i, start = i, to make sure next number is larger than i
      *
      */

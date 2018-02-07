@@ -17,7 +17,7 @@ public class Flip_Game_II {
      */
 
     /**
-     * Solution 1: DFS
+     * Solution 1: dfs
      * Base case: if recursion step (the other player) could win, it's false, otherwise we win
      * Recursion rule: for loop current s from 0 to len - 1, set i and i + 1 to '-' (skip the appeared '-')
      * Recursion the next modified string s, (means steps for the other player)

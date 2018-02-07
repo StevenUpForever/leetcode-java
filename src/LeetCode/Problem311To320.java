@@ -102,7 +102,7 @@ return its vertical order traversal as:
 ]
      */
     /*
-    Approach 1: DFS, list separate by the relative order of left and right node, which when goto left, index--, goto right index++
+    Approach 1: dfs, list separate by the relative order of left and right node, which when goto left, index--, goto right index++
     sort index (using min heap) at last to keep order in final result arrayList
     keep level in node cell
      3
@@ -115,7 +115,7 @@ return its vertical order traversal as:
     /\
    /  \
    5   2
-   in this case, for DFS, it was 2 -> ... -> 8, but vertical order it's 8 -> 2, separate node by level
+   in this case, for dfs, it was 2 -> ... -> 8, but vertical order it's 8 -> 2, separate node by level
    Sort every list by level
    Add list to final result
 

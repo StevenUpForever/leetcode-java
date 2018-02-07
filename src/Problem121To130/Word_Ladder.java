@@ -33,7 +33,7 @@ public class Word_Ladder {
      */
 
     /**
-     * Solution 1: DFS
+     * Solution 1: dfs
      * Try to modify each possible word and recursion to next level,
      *      1. find the end word then update global max with current level
      *      2. haven't find the end word, return
@@ -76,7 +76,7 @@ public class Word_Ladder {
     /**
      * Solution 2: BFS
      * Depends on solution 1, we have something to improve:
-     *      1. DFS works, but in some specific case, when wordList is very large DFS takes much more time, BFS will be a good choice, when at some level find the endWord, could immediately return current level
+     *      1. dfs works, but in some specific case, when wordList is very large dfs takes much more time, BFS will be a good choice, when at some level find the endWord, could immediately return current level
      *      2. every time we check if could modify word once, and for loop the word all, but if we could for loop once the current word and add all possible modifications in wordsList into next level, that will be better when word.length is very long
      * ***Although wordsList changed to list, we'd better change it to HashSet so that as inner loop could check wordList.contains(target) faster***
      *
