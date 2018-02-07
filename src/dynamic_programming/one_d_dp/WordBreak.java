@@ -31,6 +31,9 @@ public class WordBreak {
      *  2. else loop j from 0 to i - 1, if dp[j] = true, means s.subString(0, j) in dict, and
      *  wordDict contains(s.substring(j + 1, i)), dp[i] = true, s.substring(0, i) canbe segmented into (0, j) + (j + 1, i)
      *  return dp[len - 1]
+     *
+     *  Time: O(n^2)
+     *  Space: O(n)
      */
 
     public boolean wordBreak(String s, List<String> wordDict) {
@@ -41,8 +44,13 @@ public class WordBreak {
         for (String str: wordDict) set.add(str);
         boolean dp[] = new boolean[s.length()];
         for (int i = 0; i < s.length(); i++) {
-
+            if (set.contains(s.substring(0, i + 1))) dp[i] = true;
+            for (int j = 0; j < i; j++) {
+                if (dp[j] && set.contains(s.substring(j + 1, i + 1)))
+                    dp[i] = true;
+            }
         }
+        return dp[dp.length - 1];
     }
 
 }
