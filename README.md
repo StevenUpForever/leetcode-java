@@ -27,14 +27,14 @@ git clone https://github.com/StevenUpForever/LeetCode_Java.git
 
 ## 中文
 
-这个repo是以解题方法为序的LeetCode Java的解法，类名是当前问题的标题
+这个repo是以解题方法为序的LeetCode Java的解法，类名是当前问题的标题。
 
-提供从蛮力法到优化解法的尽可能多种的循序渐进的优化解法 （排序方式按照时间复杂度和实际运行时间）
+提供从蛮力法到优化解法的尽可能多种的循序渐进的优化解法 （排序方式按照时间复杂度和实际运行时间）。
 
-包含了时间/空间复杂度的分析
+包含了时间/空间复杂度的分析。
 
 #### 编码风格
-遵循 [Google Java Coding style](https://google.github.io/styleguide/javaguide.html).
+遵循 [Google Java Coding style](https://google.github.io/styleguide/javaguide.html)。
 
 ## 源代码 
 
