@@ -28,6 +28,9 @@ public class WordPatternII {
      * recursion rule: recursion by diff substrings(0, i) -> substring(i, j) when met the current character c in pattern string,
      * check if next any substring start from i could math the current c -> string, or put new string for c
      * Corner case: when index not enough for next substring match with c or string not equal
+     *
+     * Time: O(n^n) total n levels when pattern 1 char each level and length diff chars in pattern string
+     * Space: O(n)
      */
 
     public boolean wordPatternMatch(String pattern, String str) {

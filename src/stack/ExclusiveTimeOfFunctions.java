@@ -42,6 +42,9 @@ public class ExclusiveTimeOfFunctions {
     /**
      * Similar to valid parentheses (valid (()()))
      * Use stack to pair the start and end time
+     *
+     * Time: O(n)
+     * Space: O(n)
      */
 
 

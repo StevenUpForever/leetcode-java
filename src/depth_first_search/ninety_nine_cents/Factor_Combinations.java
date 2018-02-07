@@ -49,6 +49,8 @@ public class Factor_Combinations {
      * Solution: depth_first_search
      * due to the solution array is sorted list, so every time, when we found a number i which n % i == 0, we could add this i to current list, then recursion the n = n/i, start = i, to make sure next number is larger than i
      *
+     * Time: O(factors^log(n)) total log(n) levels if could keeping divided by 2
+     * Space: O(log(n))
      */
 
     public List<List<Integer>> getFactors(int n) {
