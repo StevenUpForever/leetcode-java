@@ -1,6 +1,9 @@
-package Problem31To40;
+package Others;
 
 public class Valid_Sudoku {
+
+    //TAG: Uber
+    //TAG: Others
 
     /**
      * 36. Valid Sudoku
@@ -49,7 +52,7 @@ public class Valid_Sudoku {
     /**
      * Solution 2: Improve time, more space
      * (Get idea from LeetCode)
-     * Use three matrix to represent the horizontal, vertical and small box occurrence of integer
+     * Use three matrix to represent the horizontal, vertical and small box arrays which num 1 should be index0 ... num 9 should be index 8
      * Due to Sudoku feature
      *      1. every row, column and small box are 9 spaces
      *      2. every integer in each row, column or small box is unique
