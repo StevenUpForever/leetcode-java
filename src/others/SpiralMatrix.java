@@ -1,8 +1,11 @@
-package Problem51To60;
+package others;
 
 import java.util.*;
 
-public class Spiral_Matrix {
+public class SpiralMatrix {
+
+    //TAG: Uber
+    //TAG: Others
 
     /**
      * 54. Spiral Matrix
