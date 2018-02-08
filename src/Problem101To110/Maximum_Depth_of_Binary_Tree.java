@@ -1,6 +1,6 @@
 package Problem101To110;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 public class Maximum_Depth_of_Binary_Tree {
 

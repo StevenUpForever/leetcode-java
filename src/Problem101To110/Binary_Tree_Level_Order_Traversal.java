@@ -1,7 +1,7 @@
 package Problem101To110;
 
 import java.util.*;
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 public class Binary_Tree_Level_Order_Traversal {
 

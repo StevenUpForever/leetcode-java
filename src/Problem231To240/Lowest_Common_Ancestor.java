@@ -1,6 +1,6 @@
 package Problem231To240;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 public class Lowest_Common_Ancestor {
 

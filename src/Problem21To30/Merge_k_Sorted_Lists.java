@@ -1,9 +1,8 @@
 package Problem21To30;
 
-import PublicClass.ListNode;
+import public_class.ListNode;
 
 import java.util.Comparator;
-import java.util.List;
 import java.util.PriorityQueue;
 
 public class Merge_k_Sorted_Lists {

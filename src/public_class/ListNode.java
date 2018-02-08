@@ -1,4 +1,4 @@
-package PublicClass;
+package public_class;
 
 public class ListNode {
     public int val;

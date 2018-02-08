@@ -1,6 +1,6 @@
 package Problem1To10;
 
-import PublicClass.ListNode;
+import public_class.ListNode;
 
 public class Add_Two_Numbers {
 

@@ -1,6 +1,6 @@
 package Problem361To370;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 import java.util.*;
 
 public class Find_Leaves_of_Binary_Tree {

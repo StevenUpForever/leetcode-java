@@ -1,6 +1,6 @@
 package Problem151To160;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 public class Binary_Tree_Upside_Down {
 

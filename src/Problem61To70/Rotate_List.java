@@ -1,6 +1,6 @@
 package Problem61To70;
 
-import PublicClass.ListNode;
+import public_class.ListNode;
 
 public class Rotate_List {
 

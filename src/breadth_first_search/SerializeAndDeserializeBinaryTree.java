@@ -1,6 +1,6 @@
 package breadth_first_search;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

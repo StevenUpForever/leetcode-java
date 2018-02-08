@@ -1,4 +1,4 @@
-package PublicClass;
+package public_class;
 
 public class Interval {
     public int start;

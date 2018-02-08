@@ -1,6 +1,6 @@
 package Problem21To30;
 
-import PublicClass.ListNode;
+import public_class.ListNode;
 
 public class Swap_Nodes_in_Pairs {
 

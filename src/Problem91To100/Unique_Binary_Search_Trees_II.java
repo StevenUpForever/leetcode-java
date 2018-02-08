@@ -2,8 +2,7 @@ package Problem91To100;
 
 import java.util.*;
 
-import PublicClass.ListNode;
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 public class Unique_Binary_Search_Trees_II {
 

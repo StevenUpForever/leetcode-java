@@ -1,6 +1,6 @@
 package Problem91To100;
 
-import PublicClass.ListNode;
+import public_class.ListNode;
 
 public class Reverse_Linked_List_II {
 

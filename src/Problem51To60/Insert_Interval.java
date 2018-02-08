@@ -1,6 +1,6 @@
 package Problem51To60;
 
-import PublicClass.Interval;
+import public_class.Interval;
 import java.util.*;
 
 public class Insert_Interval {

@@ -1,7 +1,6 @@
 package tree.bottom_up;
 
-import PublicClass.TreeNode;
-import jdk.nashorn.internal.ir.WhileNode;
+import public_class.TreeNode;
 
 public class DeleteNodeInABST {
 

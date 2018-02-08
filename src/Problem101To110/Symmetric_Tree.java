@@ -1,6 +1,6 @@
 package Problem101To110;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 public class Symmetric_Tree {
 

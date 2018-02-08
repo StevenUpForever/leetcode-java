@@ -1,7 +1,5 @@
 package Problem241To250;
 
-import PublicClass.Interval;
-
 public class Shortest_Word_Distance {
 
     /**

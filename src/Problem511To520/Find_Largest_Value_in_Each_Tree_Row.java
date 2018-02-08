@@ -1,6 +1,6 @@
 package Problem511To520;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

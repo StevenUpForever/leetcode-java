@@ -1,6 +1,6 @@
 package Problem81To90;
 
-import PublicClass.ListNode;
+import public_class.ListNode;
 
 public class Rm_Dup_from_Sorted_List_II {
 

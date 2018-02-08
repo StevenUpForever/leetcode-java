@@ -1,6 +1,6 @@
 package Problem21To30;
 
-import PublicClass.ListNode;
+import public_class.ListNode;
 import java.util.*;
 
 public class Reverse_Nodes_in_kGroup {

@@ -1,6 +1,6 @@
 package Problem91To100;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 import java.util.*;
 
 public class Validate_Binary_Search_Tree {

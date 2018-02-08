@@ -1,6 +1,6 @@
 package Problem91To100;
 
-import PublicClass.TreeNode;
+import public_class.TreeNode;
 
 public class Same_Tree {
 
