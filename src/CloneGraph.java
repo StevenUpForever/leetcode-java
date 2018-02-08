@@ -1,3 +1,8 @@
+import public_class.UndirectedGraphNode;
+
+import java.util.HashMap;
+import java.util.HashSet;
+
 public class CloneGraph {
 
     //TAG: Uber
@@ -31,7 +36,20 @@ public class CloneGraph {
      */
 
     /**
+     * Solution:
      *
      */
+
+    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+
+    }
+
+    private UndirectedGraphNode cloneGraphHelper(UndirectedGraphNode node, UndirectedGraphNode copy,
+                                  HashMap<UndirectedGraphNode, UndirectedGraphNode> map) {
+        if (map.containsKey(node)) return map.get(node);
+        else return new UndirectedGraphNode();
+    }
+
+
 
 }
