@@ -1,3 +1,5 @@
+package depth_first_search;
+
 import java.util.ArrayList;
 import java.util.List;
 
