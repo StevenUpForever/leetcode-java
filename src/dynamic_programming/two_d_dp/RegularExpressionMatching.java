@@ -1,6 +1,9 @@
-package Problem1To10;
+package dynamic_programming.two_d_dp;
 
-public class Regular_Expression_Matching {
+public class RegularExpressionMatching {
+
+    //TAG: Uber
+    //TAG: 2D DP
 
     /**
      * 10. Regular Expression Matching
@@ -27,7 +30,7 @@ public class Regular_Expression_Matching {
     /**
      *
     Solution:
-     2 dimensional DP question, the sample matrix is as below:
+     2D DP question, the sample matrix is as below:
         ""  c   *   a   *   b
      "" T   F   T   F   T   F
      a  F   F   T   T   T   F
@@ -50,6 +53,9 @@ public class Regular_Expression_Matching {
             3. dp[i][j] = dp[i - 1][j]   a* when * is larger than 1, it's like a for loop, for every m < i, if s[m] could match at least p[j - 1], means this * works increase by 1, dp[i + 1][j] result is induction from result[i][j] if j == *
         dp[i][j] = case 1 || case 2 || case 3
      3. return the right bottom corner value of dp matrix as the result
+
+     Time: O(mn)
+     Space: O(mn)
      */
 
     public boolean isMatch(String s, String p) {
