@@ -1,7 +1,8 @@
+package depth_first_search;
+
 import public_class.UndirectedGraphNode;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class CloneGraph {
 
@@ -37,19 +38,28 @@ public class CloneGraph {
 
     /**
      * Solution:
+     * Base case: when node == null or find node in map, return node/map.get(node)
+     * Recursion rule: when node not get from map, copy new one newNode, recursion each orginNode's neighbors to newNode
      *
+     * Time: O(n)
+     * Space: O(n)
      */
 
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-
+        return cloneGraphHelper(node, new HashMap<>());
     }
 
-    private UndirectedGraphNode cloneGraphHelper(UndirectedGraphNode node, UndirectedGraphNode copy,
+    private UndirectedGraphNode cloneGraphHelper(UndirectedGraphNode node,
                                   HashMap<UndirectedGraphNode, UndirectedGraphNode> map) {
+        if (node == null) return node;
         if (map.containsKey(node)) return map.get(node);
-        else return new UndirectedGraphNode();
+        UndirectedGraphNode newNode = new UndirectedGraphNode(node.label);
+        map.put(node, newNode);
+        for (UndirectedGraphNode nei: node.neighbors) {
+            newNode.neighbors.add(cloneGraphHelper(nei, map));
+        }
+        return newNode;
     }
-
 
 
 }
