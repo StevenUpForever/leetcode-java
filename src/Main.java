@@ -1,4 +1,4 @@
-import hashmap.GroupShiftedStrings;
+import map_set.GroupShiftedStrings;
 
 public class Main {
     public static void main(String[] args) {

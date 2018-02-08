@@ -20,7 +20,7 @@ public class Substring_with_Concatenation_of_All_Words {
      * Solution:
      * be aware that the word in words is the same length, but s may not combine with word length words, so sliding window solution may not work
      * for loop the s, increase by 1 every time
-     * use a hashmap to record the frequency of word
+     * use a map_set to record the frequency of word
      * from each index, try to valid all possible words after it to see is could make a anagram
      *
      * Time: O(n^2) = O(n - 1) + O(n - 2) + ... + O(1) = O(n(n + 1)/2)

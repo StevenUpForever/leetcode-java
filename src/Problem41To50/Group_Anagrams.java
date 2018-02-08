@@ -25,7 +25,7 @@ public class Group_Anagrams {
      * Sort the current string in strs, and add to same string key map
      *
      * Time: O(nmlogm) n is the length of strs, m is the average length of string in strs (mlogm normally fastest way to sort the string)
-     * Space: O(n) hashmap same space as strs to store strings
+     * Space: O(n) map_set same space as strs to store strings
      */
 
     public List<List<String>> groupAnagrams(String[] strs) {

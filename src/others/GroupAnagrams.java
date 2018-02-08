@@ -29,7 +29,7 @@ public class GroupAnagrams {
      * Solution:
      * Anagram problem, if there's one anagram, or all compare to one, could use HashMap or int[26/256] depends on String
      * is ASCII only or unicode
-     * This problem need to check O^2 time by hashmap/int[] method, so:
+     * This problem need to check O^2 time by map_set/int[] method, so:
      * sort every string, then put in a map<String, List<String>>
      *
      * Time: O(n * nlog(n)) = O(n^2log(n))
