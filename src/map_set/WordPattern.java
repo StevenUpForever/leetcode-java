@@ -1,7 +1,12 @@
+package map_set;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class WordPattern {
+
+    //TAG: Uber
+    //TAG: HashMap
 
     /**
      * 290. Word Pattern
