@@ -1,8 +1,11 @@
-package Problem21To30;
+package depth_first_search;
 
 import java.util.*;
 
-public class Generate_Parentheses {
+public class GenerateParentheses {
+
+    //TAG: Uber
+    //TAG: DFS
 
     /**
      * 22. Generate Parentheses
