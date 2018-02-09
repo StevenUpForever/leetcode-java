@@ -1,11 +1,14 @@
-package Problem21To30;
+package k_merge;
 
 import public_class.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class Merge_k_Sorted_Lists {
+public class MergeKSortedLists {
+
+    //TAG: Uber
+    //TAG: k merge
 
     /**
      * 23. Merge k Sorted Lists
@@ -17,7 +20,7 @@ public class Merge_k_Sorted_Lists {
      * treat these lists as an array, and do merge sort about this array, merge each two lists together
      * When not consider the I/O speed, this should be the one of the fastest way
      * When consider about I/O, each time when merge two lists, need to read these two lists from memory, the actual time is more slower than a merge sort
-     * Theoretically time: n represent the length of lists array, m represent the average length of list, O(nlogn * 2m) = O(mnlogn)
+     * Theoretically time: n represent the length of lists array, m represent the average length of lists, O(nlogn * 2m) = O(mnlogn)
      * If each step, merge two list to one list, it's the same as iteration, the time is O(2mn) = O(mn) ***not consider I/O performance***
      * Space: O(logn)
      */
