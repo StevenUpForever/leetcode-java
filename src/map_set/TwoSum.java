@@ -1,8 +1,13 @@
-package Problem1To10;
+package map_set;
 
 import java.util.HashMap;
 
-public class Two_Sum {
+public class TwoSum {
+
+    //TAG: Uber
+    //TAG: map
+    //TAG: set
+
     /**
     1. Two Sum
      Given an array of integers, return indices of the two numbers such that they add up to a specific target.
