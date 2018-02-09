@@ -1,8 +1,12 @@
-package Problem31To40;
+package depth_first_search;
 
 import java.util.*;
 
-public class Combination_Sum {
+public class CombinationSum {
+
+    //TAG: Uber
+    //TAG: DFS
+    //TAG: 99 cents
 
     /**
      * 39. Combination Sum
