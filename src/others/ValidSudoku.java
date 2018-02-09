@@ -1,6 +1,6 @@
 package others;
 
-public class Valid_Sudoku {
+public class ValidSudoku {
 
     //TAG: Uber
     //TAG: others
