@@ -1,7 +1,4 @@
-import depth_first_search.WordBreakII;
-
-import java.util.ArrayList;
-import java.util.List;
+import depth_first_search.CourseSchedule;
 
 public class Main {
     public static void main(String[] args) {
