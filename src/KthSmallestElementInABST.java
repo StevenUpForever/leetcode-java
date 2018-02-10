@@ -36,6 +36,8 @@ public class KthSmallestElementInABST {
         return root.val;
     }
 
+    //Helper, count all nodes in BST
+
     public int countNodes(TreeNode n) {
         if (n == null) return 0;
         return 1 + countNodes(n.left) + countNodes(n.right);
@@ -82,5 +84,6 @@ public class KthSmallestElementInABST {
 
         return -1; // never hit if k is valid
     }
+
 
 }
