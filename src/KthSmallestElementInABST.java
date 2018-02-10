@@ -24,6 +24,7 @@ public class KthSmallestElementInABST {
     /**
      * Solution:
      * in order traversal of BST will be an ascending array,
+     * count nodes, then find the kth node by BST traversal
      */
 
     public int kthSmallest(TreeNode root, int k) {
