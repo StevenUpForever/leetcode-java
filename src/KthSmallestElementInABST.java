@@ -1,5 +1,7 @@
 import public_class.TreeNode;
 
+import java.util.Stack;
+
 public class KthSmallestElementInABST {
 
     //TAG: Uber
@@ -57,6 +59,28 @@ public class KthSmallestElementInABST {
             return;
         }
         if (n.right != null) helper(n.right);
+    }
+
+    //S3
+    public int kthSmallest3(TreeNode root, int k) {
+        Stack<TreeNode> st = new Stack<>();
+        while (root != null) {
+            st.push(root);
+            root = root.left;
+        }
+
+        while (k != 0) {
+            TreeNode n = st.pop();
+            k--;
+            if (k == 0) return n.val;
+            TreeNode right = n.right;
+            while (right != null) {
+                st.push(right);
+                right = right.left;
+            }
+        }
+
+        return -1; // never hit if k is valid
     }
 
 }
