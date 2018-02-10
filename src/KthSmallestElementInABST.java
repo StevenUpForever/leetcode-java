@@ -37,7 +37,6 @@ public class KthSmallestElementInABST {
 
     public int countNodes(TreeNode n) {
         if (n == null) return 0;
-
         return 1 + countNodes(n.left) + countNodes(n.right);
     }
 
