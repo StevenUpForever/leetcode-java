@@ -31,7 +31,6 @@ public class KthSmallestElementInABST {
         } else if (k > count + 1) {
             return kthSmallest(root.right, k-1-count); // 1 is counted as current node
         }
-
         return root.val;
     }
 
