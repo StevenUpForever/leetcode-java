@@ -1,11 +1,5 @@
 package legacy_code.Problem271To280;
 
-//Just declare this API, not implemented
-class Relation {
-    public boolean knows(int a, int b) {
-        return true;
-    }
-}
 
 public class Find_the_Celebrity extends Relation {
 

@@ -1,8 +1,8 @@
-package legacy_code.Problem101To110;
+package tree.bottom_up;
 
 import public_class.TreeNode;
 
-public class Maximum_Depth_of_Binary_Tree {
+public class MaximumDepthOfBinaryTree {
 
     /**
      * 104. Maximum Depth of Binary Tree
@@ -14,8 +14,8 @@ public class Maximum_Depth_of_Binary_Tree {
     /**
      * Solution:
      * recursion to left sub problem and right sub problem
-     * find the max of left and right result
-     * +1 when recursion to next level
+     * find the max of left and right result when bottom to up
+     * +1 when recursion back to upper level
      *
      * Time: O(n)
      * Space: O(n) if tree is not balanced and all nodes on one branch
