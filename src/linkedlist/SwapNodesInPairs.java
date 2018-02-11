@@ -1,8 +1,12 @@
-package Problem21To30;
+package linkedlist;
 
 import public_class.ListNode;
 
-public class Swap_Nodes_in_Pairs {
+public class SwapNodesInPairs {
+
+    //TAG: Uber
+    //TAG: LinkedList
+    //TAG: Recursion
 
     /**
      * 24. Swap Nodes in Pairs
