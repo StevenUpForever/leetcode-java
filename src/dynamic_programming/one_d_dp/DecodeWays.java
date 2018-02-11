@@ -1,6 +1,6 @@
 package dynamic_programming.one_d_dp;
 
-public class Decode_Ways {
+public class DecodeWays {
 
     //TAG: Uber
     //TAG: DFS
