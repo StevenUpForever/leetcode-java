@@ -7,9 +7,9 @@ public class Validate_Binary_Search_Tree {
 
     /**
      * 98. Validate Binary Search Tree
-     * Given a binary tree, determine if it is a valid binary search tree (BST).
+     * Given a binary tree, determine if it is a valid binary search tree (bst).
 
-     Assume a BST is defined as follows:
+     Assume a bst is defined as follows:
 
      The left subtree of a node contains only nodes with keys less than the node's key.
      The right subtree of a node contains only nodes with keys greater than the node's key.
@@ -32,7 +32,7 @@ public class Validate_Binary_Search_Tree {
      * Base case: if root == null return true means touch the end, all nodes validated (current branch), then it's true
      * recursion rule: when recursion the left tree, max = curVal - 1, right tree: min = curval + 1, if any node over the scope return false
      *
-     * Time: O(n) n represent number of nodes in BST
+     * Time: O(n) n represent number of nodes in bst
      * Space: O(logn)
      */
 
@@ -50,7 +50,7 @@ public class Validate_Binary_Search_Tree {
 
     /**
      * Solution 2: iterative
-     * do a in order traversal of this binary tree, which depends on the feature of BST, in order traversal is a ascending order
+     * do a in order traversal of this binary tree, which depends on the feature of bst, in order traversal is a ascending order
      * Keep a pre node, update when cur node goes right side (in order place)
      * Compare pre node value and cur value, if pre >= cur return false
      *

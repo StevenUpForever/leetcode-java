@@ -5,13 +5,13 @@ import public_class.TreeNode;
 public class DeleteNodeInABST {
 
     //TAG: Uber
-    //TAG: BST
+    //TAG: bst
     //TAG: Tree
     //TAG: Bottom up
 
     /**
-     * 450. Delete Node in a BST
-     * Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+     * 450. Delete Node in a bst
+     * Given a root node reference of a bst and a key, delete the node with the given key in the bst. Return the root node reference (possibly updated) of the bst.
 
      Basically, the deletion can be divided into two stages:
 
@@ -32,7 +32,7 @@ public class DeleteNodeInABST {
 
      Given key to delete is 3. So we find the node with value 3 and delete it.
 
-     One valid answer is [5,4,6,2,null,null,7], shown in the following BST.
+     One valid answer is [5,4,6,2,null,null,7], shown in the following bst.
 
      5
      / \

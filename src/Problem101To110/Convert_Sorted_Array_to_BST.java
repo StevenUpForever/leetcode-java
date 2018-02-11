@@ -6,12 +6,12 @@ public class Convert_Sorted_Array_to_BST {
 
     /**
      * 108. Convert Sorted Array to Binary Search Tree
-     * Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+     * Given an array where elements are sorted in ascending order, convert it to a height balanced bst.
      */
 
     /**
      * Solution:
-     * As the property of BST, the middle number of BST is the root value, which the left of root is the middle of left part, right of root is the middle of right part
+     * As the property of bst, the middle number of bst is the root value, which the left of root is the middle of left part, right of root is the middle of right part
      *
      * Time: O(n)
      * Space: O(n)
