@@ -1,6 +1,10 @@
-package Problem91To100;
+package dynamic_programming.one_d_dp;
 
 public class Decode_Ways {
+
+    //TAG: Uber
+    //TAG: DFS
+    //TAG: DP
 
     /**
      * 91. Decode Ways
@@ -54,6 +58,7 @@ public class Decode_Ways {
         char[] chars = s.toCharArray();
         int len = chars.length;
         int[] dp = new int[len + 1];
+        //Prepare for loop that dp[i + 1] will not over scope, when i = len - 1
         dp[len]  = 1;
         dp[len - 1] = chars[len - 1] != '0' ? 1 : 0;
         for (int i = len - 2; i >= 0; i--) {
@@ -63,7 +68,8 @@ public class Decode_Ways {
                 if <= 26, has two ways of combinations, so dp[i] = dp[i + 1] + dp[i + 2]
                 else dp[i] = dp[i + 1]
              */
-            if (chars[i] != '0') dp[i] = (chars[i] - '0') * 10 + chars[i + 1] - '0' <= 26 ? dp[i + 1] + dp[i + 2] : dp[i + 1];
+            if (chars[i] != '0')
+                dp[i] = (chars[i] - '0') * 10 + chars[i + 1] - '0' <= 26 ? dp[i + 1] + dp[i + 2] : dp[i + 1];
         }
         return dp[0];
     }
