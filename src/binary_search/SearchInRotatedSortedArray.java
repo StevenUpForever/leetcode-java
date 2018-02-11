@@ -1,6 +1,9 @@
-package Problem31To40;
+package binary_search;
 
-public class Search_in_Rotated_Sorted_Array {
+public class SearchInRotatedSortedArray {
+
+    //TAG: Uber
+    //TAG: Binary search
 
     /**
      * 33. Search in Rotated Sorted Array
