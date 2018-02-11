@@ -21,6 +21,9 @@ public class Swap_Nodes_in_Pairs {
      *      2. make sure next is not null and next.next is not null, and connect with next.next node
      *          1. if next is null, even number of pairs, stop
      *          2. if next is not null but next.next is null, odd number of pairs, just connect with the last node and stop
+     *
+     * Time: O(n)
+     * Space: O(1)
      */
 
     public ListNode swapPairsS1(ListNode head) {
@@ -46,6 +49,9 @@ public class Swap_Nodes_in_Pairs {
      * Base case: next and next.next is not null, exchange this pair of nodes
      * recursion rule: Do not consider how the detail steps in next recursion step, just connect this pair of node to next recursion step
      * 1 -> 2 -> 3 -> 4 -> 5 => 2 -> 1 -> | next recursion part |
+     *
+     * TIme: O(n)
+     * Space: O(n)
      */
 
     public ListNode swapPairsS2(ListNode head) {
