@@ -1,3 +1,5 @@
+package stack;
+
 import java.util.Stack;
 
 public class MinStack {
@@ -14,7 +16,7 @@ public class MinStack {
      top() -- Get the top element.
      getMin() -- Retrieve the minimum element in the stack.
      Example:
-     MinStack minStack = new MinStack();
+     stack.MinStack minStack = new stack.MinStack();
      minStack.push(-2);
      minStack.push(0);
      minStack.push(-3);
@@ -65,8 +67,8 @@ public class MinStack {
     }
 
 /**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
+ * Your stack.MinStack object will be instantiated and called as such:
+ * stack.MinStack obj = new stack.MinStack();
  * obj.push(x);
  * obj.pop();
  * int param_3 = obj.top();
