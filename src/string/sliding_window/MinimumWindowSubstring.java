@@ -1,11 +1,15 @@
-package Problem71To80;
+package string.sliding_window;
 
 import java.util.HashMap;
 
-public class Minimum_Window_Substring {
+public class MinimumWindowSubstring {
+
+    //TAG: Uber
+    //TAG: String
+    //TAG: Sliding window
 
     /**
-     *
+     * 76. Minimum Window Substring
      *
      * Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 
