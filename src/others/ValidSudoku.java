@@ -51,7 +51,7 @@ public class ValidSudoku {
 
     /**
      * Solution 2: Improve time, more space
-     * (Get idea from LeetCode)
+     * (Get idea from legacy_code)
      * Use three matrix to represent the horizontal, vertical and small box arrays which num 1 should be index0 ... num 9 should be index 8
      * Due to Sudoku feature
      *      1. every row, column and small box are 9 spaces

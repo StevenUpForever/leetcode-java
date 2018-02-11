@@ -24,7 +24,7 @@ public class SpiralMatrix {
 
     /**
      * Solution:
-     * Similar as Rotate_Image (Problem41To50) problem
+     * Similar as Rotate_Image (legacy_code.Problem41To50) problem
      * append values from outside round to inside round, keep the x offset and y offset to indicate the coordinate and length
      * Diff is this is a m * n matrix not n * n, so the base case is when x < lenX || y < lenY
      *

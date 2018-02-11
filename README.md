@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The LeetCode implementations in Java sorted by solving method.
+The legacy_code implementations in Java sorted by solving method.
 
 problem's title as the class name.
 

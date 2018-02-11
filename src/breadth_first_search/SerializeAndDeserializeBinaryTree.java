@@ -25,7 +25,7 @@ public class SerializeAndDeserializeBinaryTree {
      2   3
      / \
      4   5
-     as "[1,2,3,null,null,4,5]", just the same as how LeetCode OJ serializes a binary tree. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
+     as "[1,2,3,null,null,4,5]", just the same as how legacy_code OJ serializes a binary tree. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
 
 
 
