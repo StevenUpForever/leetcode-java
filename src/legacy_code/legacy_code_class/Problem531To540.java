@@ -1,4 +1,4 @@
-package legacy_code;
+package legacy_code.legacy_code_class;
 
 /**
  * Created by ChengzhiJia on 3/25/17.

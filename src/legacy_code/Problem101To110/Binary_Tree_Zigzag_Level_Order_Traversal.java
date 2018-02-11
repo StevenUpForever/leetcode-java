@@ -26,7 +26,7 @@ public class Binary_Tree_Zigzag_Level_Order_Traversal {
 
     /**
      * Solution:
-     * Similar as Binary tree level order traversal in legacy_code.Problem101To110, difference is every time the push and poll direction is not same, so we use a structure which could push/poll at two sides (deque)
+     * Similar as Binary tree level order traversal in legacy_code.legacy_code_class.Problem101To110, difference is every time the push and poll direction is not same, so we use a structure which could push/poll at two sides (deque)
      *      1. if the level index is even number
      *          poll from deque left
      *          push left -> right from deque right

@@ -1,11 +1,11 @@
-package legacy_code;
+package legacy_code.legacy_code_class;
 
 /**
  * Created by ChengzhiJia on 6/19/16.
  */
 
 public class ListNode {
-    int val;
+    public int val;
     ListNode next;
     ListNode(int x) {
         val = x;

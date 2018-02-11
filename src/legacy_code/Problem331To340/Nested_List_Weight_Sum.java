@@ -56,7 +56,7 @@ public class Nested_List_Weight_Sum {
 
     /**
      * Solution 2: iterative
-     * Similar as binary_tree_level_order_traversal(legacy_code.Problem101To110), which current weight is the level in binary tree
+     * Similar as binary_tree_level_order_traversal(legacy_code.legacy_code_class.Problem101To110), which current weight is the level in binary tree
      * when find the list, append to the end of the queue
      * when finish current process of all origin data, weight++
      *

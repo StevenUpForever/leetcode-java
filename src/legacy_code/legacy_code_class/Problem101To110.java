@@ -1,4 +1,5 @@
-package legacy_code;
+package legacy_code.legacy_code_class;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;

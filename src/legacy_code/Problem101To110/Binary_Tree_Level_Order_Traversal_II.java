@@ -26,7 +26,7 @@ public class Binary_Tree_Level_Order_Traversal_II {
 
     /**
      * Solution 1:
-     * same as Binary Tree level order traversal (legacy_code.Problem101To110)
+     * same as Binary Tree level order traversal (legacy_code.legacy_code_class.Problem101To110)
      * Diff is insert the current list at index 0 (result list need be LinkedList not ArrayList)
      *
      * Time: O(n)

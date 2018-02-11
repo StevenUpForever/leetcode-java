@@ -17,14 +17,25 @@ public class ValidPalindrome {
      For the purpose of this problem, we define empty string as valid palindrome.
      */
 
+    /**
+     * Solution:
+     * Time: O(n)
+     * Space: O(1)
+     */
+
 
     public boolean isPalindrome(String s) {
         int start = 0, end = s.length() - 1;
-        while (start < end && s.charAt(start) == s.charAt(end)) {
-            start++;
-            end--;
+        while (start < end) {
+            char startChar = s.charAt(start), endChar = s.charAt(end);
+            if (!Character.isLetterOrDigit(startChar)) start++;
+            else if (!Character.isLetterOrDigit(endChar)) end--;
+            else if (Character.toLowerCase(startChar) == Character.toLowerCase(endChar)) {
+                start++;
+                end--;
+            } else return false;
         }
-        return start >= end;
+        return true;
     }
 
 

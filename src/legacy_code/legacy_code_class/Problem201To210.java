@@ -1,6 +1,6 @@
-package legacy_code;
+package legacy_code.legacy_code_class;
+
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by ChengzhiJia on 6/5/16.

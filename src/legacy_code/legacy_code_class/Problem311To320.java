@@ -1,4 +1,5 @@
-package legacy_code;
+package legacy_code.legacy_code_class;
+
 import java.util.*;
 /**
  * Created by ChengzhiJia on 6/10/16.
