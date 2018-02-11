@@ -1,7 +1,12 @@
+package math;
+
+import java.util.HashSet;
+import java.util.Set;
+
 public class HappyNumber {
 
     //TAG: Uber
-
+    //TAG: Math
 
     /**
      * 202. Happy Number
@@ -20,22 +25,21 @@ public class HappyNumber {
     /**
      * Solution:
      * Key point is end up loop when in a cycle, specially when not 1
-     *
+     * Use HashSet to filter the number, because if number if generated before,
+     * it's next number will sometime go back to it again, will be a cycle
      */
 
     public boolean isHappy(int n) {
-        int num = n + 1;
-        while (num != n) {
+        Set<Integer> set = new HashSet<>();
+        while (set.add(n)) {
             int temp = n;
-            num = n;
             n = 0;
-            while (temp != 0) {
-                n += temp%10 * temp%10;
+            while (temp > 0) {
+                n += (temp%10) * (temp%10);
                 temp /= 10;
             }
-
         }
-        return num == 1;
+        return n == 1;
     }
 
 }
