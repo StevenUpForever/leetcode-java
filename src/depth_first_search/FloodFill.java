@@ -8,6 +8,7 @@ public class FloodFill {
     //TAG: Uber
     //TAG: DFS
     //TAG: Best First search
+    //Difficulty: Easy
 
     /**
      * 733. Flood Fill

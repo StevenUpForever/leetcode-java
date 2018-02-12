@@ -11,6 +11,7 @@ public class SerializeAndDeserializeBinaryTree {
 
     //TAG: Uber
     //Breadth first search
+    //Difficulty: Hard
 
     /**
      * 297. Serialize and Deserialize Binary Tree

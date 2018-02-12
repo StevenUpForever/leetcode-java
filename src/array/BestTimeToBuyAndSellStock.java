@@ -4,6 +4,7 @@ public class BestTimeToBuyAndSellStock {
 
     //TAG: Uber
     //TAG: array
+    //Difficulty: Easy
 
     /**
      * 121. Best Time to Buy and Sell Stock

@@ -7,6 +7,7 @@ public class MinimumWindowSubstring {
     //TAG: Uber
     //TAG: String
     //TAG: Sliding window
+    //Difficulty: Hard
 
     /**
      * 76. Minimum Window Substring

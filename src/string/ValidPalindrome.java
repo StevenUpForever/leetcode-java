@@ -4,6 +4,7 @@ public class ValidPalindrome {
 
     //TAG: Uber
     //TAG: String
+    //Difficulty: Easy
 
     /**
      * 125. Valid Palindrome

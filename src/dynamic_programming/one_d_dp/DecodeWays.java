@@ -5,6 +5,7 @@ public class DecodeWays {
     //TAG: Uber
     //TAG: DFS
     //TAG: DP
+    //Difficulty: Medium
 
     /**
      * 91. Decode Ways

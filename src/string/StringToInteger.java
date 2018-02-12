@@ -4,6 +4,7 @@ public class StringToInteger {
 
     //TAG: Uber
     //TAG: String
+    //Difficulty: Medium
 
     /**
      * 8. String to Integer (atoi)

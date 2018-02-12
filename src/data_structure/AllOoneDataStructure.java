@@ -9,6 +9,7 @@ public class AllOoneDataStructure {
 
     //TAG: Uber
     //TAG: Data structure
+    //Difficulty: Hard
 
     /**
      * 432. All O`one Data Structure

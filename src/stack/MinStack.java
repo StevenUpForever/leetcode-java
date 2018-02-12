@@ -6,6 +6,7 @@ public class MinStack {
 
     //TAG: Uber
     //TAG: Stack
+    //Difficulty: Easy
 
     /**
      * 155. Min Stack

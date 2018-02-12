@@ -7,6 +7,7 @@ public class HappyNumber {
 
     //TAG: Uber
     //TAG: Math
+    //Difficulty: Easy
 
     /**
      * 202. Happy Number

@@ -4,6 +4,7 @@ public class ExcelSheetColumnNumber {
 
     //TAG: Uber
     //TAG: Math
+    //Difficulty: Easy
 
     /**
      * 171. Excel Sheet Column Number

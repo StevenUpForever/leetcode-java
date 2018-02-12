@@ -7,6 +7,7 @@ public class CombinationSum {
     //TAG: Uber
     //TAG: DFS
     //TAG: 99 cents
+    //Difficulty: Medium
 
     /**
      * 39. Combination Sum

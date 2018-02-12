@@ -9,6 +9,7 @@ public class WordBreak {
     //TAG: Uber
     //TAG: DP
     //TAG: 1d DP
+    //Difficulty: Medium
 
     /**
      * 139. Word Break

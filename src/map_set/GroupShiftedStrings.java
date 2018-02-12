@@ -9,6 +9,7 @@ public class GroupShiftedStrings {
 
     //TAG: Uber
     //TAG: HashMap
+    //Difficulty: Medium
 
     /**
      * 249. Group Shifted Strings

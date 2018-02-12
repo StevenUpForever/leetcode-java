@@ -6,6 +6,7 @@ public class WordPatternII {
 
     //TAG: Uber
     //TAG: recursion
+    //Difficulty: Hard
 
     /**
      * 291. Word Pattern II

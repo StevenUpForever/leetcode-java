@@ -7,6 +7,7 @@ public class SwapNodesInPairs {
     //TAG: Uber
     //TAG: LinkedList
     //TAG: Recursion
+    //Difficulty: Medium
 
     /**
      * 24. Swap Nodes in Pairs

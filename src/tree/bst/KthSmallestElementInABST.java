@@ -11,6 +11,7 @@ public class KthSmallestElementInABST {
     //TAG: Uber
     //TAG: bst
     //TAG: Tree
+    //Difficulty: Medium
 
     /**
      * 230. Kth Smallest Element in a bst

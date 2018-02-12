@@ -4,6 +4,7 @@ public class TripsAndUsers {
 
     //TAG: Uber
     //TAG: Others
+    //Difficulty: Hard
 
     /**
      * 262. Trips and Users

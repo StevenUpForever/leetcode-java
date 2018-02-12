@@ -7,6 +7,7 @@ public class TwoSum {
     //TAG: Uber
     //TAG: map
     //TAG: set
+    //Difficulty: Easy
 
     /**
     1. Two Sum

@@ -8,6 +8,7 @@ public class DeleteNodeInABST {
     //TAG: bst
     //TAG: Tree
     //TAG: Bottom up
+    //Difficulty: Medium
 
     /**
      * 450. Delete Node in a bst

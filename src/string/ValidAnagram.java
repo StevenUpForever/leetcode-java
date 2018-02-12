@@ -5,6 +5,7 @@ public class ValidAnagram {
     //TAG: Uber
     //TAG: map_set
     //TAG: String
+    //Difficulty: Easy
 
     /**
      * 242. Valid Anagram

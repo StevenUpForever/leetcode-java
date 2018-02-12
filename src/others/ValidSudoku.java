@@ -4,6 +4,7 @@ public class ValidSudoku {
 
     //TAG: Uber
     //TAG: others
+    //Difficulty: Medium
 
     /**
      * 36. Valid Sudoku

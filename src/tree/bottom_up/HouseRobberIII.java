@@ -7,6 +7,7 @@ public class HouseRobberIII {
     //TAG: Uber
     //TAG: Tree
     //TAG: bottom up
+    //Difficulty: Medium
 
     /**
      * 337. House Robber III

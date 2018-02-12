@@ -9,6 +9,7 @@ public class ImplementTrie {
 
     //TAG: Uber
     //TAG: Data structure
+    //Difficulty: Medium
 
     /**
      * 208. Implement Trie (Prefix Tree)

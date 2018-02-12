@@ -6,6 +6,7 @@ public class TopKFrequentWords {
 
     //TAG: Uber
     //TAG: Priority queue
+    //Difficulty: Medium
 
     /**
      * 692. Top K Frequent Words

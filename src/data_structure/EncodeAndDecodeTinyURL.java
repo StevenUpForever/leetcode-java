@@ -3,7 +3,7 @@ package data_structure;
 public class EncodeAndDecodeTinyURL {
 
     //TAG: Uber
-    //TAG:
+    //Difficulty: Medium
 
     /**
      * 535. Encode and Decode TinyURL

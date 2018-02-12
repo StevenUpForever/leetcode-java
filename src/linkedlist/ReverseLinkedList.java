@@ -7,6 +7,7 @@ public class ReverseLinkedList {
     //TAG: Uber
     //TAG: LinkedList
     //TAG: Recursion
+    //Difficulty: Easy
 
     /**
      * 206. Reverse Linked List

@@ -7,6 +7,7 @@ public class PalindromePermutation {
 
     //TAG: Uber
     //TAG: String
+    //Difficulty: Easy
 
     /**
      * 266. Palindrome Permutation

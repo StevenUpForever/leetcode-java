@@ -6,6 +6,7 @@ public class GenerateParentheses {
 
     //TAG: Uber
     //TAG: DFS
+    //Difficulty: Medium
 
     /**
      * 22. Generate Parentheses

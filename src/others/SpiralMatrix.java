@@ -6,6 +6,7 @@ public class SpiralMatrix {
 
     //TAG: Uber
     //TAG: Others
+    //Difficulty: Medium
 
     /**
      * 54. Spiral Matrix

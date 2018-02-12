@@ -9,6 +9,7 @@ public class GroupAnagrams {
 
     //TAG: Uber
     //TAG: Others
+    //Difficulty: Medium
 
     /**
      * 49. Group Anagrams

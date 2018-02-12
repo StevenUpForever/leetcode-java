@@ -4,6 +4,7 @@ public class RegularExpressionMatching {
 
     //TAG: Uber
     //TAG: 2D DP
+    //Difficulty: Hard
 
     /**
      * 10. Regular Expression Matching

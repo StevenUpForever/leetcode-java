@@ -7,6 +7,7 @@ public class WordPattern {
 
     //TAG: Uber
     //TAG: HashMap
+    //Difficulty: Easy
 
     /**
      * 290. Word Pattern

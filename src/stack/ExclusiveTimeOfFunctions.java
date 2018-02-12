@@ -6,6 +6,7 @@ public class ExclusiveTimeOfFunctions {
 
     //TAG: Uber
     //TAG: stack
+    //Difficulty: Medium
 
     /**
      * 636. Exclusive Time of Functions

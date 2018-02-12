@@ -4,6 +4,7 @@ public class SearchInRotatedSortedArray {
 
     //TAG: Uber
     //TAG: Binary search
+    //Difficulty: Medium
 
     /**
      * 33. Search in Rotated Sorted Array

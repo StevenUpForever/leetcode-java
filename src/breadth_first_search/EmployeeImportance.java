@@ -7,6 +7,7 @@ public class EmployeeImportance {
     //TAG: Uber
     //TAG: DFS
     //TAG: Breath first search
+    //Difficulty: Easy
 
     /**
      * 690. Employee Importance

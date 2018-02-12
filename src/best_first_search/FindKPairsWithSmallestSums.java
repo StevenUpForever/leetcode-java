@@ -6,6 +6,7 @@ public class FindKPairsWithSmallestSums {
 
     //TAG: Uber
     //TAG: Best first search
+    //Difficulty: Medium
 
     /**
      * 373. Find K Pairs with Smallest Sums

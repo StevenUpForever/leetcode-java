@@ -7,6 +7,7 @@ public class Factor_Combinations {
     //TAG: Uber
     //TAG: DFS
     //TAG: 99 cents
+    //Difficulty: Medium
 
     /**
      * 254. Factor Combinations

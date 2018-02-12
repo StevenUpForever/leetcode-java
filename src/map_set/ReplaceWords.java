@@ -8,6 +8,7 @@ public class ReplaceWords {
 
     //TAG: Uber
     //TAG: HashMap
+    //Difficulty: Medium
 
     /**
      * 648. Replace Words

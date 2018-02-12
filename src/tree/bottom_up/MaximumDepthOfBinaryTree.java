@@ -4,6 +4,11 @@ import public_class.TreeNode;
 
 public class MaximumDepthOfBinaryTree {
 
+    //TAG: Uber
+    //TAG: Tree
+    //TAG: bottom up
+    //Difficulty: Easy
+
     /**
      * 104. Maximum Depth of Binary Tree
      * Given a binary tree, find its maximum depth.

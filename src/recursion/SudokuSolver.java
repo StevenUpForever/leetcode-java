@@ -4,6 +4,7 @@ public class SudokuSolver {
 
     //TAG: Uber
     //TAG: Recursion
+    //Difficulty: Hard
 
     /**
      * 37. Sudoku Solver

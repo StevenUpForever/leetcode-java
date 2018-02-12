@@ -6,6 +6,7 @@ public class WordBreakII {
 
     //TAG: Uber
     //TAG: DFS
+    //Difficulty: Hard
 
     /**
      * 140. Word Break II

@@ -8,6 +8,7 @@ public class CopyListWithRandomPointer {
 
     //TAG: Uber
     //TAG: linkedlist
+    //Difficulty: Medium
 
     /**
      * 138. Copy List with Random Pointer

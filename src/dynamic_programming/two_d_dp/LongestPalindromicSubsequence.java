@@ -6,6 +6,7 @@ public class LongestPalindromicSubsequence {
 
     //TAG: Uber
     //TAG: 2D DP
+    //Difficulty: Medium
 
     /**
      * 516. Longest Palindromic Subsequence

@@ -8,6 +8,7 @@ public class LetterCombinationsOfAPhoneNumber {
 
     //TAG: Uber
     //TAG: DFS
+    //Difficulty: Medium
 
     /**
      * 17. Letter Combinations of a Phone Number

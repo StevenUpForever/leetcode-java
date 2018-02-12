@@ -6,6 +6,7 @@ public class InsertDeleteGetRandomO1 {
 
     //TAG: Uber
     //TAG: Data structure
+    //Difficulty: Medium
 
     /**
     380. Insert Delete GetRandom O(1)

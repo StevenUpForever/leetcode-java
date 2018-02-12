@@ -6,6 +6,7 @@ public class LRUCache {
 
     //TAG: Uber
     //TAG: Data structure
+    //Difficulty: Hard
 
     /**
     146. LRU Cache
