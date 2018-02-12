@@ -44,7 +44,7 @@ public class FindKPairsWithSmallestSums {
      * Use priority queue filter all solutions by sum(o1) - sum(o2), store index not the value to filter visited pair in
      * a 2d array
      *
-     * Time: O(mn)
+     * Time: O(mnlogmn)
      * Space: O(mn)
      */
 
