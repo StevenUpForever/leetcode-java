@@ -1,6 +1,9 @@
-package legacy_code.Problem1To10;
+package string;
 
-public class String_to_Integer {
+public class StringToInteger {
+
+    //TAG: Uber
+    //TAG: String
 
     /**
      * 8. String to Integer (atoi)
