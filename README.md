@@ -1,4 +1,4 @@
-# LeetCode_Java
+# leetcode-java
 
 ### Introduction
 
