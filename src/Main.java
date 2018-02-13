@@ -1,9 +1,9 @@
-import depth_first_search.FloodFill;
+import string.LicenseKeyFormatting;
 
 public class Main {
     public static void main(String[] args) {
-        FloodFill obj = new FloodFill();
-        System.out.println(obj.floodFill(new int[][]{{1,1,1},{1,1,0},{1,0,1}}, 1, 1, 2));
+        LicenseKeyFormatting obj = new LicenseKeyFormatting();
+        System.out.println(obj.licenseKeyFormatting("5F3Z-2e-9-w", 4));
     }
 }
 

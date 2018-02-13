@@ -1,7 +1,9 @@
+package string;
+
 public class LicenseKeyFormatting {
 
     //TAG: Google
-    //TAG:
+    //TAG: String
 
     /**
      * 482. License Key Formatting
@@ -43,8 +45,29 @@ public class LicenseKeyFormatting {
 
     public String licenseKeyFormatting(String S, int K) {
         if (S == null || S.length() == 0 || K == 0) return S;
-        char
-
+        char[] chars = S.toCharArray();
+        //Similar to move 0s to the end
+        int slow = 0;
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] != '-') {
+                //Convert all chars to uppercase as required in move char step
+                chars[i] = Character.toUpperCase(chars[i]);
+                chars[slow++] = chars[i];
+            }
+        }
+        //now chars left than slow (not include slow) is characters
+        int i = 0;
+        StringBuilder builder = new StringBuilder();
+        while (i < slow) {
+            int len = K;
+            if (i == 0) len = slow % K == 0 ? K : slow % K;
+            builder.append(chars, i, len);
+            builder.append('-');
+            i += len;
+        }
+        //Test case may contains "---" which has only '-'
+        if (builder.length() != 0) builder.deleteCharAt(builder.length() - 1);
+        return builder.toString();
     }
 
 }
