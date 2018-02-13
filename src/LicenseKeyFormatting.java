@@ -33,10 +33,14 @@ public class LicenseKeyFormatting {
 
     /**
      * Solution:
-     *
+     * use char[]
+     * Calculate all length of chars, len%k is the first word length, if len%k == 0 first word length == k
+     * add - between k length substrings
      */
 
     public String licenseKeyFormatting(String S, int K) {
+        if (S == null || S.length() == 0 || K == 0) return S;
+        char
 
     }
 
