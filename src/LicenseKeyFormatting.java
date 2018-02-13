@@ -36,6 +36,9 @@ public class LicenseKeyFormatting {
      * use char[]
      * Calculate all length of chars, len%k is the first word length, if len%k == 0 first word length == k
      * add - between k length substrings
+     *
+     * Time: O(n)
+     * Space: O(n)
      */
 
     public String licenseKeyFormatting(String S, int K) {
