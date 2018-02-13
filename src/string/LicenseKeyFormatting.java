@@ -4,6 +4,7 @@ public class LicenseKeyFormatting {
 
     //TAG: Google
     //TAG: String
+    //Difficulty: Easy
 
     /**
      * 482. License Key Formatting
@@ -69,5 +70,11 @@ public class LicenseKeyFormatting {
         if (builder.length() != 0) builder.deleteCharAt(builder.length() - 1);
         return builder.toString();
     }
+
+    /**
+     * Solution 2:
+     * append stringBuilder from end to start, so that needn't to parse first length, append k length, and left the
+     * last part for the first word
+     */
 
 }
