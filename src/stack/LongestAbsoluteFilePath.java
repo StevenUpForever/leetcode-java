@@ -45,6 +45,9 @@ public class LongestAbsoluteFilePath {
 
     /**
      * Solution:
+     *
+     * *** Similar to valid parenthesis (valid "(((()())))") ***
+     *
      * Use stack to filer dir or file,
      *      if peek() is larger or equal level than current dir, pop until current dir is smallest
      *      then level is deeper, push to stack
