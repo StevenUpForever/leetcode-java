@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class KEmptySlots {
 
     //TAG: Google
@@ -29,5 +32,49 @@ public class KEmptySlots {
      Note:
      The given array will be in the range [1, 20000].
      */
+
+    /**
+     * Solution: Brute force
+     * for loop the flowers i
+     *      for loop from 0 to i, j
+     *      if abs(flowers[i] - flowers[j]) - 1 == k &&
+     *          for m loop from i to end
+     *          if all numbers between flowers[i] - flowers[j] is in m -> end, which means flowers[m] < i && > j
+     *          return i;
+     * return -1
+     *
+     * Time: O(n^2) since, when j loop from 0 .. i, m loop from i .. end same as another loop from 0 to end
+     * Space: O(1)
+     *
+     * Since "The given array will be in the range [1, 20000]" O(n^2) is not good
+     */
+
+    public int kEmptySlots(int[] flowers, int k) {
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < flowers.length; i++) {
+            if (set.contains(flowers[i] - k - 1)) {
+                boolean pass = true;
+                for (int j = flowers[i] - k; j < flowers[i]; j++) {
+                    if (set.contains(j)) {
+                        pass = false;
+                        break;
+                    }
+                }
+                if (pass) return i + 1;
+            }
+            if (set.contains(flowers[i] + k + 1)) {
+                boolean pass = true;
+                for (int j = flowers[i] + 1; j < flowers[i] + k + 1; j++) {
+                    if (set.contains(j)) {
+                        pass = false;
+                        break;
+                    }
+                }
+                if (pass) return i + 1;
+            }
+            set.add(flowers[i]);
+        }
+        return -1;
+    }
 
 }
