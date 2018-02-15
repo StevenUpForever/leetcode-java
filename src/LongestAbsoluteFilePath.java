@@ -1,6 +1,9 @@
+import java.util.Stack;
+
 public class LongestAbsoluteFilePath {
 
     //TAG: Google
+    //TAG: Stack
     //Difficulty: Medium
 
     /**
@@ -40,10 +43,57 @@ public class LongestAbsoluteFilePath {
 
     /**
      * Solution:
+     * Use stack to filer dir or file,
+     *      if peek() is larger or equal level than current dir, pop until current dir is smallest
+     *      then level is deeper, push to stack
+     *          if is File update global max len
      *
+     *  Time: O(n) split + O(n) loop + buildNode + average O(1) for each node as push and pop once = O(n)
+     *  Space: O(n) array + O(n) Stack = O(n)
      */
     public int lengthLongestPath(String input) {
-        return 0;
+        Stack<PathNode> stack = new Stack<>();
+        String[] strs = input.split("\\n");
+        int max = 0, curLen = 0;
+        for (int i = 0; i < strs.length; i++) {
+            PathNode newNode = buildPathNode(strs[i]);
+            /*
+            First pop all larger or equal level nodes, so that next could push new node without more check, make code
+            more lint
+             */
+            while (!stack.isEmpty() && stack.peek().degree >= newNode.degree) {
+                PathNode pop = stack.pop();
+                curLen -= pop.name.length();
+            }
+            stack.push(newNode);
+            curLen += newNode.name.length();
+            //Only if node is file, update global max
+            if (newNode.isFile) max = Math.max(max, curLen);
+        }
+        return max;
+    }
+
+    //This builder used not only this question but could output longest path string
+    private PathNode buildPathNode(String str) {
+        int i = 0;
+        while (i < str.length() && str.charAt(i) == '\t') {
+            i++;
+        }
+        String name = i < str.length() ? str.substring(i) : "";
+        boolean isFile = name.contains(".");
+        if (!isFile) name += "|";
+        return new PathNode(name, i, isFile);
+    }
+
+    class PathNode {
+        String name;
+        int degree;
+        boolean isFile;
+        public PathNode(String name, int degree, boolean isFile) {
+            this.name = name;
+            this.degree = degree;
+            this.isFile = isFile;
+        }
     }
 
 }
