@@ -1,9 +1,13 @@
+package array;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class KEmptySlots {
 
     //TAG: Google
+    //TAG: Array
+    //TAG: set
     //Difficulty: Hard
 
     /**
@@ -49,11 +53,23 @@ public class KEmptySlots {
      * Since "The given array will be in the range [1, 20000]" O(n^2) is not good
      */
 
-    public int kEmptySlots(int[] flowers, int k) {
+    /**
+     * Solution 2:
+     * ** similar to TwoSum ***
+     * Use Set to filter when flower at flowers[i] - k - 1 (smaller than i) or flowers[i] + k + 1 is recorded,
+     * which means blooming
+     * then loop between smaller -> i, and i -> larger, find if non of number in set, if so, return i, i will be
+     * the earliest day
+     *
+     * Time: O(n^2) if k == 20000
+     * Space: O(n)
+     */
+
+    public int kEmptySlotsS2(int[] flowers, int k) {
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < flowers.length; i++) {
+            boolean pass = true;
             if (set.contains(flowers[i] - k - 1)) {
-                boolean pass = true;
                 for (int j = flowers[i] - k; j < flowers[i]; j++) {
                     if (set.contains(j)) {
                         pass = false;
@@ -63,7 +79,6 @@ public class KEmptySlots {
                 if (pass) return i + 1;
             }
             if (set.contains(flowers[i] + k + 1)) {
-                boolean pass = true;
                 for (int j = flowers[i] + 1; j < flowers[i] + k + 1; j++) {
                     if (set.contains(j)) {
                         pass = false;
@@ -76,5 +91,40 @@ public class KEmptySlots {
         }
         return -1;
     }
+
+    /**
+     * Solution 3:
+     * Think reversely of index is day, number is place, use an array of index represent place, and number is day
+     * init the first scope is 0...k, loop the day array, try to find place i which days[i] earlier than left 0 or larger
+     * than right day[k], means this day is not within this scope, place i is not blooming
+     * if loop cloud until right, means all days in scope is checked, use max day of (left, right), means until this day,
+     * find a valid scope
+     * otherwise update left = i, right = i + k + 1, update to scope start i to i + k + 1
+     *
+     * Time: O(n)
+     * Space: O(n)
+     */
+
+    public int kEmptySlots(int[] flowers, int k) {
+        int[] days = new int[flowers.length];
+        //place start from 1, index need start from 0
+        for(int i = 0; i < flowers.length; i++) days[flowers[i] - 1] = i + 1;
+        int left = 0, right = k + 1, res = Integer.MAX_VALUE;
+        for(int i = 0; right < days.length; i++){
+            //if flower i is blooming earlier than left or right, i is not fit for left -> right scope,
+            // check if i met the end of scope and update scope
+            if(days[i] < days[left] || days[i] <= days[right]){
+                /*
+                if flower i loop to current right scope, then this scope is valid, update day to the
+                earliest day of the scope right boundary
+                 */
+                if(i == right) res = Math.min(res, Math.max(days[left], days[right]));
+                left = i;
+                right = i + k + 1;
+            }
+        }
+        return res == Integer.MAX_VALUE ? -1 : res;
+    }
+
 
 }
