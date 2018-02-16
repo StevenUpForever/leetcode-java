@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class NextClosestTime {
 
     //TAG: Google
@@ -25,7 +28,36 @@ public class NextClosestTime {
      * Solution:
      */
     public String nextClosestTime(String time) {
-        
+        char[] chars = time.toCharArray();
+        Map<Integer, Character> map = new HashMap<>();
+        map.put(0, '2');
+        map.put(1, chars[0] < '2' ? '9' : '3');
+        map.put(3, '5');
+        map.put(4, '9');
+        char min = time.charAt(0);
+
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] < min) min = chars[i];
+        }
+        for (int i = chars.length - 1; i >= 0; i--) {
+            if (i != 2 && chars[i] < map.get(i)) {
+                char replaceMin = ':';
+                for (int j = 0; j < chars.length; j++) {
+                    if (chars[j] > chars[i] && chars[j] <= map.get(i))
+                        if (chars[j] < replaceMin) replaceMin = chars[j];
+                }
+                if (replaceMin != ':') {
+                    chars[i] = replaceMin;
+                    for (int k = i + 1; k < chars.length; k++)
+                        if (k != 2) chars[k] = min;
+                    return new String(chars);
+                }
+            }
+        }
+        for (int i = 0; i < chars.length; i++) {
+            if (i != 2) chars[i] = min;
+        }
+        return new String(chars);
     }
 
 }
