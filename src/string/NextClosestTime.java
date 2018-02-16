@@ -1,9 +1,12 @@
+package string;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class NextClosestTime {
 
     //TAG: Google
+    //TAG: String
     //Difficulty: Medium
 
     /**
@@ -26,26 +29,40 @@ public class NextClosestTime {
 
     /**
      * Solution:
+     * Loop from end to start, try to update to a value larger than current and smaller than max value of this bit
+     *      after update, reset all behind value of this bit to min value
+     * if cannot update all, reset all of them to min value in these 4 numbers
+     *
+     * Time: O(1) since array is max 4 length
+     * Space: O(1)
      */
     public String nextClosestTime(String time) {
+        //Use char[] array to replace char easy and in place
         char[] chars = time.toCharArray();
+        //Map represent index -> max value could use pair
         Map<Integer, Character> map = new HashMap<>();
         map.put(0, '2');
         map.put(1, chars[0] < '2' ? '9' : '3');
         map.put(3, '5');
         map.put(4, '9');
+        //Record a min value when need reset all values after updated bit
         char min = time.charAt(0);
-
         for (int i = 0; i < chars.length; i++) {
             if (chars[i] < min) min = chars[i];
         }
         for (int i = chars.length - 1; i >= 0; i--) {
             if (i != 2 && chars[i] < map.get(i)) {
+                //':' is '9' + 1
                 char replaceMin = ':';
+                /*
+                If met a number that smaller than max value of current bit, e.g. max 2 at first bit
+                loop time again to find a value that larger than current and smaller than max value
+                 */
                 for (int j = 0; j < chars.length; j++) {
                     if (chars[j] > chars[i] && chars[j] <= map.get(i))
                         if (chars[j] < replaceMin) replaceMin = chars[j];
                 }
+                //if found, replace and reset all behind bits, otherwise go to next bit
                 if (replaceMin != ':') {
                     chars[i] = replaceMin;
                     for (int k = i + 1; k < chars.length; k++)
@@ -54,6 +71,7 @@ public class NextClosestTime {
                 }
             }
         }
+        //If go this step, means all bits cannot update (all are max value) reset all to min value (next day)
         for (int i = 0; i < chars.length; i++) {
             if (i != 2) chars[i] = min;
         }
