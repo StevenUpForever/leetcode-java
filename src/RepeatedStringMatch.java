@@ -28,6 +28,7 @@ public class RepeatedStringMatch {
         while (i < chars.length) {
             int k = i, j = 0;
             while (j < B.length() && B.charAt(j) == chars[k]) {
+                if (j == B.length() - 1) break;
                 k++;
                 if (k >= A.length()) {
                     k = 0;
