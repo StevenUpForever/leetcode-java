@@ -25,20 +25,19 @@ public class RepeatedStringMatch {
         if (A.length() == 0 || B.length() == 0) return -1;
         int i = 0, count = 1;
         char[] chars = A.toCharArray();
-        while (i++ < chars.length) {
-            if (chars[i] == B.charAt(0)) {
-                int k = i, j = 0;
-                while (j < B.length() && B.charAt(j) == chars[k]) {
-                    k++;
-                    if (k == A.length()) {
-                        k = 0;
-                        count++;
-                    }
-                    j++;
+        while (i < chars.length) {
+            int k = i, j = 0;
+            while (j < B.length() && B.charAt(j) == chars[k]) {
+                k++;
+                if (k >= A.length()) {
+                    k = 0;
+                    count++;
                 }
-                if (j == B.length()) return count;
-                count = 1;
+                j++;
             }
+            if (j == B.length()) return count;
+            count = 1;
+            i++;
         }
         return -1;
     }
