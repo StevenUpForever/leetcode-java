@@ -17,7 +17,7 @@ public class RepeatedStringMatch {
 
     /**
      * Solution:
-     *
+     * s
      */
 
     public int repeatedStringMatch(String A, String B) {
