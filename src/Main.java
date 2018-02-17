@@ -1,10 +1,9 @@
-import string.sliding_window.LongestSubstringWithAtMostKDistinctCharacters;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
 
-        LongestSubstringWithAtMostKDistinctCharacters obj = new LongestSubstringWithAtMostKDistinctCharacters();
-        System.out.println(obj.lengthOfLongestSubstringKDistinct("eceba", 2));
     }
 }
 
