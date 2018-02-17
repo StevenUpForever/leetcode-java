@@ -1,6 +1,9 @@
+package string;
+
 public class RepeatedStringMatch {
 
     //TAG: Google
+    //TAG: String
     //Difficulty: Easy
 
     /**
@@ -17,7 +20,11 @@ public class RepeatedStringMatch {
 
     /**
      * Solution:
-     * s
+     * compare from B to A, make A as assumed longer string than B (By make indexA repeat from 0 to A.length() - 1 until
+     * indexB met unequal char or goes to B.length())
+     *
+     * Time: O(mn)
+     * Space: O(1)
      */
 
     public int repeatedStringMatch(String A, String B) {
@@ -28,13 +35,13 @@ public class RepeatedStringMatch {
         while (i < chars.length) {
             int k = i, j = 0;
             while (j < B.length() && B.charAt(j) == chars[k]) {
-                if (j == B.length() - 1) break;
                 k++;
-                if (k >= A.length()) {
+                j++;
+                //Be aware that if K need to repeat, check if B is finished validation, if so, no need to start A again
+                if (k >= A.length() && j < B.length()) {
                     k = 0;
                     count++;
                 }
-                j++;
             }
             if (j == B.length()) return count;
             count = 1;
