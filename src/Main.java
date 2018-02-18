@@ -1,9 +1,13 @@
-import matrix.BombEnemy;
+import stack.DecodeString;
 
 public class Main {
     public static void main(String[] args) {
-        BombEnemy obj = new BombEnemy();
-        System.out.println(obj.maxKilledEnemies(new char[][]{{'0','E','0','0'},{'E','0','W','E'},{'0','E','0','0'}}));
+        DecodeString obj = new DecodeString();
+        System.out.println(obj.decodeString("2[abc]3[cd]ef"));
+        StringBuilder builder = new StringBuilder();
+        builder.append('1');
+        builder.delete(0, builder.length());
+        System.out.println(builder);
     }
 }
 
