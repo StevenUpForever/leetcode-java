@@ -1,4 +1,4 @@
-package string;
+package string.palindrome;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -8,6 +8,7 @@ public class StrobogrammaticNumber {
 
     //TAG: Google
     //TAG: String
+    //TAG: Palindrome
     //Difficulty: Easy
 
     /**

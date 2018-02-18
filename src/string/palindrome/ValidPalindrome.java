@@ -1,9 +1,10 @@
-package string;
+package string.palindrome;
 
 public class ValidPalindrome {
 
     //TAG: Uber
     //TAG: String
+    //TAG: Palindrome
     //Difficulty: Easy
 
     /**

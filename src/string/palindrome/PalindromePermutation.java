@@ -1,4 +1,4 @@
-package string;
+package string.palindrome;
 
 import java.util.HashMap;
 import java.util.Map;
