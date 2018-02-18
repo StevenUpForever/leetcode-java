@@ -1,9 +1,9 @@
-import string.RepeatedStringMatch;
+import depth_first_search.WordSquares;
 
 public class Main {
     public static void main(String[] args) {
-        RepeatedStringMatch obj = new RepeatedStringMatch();
-        System.out.println(obj.repeatedStringMatch("a", "aa"));
+        WordSquares obj = new WordSquares();
+        System.out.println(obj.wordSquares(new String[]{"abat","baba","atan","atal"}));
     }
 }
 
