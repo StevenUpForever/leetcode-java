@@ -1,3 +1,5 @@
+package data_structure;
+
 import java.util.List;
 
 public class ZigzagIterator {
@@ -65,8 +67,8 @@ public class ZigzagIterator {
      */
 
 /**
- * Your ZigzagIterator object will be instantiated and called as such:
- * ZigzagIterator i = new ZigzagIterator(v1, v2);
+ * Your data_structure.ZigzagIterator object will be instantiated and called as such:
+ * data_structure.ZigzagIterator i = new data_structure.ZigzagIterator(v1, v2);
  * while (i.hasNext()) v[f()] = i.next();
  */
 
