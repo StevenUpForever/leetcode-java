@@ -1,6 +1,10 @@
+package string;
+
 public class SentenceScreenFitting {
 
     //TAG: Google
+    //TAG: String
+    //TAG: Math
     //Difficulty: Medium
 
     /**
@@ -82,6 +86,40 @@ public class SentenceScreenFitting {
             }
         }
         return count;
+    }
+
+    /**
+     * Solution 2:
+     * combine a string with spaces between and after all words
+     * Only loop rows, for each row:
+     * add col to totalLen, and do following checks:
+     *      1. if totalLen/s.len is ' ', we don't need ' ' at last, len++
+     *      2. if not ' ' skip back to previous word, since current word cannot full fill the col
+     *
+     * Time: O(rows * col) since go back may go all col length
+     * Space: O(words total length)
+     */
+
+    public int wordsTyping2(String[] sentence, int rows, int cols) {
+        String s = String.join(" ", sentence) + " ";
+        //Len represent total length fit for total string with spaces
+        int len = 0, l = s.length();
+        for (int i = 0; i < rows; i++) {
+            len += cols;
+            /*
+            if string filled after col stopped at space ' ', means last char in col is space,
+            skip this space, means len++
+             */
+            if (s.charAt(len % l) == ' ') {
+                len++;
+                //else need to go back to previous words, since current word cannot filled left spaces in col
+            } else {
+                while (len > 0 && s.charAt((len - 1) % l) != ' ') {
+                    len--;
+                }
+            }
+        }
+        return len / s.length();
     }
 
 }
