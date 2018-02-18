@@ -1,6 +1,9 @@
+package bit_operation;
+
 public class UTF8Validation {
 
     //TAG: Google
+    //TAG: Bit operation
     //Difficulty: Medium
 
     /**
@@ -46,7 +49,10 @@ public class UTF8Validation {
      * if n bit number, 1st number start with n 1s, next n - 1 numbers should have 10 as prefix, other numbers
      * should be new 1 or n bit number
      *
-     * loop numbers in data,
+     * loop numbers in data, check how many 1s as prefix, it should be n bit number
+     * check next n - 1 over data.length or any number within n - 1 numbers start with 10 return false
+     * move index to number after n bit number start new check
+     * if passed all checks, return true
      */
 
     public boolean validUtf8(int[] data) {
