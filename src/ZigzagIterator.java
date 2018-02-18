@@ -58,6 +58,12 @@ public class ZigzagIterator {
         return index1 < v1.size() || index2 < v2.size();
     }
 
+    /**
+     * Follow up:
+     * assign index array for all lists, one shift from 0 to lists.length, if any array ends and shift at
+     * current array, move to next shift until the array is not end
+     */
+
 /**
  * Your ZigzagIterator object will be instantiated and called as such:
  * ZigzagIterator i = new ZigzagIterator(v1, v2);
