@@ -1,6 +1,11 @@
-package legacy_code.Problem251To260;
+package dynamic_programming.one_d_dp;
 
-public class Paint_House {
+public class PaintHouse {
+
+    //TAG: LinkedList
+    //TAG: DFS
+    //TAG: DP
+    //Difficulty: Easy
 
     /**
      * 256. Paint House
@@ -21,7 +26,7 @@ public class Paint_House {
      * Solution 1: Brute force (similar as N Queen)
      * recursion every number from row 1 to row n, add all possible sums and update a global min one
      *
-     * Time: O(n!) n represent numbers of elements in a row
+     * Time: O(3^n)
      * Space: O(n) recursion levels
      */
 
@@ -49,7 +54,7 @@ public class Paint_House {
      * Induction rule: for every cell, it's best cost is add min of other two y index of previous row
      * At last choose the min of last row numbers as the final results
      *
-     * Time: O(n) n represent all numbers in costs
+     * Time: O(3 * n)
      * Space: O(1)
      */
 
