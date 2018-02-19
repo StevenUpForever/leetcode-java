@@ -4,6 +4,10 @@ import java.util.*;
 
 public class Nested_List_Weight_Sum_II {
 
+    //TAG: LinkedList
+    //TAG: array
+    //Difficulty: Medium
+
     /**
      * 364. Nested List Weight Sum II
      * Given a nested list of integers, return the sum of all integers in the list weighted by their depth.
@@ -41,7 +45,7 @@ public class Nested_List_Weight_Sum_II {
     }
 
     /**
-     * Solution 1.1: inspired from legacy_code
+     * Solution 1: inspired from legacy_code
      * Similar idea as binary tree level order traversal
      * as if res = 6 * 3 + 3 * 2 + 2, it also equals res = (6) level1 + (6 + 3) level2 + (6 + 3 + 2) level3
      * Add every appeared level sum to total sum, until last level sum add once, in this case, level is the same from bottom to up
@@ -50,7 +54,7 @@ public class Nested_List_Weight_Sum_II {
      * Space: O(n) if some list contains all integers
      */
 
-    public int depthSumInverseS1_1(List<NestedInteger> nestedList) {
+    public int depthSumInverseS1(List<NestedInteger> nestedList) {
         //LevelSum represent total levelSum of all current visited levels (each integer add once)
         int totalSum = 0, levelSum = 0;
         //nestedList itself is the queue as level order traversal
@@ -70,7 +74,7 @@ public class Nested_List_Weight_Sum_II {
     }
 
     /**
-     * Solution 1.2: easier to understand but more real time and space, same time/space complexity
+     * Solution 2: easier to understand but more real time and space, same time/space complexity
      * Use a standard queue to represent level order traversal
      * Use a linkedList, insert every level sum to first, represent all sums level + 1, at last, the index of number represent the correct index, add sum1 * level1 + ... + sum_n * level_n
      *
@@ -78,7 +82,7 @@ public class Nested_List_Weight_Sum_II {
      * Space: O(n) queue (all integer on same level) or LinkedList (all integers on diff levels)
      */
 
-    public int depthSumInverseS1_2(List<NestedInteger> nestedList) {
+    public int depthSumInverseS2(List<NestedInteger> nestedList) {
         Queue<NestedInteger> queue = new LinkedList<>();
         queue.addAll(nestedList);
         List<Integer> indexList = new LinkedList<>();
