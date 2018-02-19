@@ -1,8 +1,13 @@
-package legacy_code.Problem241To250;
+package map_set;
 
 import java.util.*;
 
 public class Shortest_Word_Distance_II {
+
+    //TAG: LinkedList
+    //TAG: map_set
+    //TAG: array
+    //Difficulty: Medium
 
     /**
      * 244. Shortest Word Distance II
