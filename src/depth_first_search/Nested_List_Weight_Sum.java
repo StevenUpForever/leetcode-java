@@ -1,8 +1,13 @@
-package legacy_code.Problem331To340;
+package depth_first_search;
 
 import java.util.*;
 
 public class Nested_List_Weight_Sum {
+
+    //TAG: LinkedIn
+    //TAG: Queue
+    //TAG: DFS
+    //Difficulty: Easy
 
     /**
      * 339. Nested List Weight Sum
@@ -39,7 +44,7 @@ public class Nested_List_Weight_Sum {
      * Space: O(n) n represent if 1 integer nested by n lists
      */
 
-    int res = 0;
+    private int res = 0;
     public int depthSumS1(List<NestedInteger> nestedList) {
         for (NestedInteger integer: nestedList)
             depthSumHelper(integer, 1);
