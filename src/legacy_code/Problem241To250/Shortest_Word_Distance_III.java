@@ -22,7 +22,7 @@ public class Shortest_Word_Distance_III {
 
     /**
      * Solution:
-     * Depends on Shortest_Word_Distance, diff is a diff way to calculate the distance when word1.equals(word2), need to calculate i - index1, and then update index1 to i
+     * Depends on ShortestWordDistance, diff is a diff way to calculate the distance when word1.equals(word2), need to calculate i - index1, and then update index1 to i
      * For the code, could integrate equals and not equals into one for loop, like
      * if (word1.equals(word2)) else, but this will make extra n times compare will have more time complexity, so check word1.equals(word2) once
      *

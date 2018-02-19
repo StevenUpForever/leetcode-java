@@ -1,6 +1,10 @@
-package legacy_code.Problem241To250;
+package array;
 
-public class Shortest_Word_Distance {
+public class ShortestWordDistance {
+
+    //TAG: LinkedIn
+    //TAG: array
+    //Difficulty: Easy
 
     /**
      * 243. Shortest Word Distance
