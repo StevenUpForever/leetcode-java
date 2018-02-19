@@ -1,8 +1,13 @@
-package legacy_code.Problem151To160;
+package tree.bottom_up;
 
 import public_class.TreeNode;
 
-public class Binary_Tree_Upside_Down {
+public class BinaryTreeUpsideDown {
+
+    //TAG: LinkedIn
+    //TAG: Tree
+    //TAG: Bottom up
+    //Difficulty: Medium
 
     /**
      * 156. Binary Tree Upside Down
