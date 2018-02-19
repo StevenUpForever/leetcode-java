@@ -1,8 +1,12 @@
-package legacy_code.Problem161To170;
+package data_structure;
 
 import java.util.*;
 
-public class Two_Sum_III {
+public class TwoSumIIIDataStructureDesign {
+
+    //TAG: LinkedIn
+    //TAG: Data structure
+    //Difficulty: Easy
 
     /**
      * 170. Two Sum III - Data structure design
@@ -20,7 +24,7 @@ public class Two_Sum_III {
     /**
      * Solution 1: slow in add(), fast in find()
      * The key point is find(), most efficient way is using HashMap/Set structure to search
-     * So we try to add as many sums as possible in the set, when adding one number
+     * So we try to add as many sums as possible in the set, when adding one number from num array
      * So the find will just check if the sum is in the sum set
      */
 
@@ -75,7 +79,8 @@ public class Two_Sum_III {
             for (int key: map.keySet()) {
                 int num2 = value - key;
                 if (map.containsKey(num2)) {
-                    //Don't return a must value but only the possible true at here, due to may have other answers after this loop
+                    //Don't return a must value but only the possible true at here,
+                    // due to may have other answers after this loop
                     if (num2 == key || map.get(num2) == 2) return true;
                 }
             }
