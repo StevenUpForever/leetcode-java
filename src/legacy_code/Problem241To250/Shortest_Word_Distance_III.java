@@ -2,6 +2,10 @@ package legacy_code.Problem241To250;
 
 public class Shortest_Word_Distance_III {
 
+    //TAG: LinkedIn
+    //TAG: array
+    //Difficulty: Medium
+
     /**
      * 245. Shortest Word Distance III
      * This is a follow up of Shortest Word Distance. The only difference is now word1 could be the same as word2.
@@ -31,26 +35,20 @@ public class Shortest_Word_Distance_III {
      */
 
     public int shortestWordDistance(String[] words, String word1, String word2) {
-        //If index1 or index2 is -1, means haven't found a matched word
-        int index1 = -1;
-        int res = Integer.MAX_VALUE;
-        if (word1.equals(word2)) {
-            for (int i = 0; i < words.length; i++) {
-                if (words[i].equals(word1)) {
-                    if (index1 != -1) res = Math.min(res, Math.abs(i - index1));
-                    index1 = i;
+        //when not find any word, index = -1, max distance (variable min) will be words.length
+        int index = -1, min = words.length;
+        for (int i = 0; i < words.length; i++) {
+            //If i met any word1 or word2
+            if (words[i].equals(word1) || words[i].equals(word2)) {
+                //If index at some word and (word1 == word2 or if not equal, not at the same word record before, means
+                // the other word)
+                if (index != -1 && (word1.equals(word2) || !words[i].equals(words[index]))) {
+                    min = Math.min(min, i - index);
                 }
-            }
-        } else {
-            int index2 = -1;
-            for (int i = 0; i < words.length; i++) {
-                if (words[i].equals(word1)) index1 = i;
-                else if (words[i].equals(word2)) index2 = i;
-                //If word1 and word2 found at least once, update the res
-                if (index1 != -1 && index2 != -1) res = Math.min(res, Math.abs(index1 - index2));
+                index = i;
             }
         }
-        return res;
+        return min;
     }
 
 }
