@@ -1,9 +1,14 @@
-package legacy_code.Problem361To370;
+package tree.bottom_up;
 
 import public_class.TreeNode;
 import java.util.*;
 
-public class Find_Leaves_of_Binary_Tree {
+public class FindLeavesOfBinaryTree {
+
+    //TAG: LinkedList
+    //TAG: Tree
+    //TAG: bottom up
+    //Difficulty: Medium
 
     /**
      * 366. Find Leaves of Binary Tree
