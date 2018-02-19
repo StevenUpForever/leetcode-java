@@ -1,13 +1,9 @@
-import stack.DecodeString;
+import array.range.MissingRanges;
 
 public class Main {
     public static void main(String[] args) {
-        DecodeString obj = new DecodeString();
-        System.out.println(obj.decodeString("2[abc]3[cd]ef"));
-        StringBuilder builder = new StringBuilder();
-        builder.append('1');
-        builder.delete(0, builder.length());
-        System.out.println(builder);
+        MissingRanges obj = new MissingRanges();
+        System.out.println(obj.findMissingRanges(new int[]{0,1,3,50,75}, 0 ,99));
     }
 }
 
