@@ -1,6 +1,6 @@
-package legacy_code.Problem241To250;
+package array;
 
-public class Shortest_Word_Distance_III {
+public class ShortestWordDistanceIII {
 
     //TAG: LinkedIn
     //TAG: array
