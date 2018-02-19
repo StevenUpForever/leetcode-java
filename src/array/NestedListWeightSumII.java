@@ -1,8 +1,8 @@
-package legacy_code.Problem361To370;
+package array;
 
 import java.util.*;
 
-public class Nested_List_Weight_Sum_II {
+public class NestedListWeightSumII {
 
     //TAG: LinkedList
     //TAG: array

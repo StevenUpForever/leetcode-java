@@ -2,7 +2,7 @@ package map_set;
 
 import java.util.*;
 
-public class Shortest_Word_Distance_II {
+public class ShortestWordDistanceII {
 
     //TAG: LinkedList
     //TAG: map_set
