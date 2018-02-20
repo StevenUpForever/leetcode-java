@@ -1,6 +1,11 @@
-package legacy_code.Problem201To210;
+package dynamic_programming;
 
-public class Isomorphic_Strings {
+public class IsomorphicStrings {
+
+    //TAG: LinkedIn
+    //TAG: DP
+    //TAG: String
+    //Difficulty: Easy
 
     /**
      * 205. Isomorphic Strings
@@ -26,6 +31,9 @@ public class Isomorphic_Strings {
      * main idea is check every character in s and t at the same time
      * when find the appeared character of s and t in HashMap/Array, need to verify all appearances are the same
      * DP idea is, just need to verify last appeared character index, if not matched, return false, because if could go through the loop, means last appeared index is same
+     *
+     * Time: O(m + n)
+     * Space: O(1)
      */
 
     public boolean isIsomorphic(String s, String t) {
