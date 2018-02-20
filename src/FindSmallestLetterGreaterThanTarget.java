@@ -1,6 +1,7 @@
 public class FindSmallestLetterGreaterThanTarget {
 
     //TAG: LinkedIn
+    //TAG: array
     //Difficulty: Easy
 
     /**
@@ -47,11 +48,22 @@ public class FindSmallestLetterGreaterThanTarget {
 
     /**
      * Solution:
+     * loop letters from index 1 to the end, when letters[i] > target && letters[i - 1] <= target i is the letter
+     * if first char larger than target or last char smaller than target, the loop will end, and return letters[0]
      *
+     * Time: O(n)
+     * Space: O(1)
      */
 
     public char nextGreatestLetter(char[] letters, char target) {
-
+        if (letters == null || letters.length == 0) return target;
+        //Ignore first char or last char smaller than target
+        for (int i = 1; i < letters.length; i++) {
+            if (letters[i] > target && letters[i - 1] <= target)
+                return letters[i];
+        }
+        //This condition contains when first char is larger than target or last char is smaller than target, all fits
+        return letters[0];
     }
 
 }
