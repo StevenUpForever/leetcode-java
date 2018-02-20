@@ -20,7 +20,7 @@ public class Maximum_Product_Subarray {
 
     /**
      * Solution:
-     * Similar as Maximum_Subarray(legacy_code.Problem51To60), diff is:
+     * Similar as MaximumSubarray(legacy_code.Problem51To60), diff is:
      *      1. the skip point is 0, when met 0, need to restart current product
      *      2. when met num < 0, do not skip, due to next num < 0 will make total product larger, so need another helper number to record the negative product temporarily
      *      3. cannot sync product with helper product all the time, due to result may start from some negative number like [3, -2, -3, -6, 9]

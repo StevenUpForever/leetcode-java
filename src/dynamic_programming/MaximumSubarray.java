@@ -1,6 +1,10 @@
-package legacy_code.Problem51To60;
+package dynamic_programming;
 
-public class Maximum_Subarray {
+public class MaximumSubarray {
+
+    //TAG: LinkedIn
+    //TAG: DP
+    //Difficulty: Easy
 
     /**
      * 53. Maximum Subarray
@@ -11,15 +15,7 @@ public class Maximum_Subarray {
      */
 
     /**
-     * Solution 1: Brute force
-     * for for loop, keep a global max to record every inner loop sum to a max value
-     *
-     * Time: O(n^2)
-     * Space: O(1)
-     */
-
-    /**
-     * Solution 2: DP problem
+     * Solution: DP problem
      * for loop the array once, index i
      * consider about how the current sub sum to i contribute to the max sum
      *      1. if the current sub sum is >= 0 the keep contribute to the global max
