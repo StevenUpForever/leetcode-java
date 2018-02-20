@@ -5,8 +5,8 @@ import java.util.HashMap;
 public class TwoSum {
 
     //TAG: Uber
-    //TAG: map
-    //TAG: set
+    //TAG: LinkedIn
+    //TAG: map_set
     //Difficulty: Easy
 
     /**
