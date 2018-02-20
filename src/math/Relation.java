@@ -1,4 +1,4 @@
-package legacy_code.Problem271To280;
+package math;
 
 //Just declare this API, not implemented
 public class Relation {

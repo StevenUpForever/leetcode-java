@@ -1,8 +1,6 @@
 package math;
 
 
-import legacy_code.Problem271To280.Relation;
-
 public class FindTheCelebrity extends Relation {
 
     //TAG: LinkedIn
