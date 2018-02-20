@@ -1,6 +1,10 @@
-package legacy_code.Problem41To50;
+package math;
 
-public class Pow_xn {
+public class PowXN {
+
+    //TAG: LinkedIn
+    //TAG: Math
+    //Difficulty: Medium
 
     /**
      * 50. Pow(x, n)
