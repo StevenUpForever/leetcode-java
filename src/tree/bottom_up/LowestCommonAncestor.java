@@ -1,8 +1,13 @@
-package legacy_code.Problem231To240;
+package tree.bottom_up;
 
 import public_class.TreeNode;
 
-public class Lowest_Common_Ancestor {
+public class LowestCommonAncestor {
+
+    //TAG: LinkedIn
+    //TAG: Tree
+    //TAG: Bottom up
+    //Difficulty: Medium
 
     /**
      * 236. Lowest Common Ancestor of a Binary Tree
