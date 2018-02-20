@@ -1,9 +1,13 @@
-package legacy_code.Problem51To60;
+package array;
 
 import public_class.Interval;
 import java.util.*;
 
-public class Merge_Intervals {
+public class MergeIntervals {
+
+    //TAG: LinkedIn
+    //TAG: array
+    //Difficulty: Medium
 
     /**
      * 56. Merge Intervals
@@ -15,7 +19,7 @@ public class Merge_Intervals {
      */
 
     /**
-     * Solution 1.1:
+     * Solution 1:
      * Sort List by start, and compare/merge all ends
      *      if cur.end >= next.start
      *          means cur and next could be merge, then the new interval.end is the max(cur.end, next.end)
@@ -28,7 +32,7 @@ public class Merge_Intervals {
      * Space: O(1)
      */
 
-    public List<Interval> mergeS1_1(List<Interval> intervals) {
+    public List<Interval> mergeS1(List<Interval> intervals) {
         intervals.sort(new Comparator<Interval>() {
             @Override
             public int compare(Interval o1, Interval o2) {
@@ -47,7 +51,7 @@ public class Merge_Intervals {
     }
 
     /**
-     * Solution 1.2:
+     * Solution 2:
      * Alloc new array to store new interval, (avoid when deleting element in array, extra time complexity move all behind ones to front)
      * Keep record of a pre interval, compare with each interval in intervals
      * if the cur is the first (means pre == null), or cur.start > pre.end (cannot merge anymore) add cur to result list, and cur to pre for next compare
@@ -57,7 +61,7 @@ public class Merge_Intervals {
      * Space: O(1)
      */
 
-    public List<Interval> mergeS1_2(List<Interval> intervals) {
+    public List<Interval> mergeS2(List<Interval> intervals) {
         intervals.sort(new Comparator<Interval>() {
             @Override
             public int compare(Interval o1, Interval o2) {
