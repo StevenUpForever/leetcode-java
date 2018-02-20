@@ -1,6 +1,10 @@
-package legacy_code.Problem151To160;
+package dynamic_programming;
 
-public class Maximum_Product_Subarray {
+public class MaximumProductSubarray {
+
+    //TAG: LinkedIn
+    //TAG: DP
+    //Difficulty: Medium
 
     /**
      * 152. Maximum Product Subarray
@@ -8,14 +12,6 @@ public class Maximum_Product_Subarray {
 
      For example, given the array [2,3,-2,4],
      the contiguous subarray [2,3] has the largest product = 6.
-     */
-
-    /**
-     * Solution 1: brute force
-     * for for loop, calculate all possible products, and updated the global max product
-     *
-     * Time: O(n^2)
-     * Space: O(1)
      */
 
     /**
