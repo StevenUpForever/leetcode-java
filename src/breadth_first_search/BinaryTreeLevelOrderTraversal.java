@@ -1,9 +1,14 @@
-package legacy_code.Problem101To110;
+package breadth_first_search;
 
 import java.util.*;
 import public_class.TreeNode;
 
-public class Binary_Tree_Level_Order_Traversal {
+public class BinaryTreeLevelOrderTraversal {
+
+    //TAG: LinkedIn
+    //TAG: Tree
+    //TAG: Breadth first search
+    //Difficulty: Medium
 
     /**
      * 102. Binary Tree Level Order Traversal
