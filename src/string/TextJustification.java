@@ -1,8 +1,13 @@
-package legacy_code.Problem61To70;
+package string;
 
 import java.util.*;
 
-public class Text_Justification {
+public class TextJustification {
+
+    //TAG: LinkedIn
+    //TAG: array
+    //TAG: String
+    //Difficulty: Hard
 
     /**
      * 68. Text Justification
