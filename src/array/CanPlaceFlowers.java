@@ -1,6 +1,10 @@
-package legacy_code.Problem601To610;
+package array;
 
-public class Can_Place_Flowers {
+public class CanPlaceFlowers {
+
+    //TAG: LinkedIn
+    //TAG: array
+    //Difficulty: Easy
 
     /**
      * 605. Can Place Flowers
