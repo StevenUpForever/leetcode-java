@@ -1,6 +1,10 @@
-package legacy_code.Problem61To70;
+package string;
 
-public class Valid_Number {
+public class ValidNumber {
+
+    //TAG: LinkedIn
+    //TAG: String
+    //Difficulty: Hard
 
     /**
      * 65. Valid Number
