@@ -1,7 +1,13 @@
-package legacy_code.Problem271To280;
+package math;
 
 
-public class Find_the_Celebrity extends Relation {
+import legacy_code.Problem271To280.Relation;
+
+public class FindTheCelebrity extends Relation {
+
+    //TAG: LinkedIn
+    //TAG: math
+    //Difficulty: Medium
 
     /**
      * 277. Find the Celebrity
