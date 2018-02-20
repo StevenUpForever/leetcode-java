@@ -1,3 +1,5 @@
+package array;
+
 public class FindSmallestLetterGreaterThanTarget {
 
     //TAG: LinkedIn
