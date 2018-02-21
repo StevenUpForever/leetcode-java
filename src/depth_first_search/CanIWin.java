@@ -1,9 +1,13 @@
-package legacy_code.Problem461To470;
+package depth_first_search;
 
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class Can_I_Win {
+public class CanIWin {
+
+    //TAG: LinkedIn
+    //TAG: DFS
+    //Difficulty: Medium
 
     /**
      * 464. Can I Win
@@ -35,11 +39,12 @@ public class Can_I_Win {
      */
 
     /**
-     * Solution: DP
-     * Similar to Flip_Game_II (legacy_code.Problem291To300), difference is need to use another way to represent visited number status, use 0 represent current number not visited, 1 represent visited
-     * Use a int[] to store all numbers, and when need to set a key, use string.valueOf(array) to represent the key
+     * Solution: DFS
+     * Base case: when total <= 0, base case represent the other player win
+     * recursion rule: loop the number, pick one for one player, recursion total - num,
+     * if recursion is false, means the other player lose, set (num, true) pair, return true
      *
-     * Time: O(2^n)
+     * Time: O(n!)
      * Space: O(n)
      */
 
