@@ -1,11 +1,11 @@
-package legacy_code.Problem181To190;
+package map_set;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
-public class Repeated_DNA_Sequences {
+public class RepeatedDNASequences {
 
     //TAG: LinkedIn
     //TAG: map_set
