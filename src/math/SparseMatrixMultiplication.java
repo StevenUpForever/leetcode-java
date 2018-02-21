@@ -1,6 +1,10 @@
-package legacy_code.Problem311To320;
+package math;
 
-public class Sparse_Matrix_Multiplication {
+public class SparseMatrixMultiplication {
+
+    //TAG: LinkedIn
+    //TAG: math
+    //Difficulty: Medium
 
     /**
      * 311. Sparse Matrix Multiplication
