@@ -1,11 +1,16 @@
-package legacy_code.Problem121To130;
+package breadth_first_search;
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class Word_Ladder {
+public class WordLadder {
+
+    //TAG: LinkedIn
+    //TAG: Breadth first search
+    //TAG: DFS
+    //Difficulty: Medium
 
     /**
      * 127. Word Ladder
