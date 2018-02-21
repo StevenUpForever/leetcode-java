@@ -1,6 +1,10 @@
-package legacy_code.Problem31To40;
+package binary_search;
 
-public class Search_for_a_Range {
+public class SearchForARange {
+
+    //TAG: LinkedIn
+    //TAG: Binary search
+    //Difficulty: Medium
 
     /**
      * 34. Search for a Range
