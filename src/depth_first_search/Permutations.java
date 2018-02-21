@@ -1,8 +1,12 @@
-package legacy_code.Problem41To50;
+package depth_first_search;
 
 import java.util.*;
 
 public class Permutations {
+
+    //TAG: LinkedIn
+    //TAG: DFS
+    //Difficulty: Medium
 
     /**
      * 46. Permutations
