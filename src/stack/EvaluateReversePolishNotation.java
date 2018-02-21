@@ -1,8 +1,12 @@
-package legacy_code.Problem141To150;
+package stack;
 
 import java.util.*;
 
-public class Evaluate_Reverse_Polish_Notation {
+public class EvaluateReversePolishNotation {
+
+    //TAG: LinkedIn
+    //TAG: Stack
+    //Difficulty: Medium
 
     /**
      * 150. Evaluate Reverse Polish Notation
