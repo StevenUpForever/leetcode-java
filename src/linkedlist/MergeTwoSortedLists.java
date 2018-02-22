@@ -1,8 +1,12 @@
-package legacy_code.Problem21To30;
+package linkedlist;
 
 import public_class.ListNode;
 
-public class Merge_Two_Sorted_Lists {
+public class MergeTwoSortedLists {
+
+    //TAG: LinkedIn
+    //TAG: linked list
+    //Difficulty: Easy
 
     /**
      * 21. Merge Two Sorted Lists
@@ -12,6 +16,9 @@ public class Merge_Two_Sorted_Lists {
     /**
      * Solution:
      * Create a dummy node, merge two list to dummy node list and return dummy node
+     *
+     * Time: O(m + n)
+     * Space: O(1)
      */
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
