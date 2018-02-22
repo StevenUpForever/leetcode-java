@@ -1,4 +1,4 @@
-package legacy_code.Problem511To520;
+package breadth_first_search;
 
 import public_class.TreeNode;
 
@@ -7,7 +7,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class Find_Largest_Value_in_Each_Tree_Row {
+public class FindLargestValueInEachTreeRow {
+
+    //TAG: LinkedIn
+    //TAG: Breadth first search
+    //Difficulty: Medium
 
     /**
      * 515. Find Largest Value in Each Tree Row
