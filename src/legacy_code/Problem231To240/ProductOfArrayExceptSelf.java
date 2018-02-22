@@ -1,6 +1,11 @@
 package legacy_code.Problem231To240;
 
-public class Product_of_Array_Except_Self {
+public class ProductOfArrayExceptSelf {
+
+    //TAG: LinkedIn
+    //TAG: Math
+    //TAG: array
+    //Difficulty: Medium
 
     /**
      * 238. Product of Array Except Self
@@ -16,9 +21,17 @@ public class Product_of_Array_Except_Self {
 
     /**
      * Solution:
-     * Multiple previous numbers add set to current index at first loop
-     * Then second loop, from end to start also multiple previous numbers add set to current index at first loop
-     * at this time, we already multiple all other numbers in this index
+     * Think about the problem, cannot use divide, so we cannot multiple all numbers together and divide nums[i]
+     * Solve in O(n), so cannot for for loop multiple all numbers but nums[i] together, need to record previous somewhere
+     * solve with constant space, so cannot use HashMap which key is num[i] value is multiple res
+     *
+     * All above are valid solutions if no restriction
+     *
+     * So in another way, for a number num[i] we could multiple num[0...i-1] and num[i+1...] together and put in current
+     * index i, to do this, we can multiple previous res (dp[i - 1]) * num[i - 1] into dp[i] so dp[i] will be all multiple
+     * results of num[0..i-1]
+     * then loop from end to start again do the same thing, dp[i] will contains multiple num[i + 1...n]
+     * so finally, we got result dp[]
      *
      * Time: O(2n) = O(n)
      * Space: O(1) as (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
