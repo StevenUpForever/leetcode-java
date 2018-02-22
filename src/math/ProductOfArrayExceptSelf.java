@@ -1,4 +1,4 @@
-package legacy_code.Problem231To240;
+package math;
 
 public class ProductOfArrayExceptSelf {
 

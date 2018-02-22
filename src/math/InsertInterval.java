@@ -1,9 +1,14 @@
-package legacy_code.Problem51To60;
+package math;
 
 import public_class.Interval;
 import java.util.*;
 
-public class Insert_Interval {
+public class InsertInterval {
+
+    //TAG: LinkedIn
+    //TAG: array
+    //TAG: math
+    //Difficulty: Hard
 
     /**
      * 57. Insert Interval
