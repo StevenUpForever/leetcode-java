@@ -1,6 +1,10 @@
-package legacy_code.Problem191To200;
+package dynamic_programming;
 
-public class House_Robber {
+public class HouseRobber {
+
+    //TAG: LinkedIn
+    //TAG: DP
+    //Difficulty: Easy
 
     /**
      * 198. House Robber
