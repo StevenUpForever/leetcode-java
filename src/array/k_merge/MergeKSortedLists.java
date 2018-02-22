@@ -1,4 +1,4 @@
-package k_merge;
+package array.k_merge;
 
 import public_class.ListNode;
 
@@ -8,6 +8,9 @@ import java.util.PriorityQueue;
 public class MergeKSortedLists {
 
     //TAG: Uber
+    //TAG: LinkedIn
+    //TAG: LinkedList
+    //TAG: array
     //TAG: k merge
     //Difficulty: Hard
 
