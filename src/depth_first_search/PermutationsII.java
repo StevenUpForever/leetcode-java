@@ -1,8 +1,12 @@
-package legacy_code.Problem41To50;
+package depth_first_search;
 
 import java.util.*;
 
-public class Permutations_II {
+public class PermutationsII {
+
+    //TAG: LinkedIn
+    //TAG: DFS
+    //Difficulty: Medium
 
     /**
      * 47. Permutations II
@@ -20,6 +24,9 @@ public class Permutations_II {
     /**
      * Solution:
      * Similar as Permutations, diff is in each loop, have a extra HashSet for each loop (represent the new HashSet on every recursion level, filter the dup number on current recursion level)
+     *
+     * The reason is because e.g. aba when 1st level swap a1 with following, at 3rd level swap a3 with following, which is same as
+     * loop to a3 on 1st level
      *
      * Time: o(n!) every recursion level will skip one char in loop so O(n*(n - 1)*(n - 2)) = O(n!)
      * Space: O(n) max recursion levels + (max number of n hashSets) or (1 hashSet with max n numbers) clear on recursion tree,
