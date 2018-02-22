@@ -1,8 +1,13 @@
-package legacy_code.Problem101To110;
+package tree.bottom_up;
 
 import public_class.TreeNode;
 
-public class Symmetric_Tree {
+public class SymmetricTree {
+
+    //TAG: LinkedIn
+    //TAG: Tree
+    //TAG: bottom up
+    //Difficulty: Easy
 
     /**
      * 101. Symmetric Tree
@@ -27,13 +32,14 @@ public class Symmetric_Tree {
 
     /**
      * Solution:
+     * Similar to LCA lowest common ancestors
      * recursion left node and right node
-     *      Base case: if left is null and right is null, return true, current recursion is done
-     *      if left is null or right is null only one is null, or value not equal not symmetric
-     *      recursion rule: recursion left.left, right.right and left.right, right.left
+     *      Base case: if left == right (include left == null && right == null) return true
+     *      if left != right, include val not equal or any one is null, not symmetric and return false
+     *      Symmetric recursion rule: recursion left.left, right.right and left.right, right.left
      *
      * Time: O(n/2) half nodes times compare O(n)
-     * Space: O(logn)
+     * Space: O(n)
      */
 
     public boolean isSymmetric(TreeNode root) {
