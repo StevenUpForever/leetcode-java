@@ -1,9 +1,9 @@
-import depth_first_search.all_subsets.PartitionToKEqualSumSubsets;
+import string.palindrome.PalindromicSubstrings;
 
 public class Main {
     public static void main(String[] args) {
-        PartitionToKEqualSumSubsets obj = new PartitionToKEqualSumSubsets();
-        System.out.println(obj.canPartitionKSubsets(new int[]{15,1,1,1,1,3,11,1,10}, 3));
+        PalindromicSubstrings obj = new PalindromicSubstrings();
+        System.out.println(obj.countSubstrings("bcddcdbddbdccabdabaccdacadadabcabdbddcccabaaab"));
     }
 }
 
