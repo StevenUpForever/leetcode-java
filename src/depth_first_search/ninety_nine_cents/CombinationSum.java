@@ -1,4 +1,4 @@
-package depth_first_search;
+package depth_first_search.ninety_nine_cents;
 
 import java.util.*;
 
