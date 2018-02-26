@@ -1,8 +1,14 @@
-package legacy_code.Problem1To10;
+package linkedlist;
 
 import public_class.ListNode;
 
-public class Add_Two_Numbers {
+public class AddTwoNumbers {
+
+    //TAG: Microsoft
+    //TAG: Amazon
+    //TAG: Airbnb
+    //TAG: linked list
+    //Difficulty: Medium
 
     /**
      * 2. Add Two Numbers
@@ -26,7 +32,6 @@ public class Add_Two_Numbers {
      */
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        //Avoid to modify original input
         ListNode temp1 = l1, temp2 = l2;
         ListNode res = new ListNode(0);
         ListNode temp = res;
