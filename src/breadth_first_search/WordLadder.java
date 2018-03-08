@@ -83,7 +83,7 @@ public class WordLadder {
      * Depends on solution 1, we have something to improve:
      *      1. depth_first_search works, but in some specific case, when wordList is very large depth_first_search takes much more time, BFS will be a good choice, when at some level find the endWord, could immediately return current level
      *      2. every time we check if could modify word once, and for loop the word all, but if we could for loop once the current word and add all possible modifications in wordsList into next level, that will be better when word.length is very long
-     * ***Although wordsList changed to list, we'd better change it to HashSet so that as inner loop could check wordList.contains(target) faster***
+     * *** Although wordsList changed to list, we'd better change it to HashSet so that as inner loop could check wordList.contains(target) faster ***
      *
      * Time: O(n)
      * Space: O(n)
