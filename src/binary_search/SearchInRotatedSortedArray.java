@@ -41,7 +41,7 @@ public class SearchInRotatedSortedArray {
             //better than (left + right)/2 may overflow when left + right
             int middle = left + (right - left)/2;
             if (nums[middle] == target) return middle;
-            //left has a condition when == middle, only one number in this step and exactly the right one
+            //left has a condition when left == middle, only one number in this step and exactly the right one
             else if (nums[left] <= nums[middle]) {
                 if (nums[middle] > target && nums[left] <= target) right = middle - 1;
                 else left = middle + 1;
