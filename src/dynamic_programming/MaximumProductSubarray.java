@@ -1,6 +1,6 @@
 package dynamic_programming;
 
-public class MaximumProductSubarray {
+public class  MaximumProductSubarray {
 
     //TAG: LinkedIn
     //TAG: DP
