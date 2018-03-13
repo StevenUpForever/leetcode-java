@@ -7,7 +7,11 @@ import java.util.HashMap;
  */
 public class Problem281To290 {
 
-    /*
+    //TAG: Facebook
+    //TAG: array
+    //Difficulty: Easy
+
+    /**
     283. Move Zeroes
     Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
@@ -18,7 +22,8 @@ You must do this in-place without making a copy of the array.
 Minimize the total number of operations.
      */
 
-    /*
+    /**
+     *
     1 slow pointer and 1 fast pointer go at the same direction, this will not change the original relative order, remember for loop from
     the first element not the second one, make sure slow pointer always point to the next of known non-zero element, in case when set all rest
      elements to 0 will also set the last known non-zero element
