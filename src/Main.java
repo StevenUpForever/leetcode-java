@@ -1,9 +1,13 @@
-import string.palindrome.PalindromicSubstrings;
+import array.TaskScheduler;
 
 public class Main {
     public static void main(String[] args) {
-        PalindromicSubstrings obj = new PalindromicSubstrings();
-        System.out.println(obj.countSubstrings("bcddcdbddbdccabdabaccdacadadabcabdbddcccabaaab"));
+        TaskScheduler obj = new TaskScheduler();
+        System.out.println(obj.leastInterval(convert("ACCCEEE"), 2));
+    }
+
+    private static char[] convert(String s) {
+        return s.toCharArray();
     }
 }
 
