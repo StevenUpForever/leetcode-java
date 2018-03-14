@@ -1,6 +1,10 @@
-package legacy_code.Problem61To70;
+package string;
 
 public class Add_Binary {
+
+    //TAG: Facebook
+    //TAG: String
+    //Difficulty: Easy
 
     /**
      * 67. Add Binary
