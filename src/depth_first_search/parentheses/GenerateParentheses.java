@@ -1,4 +1,4 @@
-package depth_first_search;
+package depth_first_search.parentheses;
 
 import java.util.*;
 

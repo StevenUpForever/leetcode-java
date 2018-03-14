@@ -1,9 +1,9 @@
-import array.TaskScheduler;
+import depth_first_search.parentheses.RemoveInvalidParentheses;
 
 public class Main {
     public static void main(String[] args) {
-        TaskScheduler obj = new TaskScheduler();
-        System.out.println(obj.leastInterval(convert("ACCCEEE"), 2));
+        RemoveInvalidParentheses obj = new RemoveInvalidParentheses();
+        System.out.println(obj.removeInvalidParentheses("())))"));
     }
 
     private static char[] convert(String s) {
