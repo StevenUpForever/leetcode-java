@@ -1,11 +1,11 @@
-package others;
+package string.integer_string_convert;
 
 import java.util.HashMap;
 
 public class RomanToInteger {
 
     //TAG: Uber
-    //TAG: Others
+    //TAG: String
     //Difficulty: Easy
 
     /**
