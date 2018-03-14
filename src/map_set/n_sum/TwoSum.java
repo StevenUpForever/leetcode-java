@@ -1,4 +1,4 @@
-package map_set;
+package map_set.n_sum;
 
 import java.util.HashMap;
 
