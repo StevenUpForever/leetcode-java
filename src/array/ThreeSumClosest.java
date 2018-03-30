@@ -1,8 +1,11 @@
-package legacy_code.Problem11To20;
+package array;
 
 import java.util.*;
 
-public class ThreeSum_Closest {
+public class ThreeSumClosest {
+
+    //TAG: array
+    //Difficulty: Medium
 
     /**
      * 16. 3Sum Closest
