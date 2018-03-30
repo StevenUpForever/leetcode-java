@@ -1,6 +1,10 @@
-package legacy_code.Problem31To40;
+package array;
 
-public class Next_Permutation {
+public class NextPermutation {
+
+    //TAG: Google
+    //TAG: array
+    //Difficulty: Medium
 
     /**
      * 31. Next Permutation
