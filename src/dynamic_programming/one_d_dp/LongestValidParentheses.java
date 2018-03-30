@@ -1,8 +1,12 @@
-package legacy_code.Problem31To40;
+package dynamic_programming.one_d_dp;
 
 import java.util.*;
 
-public class Longest_Valid_Parentheses {
+public class LongestValidParentheses {
+
+    //TAG: dp
+    //TAG: stack
+    //Difficulty: Hard
 
     /**
      * 32. Longest Valid Parentheses
@@ -14,41 +18,7 @@ public class Longest_Valid_Parentheses {
      */
 
     /**
-     * Solution 1: Brute force
-     * for for loop, left index start from 0, right index start from the end, make sure the length start from the longest to shortest
-     *      In every inner loop, use stack to validate current substring is parenthesis or not, if so, immediately return current substring length
-     *      Keep a global max to record the longest valid parentheses length
-     *
-     *  Time: j loop is O(n - 1) + O(n - 2) + ... + O(1) multiple by stack time same as j loop, it's O((n - 1)^2) + O((n - 2)^2) + ... + O(1)
-     *  = O(n^4)
-     *  Space: O(n) when first loop may need a length n stack
-     */
-
-    public int longestValidParenthesesS1(String s) {
-        int res = 0;
-        if (s.length() < 2) return res;
-        char[] chars = s.toCharArray();
-        for (int i = 0; i < chars.length - 1; i++) {
-            for (int j = chars.length - 1; j > i; j--) {
-                Stack<Character> stack = new Stack<>();
-                int k = i;
-                while (k <= j) {
-                    if (chars[k] == '(') stack.push(chars[k]);
-                    else if (!stack.isEmpty() && stack.peek() == '(') stack.pop();
-                    else break;
-                    k++;
-                }
-                if (k == j + 1 && stack.isEmpty()) {
-                    res = Math.max(res, j - i + 1);
-                    break;
-                }
-            }
-        }
-        return res;
-    }
-
-    /**
-     * Solution 2: DP
+     * Solution: DP
      * use a dp array to record the longest valid parentheses until current index
      * M[0] = 0, no matter the first character is ( or ), it's invalid
      * induction rule:
