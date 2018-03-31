@@ -1,9 +1,11 @@
-package math;
+package recursion;
 
 public class PowXN {
 
+    //TAG: Google
     //TAG: LinkedIn
     //TAG: Math
+    //TAG: Recursion
     //Difficulty: Medium
 
     /**
