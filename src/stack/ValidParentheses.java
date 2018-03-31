@@ -1,8 +1,15 @@
-package legacy_code.Problem11To20;
+package stack;
 
 import java.util.*;
 
-public class Valid_Parentheses {
+public class ValidParentheses {
+
+    //TAG: Google
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: Amazon
+    //TAG: Stack
+    //Difficulty: Easy
 
     /**
      * 20. Valid Parentheses
