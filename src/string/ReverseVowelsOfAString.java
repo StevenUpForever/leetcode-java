@@ -1,10 +1,9 @@
-package string.rainbow_sort;
+package string;
 
 public class ReverseVowelsOfAString {
 
     //TAG: Google
     //TAG: string
-    //TAG: rainbow sort
     //Difficulty: Easy
 
     /**
@@ -24,8 +23,8 @@ public class ReverseVowelsOfAString {
     /**
      * Solution:
      * *** Similar to rainbow sort (sort array contains -1, 0, 1 so that put -1 at left and 1 at right) ***
-     * set left and right index, if all met vowels, swap and move to middle
-     * else if left met vowels, move to wait right to met vowels
+     * set left and right index, if all met vowels, swap and move both left and right to middle
+     * else if left met vowels, wait right to met vowels
      * else if right met vowels or any haven't met vowels, move left
      *
      * Time: O(n)
