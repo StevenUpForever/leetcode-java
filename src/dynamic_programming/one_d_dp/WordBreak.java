@@ -7,6 +7,8 @@ import java.util.List;
 public class WordBreak {
 
     //TAG: Google
+    //TAG: Facebook
+    //TAG: Amazon
     //TAG: Uber
     //TAG: DP
     //Difficulty: Medium
