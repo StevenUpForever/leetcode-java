@@ -1,4 +1,4 @@
-import depth_first_search.parentheses.RemoveInvalidParentheses;
+import binary_search.GuessNumberHigherOrLower;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package binary_search;
+
 public class GuessNumberHigherOrLower extends GuessGame {
 
     //TAG: Google
@@ -49,7 +51,7 @@ class GuessGame {
 
     protected int n;
 
-    /* The guess API is defined in the parent class GuessGame.
+    /* The guess API is defined in the parent class binary_search.GuessGame.
    @param num, your guess
    @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
       int guess(int num); */
