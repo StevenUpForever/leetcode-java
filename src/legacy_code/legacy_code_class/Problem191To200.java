@@ -1,8 +1,6 @@
 package legacy_code.legacy_code_class;
 
-/**
- * Created by c0j00cs on 3/31/17.
- */
+
 public class Problem191To200 {
 
     /*
