@@ -3,6 +3,7 @@ package binary_search;
 public class FindPeakElement {
 
     //TAG: Google
+    //TAG: Microsoft
     //TAG: Binary search
     //Difficulty: medium
 
@@ -22,6 +23,11 @@ For example, in array [1, 2, 3, 1], 3 is a peak element and your function should
     /**
      * Solution:
      * Binary search
+     * Due to we can return any peak index, so use binary search,
+     * which middle compare with nums[mid + 1] to know move right or left
+     *
+     * Time: O(logn)
+     * Space: O(1)
      */
 
     public int findPeakElement(int[] nums) {
