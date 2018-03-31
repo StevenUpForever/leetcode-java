@@ -42,12 +42,12 @@ public class NextPermutation {
             Helper function is faster than O(nlogn) in this case
             Arrays.sort(nums, index, nums.length);
              */
-            sortDecendentOrder(nums, 0, nums.length - 1);
+            reverseArray(nums, 0, nums.length - 1);
             return;
         }
         for (int temp = index; temp < nums.length; temp++) {
             if (nums[temp] > nums[index - 1] && (temp == nums.length - 1 || nums[temp + 1] <= nums[index - 1])) {
-                exchangeNumber(nums, temp, index - 1);
+                swap(nums, temp, index - 1);
                 break;
             }
         }
@@ -55,18 +55,18 @@ public class NextPermutation {
         Helper function is faster than O(nlogn) in this case
         Arrays.sort(nums, index, nums.length);
          */
-        sortDecendentOrder(nums, index, nums.length - 1);
+        reverseArray(nums, index, nums.length - 1);
     }
 
-    private void sortDecendentOrder(int[] nums, int start, int end) {
+    private void reverseArray(int[] nums, int start, int end) {
         while (start < end) {
-            exchangeNumber(nums, start, end);
+            swap(nums, start, end);
             start++;
             end--;
         }
     }
 
-    private void exchangeNumber(int[] nums, int a, int b) {
+    private void swap(int[] nums, int a, int b) {
         int temp = nums[a];
         nums[a] = nums[b];
         nums[b] = temp;
