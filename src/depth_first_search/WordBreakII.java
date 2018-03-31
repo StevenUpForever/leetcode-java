@@ -25,6 +25,16 @@ public class WordBreakII {
      The wordDict parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
      */
 
+    /**
+     * Solution:
+     * DFS to find all combinations of a string by loop the substrings of it
+     * Need a map, to save all combinations of a current substring, so that when track back to this substring,
+     * could get the list, and needn't to generate again
+     *
+     * Time: O(n!)
+     * Space: O(n)
+     */
+
     public List<String> wordBreak(String s, List<String> wordDict) {
         return wordBreakHelper(s, wordDict, new HashMap<>());
     }
