@@ -1,6 +1,12 @@
-package legacy_code.Problem41To50;
+package dynamic_programming.one_d_dp;
 
-public class Trapping_Rain_Water {
+public class TrappingRainWater {
+
+    //TAG: Google
+    //TAG: Facebook
+    //TAG: Uber
+    //TAG: DP
+    //Difficulty: Hard
 
     /**
      * 42. Trapping Rain Water
