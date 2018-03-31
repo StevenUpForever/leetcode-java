@@ -1,6 +1,11 @@
-package legacy_code.Problem1To10;
+package binary_search;
 
-public class Median_Two_Sorted_Arrays {
+public class MedianTwoSortedArrays {
+
+    //TAG: Google
+    //TAG: recursion
+    //TAG: binary search
+    //Difficulty: Hard
 
     /**
     4. Median of Two Sorted Arrays
