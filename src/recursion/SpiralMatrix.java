@@ -1,11 +1,13 @@
-package others;
+package recursion;
 
 import java.util.*;
 
 public class SpiralMatrix {
 
+    //TAG: Google
+    //TAG: Microsoft
     //TAG: Uber
-    //TAG: Others
+    //TAG: Recursion
     //Difficulty: Medium
 
     /**
