@@ -1,10 +1,13 @@
-package array;
+package array.interval;
 
 import public_class.Interval;
 import java.util.*;
 
 public class MergeIntervals {
 
+    //TAG: Google
+    //TAG: Facebook
+    //TAG: Microsoft
     //TAG: LinkedIn
     //TAG: array
     //Difficulty: Medium
