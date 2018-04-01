@@ -2,12 +2,12 @@ import binary_search.GuessNumberHigherOrLower;
 
 public class Main {
     public static void main(String[] args) {
-        GuessNumberHigherOrLower obj = new GuessNumberHigherOrLower();
-        System.out.println(obj.guessNumber(10));
-    }
+        long res = 1;
+        while (res < Integer.MAX_VALUE) {
+            res *= 3;
+        }
+        System.out.println(res/3);
 
-    private static char[] convert(String s) {
-        return s.toCharArray();
     }
 }
 
