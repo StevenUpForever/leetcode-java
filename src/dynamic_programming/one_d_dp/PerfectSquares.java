@@ -1,3 +1,5 @@
+package dynamic_programming.one_d_dp;
+
 public class PerfectSquares {
 
     //TAG: Google
