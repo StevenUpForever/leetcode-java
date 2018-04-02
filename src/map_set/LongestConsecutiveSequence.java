@@ -6,6 +6,7 @@ import java.util.HashMap;
 public class LongestConsecutiveSequence {
 
     //TAG: Google
+    //TAG: Facebook
     //TAG: map_set
     //Difficulty: Hard
 
@@ -76,7 +77,6 @@ public class LongestConsecutiveSequence {
                 map.put(n, sum);
                 //Update res with max so that needn't to loop keys finally
                 res = Math.max(res, sum);
-
                 /*
                 Key point: update left and right bound, so that when could insert next number, it will connect other
                 scope left or right bound, which is the newest length
