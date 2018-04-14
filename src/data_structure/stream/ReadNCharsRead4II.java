@@ -21,6 +21,7 @@ public class ReadNCharsRead4II {
 
     /**
      * Solution:
+     * be aware that n may smaller than 4 or larger than 4, need diff operations
      * The key point to read char[] multiple times, is keep the visited index where current index at, after previous
      * read, so that when run next read, could have preserved index where to start
      */
@@ -30,6 +31,7 @@ public class ReadNCharsRead4II {
     private char[] curBuff = new char[4];
     public int read(char[] buf, int n) {
         int ptr = 0;
+        //Keep read until fully fill n chars
         while (ptr < n) {
             //If index == 0 means all chars already read from temp char[] to result char[] and need read next4 to index
             if (index == 0) count = read4(curBuff);
