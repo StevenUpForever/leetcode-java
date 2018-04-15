@@ -46,6 +46,9 @@ public class FindDuplicateSubtrees {
      * otherwise may dup again
      *
      * return the list
+     *
+     * Time: O(n)
+     * Space: O(n) if any same height subtree is duplicated
      */
 
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
