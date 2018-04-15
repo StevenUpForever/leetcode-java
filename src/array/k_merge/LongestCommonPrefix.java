@@ -1,6 +1,8 @@
-package legacy_code.Problem11To20;
+package array.k_merge;
 
-public class Longest_Common_Prefix {
+public class LongestCommonPrefix {
+
+    //TAG: Google
 
     /**
      * 14. Longest Common Prefix
