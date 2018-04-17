@@ -1,10 +1,14 @@
-package legacy_code.Problem291To300;
+package string;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Flip_Game {
+public class FlipGame {
+
+    //TAG: Google
+    //TAG: String
+    //Difficulty: Easy
 
     /**
      * 293. Flip Game
