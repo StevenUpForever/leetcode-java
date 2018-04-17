@@ -1,8 +1,8 @@
-package legacy_code.Problem291To300;
+package dynamic_programming.one_d_dp;
 
 import java.util.*;
 
-public class Flip_Game_II {
+public class FlipGameII {
 
     /**
      * 294. Flip Game II
