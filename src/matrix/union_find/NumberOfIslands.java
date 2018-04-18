@@ -1,4 +1,4 @@
-package depth_first_search;
+package matrix.union_find;
 
 import public_class.UnionFind;
 
@@ -10,6 +10,7 @@ public class NumberOfIslands {
     //TAG: Amazon
     //TAG: DFS
     //TAG: BFS
+    //TAG: union find
     //Difficulty: medium
 
     /**

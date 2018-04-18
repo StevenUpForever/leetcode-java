@@ -1,5 +1,4 @@
-import binary_search.GuessNumberHigherOrLower;
-import depth_first_search.NumberOfIslands;
+import matrix.union_find.NumberOfIslands;
 
 public class Main {
     public static void main(String[] args) {
