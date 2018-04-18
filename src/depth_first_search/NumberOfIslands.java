@@ -1,5 +1,7 @@
 package depth_first_search;
 
+import public_class.UnionFind;
+
 public class NumberOfIslands {
 
     //TAG: Google
@@ -64,6 +66,47 @@ public class NumberOfIslands {
         dfs(grid, i, j - 1);
         dfs(grid, i + 1, j);
         dfs(grid, i, j + 1);
+    }
+
+    /**
+     * Solution 2:
+     * union find
+     * always merge current 1 to nearest unit, see UnionFind class
+     * due to merge from left top, so, at current 1, left and up could be the same unit
+     *
+     * Time: O(mn) initial unionFind + O(mn) search for 1 and do union found
+     * Union fond takes essentially O(1) due yo update by rank
+     * Space: O(mn)
+     */
+    public int numIslands2(char[][] grid) {
+        if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;
+        UnionFind union = new UnionFind(grid);
+        int row = grid.length, col = grid[0].length;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (grid[i][j] == '1') {
+                    int curIndex = i * col + j;
+                    //Only 1 and 1 could union
+                    if (i > 0 && grid[i - 1][j] == '1') {
+                        int up = (i - 1) * col + j;
+                        union.union(curIndex, up);
+                    }
+                    if (j > 0 && grid[i][j - 1] == '1') {
+                        int left = i * col + j - 1;
+                        union.union(curIndex, left);
+                    }
+                    if (i < grid.length - 1 && grid[i + 1][j] == '1') {
+                        int down = (i + 1) * col + j;
+                        union.union(curIndex, down);
+                    }
+                    if (j < grid[0].length - 1 && grid[i][j + 1] == '1') {
+                        int right = i * col + j + 1;
+                        union.union(curIndex, right);
+                    }
+                }
+            }
+        }
+        return union.getCount();
     }
 
 }

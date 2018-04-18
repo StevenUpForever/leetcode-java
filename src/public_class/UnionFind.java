@@ -25,7 +25,8 @@ public class UnionFind {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == '1') {
                     //Set parents array without consider about if islands could union
-                    parents[i * col + j] = 1;
+                    int index = i * col + j;
+                    parents[i * col + j] = index;
                     count++;
                 }
                 rank[i * col + j] = 0;
@@ -74,12 +75,17 @@ public class UnionFind {
         //First find parent of these two units
         int parent1 = find(i);
         int parent2 = find(j);
-        //Compare rank of them, always merge lower rank one to higher rank
-        if (rank[parent1] < rank[parent2]) parents[parent1] = parent2;
-        else if (rank[parent1] > rank[parent2]) parents[parent2] = parent1;
-        else {
-            parents[parent2] = parent1;
-            rank[parent1]++;
+        //If we find two units need to union by parent not same
+        if (parent1 != parent2) {
+            //Compare rank of them, always merge lower rank one to higher rank
+            if (rank[parent1] < rank[parent2]) parents[parent1] = parent2;
+            else if (rank[parent1] > rank[parent2]) parents[parent2] = parent1;
+            else {
+                parents[parent2] = parent1;
+                rank[parent1]++;
+            }
+            //Decrease count due to union two units
+            count--;
         }
     }
 
