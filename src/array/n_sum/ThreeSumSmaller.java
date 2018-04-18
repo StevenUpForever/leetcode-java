@@ -1,3 +1,5 @@
+package array.n_sum;
+
 import java.util.Arrays;
 
 public class ThreeSumSmaller {
