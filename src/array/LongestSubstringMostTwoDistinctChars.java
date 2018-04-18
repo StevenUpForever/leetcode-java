@@ -1,3 +1,5 @@
+package array;
+
 public class LongestSubstringMostTwoDistinctChars {
 
     //TAG: Google
