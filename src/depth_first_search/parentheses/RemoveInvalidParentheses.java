@@ -60,8 +60,7 @@ public class RemoveInvalidParentheses {
                     If two adjacent )) delete anyone will have duplicate output, so skip (because when j
                     at the first dup ), it already deleted once)
                      */
-                    if (s.charAt(j) == chars[1] && (j == last_j
-                            || s.charAt(j - 1) != chars[1])) {
+                    if (s.charAt(j) == chars[1] && (j == last_j || s.charAt(j - 1) != chars[1])) {
                         remove(res, s.substring(0, j) + s.substring(j + 1, s.length()), i, j, chars);
                     }
                 }
