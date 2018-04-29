@@ -26,18 +26,19 @@ public class TaskScheduler {
      */
 
     /**
-     * Solution:
+     * Solution 1:
      * https://leetcode.com/problems/task-scheduler/discuss/104496/concise-Java-Solution-O(N)-time-O(26)-space
      */
 
-    //TODO: Analysis
-
     public int leastInterval(char[] tasks, int n) {
+        //Stats and sort freqs of tasks and use most freqs task as much as possible
         int[] freqs = new int[26];
         for(char c: tasks) freqs[c - 'A']++;
         Arrays.sort(freqs);
+        //Count same highest freqs tasks, so when at last make a frame, could have correct boundary
         int i = 25;
         while(i >= 0 && freqs[i] == freqs[25]) i--;
+        //See solution link for count the max length
         return Math.max(tasks.length, (freqs[25] - 1) * (n + 1) + 25 - i);
     }
 
