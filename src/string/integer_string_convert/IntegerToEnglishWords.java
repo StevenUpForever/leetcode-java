@@ -20,6 +20,23 @@ public class IntegerToEnglishWords {
      Space: O(1)
      */
 
+    /**
+     * Solution:
+     * The numbers cannot reuse and need fast lookup (by array or map) are:
+     *  1. one digit number
+     *  2. two digits number which between 10-19
+     *  3. tens number, e.g. 10, 20, 30, 40......
+     *
+     * Then every 3 digits number could be reuse but just append proper suffix,
+     * e.g. for 123,456,789 could reuse code to generate string 123 & 456 & 789
+     * and append Million or Thousand after that
+     *
+     * concat all strings together and return the result
+     *
+     * Time: O(n)
+     * Space: O(n)
+     */
+
     private final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven",
             "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",
             "Seventeen", "Eighteen", "Nineteen"};
