@@ -1,4 +1,4 @@
-package array.range;
+package array.interval;
 
 import public_class.Interval;
 import java.util.Arrays;
