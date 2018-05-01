@@ -23,13 +23,13 @@ public class UnionFind {
         rank = new int[row * col];
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
+                int index = i * col + j;
                 if (grid[i][j] == '1') {
                     //Set parents array without consider about if islands could union
-                    int index = i * col + j;
-                    parents[i * col + j] = index;
+                    parents[index] = index;
                     count++;
                 }
-                rank[i * col + j] = 0;
+                rank[index] = 0;
             }
         }
     }
