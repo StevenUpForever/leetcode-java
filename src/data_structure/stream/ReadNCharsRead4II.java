@@ -5,7 +5,6 @@ public class ReadNCharsRead4II {
     //TAG: Google
     //TAG: Facebook
     //TAG: Data structure
-    //TAG: Stream
 
     /**
      * 158. Read N Characters Given Read4 II - Call multiple times
