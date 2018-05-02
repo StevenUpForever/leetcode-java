@@ -2,6 +2,9 @@ package array;
 
 public class BestTimeToBuyAndSellStock {
 
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: Amazon
     //TAG: Uber
     //TAG: array
     //Difficulty: Easy
