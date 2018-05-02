@@ -2,6 +2,7 @@ package math;
 
 public class SparseMatrixMultiplication {
 
+    //TAG: Facebook
     //TAG: LinkedIn
     //TAG: math
     //Difficulty: Medium
@@ -26,9 +27,9 @@ public class SparseMatrixMultiplication {
      ]
 
 
-     |  1 0 0 |   | 7 0 0 |   |  7 0 0 |
+          |  1 0 0 |   | 7 0 0 |   |  7 0 0 |
      AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
-     | 0 0 1 |
+                       | 0 0 1 |
      */
 
     /**
