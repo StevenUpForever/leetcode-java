@@ -1,8 +1,15 @@
-package legacy_code.Problem11To20;
+package array.n_sum;
 
 import java.util.*;
 
-public class Three_Sum {
+public class ThreeSum {
+
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: Amazon
+    //TAG: array
+    //TAG: n_sum
+    //Difficulty: Medium
 
     /**
      * 15. 3Sum
