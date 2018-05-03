@@ -54,7 +54,7 @@ public class CloneGraph {
 
     private UndirectedGraphNode cloneGraphHelper(UndirectedGraphNode node,
                                   HashMap<UndirectedGraphNode, UndirectedGraphNode> map) {
-        if (node == null) return node;
+        if (node == null) return null;
         if (map.containsKey(node)) return map.get(node);
         UndirectedGraphNode newNode = new UndirectedGraphNode(node.label);
         map.put(node, newNode);
