@@ -1,9 +1,16 @@
-package legacy_code.Problem91To100;
+package tree.bst;
 
 import public_class.TreeNode;
 import java.util.*;
 
-public class Validate_Binary_Search_Tree {
+public class ValidateBinarySearchTree {
+
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: Amazon
+    //TAG: tree
+    //TAG: bst
+    //Difficulty: medium
 
     /**
      * 98. Validate Binary Search Tree
@@ -59,7 +66,6 @@ public class Validate_Binary_Search_Tree {
      */
 
     public boolean isValidBSTS2(TreeNode root) {
-        //Logic explained at Binary_Tree_Inorder_Traversal Solution 2 legacy_code.Problem91To100
         Stack<TreeNode> stack = new Stack<>();
         TreeNode pre = null;
         while (root != null || !stack.isEmpty()) {
