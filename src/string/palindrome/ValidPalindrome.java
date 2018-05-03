@@ -2,6 +2,8 @@ package string.palindrome;
 
 public class ValidPalindrome {
 
+    //TAG: Facebook
+    //TAG: Microsoft
     //TAG: Uber
     //TAG: String
     //TAG: Palindrome
