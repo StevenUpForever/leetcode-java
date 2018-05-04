@@ -1,6 +1,6 @@
-package legacy_code.Problem41To50;
+package string;
 
-public class Multiply_Strings {
+public class MultiplyStrings {
 
     /**
      * 43. Multiply Strings
@@ -14,7 +14,7 @@ public class Multiply_Strings {
      You must not use any built-in BigInteger library or convert the inputs to integer directly.
      */
 
-    /**
+    /*
      * Solution 1: Brute force
      * Follow the steps of a normal multiplication
      *      1. Multiple each char in num2 by the whole string num1, and save to an array
@@ -23,8 +23,8 @@ public class Multiply_Strings {
      * Space: O(mn) space of array to store all strings
      */
 
-    /**
-     * Solution 2.1: Optimized Brute force
+    /*
+     * Solution 2: Optimized Brute force
      * 1. Based on idea of solution 1, use an array to represent the final result, as when two int multiple together the result max length is len(num1) + len(num2), so alloc an array of length len(num1) + len(num2),
      *      *** when two numbers len >= 2, it's len1 + len2 - 1, when at least one len == 1, the total len max to len1 + len2, for example: 99 * 99 = len 3, 20 * 5 = len 3 ***
      * 2. Multiple each char in num2 by the whole string num1, and save to this array, be aware of the current carry, carry++ when num2 index1++, carry is current index1 so added index is index1 + index2 + 1 (+1 for for sure the valid bit like 20 * 5, consider about prefix 0s at post step)
@@ -36,7 +36,7 @@ public class Multiply_Strings {
      * Space: O(m + n) = O(m + n)
      */
 
-    public String multiplyS2_1(String num1, String num2) {
+    public String multiply2(String num1, String num2) {
         //Base case, when any string is invalid, return another one
         if (num1 == null || num1.length() == 0) return num2;
         if (num2 == null || num2.length() == 0) return num1;
@@ -64,12 +64,12 @@ public class Multiply_Strings {
         return builder.length() == 0 ? "0" : builder.toString();
     }
 
-    /**
-     * Solution 2.2:
-     * Depends on the Solution 2.1, put the real number (num % 10) to i + j, carry (number / 10) to i + j + 1 when in mn loop, skip the real number transfer step
+    /*
+     * Solution 3:
+     * Depends on the Solution 2, put the real number (num % 10) to i + j, carry (number / 10) to i + j + 1 when in mn loop, skip the real number transfer step
      */
 
-    public String multiplyS2_2(String num1, String num2) {
+    public String multiply3(String num1, String num2) {
         //Base case, when any string is invalid, return another one
         if (num1 == null || num1.length() == 0) return num2;
         if (num2 == null || num2.length() == 0) return num1;
@@ -93,8 +93,8 @@ public class Multiply_Strings {
         return builder.length() == 0 ? "0" : builder.toString();
     }
 
-    /**
-     * Solution 3: Divide and conquer
+    /*
+     * Solution 4: Divide and conquer
      * As the Integer.max = 2^31 - 1, so we divide the num1 and num2 for several times
      * for each time, make sure len(sub num1) + len(sub num2) - 1 < 10 (len of 2 ^ 31 - 1)
      *      1. parse these two substrings to integer and multiple together
