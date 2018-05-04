@@ -1,4 +1,4 @@
-package priority_queue;
+package heap;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -9,6 +9,8 @@ public class KthLargestElementInAnArray {
     //TAG: Microsoft
     //TAG: Amazon
     //TAG: Apple
+    //TAG: heap
+    //Difficulty: medium
 
     /**
      * 215. Kth Largest Element in an Array
