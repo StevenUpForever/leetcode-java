@@ -1,6 +1,6 @@
-package legacy_code.Problem71To80;
+package depth_first_search;
 
-public class Word_Search {
+public class WordSearch {
 
     /**
      * 79. Word Search
@@ -21,8 +21,8 @@ public class Word_Search {
      word = "ABCB", -> returns false.
      */
 
-    /**
-     * Solution 1: depth_first_search
+    /*
+     * Solution 1: dfs
      * Use a visit helper matrix to indicate whether current cell is visited
      * Try to recursively go 4 directions which helper matrix is false, then if any path goes all characters in word, return true
      *
