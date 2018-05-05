@@ -1,4 +1,4 @@
-package array;
+package array.sort;
 
 public class MoveZeroes {
 

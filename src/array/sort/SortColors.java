@@ -1,6 +1,11 @@
-package legacy_code.Problem71To80;
+package array.sort;
 
-public class Sort_Colors {
+public class SortColors {
+
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: array
+    //Difficulty: medium
 
     /**
      * 75. Sort Colors
@@ -20,7 +25,7 @@ public class Sort_Colors {
      Could you come up with an one-pass algorithm using only constant space?
      */
 
-    /**
+    /*
      * Solution:
      * Rainbow sort, due to 3 colors, we need to have two index left and right, which when find 0, put at left of left (not include left), when met 2, put right of right (not include right), middle part is unknown
      * Until left met right, the sort is done
