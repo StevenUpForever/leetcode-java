@@ -2,6 +2,8 @@ package binary_search;
 
 public class SearchInRotatedSortedArray {
 
+    //TAG: Facebook
+    //TAG: Microsoft
     //TAG: Uber
     //TAG: LinkedIn
     //TAG: Binary search
@@ -18,7 +20,7 @@ public class SearchInRotatedSortedArray {
      You may assume no duplicate exists in the array.
      */
 
-    /**
+    /*
      * Solution:
      * Although rotated array, but still partial sorted, use binary search, add few if condition is each binary step
      * there are two conditions which will unique determine the next step of binary search
@@ -41,7 +43,10 @@ public class SearchInRotatedSortedArray {
             //better than (left + right)/2 may overflow when left + right
             int middle = left + (right - left)/2;
             if (nums[middle] == target) return middle;
-            //left has a condition when left == middle, only one number in this step and exactly the right one
+            /*
+            left has a condition when left == middle, only one number in this step and exactly the right one
+            e.g. 1,2 mid will be 1, then if mid is not the result, need to move to right, right will be the result
+             */
             else if (nums[left] <= nums[middle]) {
                 if (nums[middle] > target && nums[left] <= target) right = middle - 1;
                 else left = middle + 1;
