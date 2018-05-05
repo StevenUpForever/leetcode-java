@@ -4,6 +4,10 @@ import public_class.ListNode;
 
 public class ReverseLinkedList {
 
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: Amazon
+    //TAG: Apple
     //TAG: Uber
     //TAG: LinkedList
     //TAG: Recursion
@@ -19,7 +23,7 @@ public class ReverseLinkedList {
      A linked list can be reversed either iteratively or recursively. Could you implement both?
      */
 
-    /**
+    /*
      * Solution 1: Iterative
      * keep track of pre node and cur node, loop the list, every time
      *      keep track of cur.next temporarily, point cur.next = pre, then parallelly move pre to cur, cur to next
@@ -40,7 +44,7 @@ public class ReverseLinkedList {
         return pre;
     }
 
-    /**
+    /*
      * Solution 2: recursion
      * 1. find the end of the list recursively, this end node will be the begin node of reversed list
      * 2. at track back steps, point cur next.next = head, head.next = null
