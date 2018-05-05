@@ -1,9 +1,6 @@
-package others;
+package string.anagram;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class GroupAnagrams {
 
@@ -29,7 +26,7 @@ public class GroupAnagrams {
      */
 
     /*
-     * Solution:
+     * Solution 1:
      * Anagram problem, if there's one anagram, or all compare to one, could use HashMap or int[26/256] depends on String
      * is ASCII only or unicode
      * This problem need to check O^2 time by map_set/int[] method, so:
@@ -38,6 +35,7 @@ public class GroupAnagrams {
      * Time: O(n * nlog(n)) = O(n^2log(n))
      * Space: O(n) if every string has no anagram
      */
+
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<>();
         for (String str: strs) {
@@ -53,6 +51,33 @@ public class GroupAnagrams {
             }
         }
         return new ArrayList<>(map.values());
+    }
+
+    /*
+    Solution 2:
+    Sort string could optimized, which can count frequency of each char in string, append count by insert # or
+    other special symbol between a-z and compare with this count string
+
+    Time: O(n*k)
+    Space: O(n*k)
+     */
+    public List<List<String>> groupAnagrams2(String[] strs) {
+        if (strs.length == 0) return new ArrayList<>();
+        Map<String, List> ans = new HashMap<String, List>();
+        int[] count = new int[26];
+        for (String s : strs) {
+            Arrays.fill(count, 0);
+            for (char c : s.toCharArray()) count[c - 'a']++;
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 26; i++) {
+                sb.append('#');
+                sb.append(count[i]);
+            }
+            String key = sb.toString();
+            if (!ans.containsKey(key)) ans.put(key, new ArrayList());
+            ans.get(key).add(s);
+        }
+        return new ArrayList<>(ans.values());
     }
 
 }
