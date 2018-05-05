@@ -1,9 +1,9 @@
-package legacy_code.Problem81To90;
+package array.k_merge;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Merge_Sorted_Array {
+public class MergeSortedArray {
 
     /**
      * 88. Merge Sorted Array
@@ -13,7 +13,7 @@ public class Merge_Sorted_Array {
      You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.
      */
 
-    /**
+    /*
      * Solution 1:
      * Use a new array to merge nums1 and nums2, then copy all numbers in this array to nums1
      *
@@ -33,7 +33,7 @@ public class Merge_Sorted_Array {
         for (int k = 0; k < temp.length; k++) nums1[k] = temp[k];
     }
 
-    /**
+    /*
      * Solution 2:
      * We could use a smaller helper space, merge nums2 to nums1 immediately, save time when copy all numbers in temp array to nums1
      * Use queue to save the numbers which need to temporarily removed from nums1
@@ -82,7 +82,7 @@ public class Merge_Sorted_Array {
         while (j < n) nums1[i++] = nums2[j++];
     }
 
-    /**
+    /*
      * Solution 3:
      * If sort from left to right, then need extra spaces for temp numbers from nums1 to insert, so we could consider sort the nums1 from the end, as from the end we could use the extra spaces immediately, then we don't need to maintain extra spaces
      * And as sorted numbers already use extra spaces at the end, so when i index moved into < m part in nums1, all behind numbers already sorted, so current nums1 space are available spaces
