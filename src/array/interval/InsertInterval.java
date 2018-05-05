@@ -1,13 +1,14 @@
-package math;
+package array.interval;
 
 import public_class.Interval;
 import java.util.*;
 
 public class InsertInterval {
 
+    //TAG: Google
+    //TAG: Facebook
     //TAG: LinkedIn
     //TAG: array
-    //TAG: math
     //Difficulty: Hard
 
     /**
@@ -25,7 +26,7 @@ public class InsertInterval {
      This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
      */
 
-    /**
+    /*
      * Solution:
      * As the intervals non-overlapped and sorted by start time
      * for loop the intervals from the start
@@ -36,7 +37,7 @@ public class InsertInterval {
      *      Add this merged newInterval and rest of all intervals to list
      *
      * Time: O(n)
-     * Space: O(n) size of array list
+     * Space: O(n)
      */
 
     public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
