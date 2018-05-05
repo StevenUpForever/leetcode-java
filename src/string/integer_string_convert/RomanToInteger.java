@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class RomanToInteger {
 
+    //TAG: Facebook
+    //TAG: Microsoft
     //TAG: Uber
     //TAG: String
     //Difficulty: Easy
@@ -14,7 +16,7 @@ public class RomanToInteger {
      Input is guaranteed to be within the range from 1 to 3999.
      */
 
-    /**
+    /*
      * Solution:
      * Roman has a feature that about the last second number of 5 or 10, it's smaller append larger number, otherwise, it's larger number append multiple smaller or equal number, so we parse the roman from end to start
      * 1. Need a dictionary to represent different level of roman (multiple by 5), for 1, 5, 10, 50, 100, 500, 1000, every roman is combine with several roman from these tagged romans
