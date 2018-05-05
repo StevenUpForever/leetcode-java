@@ -28,7 +28,7 @@ public class GroupAnagrams {
      Note: All inputs will be in lower-case.
      */
 
-    /**
+    /*
      * Solution:
      * Anagram problem, if there's one anagram, or all compare to one, could use HashMap or int[26/256] depends on String
      * is ASCII only or unicode
