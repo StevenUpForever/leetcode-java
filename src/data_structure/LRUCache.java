@@ -5,6 +5,9 @@ import java.util.HashMap;
 public class LRUCache {
 
     //TAG: Google
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: Amazon
     //TAG: Uber
     //TAG: Data structure
     //Difficulty: Hard
@@ -33,7 +36,7 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
     */
 
-    /**
+    /*
      * Solution:
      * Use Doubly linkedList, used when delete LRU and insert
      * Use HashMap for get O(1)
@@ -73,6 +76,8 @@ cache.get(4);       // returns 4
             1. replace the value
             2. delete and move to first place
         2. if not existed, alloc a new node and move to first place
+            decrease capacity
+            if no capacity (-1) delete tail node
          */
         if (map.containsKey(key)) {
             DoublyListNode node = map.get(key);
