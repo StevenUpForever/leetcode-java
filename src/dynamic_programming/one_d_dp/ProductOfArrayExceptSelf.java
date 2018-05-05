@@ -1,9 +1,13 @@
-package math;
+package dynamic_programming.one_d_dp;
 
 public class ProductOfArrayExceptSelf {
 
+    //TAG: Facebook
+    //TAG: Microsoft
+    //TAG: Amazon
     //TAG: LinkedIn
-    //TAG: Math
+    //TAG: Apple
+    //TAG: dp
     //TAG: array
     //Difficulty: Medium
 
@@ -19,7 +23,7 @@ public class ProductOfArrayExceptSelf {
      Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
      */
 
-    /**
+    /*
      * Solution:
      * Think about the problem, cannot use divide, so we cannot multiple all numbers together and divide nums[i]
      * Solve in O(n), so cannot for for loop multiple all numbers but nums[i] together, need to record previous somewhere
