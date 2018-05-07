@@ -2,12 +2,10 @@ package tree.bst;
 
 import public_class.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-
 public class KthSmallestElementInABST {
 
+    //TAG: Google
+    //TAG: Facebook
     //TAG: Uber
     //TAG: bst
     //TAG: Tree
@@ -27,27 +25,32 @@ public class KthSmallestElementInABST {
      Special thanks to @ts for adding this problem and creating all test cases.
      */
 
-    /**
+    /*
      * Solution:
      * in order traversal of bst will be an ascending array,
-     * Inorder traversal bst and put all integers into array list,
-     * list is ascending array, return list(k - 1)
+     * Inorder traversal bst and count k, when k == 0, we find kth smallest number and return
      *
      * Time: O(n)
      * Space: O(n)
      */
 
+    private static int number = 0;
+    private static int count = 0;
+
     public int kthSmallest(TreeNode root, int k) {
-        List<Integer> list = new ArrayList<>();
-        kthSmallestHelper(root, list);
-        return k - 1 < 0 || k - 1 >= list.size() ? -1 : list.get(k - 1);
+        count = k;
+        helper(root);
+        return number;
     }
 
-    private void kthSmallestHelper(TreeNode root, List<Integer> list) {
-        if (root == null) return;
-        kthSmallestHelper(root.left, list);
-        list.add(root.val);
-        kthSmallestHelper(root.right, list);
+    public void helper(TreeNode n) {
+        if (n.left != null) helper(n.left);
+        count--;
+        if (count == 0) {
+            number = n.val;
+            return;
+        }
+        if (n.right != null) helper(n.right);
     }
 
 }
