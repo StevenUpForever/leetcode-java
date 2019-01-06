@@ -53,4 +53,10 @@ public class KthSmallestElementInABST {
         if (n.right != null) helper(n.right);
     }
 
+    /*
+    Follow up:
+    use array save all in-order numbers, when insert/delete (like a flow), then insert/delete at the proper place
+    in the array, then return array[k - 1]
+     */
+
 }
