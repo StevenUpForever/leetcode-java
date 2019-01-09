@@ -1,4 +1,4 @@
-import two_pointers.ExpressiveWords;
+import breadth_first_search.AlienDictionary;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +11,9 @@ public class Main {
 //            System.out.print(extension.start + "->" + extension.end);
 //            System.out.println();
 //        }
+
+        AlienDictionary dictionary = new AlienDictionary();
+        System.out.println(dictionary.alienOrder(new String[]{"za","zb","ca","cb"}));
 
     }
 }
