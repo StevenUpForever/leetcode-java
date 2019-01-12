@@ -5,6 +5,7 @@ import java.util.*;
 public class TextJustification {
 
     //TAG: LinkedIn
+    //TAG: Airbnb
     //TAG: array
     //TAG: String
     //Difficulty: Hard
@@ -38,7 +39,7 @@ public class TextJustification {
      In this case, that line should be left-justified.
       */
 
-    /**
+    /*
      * Solution:
      * For loop the words, have index i
      *      every time find until words sum(i + 1) + i (number of blanks) > maxWidth, do the add to StringBuilder step
