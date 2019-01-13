@@ -1,9 +1,16 @@
+package breadth_first_search;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
 public class SlidingPuzzle {
+
+    //Difficulty: Hard
+    //TAG: BFS
+    //TAG: DFS
+    //TAG: Airbnb
 
     /**
      * 773. Sliding Puzzle
@@ -43,13 +50,14 @@ public class SlidingPuzzle {
 
     /*
     Solution:
-
+    Permutation by DFS or BFS
      */
 
     public int slidingPuzzle(int[][] board) {
         if (board == null || board.length == 0 || board[0].length == 0) return -1;
         Set<String> set = new HashSet<>();
         String str = "";
+        //The index of possible directions of index i in dir[i]
         int[][] dir = new int[][]{{1, 3}, {0, 2, 4}, {1, 5}, {0, 4}, {1, 3, 5}, {2, 4}};
         for (int[] arr: board) {
             for (int num: arr) {
@@ -61,17 +69,18 @@ public class SlidingPuzzle {
         queue.offer(str);
         int steps = 0;
         while (!queue.isEmpty()) {
-            String poll = queue.poll();
-            if (poll.equals("123450")) {
-                return steps;
-            }
-            int zeroIndex = poll.indexOf('0');
-            for (int num: dir[zeroIndex]) {
-                StringBuilder builder = new StringBuilder(str);
-                swapChar(builder, num, zeroIndex);
-                String newStr = builder.toString();
-                if (set.add(newStr)) {
-                    queue.offer(newStr);
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                String poll = queue.poll();
+                if (poll.equals("123450")) {
+                    return steps;
+                }
+                int zeroIndex = poll.indexOf('0');
+                for (int num: dir[zeroIndex]) {
+                    String newStr = swapChar(poll, num, zeroIndex);
+                    if (set.add(newStr)) {
+                        queue.offer(newStr);
+                    }
                 }
             }
             steps++;
@@ -79,10 +88,11 @@ public class SlidingPuzzle {
         return -1;
     }
 
-    private void swapChar(StringBuilder builder, int i, int j) {
-        char c = builder.charAt(i);
-        builder.setCharAt(i, builder.charAt(j));
-        builder.setCharAt(j, c);
+    private String swapChar(String str, int i, int j) {
+        StringBuilder builder = new StringBuilder(str);
+        builder.setCharAt(i, str.charAt(j));
+        builder.setCharAt(j, str.charAt(i));
+        return builder.toString();
     }
 
 }
