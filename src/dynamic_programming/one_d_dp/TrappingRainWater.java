@@ -5,6 +5,7 @@ public class TrappingRainWater {
     //TAG: Google
     //TAG: Facebook
     //TAG: Uber
+    //TAG: Airbnb
     //TAG: DP
     //Difficulty: Hard
 
@@ -16,7 +17,7 @@ public class TrappingRainWater {
      Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
      */
 
-    /**
+    /*
      * Solution:
      * DP problem, as the max watter trapped is determined by the shorter side of left and right side
      * 1. define the left side (0) and right side (len - 1)
