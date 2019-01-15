@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class WordPatternII {
 
     //TAG: Uber
+    //TAG: Airbnb
     //TAG: recursion
     //Difficulty: Hard
 
@@ -22,7 +23,7 @@ public class WordPatternII {
      You may assume both pattern and str contains only lowercase letters.
      */
 
-    /**
+    /*
      * Solution:
      * Use recursion, base case when str is null or patter is null return true
      * use HashMap to record current pattern char -> substring in str
