@@ -27,8 +27,9 @@ public class MinimumWindowSubstring {
      If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
      */
 
-    /**
-     * Solution: Sliding window problem
+    /*
+     * Solution:
+     * Sliding window problem
      * Keep a global min length
      * Keep a sliding window length of t, keep record the characters occurrence, increase right side of window, when all characters appeared in the window, keep update the global min length
      * Move left side while all characters appear at least once in the window, keep updating the global min
