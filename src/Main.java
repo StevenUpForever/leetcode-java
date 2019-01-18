@@ -1,3 +1,4 @@
+import data_structure.LRUCache;
 import depth_first_search.ninety_nine_cents.CoinChange;
 
 public class Main {
@@ -12,10 +13,17 @@ public class Main {
 //            System.out.println();
 //        }
 
-        CoinChange coinChange = new CoinChange();
-        System.out.println("hehe" + coinChange.coinChange(new int[]{1,2,5},
-        11));
-
+        LRUCache cache = new LRUCache(2);
+        cache.put(1,1);
+        cache.put(2,2);
+        System.out.println(cache.get(1));
+        cache.put(3,3);
+        System.out.println(cache.get(2));
+        System.out.println(cache.get(3));
+        cache.put(4,4);
+        System.out.println(cache.get(1));
+        System.out.println(cache.get(3));
+        System.out.println(cache.get(4));
     }
 }
 
