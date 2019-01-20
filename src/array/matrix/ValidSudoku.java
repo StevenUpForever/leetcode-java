@@ -1,10 +1,11 @@
-package others;
+package array.matrix;
 
 public class ValidSudoku {
 
-    //TAG: Uber
-    //TAG: others
     //Difficulty: Medium
+    //TAG: Uber
+    //TAG: array
+    //TAG: matrix
 
     /**
      * 36. Valid Sudoku
@@ -18,7 +19,7 @@ public class ValidSudoku {
      A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
      */
 
-    /**
+    /*
      * Solution 1: Brute force
      * for for loop all elements in board matrix
      *      for each element, run horizontal, vertical and current 9 * 9 to verify if duplicate, if so, return false
@@ -50,8 +51,8 @@ public class ValidSudoku {
         return true;
     }
 
-    /**
-     * Solution 2: Improve time, more space
+    /*
+     * Solution 2: less time, more space
      * (Get idea from legacy_code)
      * Use three matrix to represent the horizontal, vertical and small box arrays which num 1 should be index0 ... num 9 should be index 8
      * Due to Sudoku feature
