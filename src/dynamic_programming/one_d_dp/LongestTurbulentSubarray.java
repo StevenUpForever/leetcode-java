@@ -3,7 +3,6 @@ package dynamic_programming.one_d_dp;
 public class LongestTurbulentSubarray {
 
     //Difficulty: medium
-    //TAG: Snap
     //TAG: array
     //TAG: DP
 
