@@ -1,4 +1,4 @@
-import math.random.RandomPickWithWeight;
+import string.integer_string_convert.SolveTheEquation;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,8 +12,7 @@ public class Main {
 //            System.out.println();
 //        }
 
-        RandomPickWithWeight.Solution obj = new RandomPickWithWeight.Solution(new int[]{1});
-        System.out.println(obj.pickIndex());
+        System.out.println(new SolveTheEquation().solveEquation("x+5-3+x=6+x-2"));
     }
 
 
