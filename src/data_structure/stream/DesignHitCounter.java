@@ -1,9 +1,14 @@
-package data_structure;
+package data_structure.stream;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class DesignHitCounter {
+
+    //Difficulty: Medium
+    //TAG: Uber
+    //TAG: data structure
+    //TAG: stream
 
     /**
      * 362. Design Hit Counter
