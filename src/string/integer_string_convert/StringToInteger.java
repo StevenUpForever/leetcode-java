@@ -1,4 +1,4 @@
-package string;
+package string.integer_string_convert;
 
 public class StringToInteger {
 
