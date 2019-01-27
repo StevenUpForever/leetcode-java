@@ -108,25 +108,21 @@ public class MinimumCostForTickets {
 
     public int mincostTickets2(int[] days, int[] costs) {
         boolean[] dayIncluded = new boolean[366];
-        for (int day : days) {
+        for (int day: days) {
             dayIncluded[day] = true;
         }
         int[] minCost = new int[366];
         minCost[0] = 0;
         for (int day = 1; day <= 365; ++day) {
             if (!dayIncluded[day]) {
-                minCost[day] = minCost[day-1];
+                minCost[day] = minCost[day - 1];
                 continue;
             }
-            int min;
-            min = minCost[day-1] + costs[0];
-            min =Math.min(min, minCost[Math.max(0, day-7)] + costs[1]);
-            min = Math.min(min, minCost[Math.max(0, day-30)] + costs[2]);
-            minCost[day] = min;
+            minCost[day] = minCost[day - 1] + costs[0];
+            minCost[day] = Math.min(minCost[day], minCost[Math.max(0, day-7)] + costs[1]);
+            minCost[day] = Math.min(minCost[day], minCost[Math.max(0, day-30)] + costs[2]);
         }
-
         return minCost[365];
-
     }
 
 }
