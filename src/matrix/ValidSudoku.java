@@ -1,4 +1,4 @@
-package array.matrix;
+package matrix;
 
 public class ValidSudoku {
 
