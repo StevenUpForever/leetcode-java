@@ -1,4 +1,4 @@
-package array;
+package array.priority_queue;
 
 import java.util.*;
 
