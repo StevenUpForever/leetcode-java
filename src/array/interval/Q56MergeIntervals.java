@@ -9,6 +9,7 @@ public class Q56MergeIntervals {
     //TAG: Facebook
     //TAG: Microsoft
     //TAG: LinkedIn
+    //TAG: Snap
     //TAG: array
     //Difficulty: Medium
 
@@ -21,7 +22,7 @@ public class Q56MergeIntervals {
      return [1,6],[8,10],[15,18].
      */
 
-    /**
+    /*
      * Solution 1:
      * Sort List by start, and compare/merge all ends
      *      if cur.end >= next.start
@@ -53,7 +54,7 @@ public class Q56MergeIntervals {
         return intervals;
     }
 
-    /**
+    /*
      * Solution 2:
      * Alloc new array to store new interval, (avoid when deleting element in array, extra time complexity move all behind ones to front)
      * Keep record of a pre interval, compare with each interval in intervals

@@ -9,6 +9,7 @@ public class Q253MeetingRoomsII {
 
     //TAG: Facebook
     //TAG: Google
+    //TAG: Snap
     //TAG: Array
     //TAG: range
     //Difficulty: Medium
@@ -22,7 +23,7 @@ public class Q253MeetingRoomsII {
      return 2.
      */
 
-    /**
+    /*
      * Solution 1:
      * Consider about only when one end > next.start we need a new meeting room, but when next2 is overlapped with
      * next but not with first one, we don't need another meeting room, due to the first meeting is done
@@ -66,7 +67,7 @@ public class Q253MeetingRoomsII {
         return queue.size();
     }
 
-    /**
+    /*
      * Solution 2:
      * Don't need to consider every interval as a single interval but two numbers, start and end, gather all starts
      * and ends

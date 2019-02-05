@@ -2,6 +2,10 @@ package depth_first_search;
 
 public class WordSearch {
 
+    //Difficulty: medium
+    //TAG: Snap
+    //TAG: dfs
+
     /**
      * 79. Word Search
      * Given a 2D board and a word, find if the word exists in the grid.
@@ -61,7 +65,7 @@ public class WordSearch {
         return false;
     }
 
-    /**
+    /*
      * Solution 2:
      * Depends on solution 1, all elements in this problem in matrix are from 'A' to 'Z', which we could modify the original matrix value to a non 'A' - 'Z'
      *
