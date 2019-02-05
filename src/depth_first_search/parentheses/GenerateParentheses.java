@@ -6,6 +6,7 @@ public class GenerateParentheses {
 
     //TAG: Google
     //TAG: Uber
+    //TAG: Snap
     //TAG: DFS
     //Difficulty: Medium
 
@@ -24,7 +25,7 @@ public class GenerateParentheses {
      ]
      */
 
-    /**
+    /*
      * Solution:
      * Permutations/subsets better use recursion
      * for example, when n == 3, the recursion tree is as below

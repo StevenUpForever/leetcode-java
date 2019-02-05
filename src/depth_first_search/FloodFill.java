@@ -6,6 +6,7 @@ import java.util.Queue;
 public class FloodFill {
 
     //TAG: Uber
+    //TAG: Snap
     //TAG: DFS
     //TAG: Breadth First Search
     //Difficulty: Easy
@@ -37,8 +38,11 @@ public class FloodFill {
      The value of each color in image[i][j] and newColor will be an integer in [0, 65535].
      */
 
-    /**
-     * Solution (BestFS):
+    /*
+     * Solution:
+     *
+     * bfs
+     *
      * Time: O(mn)
      * Space: O(mn)
      */
@@ -86,8 +90,10 @@ public class FloodFill {
         }
     }
 
-    /**
-     * Solution (DFS):
+    /*
+     * Solution:
+     *
+     * dfs
      *
      * Time: O(mn)
      * Space: O(mn)
