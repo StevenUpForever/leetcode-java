@@ -7,10 +7,11 @@ import java.util.Queue;
 
 public class WordLadder {
 
-    //TAG: LinkedIn
-    //TAG: Breadth first search
-    //TAG: DFS
     //Difficulty: Medium
+    //TAG: LinkedIn
+    //TAG: Snap
+    //TAG: BFS
+    //TAG: DFS
 
     /**
      * 127. Word Ladder
@@ -37,7 +38,7 @@ public class WordLadder {
      The wordList parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
      */
 
-    /**
+    /*
      * Solution 1: depth_first_search
      * Try to modify each possible word and recursion to next level,
      *      1. find the end word then update global max with current level
@@ -78,7 +79,7 @@ public class WordLadder {
         return diff <= 1;
     }
 
-    /**
+    /*
      * Solution 2: BFS
      * Depends on solution 1, we have something to improve:
      *      1. depth_first_search works, but in some specific case, when wordList is very large depth_first_search takes much more time, BFS will be a good choice, when at some level find the endWord, could immediately return current level
@@ -123,7 +124,7 @@ public class WordLadder {
         return 0;
     }
 
-    /**
+    /*
      * Solution 3: Two way BFS from leetCode
      * Depends on solution 2, if wordsList very large, if queue became very large, we need to loop the queue again and again
      * So if we could use more efficient way to check we find endWord (by HashSet or HashMap)

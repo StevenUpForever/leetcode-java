@@ -27,10 +27,10 @@ public class ShortestWordDistanceII {
 
     /**
      * Solution:
-     * Depends on ShortestWordDistance solution, the method will be called multiple times, it may duplicated calculate the distance of some visited words, so we'd better to record the result of any visited pair of words' shortest distance
+     * Depends on Q243ShortestWordDistance solution, the method will be called multiple times, it may duplicated calculate the distance of some visited words, so we'd better to record the result of any visited pair of words' shortest distance
      * As different pair of word distances, so could not only record the most updated word index, need to record every appeared index of every word
      * So we use a hashMap, which the key is the word, value is an arrayList to store all indices of this word
-     * for shortest distance method, do a similar way as ShortestWordDistance, update smaller index of two indices of word1 word2, keep updating the min value until any of the list is done (if one list is done, and another is not, along with this array goes, the distance will must increase, must not be the min value, so any one is done, all loop is done)
+     * for shortest distance method, do a similar way as Q243ShortestWordDistance, update smaller index of two indices of word1 word2, keep updating the min value until any of the list is done (if one list is done, and another is not, along with this array goes, the distance will must increase, must not be the min value, so any one is done, all loop is done)
      *
      * Time: O(n) construct hashMap + O(n) * times
      * Space: O(n) if every word appear once in hashMap
