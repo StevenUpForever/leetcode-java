@@ -1,8 +1,8 @@
 package dynamic_programming.one_d_dp;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class WordBreak {
 
@@ -10,6 +10,7 @@ public class WordBreak {
     //TAG: Facebook
     //TAG: Amazon
     //TAG: Uber
+    //TAG: Snap
     //TAG: DP
     //Difficulty: Medium
 
@@ -27,7 +28,9 @@ public class WordBreak {
      The wordDict parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
      */
 
-    /**
+    /*
+     * Solution:
+     *
      * 1 d dp, base case dp[0] = false, which "" cannot segmented from words in dict
      * induction rule: dp[i] represent s.substring(0, i) could be segmented from words in dict, which steps follow:
      *  1. if wordDict contains s.substring(0, i) dp[i] = true
@@ -43,8 +46,7 @@ public class WordBreak {
         if (s.length() == 0 && wordDict.size() == 0) return true;
         if (s.length() == 0 || wordDict.size() == 0) return false;
         //Convert list to set, speed up the look up
-        HashSet<String> set = new HashSet<>();
-        for (String str: wordDict) set.add(str);
+        Set<String> set = new HashSet<>(wordDict);
         boolean dp[] = new boolean[s.length()];
         for (int i = 0; i < s.length(); i++) {
             if (set.contains(s.substring(0, i + 1))) dp[i] = true;
