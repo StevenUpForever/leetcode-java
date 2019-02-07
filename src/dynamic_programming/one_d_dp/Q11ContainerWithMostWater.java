@@ -1,6 +1,10 @@
-package legacy_code.Problem11To20;
+package dynamic_programming.one_d_dp;
 
-public class Container_With_Most_Water {
+public class Q11ContainerWithMostWater {
+
+    //Difficulty: Hard
+    //TAG: Uber
+    //TAG: DP
 
     /**
      * 11. Container With Most Water
@@ -9,7 +13,7 @@ public class Container_With_Most_Water {
      Note: You may not slant the container and n is at least 2.
      */
 
-    /**
+    /*
      * Solution 1:
      * 1. base case, when array count is less than 2, no water could be contained, return 0
      * 2. keep global max, two for loops
@@ -33,7 +37,7 @@ public class Container_With_Most_Water {
         return (int)max;
     }
 
-    /**
+    /*
      * Solution 2:
      * 1. base case, when array count is less than 2, no water could be contained, return 0
      * 2. one loop to find the larger side of two sides, move left and right index to middle
