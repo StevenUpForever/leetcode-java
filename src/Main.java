@@ -1,15 +1,12 @@
-import depth_first_search.EvaluateDivision;
-import depth_first_search.ReconstructItinerary;
-
-import java.util.List;
+import binary_search.Q34FindFirstAndLastPositionOfElementInSortedArray;
 
 public class Main {
     public static void main(String[] args) {
 
 
-        ReconstructItinerary obj = new ReconstructItinerary();
-        List<String> strs = obj.findItinerary(new String[][]{{"JFK", "A"}, {"JFK", "B"}, {"A", "Z"}, {"B", "Z"}});
-        for (String str: strs) System.out.println(str);
+        Q34FindFirstAndLastPositionOfElementInSortedArray obj = new Q34FindFirstAndLastPositionOfElementInSortedArray();
+        int[] res = obj.searchRange(new int[]{5,7,7,8,8,10}, 8);
+        System.out.println(res[0] + " " + res[1]);
 
     }
 
