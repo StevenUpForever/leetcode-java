@@ -29,7 +29,7 @@ public class FlattenNestedListIterator {
      * By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6].
      */
 
-    /**
+    /*
      * Solution:
      * Use stack to save obj from input, stack only valid when it's integer
      * 1. when peek is integer, just return the integer and hasNext is true

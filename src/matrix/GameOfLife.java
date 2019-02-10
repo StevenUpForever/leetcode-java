@@ -2,13 +2,12 @@ package matrix;
 
 public class GameOfLife {
 
-    //Difficulty: medium
+    //Difficulty: Medium
     //TAG: Uber
     //TAG: matrix
 
 
     /**
-     * 289. Game of Life
      * 289. Game of Life
      * Medium
      *
@@ -115,8 +114,6 @@ public class GameOfLife {
             }
         }
     }
-
-
 
 }
 
