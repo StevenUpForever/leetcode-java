@@ -5,9 +5,9 @@ import java.util.*;
 public class PalindromePairs {
 
     //Difficulty: Hard
+    //TAG: Airbnb
     //TAG: String
     //TAG: palindrome
-    //TAG: Airbnb
 
     /**
      * 336. Palindrome Pairs

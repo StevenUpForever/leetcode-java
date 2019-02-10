@@ -19,7 +19,7 @@ public class AddTwoNumbers {
      Output: 7 -> 0 -> 8
      */
 
-    /**
+    /*
      * Solution:
      * The order of list represent the number from lower level to higher level, either choose add number one by one or parse lists to two numbers and add them are the same
      * add number by each bit
