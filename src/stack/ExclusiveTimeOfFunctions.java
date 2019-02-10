@@ -41,7 +41,7 @@ public class ExclusiveTimeOfFunctions {
      1 <= n <= 100
      */
 
-    /**
+    /*
      * Similar to valid parentheses (valid (()()))
      * Use stack to pair the start and end time
      *
