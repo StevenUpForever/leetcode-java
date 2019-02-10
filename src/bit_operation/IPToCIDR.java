@@ -8,7 +8,6 @@ public class IPToCIDR {
     //Difficulty: easy
     //TAG: Airbnb
     //TAG: bit operation
-    //TODO: review
 
     /**
      * 751. IP to CIDR
@@ -57,7 +56,13 @@ public class IPToCIDR {
 
     /*
     Solution:
-
+    1. combine ip address to an integer
+    2. loop until range is filled
+        2.1 find the rightmost 1 by x & -x
+        2.2 right shift the 1 to <= current range, means fill with shortest prefix as much as possible
+        2.3 convert current x append with length to res
+        2.4 increase x by step to next possible shortest prefix
+        2.5 minus steps in range so that we know how much range left
      */
 
     public List<String> ipToCIDR(String ip, int range) {
@@ -70,12 +75,11 @@ public class IPToCIDR {
         List<String> ans = new ArrayList<>();
         while (range > 0) {
             long step = x & -x;
-            while (step > range) step /= 2;
+            while (step > range) step >>= 1;
             ans.add(longToIP(x, (int)step));
             x += step;
             range -= step;
         }
-
         return ans;
     }
 
@@ -87,8 +91,8 @@ public class IPToCIDR {
         ans[3] = (int) x;
         int len = 33;
         while (step > 0) {
-            len --;
-            step /= 2;
+            len--;
+            step >>= 2;
         }
         return ans[3] + "." + ans[2] + "." + ans[1] + "." + ans[0] + "/" + len;
     }
