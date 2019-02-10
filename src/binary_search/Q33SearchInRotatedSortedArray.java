@@ -1,6 +1,6 @@
 package binary_search;
 
-public class SearchInRotatedSortedArray {
+public class Q33SearchInRotatedSortedArray {
 
     //TAG: Facebook
     //TAG: Microsoft

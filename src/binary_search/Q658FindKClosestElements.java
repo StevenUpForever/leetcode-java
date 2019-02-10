@@ -3,7 +3,7 @@ package binary_search;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FindKClosestElements {
+public class Q658FindKClosestElements {
 
     //Difficulty: medium
     //TAG: Uber

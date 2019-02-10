@@ -1,6 +1,6 @@
 package binary_search;
 
-public class FindPeakElement {
+public class Q162FindPeakElement {
 
     //TAG: Google
     //TAG: Microsoft

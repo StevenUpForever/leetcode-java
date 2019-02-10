@@ -1,6 +1,6 @@
 package binary_search;
 
-public class FirstBadVersion {
+public class Q278FirstBadVersion {
 
     //TAG: Facebook
     //TAG: Binary search

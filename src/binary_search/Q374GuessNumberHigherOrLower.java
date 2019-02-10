@@ -1,6 +1,6 @@
 package binary_search;
 
-public class GuessNumberHigherOrLower extends GuessGame {
+public class Q374GuessNumberHigherOrLower extends GuessGame {
 
     //TAG: Google
     //TAG: Binary search

@@ -1,6 +1,6 @@
 package binary_search;
 
-public class SearchForARange {
+public class Q34SearchForARange {
 
     //TAG: LinkedIn
     //TAG: Binary search
