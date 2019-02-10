@@ -2,7 +2,7 @@ package best_first_search;
 
 import java.util.*;
 
-public class FindKPairsWithSmallestSums {
+public class Q373FindKPairsWithSmallestSums {
 
     //TAG: Uber
     //TAG: Best first search

@@ -2,7 +2,7 @@ package best_first_search;
 
 import java.util.*;
 
-public class CheapestFlightsWithinKStops {
+public class Q787CheapestFlightsWithinKStops {
 
     //Difficulty: Medium
     //TAG: Airbnb

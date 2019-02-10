@@ -3,7 +3,7 @@ package best_first_search;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class KthSmallestElementInASortedMatrix {
+public class Q378KthSmallestElementInASortedMatrix {
 
     //Difficulty: medium
     //TAG: Apple
