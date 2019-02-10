@@ -1,18 +1,9 @@
-import binary_search.Q34FindFirstAndLastPositionOfElementInSortedArray;
-
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-
-
-
-
     }
-
-
-
-
 }
 
 

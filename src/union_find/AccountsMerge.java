@@ -1,4 +1,4 @@
-package matrix.union_find;
+package union_find;
 
 import java.util.*;
 
