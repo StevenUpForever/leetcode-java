@@ -1,8 +1,9 @@
-package binary_search;
+package recursion;
 
 public class MedianTwoSortedArrays {
 
     //TAG: Google
+    //TAG: Uber
     //TAG: recursion
     //TAG: binary search
     //Difficulty: Hard
@@ -23,7 +24,7 @@ public class MedianTwoSortedArrays {
     The median is (2 + 3)/2 = 2.5
      */
 
-    /**
+    /*
      * Solution 1
      * Iterative each array, compare every element, merge two arrays to one array
      * need to consider about the total length of m + n is odd number or even number
@@ -43,7 +44,7 @@ public class MedianTwoSortedArrays {
         return res.length % 2 == 0 ? (double)(res[res.length/2] + res[res.length/2 - 1])/2 : (double)res[res.length/2];
     }
 
-    /**
+    /*
      * Solution 2
      * Due to sorted array and find median, use binary search, recursion steps (also could implement in iterative way)
      * 1. for first step, assume the total length k
