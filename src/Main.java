@@ -1,12 +1,13 @@
 import bit_operation.IPToCIDR;
+import string.palindrome.Q5LongestPalindromicSubstring;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        IPToCIDR obj = new IPToCIDR();
-        System.out.println(obj.ipToCIDR("255.0.0.7", 10));
+        Q5LongestPalindromicSubstring obj = new Q5LongestPalindromicSubstring();
+        System.out.println(obj.longestPalindrome("cbbd"));
     }
 }
 
