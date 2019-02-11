@@ -5,6 +5,7 @@ import public_class.ListNode;
 public class MergeTwoSortedLists {
 
     //TAG: LinkedIn
+    //TAG: Airbnb
     //TAG: linked list
     //Difficulty: Easy
 
@@ -13,7 +14,7 @@ public class MergeTwoSortedLists {
      * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
      */
 
-    /**
+    /*
      * Solution:
      * Create a dummy node, merge two list to dummy node list and return dummy node
      *
