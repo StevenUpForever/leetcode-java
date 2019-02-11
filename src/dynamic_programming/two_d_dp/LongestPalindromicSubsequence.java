@@ -1,7 +1,5 @@
 package dynamic_programming.two_d_dp;
 
-import java.util.Stack;
-
 public class LongestPalindromicSubsequence {
 
     //TAG: Uber
@@ -63,7 +61,7 @@ public class LongestPalindromicSubsequence {
         return i >= j;
     }
 
-    /**
+    /*
      * Solution (DP):
      * check palindrome from middle to two ends
      * Base case: dp[i][i] = 1, which means 1 char will be palindrome
@@ -87,7 +85,5 @@ public class LongestPalindromicSubsequence {
         }
         return dp[0][s.length() - 1];
     }
-
-
 
 }
