@@ -1,6 +1,6 @@
 package bit_operation;
 
-public class SumOfTwoIntegers {
+public class Q371SumOfTwoIntegers {
 
     //TAG: bit operation
     //Difficulty: Easy

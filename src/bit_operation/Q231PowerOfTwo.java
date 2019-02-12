@@ -1,6 +1,6 @@
 package bit_operation;
 
-public class PowerOfTwo {
+public class Q231PowerOfTwo {
 
     //TAG: Google
     //TAG: Recursion

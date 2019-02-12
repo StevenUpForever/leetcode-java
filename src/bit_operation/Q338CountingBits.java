@@ -1,6 +1,6 @@
 package bit_operation;
 
-public class CountingBits {
+public class Q338CountingBits {
 
     //Difficulty: medium
     //TAG: Apple

@@ -3,7 +3,7 @@ package bit_operation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IPToCIDR {
+public class Q751IPToCIDR {
 
     //Difficulty: easy
     //TAG: Airbnb

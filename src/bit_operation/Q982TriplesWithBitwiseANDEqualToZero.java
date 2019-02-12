@@ -1,6 +1,6 @@
 package bit_operation;
 
-public class TriplesWithBitwiseANDEqualToZero {
+public class Q982TriplesWithBitwiseANDEqualToZero {
 
     //Difficulty: Hard
     //TAG: bit operation

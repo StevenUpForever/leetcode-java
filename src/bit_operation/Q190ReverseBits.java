@@ -1,6 +1,6 @@
 package bit_operation;
 
-public class ReverseBits {
+public class Q190ReverseBits {
 
     //Difficulty: Easy
     //TAG: Apple

@@ -1,6 +1,6 @@
 package bit_operation;
 
-public class UTF8Validation {
+public class Q393UTF8Validation {
 
     //TAG: Google
     //TAG: Bit operation

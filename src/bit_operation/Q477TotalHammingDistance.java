@@ -1,6 +1,6 @@
 package bit_operation;
 
-public class TotalHammingDistance {
+public class Q477TotalHammingDistance {
 
     //TAG: Facebook
     //TAG: bit operation
