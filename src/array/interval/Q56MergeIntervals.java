@@ -10,6 +10,7 @@ public class Q56MergeIntervals {
     //TAG: Microsoft
     //TAG: LinkedIn
     //TAG: Snap
+    //TAG: Apple
     //TAG: array
     //Difficulty: Medium
 
