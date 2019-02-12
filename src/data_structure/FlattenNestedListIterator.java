@@ -9,6 +9,7 @@ public class FlattenNestedListIterator {
     //TAG: Google
     //TAG: Facebook
     //TAG: Airbnb
+    //TAG: Apple
     //TAG: data structure
     //Difficulty: medium
 

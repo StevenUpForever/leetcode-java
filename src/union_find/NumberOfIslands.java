@@ -4,14 +4,15 @@ import public_class.UnionFind;
 
 public class NumberOfIslands {
 
+    //Difficulty: medium
     //TAG: Google
     //TAG: Facebook
     //TAG: Microsoft
     //TAG: Amazon
+    //TAG: Apple
     //TAG: DFS
     //TAG: BFS
     //TAG: union find
-    //Difficulty: medium
 
     /**
      * 200. Number of Islands
@@ -36,7 +37,7 @@ public class NumberOfIslands {
      Answer: 3
      */
 
-    /**
+    /*
      * Solution 1:
      * DFS, when find a '1', try to set all adjacent '1' to '0' (including itself)
      *
@@ -69,7 +70,7 @@ public class NumberOfIslands {
         dfs(grid, i, j + 1);
     }
 
-    /**
+    /*
      * Solution 2:
      * union find
      * always merge current 1 to nearest unit, see UnionFind class
