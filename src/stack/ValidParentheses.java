@@ -8,6 +8,7 @@ public class ValidParentheses {
     //TAG: Facebook
     //TAG: Microsoft
     //TAG: Amazon
+    //TAG: Apple
     //TAG: Stack
     //Difficulty: Easy
 

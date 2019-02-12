@@ -7,6 +7,7 @@ public class SpiralMatrix {
     //TAG: Google
     //TAG: Microsoft
     //TAG: Uber
+    //TAG: Apple
     //TAG: Recursion
     //Difficulty: Medium
 
@@ -25,7 +26,7 @@ public class SpiralMatrix {
      You should return [1,2,3,6,9,8,7,4,5].
      */
 
-    /**
+    /*
      * Solution:
      * Similar as Rotate_Image (legacy_code.Problem41To50) problem
      * append values from outside round to inside round, keep the x offset and y offset to indicate the coordinate and length
@@ -36,7 +37,7 @@ public class SpiralMatrix {
      */
 
     public List<Integer> spiralOrder(int[][] matrix) {
-        List<Integer> result = new ArrayList();
+        List<Integer> result = new ArrayList<>();
         //Base case avoid below lenY = matrix[0].length error
         if (matrix.length == 0) return result;
         int x = 0, y = 0;

@@ -11,6 +11,7 @@ public class WordBreak {
     //TAG: Amazon
     //TAG: Uber
     //TAG: Snap
+    //TAG: Apple
     //TAG: DP
     //Difficulty: Medium
 
@@ -51,8 +52,10 @@ public class WordBreak {
         for (int i = 0; i < s.length(); i++) {
             if (set.contains(s.substring(0, i + 1))) dp[i] = true;
             for (int j = 0; j < i; j++) {
-                if (dp[j] && set.contains(s.substring(j + 1, i + 1)))
+                if (dp[j] && set.contains(s.substring(j + 1, i + 1))) {
                     dp[i] = true;
+                    break;
+                }
             }
         }
         return dp[dp.length - 1];

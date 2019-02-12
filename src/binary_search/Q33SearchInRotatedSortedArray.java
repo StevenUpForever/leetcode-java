@@ -6,6 +6,7 @@ public class Q33SearchInRotatedSortedArray {
     //TAG: Microsoft
     //TAG: Uber
     //TAG: LinkedIn
+    //TAG: Apple
     //TAG: Binary search
     //Difficulty: Medium
 

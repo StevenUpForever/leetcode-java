@@ -3,6 +3,7 @@ package string.integer_string_convert;
 public class StringToInteger {
 
     //TAG: Uber
+    //TAG: Apple
     //TAG: String
     //Difficulty: Medium
 
@@ -18,7 +19,7 @@ public class StringToInteger {
      The signature of the C++ function had been updated. If you still see your function signature accepts a const char * argument, please click the reload button  to reset your code definition.
      */
 
-    /**
+    /*
      * Solution:
      * 1. Ignore all prefix white spaces
      * 2. parse integer part to integer until met non-number character

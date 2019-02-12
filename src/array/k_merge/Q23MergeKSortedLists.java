@@ -10,6 +10,7 @@ public class Q23MergeKSortedLists {
     //TAG: Google
     //TAG: Uber
     //TAG: LinkedIn
+    //TAG: Apple
     //TAG: LinkedList
     //TAG: array
     //TAG: k merge
@@ -20,7 +21,7 @@ public class Q23MergeKSortedLists {
      * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
      */
 
-    /**
+    /*
      * Solution 1: Binary reduction
      * treat these lists as an array, and do merge sort about this array, merge each two lists together
      * When not consider the I/O speed, this should be the one of the fastest way
@@ -30,7 +31,7 @@ public class Q23MergeKSortedLists {
      * Space: O(logn)
      */
 
-    /**
+    /*
      * Solution 2: iteration
      * merge list from the first to the end
      * Same I/O performance issue as the binary reduction
@@ -60,7 +61,7 @@ public class Q23MergeKSortedLists {
         return node;
     }
 
-    /**
+    /*
      * Solution 3: Priority queue
      * push all list node into queue (merge to a dummy node at the same time)
      * Time: O(mnlogn) logn is the sort in a heap for n nodes at one time in the heap (each time need to poll a node and push a new one into it, max n nodes)

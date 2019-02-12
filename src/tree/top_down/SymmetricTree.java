@@ -1,12 +1,13 @@
-package tree.bottom_up;
+package tree.top_down;
 
 import public_class.TreeNode;
 
 public class SymmetricTree {
 
     //TAG: LinkedIn
+    //TAG: Apple
     //TAG: Tree
-    //TAG: bottom up
+    //TAG: top down
     //Difficulty: Easy
 
     /**
@@ -30,7 +31,7 @@ public class SymmetricTree {
      Bonus points if you could solve it both recursively and iteratively.
      */
 
-    /**
+    /*
      * Solution:
      * Similar to LCA lowest common ancestors
      * recursion left node and right node

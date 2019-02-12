@@ -3,6 +3,7 @@ package dynamic_programming.one_d_dp;
 public class MaximumSubarray {
 
     //TAG: LinkedIn
+    //TAG: Apple
     //TAG: DP
     //Difficulty: Easy
 
@@ -14,7 +15,7 @@ public class MaximumSubarray {
      the contiguous subarray [4,-1,2,1] has the largest sum = 6.
      */
 
-    /**
+    /*
      * Solution: DP problem
      * for loop the array once, index i
      * consider about how the current sub sum to i contribute to the max sum

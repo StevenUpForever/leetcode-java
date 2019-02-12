@@ -3,6 +3,7 @@ package array.sort;
 public class Q283MoveZeroes {
 
     //TAG: Facebook
+    //TAG: Apple
     //TAG: array
     //Difficulty: Easy
 
@@ -22,7 +23,6 @@ public class Q283MoveZeroes {
      1 slow pointer and 1 fast pointer go at the same direction, this will not change the original relative order, remember for loop from
      the first element not the second one, make sure slow pointer always point to the next of known non-zero element, in case when set all rest
      elements to 0 will also set the last known non-zero element
-     2个隔板同向而行，快慢指针，不会改变原来数据的顺序，从第一位开始循环而不是第二位以保证慢指针一直在已知非0元素的下一位，在清零时不会清除已知最后一位非零元素
 
      Time: O(n)
      Space: O(1)
