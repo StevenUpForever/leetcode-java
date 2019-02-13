@@ -7,6 +7,7 @@ public class Q15ThreeSum {
     //TAG: Facebook
     //TAG: Microsoft
     //TAG: Amazon
+    //TAG: Apple
     //TAG: array
     //TAG: n_sum
     //Difficulty: Medium
@@ -26,8 +27,8 @@ public class Q15ThreeSum {
      ]
      */
 
-    /**
-     * Solution 1:
+    /*
+     * Solution:
      * 1. Sort the array in ascending order, need to filter the duplicate number, easier to do this in sorted array
      * 2. set left index i, right index j and middle index m, outer loop of i start from 0 to last third number
      *      1. for each outer loop, start m = i + 1, j = len - 1, to find triplet number equal to 0, each step skip duplicated elements
