@@ -2,10 +2,11 @@ package math;
 
 public class SparseMatrixMultiplication {
 
+    //Difficulty: Medium
     //TAG: Facebook
     //TAG: LinkedIn
+    //TAG: Apple
     //TAG: math
-    //Difficulty: Medium
 
     /**
      * 311. Sparse Matrix Multiplication
@@ -32,7 +33,7 @@ public class SparseMatrixMultiplication {
                        | 0 0 1 |
      */
 
-    /**
+    /*
      * Solution:
      * Do a matrix multiplication,rules under https://en.wikipedia.org/wiki/Matrix_multiplication
      * Diff is due to every number in A need to multiple by all the row in B, so if A[i][j] is 0, skip the inner loop due to all numbers sum will be 0 too, Sparse Matrix will have most of 0 values which will save the time

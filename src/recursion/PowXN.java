@@ -2,18 +2,19 @@ package recursion;
 
 public class PowXN {
 
+    //Difficulty: Medium
     //TAG: Google
     //TAG: LinkedIn
     //TAG: Math
+    //TAG: Apple
     //TAG: Recursion
-    //Difficulty: Medium
 
     /**
      * 50. Pow(x, n)
      * Implement pow(x, n).
      */
 
-    /**
+    /*
      * Solution 1: recursion
      * Base case: if n == 0, return 1, if n == 1, return x
      * recursion rule: recursively divd n by 2 each time, and x^n = x^n/2 * x^n/2

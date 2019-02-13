@@ -2,11 +2,12 @@ package array;
 
 public class Q387FirstUniqueCharacterInAString {
 
+    //Difficulty: Easy
     //TAG: Google
     //TAG: Microsoft
     //TAG: Amazon
+    //TAG: Apple
     //TAG: array
-    //Difficulty: Easy
 
     /**
      * 387. First Unique Character in a String
@@ -22,7 +23,7 @@ public class Q387FirstUniqueCharacterInAString {
      Note: You may assume the string contain only lowercase letters.
      */
 
-    /**
+    /*
      * Solution:
      * due to all lowercase letters, loop once to count frequency of char
      * loop 2nd time, if any frequency is 1, it is the first one, just return

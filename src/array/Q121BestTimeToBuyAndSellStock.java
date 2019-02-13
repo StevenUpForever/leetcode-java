@@ -7,6 +7,7 @@ public class Q121BestTimeToBuyAndSellStock {
     //TAG: Microsoft
     //TAG: Amazon
     //TAG: Uber
+    //TAG: Apple
     //TAG: array
 
     /**
@@ -29,6 +30,9 @@ public class Q121BestTimeToBuyAndSellStock {
 
     /*
      * Solution:
+     *
+     * Due to sell need be after buy, and sell price need be higher than buy price
+     * We need to update min price, and find possible max diff in after values
      *
      * Time: O(n)
      * Space: O(1)

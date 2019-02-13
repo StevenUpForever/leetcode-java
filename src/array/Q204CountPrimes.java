@@ -31,6 +31,7 @@ public class Q204CountPrimes {
     public int countPrimes(int n) {
         int count = 0;
         boolean[] prime = new boolean[n];
+        //1 is not prime number, and 1 * n cannot exclusive prime number, so start from 2
         for (int i = 2; i < n; i++) {
             if (!prime[i]) {
                 count++;
