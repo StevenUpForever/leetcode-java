@@ -5,9 +5,10 @@ import java.util.Set;
 
 public class HappyNumber {
 
-    //TAG: Uber
-    //TAG: Math
     //Difficulty: Easy
+    //TAG: Uber
+    //TAG: Apple
+    //TAG: Math
 
     /**
      * 202. Happy Number
@@ -23,7 +24,7 @@ public class HappyNumber {
      1^2 + 0^2 + 0^2 = 1
      */
 
-    /**
+    /*
      * Solution:
      * Key point is end up loop when in a cycle, specially when not 1
      * Use HashSet to filter the number, because if number if generated before,

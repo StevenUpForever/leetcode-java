@@ -6,6 +6,7 @@ public class WordBreakII {
 
     //TAG: Google
     //TAG: Uber
+    //TAG: Apple
     //TAG: DFS
     //Difficulty: Hard
 
@@ -25,7 +26,7 @@ public class WordBreakII {
      The wordDict parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
      */
 
-    /**
+    /*
      * Solution:
      * DFS to find all combinations of a string by loop the substrings of it
      * Need a map, to save all combinations of a current substring, so that when track back to this substring,

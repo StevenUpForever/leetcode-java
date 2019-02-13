@@ -9,6 +9,7 @@ public class LetterCombinationsOfAPhoneNumber {
     //TAG: Google
     //TAG: Uber
     //TAG: Amazon
+    //TAG: Apple
     //TAG: DFS
     //Difficulty: Medium
 
@@ -26,7 +27,7 @@ public class LetterCombinationsOfAPhoneNumber {
      Although the above answer is in lexicographical order, your answer could be in any order you want.
      */
 
-    /**
+    /*
      * Solution:
      * Begin recursion from the first string, in the loop, recursion next strings related to input digit array related strings
      * recursion tree like below, if input is 23
@@ -40,7 +41,8 @@ public class LetterCombinationsOfAPhoneNumber {
      *     Space: O(n)
      */
 
-    static final String[] digitPad = new String[] {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    private static final String[] digitPad =
+            new String[] {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
     public List<String> letterCombinations(String digits) {
         List<String> list = new ArrayList<>();
