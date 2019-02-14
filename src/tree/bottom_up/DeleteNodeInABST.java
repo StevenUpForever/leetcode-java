@@ -4,14 +4,15 @@ import public_class.TreeNode;
 
 public class DeleteNodeInABST {
 
+    //Difficulty: Medium
     //TAG: Uber
+    //TAG: Apple
     //TAG: bst
     //TAG: Tree
     //TAG: Bottom up
-    //Difficulty: Medium
 
     /**
-     * 450. Delete Node in a bst
+     * 450. Delete Node in a BST
      * Given a root node reference of a bst and a key, delete the node with the given key in the bst. Return the root node reference (possibly updated) of the bst.
 
      Basically, the deletion can be divided into two stages:
@@ -50,7 +51,7 @@ public class DeleteNodeInABST {
      4   7
      */
 
-    /**
+    /*
      * Solution:
      * Return TreeNode due to if delete the root, need to return the new root
      *
@@ -62,6 +63,7 @@ public class DeleteNodeInABST {
      * Time: O(n)
      * Space: O(n)
      */
+
     public TreeNode deleteNode(TreeNode root, int key) {
         if (root == null) return root;
         if (root.val < key) root.right = deleteNode(root.right, key);

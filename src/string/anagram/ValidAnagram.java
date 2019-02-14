@@ -3,6 +3,7 @@ package string.anagram;
 public class ValidAnagram {
 
     //TAG: Uber
+    //TAG: Apple
     //TAG: map_set
     //TAG: String
     //Difficulty: Easy
@@ -22,7 +23,7 @@ public class ValidAnagram {
      What if the inputs contain unicode characters? How would you adapt your solution to such case?
      */
 
-    /**
+    /*
      * Solution:
      * Due to lowercase alphabets, use int[] represent char frequency of str s
      * loop str t, check if any char frequency is currently 0 and will be -1, if so, that char frequency will not match,
@@ -48,7 +49,11 @@ public class ValidAnagram {
 
     /**
      * Follow up: What if the inputs contain unicode characters? How would you adapt your solution to such case?
-     * Same time, worse space, use HashMap record frequency, which Time: O(n) Space: O(n)
+     */
+
+    /*
+    Solution:
+    * Same time, worse space, use HashMap record frequency, which Time: O(n) Space: O(n)
      * If same space, worse time, sort two strings and compare with equals(), time: O(nlogn) space: O(1)
      */
 
