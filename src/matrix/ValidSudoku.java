@@ -4,7 +4,7 @@ public class ValidSudoku {
 
     //Difficulty: Medium
     //TAG: Uber
-    //TAG: array
+    //TAG: Apple
     //TAG: matrix
 
     /**
