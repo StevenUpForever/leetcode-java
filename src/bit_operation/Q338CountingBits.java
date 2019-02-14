@@ -5,7 +5,7 @@ public class Q338CountingBits {
     //Difficulty: medium
     //TAG: Apple
     //TAG: bit operation
-    //TODO: review
+    //TAG: dp
 
     /**
      * 338. Counting Bits
@@ -26,10 +26,20 @@ public class Q338CountingBits {
      * Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
      */
 
+    /*
+    Solution:
+    Due to try get result in one pass, so we try to use dp, and connect current dp[i] with previous results
+    in binary, we connect the number to number >> 1 which is number/2,
+    if we know how many 1s in dp[i >> 1] then we add 1 if i last bit is 1 then it's dp[i]
+
+    Time: O(n)
+    Space: O(n)
+     */
+
     public int[] countBits(int num) {
-        int[] f = new int[num + 1];
-        for (int i=1; i<=num; i++) f[i] = f[i >> 1] + (i & 1);
-        return f;
+        int[] dp = new int[num + 1];
+        for (int i=1; i<=num; i++) dp[i] = dp[i >> 1] + (i & 1);
+        return dp;
     }
 
 }
