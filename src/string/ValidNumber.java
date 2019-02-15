@@ -2,9 +2,10 @@ package string;
 
 public class ValidNumber {
 
-    //TAG: LinkedIn
-    //TAG: String
     //Difficulty: Hard
+    //TAG: LinkedIn
+    //TAG: Apple
+    //TAG: String
 
     /**
      * 65. Valid Number
@@ -22,7 +23,7 @@ public class ValidNumber {
      The signature of the C++ function had been updated. If you still see your function signature accepts a const char * argument, please click the reload button  to reset your code definition.
      */
 
-    /**
+    /*
      * Solution:
      * many conditions need to be consider of
      *      1. '.' can only be appear once, and must before 'e'

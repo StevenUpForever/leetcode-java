@@ -5,6 +5,12 @@ import java.util.List;
 
 public class Flatten2DVector {
 
+    //Difficulty: Medium
+    //TAG: Airbnb
+    //TAG: Facebook
+    //TAG: Apple
+    //TAG: data structure
+
     /**
      * 251. Flatten 2D Vector
      * Implement an iterator to flatten a 2d vector.
