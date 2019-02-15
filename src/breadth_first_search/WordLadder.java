@@ -1,14 +1,12 @@
 package breadth_first_search;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class WordLadder {
 
     //Difficulty: Medium
     //TAG: LinkedIn
+    //TAG: Apple
     //TAG: Snap
     //TAG: BFS
     //TAG: DFS
@@ -92,8 +90,7 @@ public class WordLadder {
 
     public int ladderLengthS2(String beginWord, String endWord, List<String> wordList) {
         //Pre step to change list to set to increase contains method performance
-        HashSet<String> wordSet = new HashSet<>();
-        for (String word: wordList) wordSet.add(word);
+        Set<String> wordSet = new HashSet<>(wordList);
         if (!wordSet.contains(endWord)) return 0;
         Queue<String> queue = new LinkedList<>();
         HashSet<String> visited = new HashSet<>();

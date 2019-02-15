@@ -3,6 +3,7 @@ package depth_first_search;
 public class WordSearch {
 
     //Difficulty: medium
+    //TAG: Apple
     //TAG: Snap
     //TAG: dfs
 

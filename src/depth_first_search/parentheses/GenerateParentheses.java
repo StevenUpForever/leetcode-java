@@ -7,6 +7,7 @@ public class GenerateParentheses {
     //TAG: Google
     //TAG: Uber
     //TAG: Snap
+    //TAG: Apple
     //TAG: DFS
     //Difficulty: Medium
 

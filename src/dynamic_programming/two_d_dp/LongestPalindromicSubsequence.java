@@ -3,6 +3,7 @@ package dynamic_programming.two_d_dp;
 public class LongestPalindromicSubsequence {
 
     //TAG: Uber
+    //TAG: Apple
     //TAG: 2D DP
     //Difficulty: Medium
 
@@ -27,7 +28,7 @@ public class LongestPalindromicSubsequence {
 
      */
 
-    /**
+    /*
      * Solution (Recursion):
      * Permutation all of sub sequences and check if any is palindrome, keep global max
      * Time: O(n!)

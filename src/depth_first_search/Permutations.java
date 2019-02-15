@@ -5,6 +5,7 @@ import java.util.*;
 public class Permutations {
 
     //TAG: LinkedIn
+    //TAG: Apple
     //TAG: DFS
     //Difficulty: Medium
 
@@ -24,7 +25,7 @@ public class Permutations {
      ]
      */
 
-    /**
+    /*
      * Approach:
      * recursion problem, swap or add diff char into new list every time, recursion tree as below
      *                         abc
@@ -45,7 +46,7 @@ public class Permutations {
         return res;
     }
 
-    /**
+    /*
      * Solution 1:
      * Have a list which contains all numbers in nums, swap diff pair of chars every time to make diff order of list
      * *** make sure every diff pair chars exchange once and only once ***
@@ -78,7 +79,7 @@ public class Permutations {
         list.set(b, temp);
     }
 
-    /**
+    /*
      * Solution 2:
      * Have a empty list, and nums in recursion, every time add a new char (not been appear in list), and recursive next level
      * every loop will loop all numbers in nums to current recursion index in list (by list.add() will make index + 1)
