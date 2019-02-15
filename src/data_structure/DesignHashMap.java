@@ -1,8 +1,5 @@
 package data_structure;
 
-import java.util.HashSet;
-import java.util.List;
-
 public class DesignHashMap {
 
     //Difficulty: Easy

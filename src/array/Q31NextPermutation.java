@@ -3,6 +3,7 @@ package array;
 public class Q31NextPermutation {
 
     //TAG: Google
+    //TAG: Apple
     //TAG: array
     //Difficulty: Medium
 
@@ -20,7 +21,7 @@ public class Q31NextPermutation {
      1,1,5 → 1,5,1
      */
 
-    /**
+    /*
      * Solution:
      * 1. loop from end of nums, find the first number which is in decedent order, means this place could be replaced by a larger number
      * 2. look back of right of this number, find the first number which is larger than it, and exchange them, this number is also the smallest larger number because in step 1, all numbers right of it is in decedent order
