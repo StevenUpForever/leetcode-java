@@ -121,7 +121,6 @@ public class Q990SatisfiabilityOfEqualityEquations {
                 return false;
             }
         }
-        for (int num: uf) System.out.println(num);
         return true;
     }
 
