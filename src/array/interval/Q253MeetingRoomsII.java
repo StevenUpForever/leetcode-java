@@ -12,6 +12,7 @@ public class Q253MeetingRoomsII {
     //TAG: Google
     //TAG: Snap
     //TAG: Uber
+    //TAG: Apple
     //TAG: Array
     //TAG: range
 
@@ -48,24 +49,24 @@ public class Q253MeetingRoomsII {
                 return o1.start - o2.start;
             }
         });
-        PriorityQueue<Interval> queue = new PriorityQueue<>(new Comparator<Interval>() {
+        PriorityQueue<Interval> pq = new PriorityQueue<>(new Comparator<Interval>() {
             @Override
             public int compare(Interval o1, Interval o2) {
                 return o1.end - o2.end;
             }
         });
-        queue.offer(intervals[0]);
+        pq.offer(intervals[0]);
         for (int i = 1; i < intervals.length; i++) {
-            Interval poll = queue.poll();
+            Interval poll = pq.poll();
             //We don't need a meeting room and merge them (keep occupy this room)
             if (intervals[i].start >= poll.end) {
                 poll.end = intervals[i].end;
-                //Otherwise we need a room and push it to the queue
-            } else queue.offer(intervals[i]);
-            //whether we need a room or not, we push poll back to queue
-            queue.offer(poll);
+                //Otherwise we need a room and push it to the pq
+            } else pq.offer(intervals[i]);
+            //whether we need a room or not, we push poll back to pq
+            pq.offer(poll);
         }
-        return queue.size();
+        return pq.size();
     }
 
     /*

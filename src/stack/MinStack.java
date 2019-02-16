@@ -6,6 +6,7 @@ public class MinStack {
 
     //TAG: Google
     //TAG: Uber
+    //TAG: Apple
     //TAG: Stack
     //Difficulty: Easy
 
@@ -26,9 +27,16 @@ public class MinStack {
      minStack.pop();
      minStack.top();      --> Returns 0.
      minStack.getMin();   --> Returns -2.
+
+     * Your stack.MinStack object will be instantiated and called as such:
+     * stack.MinStack obj = new stack.MinStack();
+     * obj.push(x);
+     * obj.pop();
+     * int param_3 = obj.top();
+     * int param_4 = obj.getMin();
      */
 
-    /**
+    /*
      * Solution:
      * Use two stacks, one stack with regular push and pop, the other stack, when current push value is smaller than
      * stack2.peek(), push, when stack1 pop and it's the value of stack2.peek() too, pop from stack2, so that stack2
@@ -67,15 +75,5 @@ public class MinStack {
     public int getMin() {
         return stack2.isEmpty() ? 0 : stack2.peek();
     }
-
-/**
- * Your stack.MinStack object will be instantiated and called as such:
- * stack.MinStack obj = new stack.MinStack();
- * obj.push(x);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */
-
 
 }

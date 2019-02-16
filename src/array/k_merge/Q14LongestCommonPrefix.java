@@ -4,6 +4,7 @@ public class Q14LongestCommonPrefix {
 
     //Difficulty: easy
     //TAG: Google
+    //TAG: Apple
     //TAG: array
 
     /**
