@@ -7,6 +7,7 @@ public class Q993CousinsInBinaryTree {
     //Difficulty: Easy
     //TAG: Tree
     //TAG: bottom up
+    //TAG: BFS
 
     /**
      * 993. Cousins in Binary Tree
