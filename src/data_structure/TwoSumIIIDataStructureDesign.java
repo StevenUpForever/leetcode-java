@@ -21,7 +21,7 @@ public class TwoSumIIIDataStructureDesign {
      find(7) -> false
      */
 
-    /**
+    /*
      * Solution 1: slow in add(), fast in find()
      * The key point is find(), most efficient way is using HashMap/Set structure to search
      * So we try to add as many sums as possible in the set, when adding one number from num array
@@ -51,7 +51,7 @@ public class TwoSumIIIDataStructureDesign {
         }
     }
 
-    /**
+    /*
      * Solution 2: fast in add(), slow in find()
      * Store every added number into a hashMap, value have two types, if only one, value == 1, if more than 1, value == 2
      * Find(): check if sum - value is in hashMap, there are two conditions:
@@ -79,9 +79,11 @@ public class TwoSumIIIDataStructureDesign {
             for (int key: map.keySet()) {
                 int num2 = value - key;
                 if (map.containsKey(num2)) {
-                    //Don't return a must value but only the possible true at here,
-                    // due to may have other answers after this loop
-                    if (num2 == key || map.get(num2) == 2) return true;
+                    /*
+                    Need check if num2 == key, if not, return true, otherwise only num2 appears more than once,
+                    it's true
+                     */
+                    if (num2 != key || map.get(num2) == 2) return true;
                 }
             }
             return false;
