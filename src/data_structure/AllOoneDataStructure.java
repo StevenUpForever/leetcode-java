@@ -7,9 +7,10 @@ import java.util.Set;
 
 public class AllOoneDataStructure {
 
-    //TAG: Uber
-    //TAG: Data structure
     //Difficulty: Hard
+    //TAG: Uber
+    //TAG: LinkedIn
+    //TAG: Data structure
 
     /**
      * 432. All O`one Data Structure
@@ -22,14 +23,15 @@ public class AllOoneDataStructure {
      Challenge: Perform all these in O(1) time complexity.
      */
 
-    /**
+    /*
      * Solution:
      * The key point is how to keep O(1) when get max/min when inc/dec is O(1) or keep O(1) when inc/dec when get max/min
      * is O(1)
      * when inc/dec, need to update max/min sequence also in O(1)
      * Similar to LFU cache, Use HashMap to get O(1) inc/dec
      * Use Doubly linkedList to maintain the sequence, which head is the max, tail is the min
-     * each doubly list node contains a linkedlist/set to put all strings with same frequency
+     * each doubly list node contains a set to put all strings with same frequency so when update key in frequency list,
+     * the time is O(1)
      */
 
     class AllOne {

@@ -4,10 +4,10 @@ import java.util.*;
 
 public class ShortestWordDistanceII {
 
-    //TAG: LinkedList
+    //Difficulty: Medium
+    //TAG: LinkedIn
     //TAG: map_set
     //TAG: array
-    //Difficulty: Medium
 
     /**
      * 244. Shortest Word Distance II
@@ -25,7 +25,7 @@ public class ShortestWordDistanceII {
      You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
      */
 
-    /**
+    /*
      * Solution:
      * Depends on Q243ShortestWordDistance solution, the method will be called multiple times, it may duplicated calculate the distance of some visited words, so we'd better to record the result of any visited pair of words' shortest distance
      * As different pair of word distances, so could not only record the most updated word index, need to record every appeared index of every word
@@ -38,7 +38,7 @@ public class ShortestWordDistanceII {
 
     public class WordDistance {
 
-        HashMap<String, List<Integer>> map;
+        private HashMap<String, List<Integer>> map;
 
         public WordDistance(String[] words) {
             map = new HashMap<>();

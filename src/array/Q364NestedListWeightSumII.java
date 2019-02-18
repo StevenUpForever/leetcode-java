@@ -4,9 +4,9 @@ import java.util.*;
 
 public class Q364NestedListWeightSumII {
 
-    //TAG: LinkedList
-    //TAG: array
     //Difficulty: Medium
+    //TAG: LinkedIn
+    //TAG: array
 
     /**
      * 364. Nested List Weight Sum II
@@ -44,7 +44,7 @@ public class Q364NestedListWeightSumII {
         public List<NestedInteger> getList();
     }
 
-    /**
+    /*
      * Solution 1: inspired from legacy_code
      * Similar idea as binary tree level order traversal
      * as if res = 6 * 3 + 3 * 2 + 2, it also equals res = (6) level1 + (6 + 3) level2 + (6 + 3 + 2) level3

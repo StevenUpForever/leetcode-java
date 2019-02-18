@@ -1,3 +1,5 @@
+package map_set;
+
 import public_class.Point;
 
 import java.util.Arrays;
@@ -5,6 +7,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Q149MaxPointsOnALine {
+
+    //Difficulty: Hard
+    //TAG: LinkedIn
+    //TAG: map
 
     /**
      * 149. Max Points on a Line
@@ -41,7 +47,12 @@ public class Q149MaxPointsOnALine {
     Solution:
     Max length always start from one point, and all after points have the same slope with the start point
 
-    
+    for for loop, every inner loop means find max length of same line points start from points[i]
+
+    Update max by current points[i] loop
+
+    Time: O(n^2)
+    Space: O(n)
      */
 
     public int maxPoints(Point[] points) {
