@@ -20,7 +20,7 @@ public class IntegerToEnglishWords {
      Space: O(1)
      */
 
-    /**
+    /*
      * Solution:
      * The numbers cannot reuse and need fast lookup (by array or map) are:
      *  1. one digit number

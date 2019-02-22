@@ -2,6 +2,10 @@ package depth_first_search;
 
 public class AndroidUnlockPatterns {
 
+    //Difficulty: Medium
+    //TAG: Snap
+    //TAG: DFS
+
     /**
      * 351. Android Unlock Patterns
      * Given an Android 3x3 key lock screen and two integers m and n, where 1 ≤ m ≤ n ≤ 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.
@@ -35,28 +39,6 @@ public class AndroidUnlockPatterns {
      * Special thanks to @elmirap for adding this problem and creating all test cases.
      */
 
-    /**
-     * Solution:
-     *
-     */
-
-    // cur: the current position
-    // remain: the steps remaining
-    int DFS(boolean vis[], int[][] skip, int cur, int remain) {
-        if(remain < 0) return 0;
-        if(remain == 0) return 1;
-        vis[cur] = true;
-        int rst = 0;
-        for(int i = 1; i <= 9; ++i) {
-            // If vis[i] is not visited and (two numbers are adjacent or skip number is already visited)
-            if(!vis[i] && (skip[cur][i] == 0 || (vis[skip[cur][i]]))) {
-                rst += DFS(vis, skip, i, remain - 1);
-            }
-        }
-        vis[cur] = false;
-        return rst;
-    }
-
     public int numberOfPatterns(int m, int n) {
         // Skip array represents number to skip between two pairs
         int skip[][] = new int[10][10];
@@ -73,6 +55,23 @@ public class AndroidUnlockPatterns {
             rst += DFS(vis, skip, 2, i - 1) * 4;    // 2, 4, 6, 8 are symmetric
             rst += DFS(vis, skip, 5, i - 1);        // 5
         }
+        return rst;
+    }
+
+    // cur: the current position
+    // remain: the steps remaining
+    private int DFS(boolean vis[], int[][] skip, int cur, int remain) {
+        if(remain < 0) return 0;
+        if(remain == 0) return 1;
+        vis[cur] = true;
+        int rst = 0;
+        for(int i = 1; i <= 9; ++i) {
+            // If vis[i] is not visited and (two numbers are adjacent or skip number is already visited)
+            if(!vis[i] && (skip[cur][i] == 0 || (vis[skip[cur][i]]))) {
+                rst += DFS(vis, skip, i, remain - 1);
+            }
+        }
+        vis[cur] = false;
         return rst;
     }
 
