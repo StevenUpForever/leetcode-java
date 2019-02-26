@@ -83,6 +83,7 @@ public class Q1001GridIllumination {
             map.get(lamp[0]).add(lamp[1]);
         }
         for (int i = 0; i < queries.length; i++) {
+
             int x = queries[i][0], y = queries[i][1];
             if (xMap.getOrDefault(x, 0) > 0 ||
             yMap.getOrDefault(y, 0) > 0 ||
@@ -102,6 +103,18 @@ public class Q1001GridIllumination {
             }
         }
         return illuminations;
+    }
+
+    public static int consecutive(long num) {
+        Map<Long, Long> map = new HashMap<>();
+        map.put(0L, 1L);
+        long preSum = 0, count = 0;
+        for (long i = 1; i <= (num + 1)/2; i++) {
+            preSum += i;
+            count += map.getOrDefault(num - preSum, 0L);
+            map.put(preSum, map.getOrDefault(preSum, 0L) + 1);
+        }
+        return (int)count;
     }
 
 }
