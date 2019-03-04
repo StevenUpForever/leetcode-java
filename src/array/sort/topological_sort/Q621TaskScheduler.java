@@ -1,4 +1,4 @@
-package array;
+package array.sort.topological_sort;
 
 import java.util.Arrays;
 

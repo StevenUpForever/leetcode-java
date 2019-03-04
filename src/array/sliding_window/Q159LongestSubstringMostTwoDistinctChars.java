@@ -1,4 +1,4 @@
-package array;
+package array.sliding_window;
 
 public class Q159LongestSubstringMostTwoDistinctChars {
 
