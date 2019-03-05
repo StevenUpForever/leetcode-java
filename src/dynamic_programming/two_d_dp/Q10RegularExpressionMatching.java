@@ -1,6 +1,6 @@
 package dynamic_programming.two_d_dp;
 
-public class RegularExpressionMatching {
+public class Q10RegularExpressionMatching {
 
     //TAG: Google
     //TAG: Facebook
@@ -30,7 +30,7 @@ public class RegularExpressionMatching {
      isMatch("aab", "c*a*b") → true
      */
 
-    /**
+    /*
      *
     Solution:
      2D DP question, the sample matrix is as below:
