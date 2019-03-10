@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-public class IsGraphBipartite {
+public class Q785IsGraphBipartite {
 
     //Difficulty: medium
     //TAG: Apple

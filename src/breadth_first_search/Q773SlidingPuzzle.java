@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-public class SlidingPuzzle {
+public class Q773SlidingPuzzle {
 
     //Difficulty: Hard
     //TAG: BFS

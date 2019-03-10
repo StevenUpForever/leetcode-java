@@ -3,7 +3,7 @@ package breadth_first_search;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class ShortestBridge {
+public class Q934ShortestBridge {
 
     //Difficulty: medium
     //TAG: Uber

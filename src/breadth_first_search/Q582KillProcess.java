@@ -2,7 +2,7 @@ package breadth_first_search;
 
 import java.util.*;
 
-public class KillProcess {
+public class Q582KillProcess {
 
     //Difficulty: medium
     //TAG: Apple

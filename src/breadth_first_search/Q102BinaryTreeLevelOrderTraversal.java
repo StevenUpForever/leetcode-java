@@ -3,7 +3,7 @@ package breadth_first_search;
 import java.util.*;
 import public_class.TreeNode;
 
-public class BinaryTreeLevelOrderTraversal {
+public class Q102BinaryTreeLevelOrderTraversal {
 
     //TAG: LinkedIn
     //TAG: Tree

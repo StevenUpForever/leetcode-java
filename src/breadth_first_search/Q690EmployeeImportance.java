@@ -2,7 +2,7 @@ package breadth_first_search;
 
 import java.util.*;
 
-public class EmployeeImportance {
+public class Q690EmployeeImportance {
 
     //TAG: Uber
     //TAG: DFS

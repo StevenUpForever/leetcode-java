@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class FindLargestValueInEachTreeRow {
+public class Q515FindLargestValueInEachTreeRow {
 
     //TAG: LinkedIn
     //TAG: Breadth first search

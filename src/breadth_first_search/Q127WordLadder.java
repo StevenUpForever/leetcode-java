@@ -2,7 +2,7 @@ package breadth_first_search;
 
 import java.util.*;
 
-public class WordLadder {
+public class Q127WordLadder {
 
     //Difficulty: Medium
     //TAG: LinkedIn

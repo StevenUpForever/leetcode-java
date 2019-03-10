@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class SerializeAndDeserializeBinaryTree {
+public class Q297SerializeAndDeserializeBinaryTree {
 
     //TAG: Google
     //TAG: Facebook

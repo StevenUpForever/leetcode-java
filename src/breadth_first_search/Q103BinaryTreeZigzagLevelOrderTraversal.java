@@ -3,7 +3,7 @@ package breadth_first_search;
 import java.util.*;
 import public_class.TreeNode;
 
-public class BinaryTreeZigzagLevelOrderTraversal {
+public class Q103BinaryTreeZigzagLevelOrderTraversal {
 
     //TAG: LinkedIn
     //TAG: Tree

@@ -2,7 +2,7 @@ package breadth_first_search;
 
 import java.util.*;
 
-public class AlienDictionary {
+public class Q269AlienDictionary {
 
     //Difficulty: Hard
     //TAG: Airbnb
