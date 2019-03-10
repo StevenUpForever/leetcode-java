@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class LFUCache {
+public class Q460LFUCache {
 
     //Difficulty: Hard
     //TAG: Snap
@@ -23,7 +23,7 @@ public class LFUCache {
      *
      * Example:
      *
-     * data_structure.LFUCache cache = new data_structure.LFUCache( 2  capacity  );
+     * data_structure.Q460LFUCache cache = new data_structure.Q460LFUCache( 2  capacity  );
      *
              *cache.put(1,1);
      *cache.put(2,2);
@@ -85,7 +85,7 @@ public class LFUCache {
     //The freq list is least freq at first (index 0) means ascending order
     private List<Integer> freqList;
 
-    public LFUCache(int capacity) {
+    public Q460LFUCache(int capacity) {
         this.capacity = capacity;
         this.keyFreqMap = new HashMap<>();
         this.keyValueMap = new HashMap<>();

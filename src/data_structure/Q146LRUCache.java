@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.HashMap;
 
-public class LRUCache {
+public class Q146LRUCache {
 
     //TAG: Google
     //TAG: Facebook
@@ -26,7 +26,7 @@ public class LRUCache {
 
      Example:
 
-     LRUCache cache = new LRUCache( 2  capacity );
+     Q146LRUCache cache = new Q146LRUCache( 2  capacity );
     cache.put(1, 1);
     cache.put(2, 2);
     cache.get(1);       // returns 1
@@ -50,7 +50,7 @@ public class LRUCache {
     private DoublyListNode head;
     private DoublyListNode tail;
 
-    public LRUCache(int capacity) {
+    public Q146LRUCache(int capacity) {
         map = new HashMap<>();
         this.capacity = capacity;
         head = new DoublyListNode(0, 0);

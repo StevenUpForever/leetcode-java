@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.Iterator;
 
-public class PeekingIterator implements Iterator<Integer> {
+public class Q284PeekingIterator implements Iterator<Integer> {
 
     //Difficulty: medium
     //TAG: Apple
@@ -10,7 +10,7 @@ public class PeekingIterator implements Iterator<Integer> {
 
     /**
      * 284. Peeking Iterator
-     * Given an Iterator class interface with methods: next() and hasNext(), design and implement a data_structure.PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
+     * Given an Iterator class interface with methods: next() and hasNext(), design and implement a data_structure.Q284PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
      *
      * Example:
      *
@@ -35,7 +35,7 @@ public class PeekingIterator implements Iterator<Integer> {
     private Integer next;
     private Iterator<Integer> iterator;
 
-    public PeekingIterator(Iterator<Integer> iterator) {
+    public Q284PeekingIterator(Iterator<Integer> iterator) {
         this.iterator = iterator;
         if (this.iterator.hasNext()) next = this.iterator.next();
     }

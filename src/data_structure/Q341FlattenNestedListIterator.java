@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
-public class FlattenNestedListIterator {
+public class Q341FlattenNestedListIterator {
 
     //TAG: Google
     //TAG: Facebook

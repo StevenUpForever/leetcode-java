@@ -1,6 +1,6 @@
 package data_structure.trie_tree;
 
-public class AddAndSearchWord {
+public class Q211AddAndSearchWord {
 
     //TAG: Facebook
     //TAG: data structure

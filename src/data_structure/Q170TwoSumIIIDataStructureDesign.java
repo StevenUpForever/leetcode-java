@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.*;
 
-public class TwoSumIIIDataStructureDesign {
+public class Q170TwoSumIIIDataStructureDesign {
 
     //TAG: LinkedIn
     //TAG: Data structure

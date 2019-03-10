@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.*;
 
-public class InsertDeleteGetRandomO1 {
+public class Q380InsertDeleteGetRandomO1 {
 
     //TAG: Uber
     //TAG: Data structure

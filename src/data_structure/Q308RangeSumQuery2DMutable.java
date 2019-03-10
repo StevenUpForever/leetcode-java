@@ -3,7 +3,7 @@ package data_structure;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RangeSumQuery2DMutable {
+public class Q308RangeSumQuery2DMutable {
 
     //TAG: Google
     //TAG: Data structure

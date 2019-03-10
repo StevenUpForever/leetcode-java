@@ -1,6 +1,6 @@
 package data_structure.stream;
 
-public class ReadNCharsRead4II {
+public class Q158ReadNCharsRead4II {
 
     //TAG: Google
     //TAG: Facebook

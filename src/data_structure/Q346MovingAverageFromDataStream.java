@@ -3,7 +3,7 @@ package data_structure;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class MovingAverageFromDataStream {
+public class Q346MovingAverageFromDataStream {
 
     //TAG: Google
     //TAG: data structure

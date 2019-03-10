@@ -1,6 +1,6 @@
 package data_structure;
 
-public class DesignHashMap {
+public class Q706DesignHashMap {
 
     //Difficulty: Easy
     //TAG: Apple

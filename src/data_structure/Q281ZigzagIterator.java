@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.List;
 
-public class ZigzagIterator {
+public class Q281ZigzagIterator {
 
     //TAG: Google
     //TAG: data structure
@@ -40,7 +40,7 @@ public class ZigzagIterator {
 
     private int shift;
 
-    public ZigzagIterator(List<Integer> v1, List<Integer> v2) {
+    public Q281ZigzagIterator(List<Integer> v1, List<Integer> v2) {
         this.v1 = v1;
         this.v2 = v2;
         index1 = 0;
@@ -67,8 +67,8 @@ public class ZigzagIterator {
      */
 
 /**
- * Your data_structure.ZigzagIterator object will be instantiated and called as such:
- * data_structure.ZigzagIterator i = new data_structure.ZigzagIterator(v1, v2);
+ * Your data_structure.Q281ZigzagIterator object will be instantiated and called as such:
+ * data_structure.Q281ZigzagIterator i = new data_structure.Q281ZigzagIterator(v1, v2);
  * while (i.hasNext()) v[f()] = i.next();
  */
 

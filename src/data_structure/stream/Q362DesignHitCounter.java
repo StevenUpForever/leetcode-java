@@ -3,7 +3,7 @@ package data_structure.stream;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class DesignHitCounter {
+public class Q362DesignHitCounter {
 
     //Difficulty: Medium
     //TAG: Uber

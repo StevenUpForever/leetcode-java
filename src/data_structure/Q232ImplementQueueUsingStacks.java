@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.Stack;
 
-public class ImplementQueueUsingStacks {
+public class Q232ImplementQueueUsingStacks {
 
     //Difficulty: Easy
     //TAG: Apple

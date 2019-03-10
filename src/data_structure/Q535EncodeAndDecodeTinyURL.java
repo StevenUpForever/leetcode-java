@@ -1,6 +1,6 @@
 package data_structure;
 
-public class EncodeAndDecodeTinyURL {
+public class Q535EncodeAndDecodeTinyURL {
 
     //TAG: Uber
     //Difficulty: Medium

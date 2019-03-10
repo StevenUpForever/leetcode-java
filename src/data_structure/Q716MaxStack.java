@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.Stack;
 
-public class MaxStack {
+public class Q716MaxStack {
 
     //TAG: LinkedIn
     //TAG: data structure
@@ -18,7 +18,7 @@ public class MaxStack {
      peekMax() -- Retrieve the maximum element in the stack.
      popMax() -- Retrieve the maximum element in the stack, and remove it. If you find more than one maximum elements, only remove the top-most one.
      Example 1:
-     data_structure.MaxStack stack = new data_structure.MaxStack();
+     data_structure.Q716MaxStack stack = new data_structure.Q716MaxStack();
      stack.push(5);
      stack.push(1);
      stack.push(5);
@@ -46,7 +46,7 @@ public class MaxStack {
 
     private Stack<Integer> stack, maxStack;
 
-    public MaxStack() {
+    public Q716MaxStack() {
         stack = new Stack<>();
         maxStack = new Stack<>();
     }
@@ -84,8 +84,8 @@ public class MaxStack {
     }
 
     /**
-     * Your data_structure.MaxStack object will be instantiated and called as such:
-     * data_structure.MaxStack obj = new data_structure.MaxStack();
+     * Your data_structure.Q716MaxStack object will be instantiated and called as such:
+     * data_structure.Q716MaxStack obj = new data_structure.Q716MaxStack();
      * obj.push(x);
      * int param_2 = obj.pop();
      * int param_3 = obj.top();

@@ -3,7 +3,7 @@ package data_structure;
 import java.util.Iterator;
 import java.util.List;
 
-public class Flatten2DVector {
+public class Q251Flatten2DVector {
 
     //Difficulty: Medium
     //TAG: Airbnb

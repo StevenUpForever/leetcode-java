@@ -1,6 +1,6 @@
 package data_structure.stream;
 
-public class ReadNCharactersGivenRead4 {
+public class Q157ReadNCharactersGivenRead4 {
 
     //TAG: Facebook
     //TAG: stream

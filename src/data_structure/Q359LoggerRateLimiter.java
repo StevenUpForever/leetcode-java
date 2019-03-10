@@ -3,7 +3,7 @@ package data_structure;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LoggerRateLimiter {
+public class Q359LoggerRateLimiter {
 
     //TAG: Google
     //TAG: data structure

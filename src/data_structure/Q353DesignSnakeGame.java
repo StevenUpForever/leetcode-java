@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.*;
 
-public class DesignSnakeGame {
+public class Q353DesignSnakeGame {
 
     //Difficulty: medium
     //TAG: Uber
