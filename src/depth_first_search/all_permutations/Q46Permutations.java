@@ -2,7 +2,7 @@ package depth_first_search.all_permutations;
 
 import java.util.*;
 
-public class Permutations {
+public class Q46Permutations {
 
     //TAG: LinkedIn
     //TAG: Apple
@@ -10,7 +10,7 @@ public class Permutations {
     //Difficulty: Medium
 
     /**
-     * 46. Permutations
+     * 46. Q46Permutations
      * Given a collection of distinct numbers, return all possible permutations.
 
      For example,

@@ -2,7 +2,7 @@ package depth_first_search;
 
 import java.util.*;
 
-public class EvaluateDivision {
+public class Q399EvaluateDivision {
 
     //Difficulty: medium
     //TAG: Uber

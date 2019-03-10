@@ -2,7 +2,7 @@ package depth_first_search;
 
 import java.util.*;
 
-public class NestedListWeightSum {
+public class Q339NestedListWeightSum {
 
     //TAG: LinkedIn
     //TAG: Queue

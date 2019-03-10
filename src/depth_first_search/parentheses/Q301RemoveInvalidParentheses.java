@@ -3,7 +3,7 @@ package depth_first_search.parentheses;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RemoveInvalidParentheses {
+public class Q301RemoveInvalidParentheses {
 
     //TAG: Facebook
     //TAG: DFS

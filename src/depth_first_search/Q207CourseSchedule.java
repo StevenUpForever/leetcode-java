@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-public class CourseSchedule {
+public class Q207CourseSchedule {
 
     //TAG: Uber
     //TAG: DFS

@@ -3,7 +3,7 @@ package depth_first_search;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class WallsAndGates {
+public class Q286WallsAndGates {
 
     //TAG: Google
     //TAG: Facebook

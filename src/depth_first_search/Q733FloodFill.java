@@ -3,7 +3,7 @@ package depth_first_search;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class FloodFill {
+public class Q733FloodFill {
 
     //TAG: Uber
     //TAG: Snap

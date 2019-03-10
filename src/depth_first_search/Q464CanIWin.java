@@ -3,7 +3,7 @@ package depth_first_search;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class CanIWin {
+public class Q464CanIWin {
 
     //TAG: LinkedIn
     //TAG: DFS

@@ -2,7 +2,7 @@ package depth_first_search.ninety_nine_cents;
 
 import java.util.Arrays;
 
-public class CoinChange {
+public class Q322CoinChange {
 
     //Difficulty: Medium
     //TAG: Airbnb

@@ -2,7 +2,7 @@ package depth_first_search;
 
 import java.util.*;
 
-public class ReconstructItinerary {
+public class Q332ReconstructItinerary {
 
     //Difficulty: Medium
     //TAG: Snap

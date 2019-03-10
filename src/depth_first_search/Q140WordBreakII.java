@@ -2,7 +2,7 @@ package depth_first_search;
 
 import java.util.*;
 
-public class WordBreakII {
+public class Q140WordBreakII {
 
     //TAG: Google
     //TAG: Uber

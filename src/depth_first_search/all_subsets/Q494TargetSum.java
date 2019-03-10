@@ -1,6 +1,6 @@
 package depth_first_search.all_subsets;
 
-public class TargetSum {
+public class Q494TargetSum {
 
     //TAG: Google
     //TAG: Facebook

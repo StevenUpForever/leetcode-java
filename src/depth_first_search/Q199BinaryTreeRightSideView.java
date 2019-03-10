@@ -5,7 +5,7 @@ import public_class.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BinaryTreeRightSideView {
+public class Q199BinaryTreeRightSideView {
 
     /**
      * 199. Binary Tree Right Side View

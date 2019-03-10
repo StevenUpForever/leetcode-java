@@ -2,7 +2,7 @@ package depth_first_search.ninety_nine_cents;
 
 import java.util.*;
 
-public class FactorCombinations {
+public class Q254FactorCombinations {
 
     //TAG: Uber
     //TAG: LinkedIn

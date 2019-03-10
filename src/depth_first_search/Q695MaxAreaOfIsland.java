@@ -1,6 +1,6 @@
 package depth_first_search;
 
-public class MaxAreaOfIsland {
+public class Q695MaxAreaOfIsland {
 
     //Difficulty: medium
     //TAG: Uber

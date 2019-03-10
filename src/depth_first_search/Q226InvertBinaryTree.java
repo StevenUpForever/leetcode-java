@@ -5,7 +5,7 @@ import public_class.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class InvertBinaryTree {
+public class Q226InvertBinaryTree {
 
     //Difficulty: Easy
     //TAG: Uber

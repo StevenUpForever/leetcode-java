@@ -3,7 +3,7 @@ package depth_first_search;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LetterCombinationsOfAPhoneNumber {
+public class Q17LetterCombinationsOfAPhoneNumber {
 
     //TAG: Facebook
     //TAG: Google

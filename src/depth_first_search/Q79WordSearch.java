@@ -1,6 +1,6 @@
 package depth_first_search;
 
-public class WordSearch {
+public class Q79WordSearch {
 
     //Difficulty: medium
     //TAG: Apple

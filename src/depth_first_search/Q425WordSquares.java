@@ -2,7 +2,7 @@ package depth_first_search;
 
 import java.util.*;
 
-public class WordSquares {
+public class Q425WordSquares {
 
     //TAG: Google
     //TAG: DFS

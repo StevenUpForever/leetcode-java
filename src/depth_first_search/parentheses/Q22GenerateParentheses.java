@@ -2,7 +2,7 @@ package depth_first_search.parentheses;
 
 import java.util.*;
 
-public class GenerateParentheses {
+public class Q22GenerateParentheses {
 
     //TAG: Google
     //TAG: Uber
@@ -28,7 +28,7 @@ public class GenerateParentheses {
 
     /*
      * Solution:
-     * Permutations/subsets better use recursion
+     * Q46Permutations/subsets better use recursion
      * for example, when n == 3, the recursion tree is as below
      *              ""
      *             /  \

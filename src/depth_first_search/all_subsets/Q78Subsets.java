@@ -2,7 +2,7 @@ package depth_first_search.all_subsets;
 
 import java.util.*;
 
-public class Subsets {
+public class Q78Subsets {
 
     //TAG: Facebook
     //TAG: Amazon
@@ -12,7 +12,7 @@ public class Subsets {
     //Difficulty: Medium
 
     /**
-     * 78. Subsets
+     * 78. Q78Subsets
      * Given a set of distinct integers, nums, return all possible subsets.
 
      Note: The solution set must not contain duplicate subsets.

@@ -2,14 +2,14 @@ package depth_first_search.all_permutations;
 
 import java.util.*;
 
-public class PermutationsII {
+public class Q47PermutationsII {
 
     //TAG: LinkedIn
     //TAG: DFS
     //Difficulty: Medium
 
     /**
-     * 47. Permutations II
+     * 47. Q46Permutations II
      * Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 
      For example,
@@ -23,7 +23,7 @@ public class PermutationsII {
 
     /**
      * Solution:
-     * Similar as Permutations, diff is in each loop, have a extra HashSet for each loop (represent the new HashSet on every recursion level, filter the dup number on current recursion level)
+     * Similar as Q46Permutations, diff is in each loop, have a extra HashSet for each loop (represent the new HashSet on every recursion level, filter the dup number on current recursion level)
      *
      * The reason is because e.g. aba when 1st level swap a1 with following, at 3rd level swap a3 with following, which is same as
      * loop to a3 on 1st level

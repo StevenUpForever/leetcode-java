@@ -2,7 +2,7 @@ package depth_first_search.all_subsets;
 
 import java.util.Arrays;
 
-public class PartitionToKEqualSumSubsets {
+public class Q698PartitionToKEqualSumSubsets {
 
     //TAG: LinkedIn
     //TAG: DFS
@@ -10,7 +10,7 @@ public class PartitionToKEqualSumSubsets {
     //Difficulty: Medium
 
     /**
-     * 698. Partition to K Equal Sum Subsets
+     * 698. Partition to K Equal Sum Q78Subsets
      * Given an array of integers nums and a positive integer k, find whether it's possible to divide this array into k non-empty subsets whose sums are all equal.
 
      Example 1:

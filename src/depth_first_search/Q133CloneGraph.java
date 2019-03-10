@@ -4,7 +4,7 @@ import public_class.UndirectedGraphNode;
 
 import java.util.HashMap;
 
-public class CloneGraph {
+public class Q133CloneGraph {
 
     //TAG: Google
     //TAG: Facebook

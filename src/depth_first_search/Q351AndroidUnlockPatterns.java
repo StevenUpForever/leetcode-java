@@ -1,6 +1,6 @@
 package depth_first_search;
 
-public class AndroidUnlockPatterns {
+public class Q351AndroidUnlockPatterns {
 
     //Difficulty: Medium
     //TAG: Snap
