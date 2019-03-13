@@ -1,4 +1,4 @@
-package tree.bottom_up;
+package tree.post_order;
 
 import public_class.TreeNode;
 import java.util.*;

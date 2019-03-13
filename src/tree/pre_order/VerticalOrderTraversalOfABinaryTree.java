@@ -1,4 +1,4 @@
-package tree.top_down;
+package tree.pre_order;
 
 import public_class.TreeNode;
 
@@ -9,7 +9,7 @@ public class VerticalOrderTraversalOfABinaryTree {
 
     //Difficulty: medium
     //TAG: tree
-    //TAG: top_down
+    //TAG: pre_order
 
     /**
      * 987. Vertical Order Traversal of a Binary Tree

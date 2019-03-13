@@ -1,4 +1,4 @@
-package tree.bottom_up;
+package tree.post_order;
 
 import public_class.TreeNode;
 
@@ -12,7 +12,7 @@ public class FindDuplicateSubtrees {
     //TAG: Google
     //TAG: Uber
     //TAG: tree
-    //TAG bottom_up
+    //TAG post_order
 
     /**
      * 652. Find Duplicate Subtrees
