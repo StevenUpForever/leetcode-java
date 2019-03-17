@@ -27,7 +27,7 @@ public class NextClosestTime {
      Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. It may be assumed that the returned time is next day's time since it is smaller than the input time numerically.
      */
 
-    /**
+    /*
      * Solution:
      * Loop from end to start, try to update to a value larger than current and smaller than max value of this bit
      *      after update, reset all behind value of this bit to min value
@@ -76,6 +76,52 @@ public class NextClosestTime {
             if (i != 2) chars[i] = min;
         }
         return new String(chars);
+    }
+
+    /*
+    Solution 2:
+    try to set from last to start, first value that can be increased, e.g. 19:43 -> 19:44,
+    if the value will over limit, e.g. 19:59 then set the digit to smallest number 19:x1 then do same thing on next digit
+
+    Time: O(n)
+    Space: O(1)
+     */
+    public String nextClosestTime2(String time) {
+        //Used to easy find larger value of current digit in sequence
+        boolean[] digits = new boolean[10];
+        //max value on current position
+        int[] maxNums = new int[]{2, time.charAt(0) == '2' ? 3 : 9, 10, 5, 9};
+        StringBuilder builder = new StringBuilder();
+        int smallest = 10;
+        for (int i = 0; i < time.length(); i++) {
+            char c = time.charAt(i);
+            if (c != ':') {
+                //Record digit at the digit index, and the smallest value
+                digits[c - '0'] = true;
+                smallest = Math.min(smallest, c - '0');
+            }
+            builder.append(c);
+        }
+        for (int i = 4; i >= 0; i--) {
+            if (i == 2) continue;
+            //next is smallest number larger than i, which will replace at index i
+            int digit = builder.charAt(i) - '0', next = digit;
+            for (int j = digit + 1; j < 10; j++) {
+                if (digits[j]) {
+                    next = j;
+                    break;
+                }
+            }
+            //If i is the largest number or over limit, set to smallest and goto next pre index
+            if (next == digit || next > maxNums[i]) {
+                builder.setCharAt(i, (char)(smallest + '0'));
+                //If next could be increased, then increase and return
+            } else {
+                builder.setCharAt(i, (char)(next + '0'));
+                return builder.toString();
+            }
+        }
+        return builder.toString();
     }
 
 }
