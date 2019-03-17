@@ -5,6 +5,38 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();
+//        System.out.println(main.shipWithinDays(new int[]{1,2,3,1,1}, 4));
+    }
+
+    private int dfs(int[] weights, int cur, int sum, int D) {
+//        if (D == 0)
+//        if (min * D < sum)
+    }
+
+    public int bitwiseComplement(int N) {
+        int temp = N, num = 0;
+        while (temp > 0) {
+            temp >>= 1;
+            num <<= 1;
+            num |= 1;
+        }
+        return N ^ num;
+    }
+
+    public int numPairsDivisibleBy60(int[] time) {
+        if (time == null) return 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        int count = 0;
+        for (int num: time) {
+            for (int i = 1; i <= 16; i++) {
+                int key = i * 60 - num;
+                if (map.containsKey(key)) {
+                    count += map.get(key);
+                }
+            }
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        return count;
     }
 
     public int maxProduct(String[] words) {
