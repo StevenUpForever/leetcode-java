@@ -38,7 +38,8 @@ public class Q1013PairsOfSongsWithTotalDurationsDivisibleBy60 {
      */
 
     /*
-    Solution:
+    Solution 1:
+
     similar to two sum, when checking the target - num = n * 60,
     we know time[i] <= 500, then n * 60 <= 500 + 500, n <= 16
     loop from 1 to 16 find all possible i * 16 in map
@@ -61,6 +62,25 @@ public class Q1013PairsOfSongsWithTotalDurationsDivisibleBy60 {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
         return count;
+    }
+
+    /*
+    Solution 2:
+    if (a + b)%60 == 0, then a % 60 + b % 60 == 60 or 0
+    we could use two sum which save cur % 60 to map, the value will between 0 to 59
+    then when find similar sum - cur, it's map((60 - cur%60) % 60)
+
+    Time: O(n)
+    Space: O(1)
+     */
+
+    public int numPairsDivisibleBy602(int[] time) {
+        int c[]  = new int[60], res = 0;
+        for (int t : time) {
+            res += c[(60 - t % 60) % 60];
+            c[t % 60] += 1;
+        }
+        return res;
     }
 
 }
