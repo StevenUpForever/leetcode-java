@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
         MinimumWindowSubstring sub = new MinimumWindowSubstring();
-        System.out.println(sub.minWindow("ADOBECODEBANC", "ABC"));
+        System.out.println((char)('a' - 'a' + 'A'));
     }
 
 }
