@@ -6,6 +6,7 @@ public class Q642DesignSearchAutocompleteSystem {
 
     //Difficulty: Hard
     //TAG: data structure
+    //TAG: trie tree
 
     /**
      * 642. Design Search Autocomplete System
