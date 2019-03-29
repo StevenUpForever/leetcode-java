@@ -1,4 +1,4 @@
-package breadth_first_search;
+package breadth_first_search.min_steps;
 
 import java.util.*;
 
