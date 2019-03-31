@@ -11,7 +11,21 @@ public class Main {
         System.out.println(main.oneCharDiff("lest", "lose"));
         List<String> list;
         Set<String> set = new HashSet<>();
-        System.out.println(intToBinary(35));
+        System.out.println(main.baseNeg2(3));
+    }
+
+    public String baseNeg2(int N) {
+        StringBuilder builder = new StringBuilder();
+        while (N != 0) {
+            int i = N % -2;
+            N /= -2;
+            if (i < 0) {
+                i += 2;
+                N++;
+            }
+            builder.append(i);
+        }
+        return builder.length() == 0 ? "0" : builder.reverse().toString();
     }
 
     public List<Boolean> prefixesDivBy5(int[] A) {
