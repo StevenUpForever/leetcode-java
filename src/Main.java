@@ -1,4 +1,5 @@
 import com.sun.org.apache.xpath.internal.operations.Bool;
+import public_class.Interval;
 import public_class.ListNode;
 
 import java.math.BigInteger;
@@ -12,6 +13,8 @@ public class Main {
         List<String> list;
         Set<String> set = new HashSet<>();
         System.out.println(main.baseNeg2(3));
+
+        System.out.println(Integer.toString(-5, 2));
     }
 
     public String baseNeg2(int N) {

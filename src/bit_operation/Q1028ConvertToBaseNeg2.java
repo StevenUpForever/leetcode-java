@@ -61,4 +61,13 @@ public class Q1028ConvertToBaseNeg2 {
         return builder.length() == 0 ? "0" : builder.reverse().toString();
     }
 
+    public String baseNeg2_2(int N) {
+        String res = "";
+        while (N != 0) {
+            res = Integer.toString(N & 1) + res;
+            N = -(N >> 1);
+        }
+        return res == ""  ? "0" : res;
+    }
+
 }
