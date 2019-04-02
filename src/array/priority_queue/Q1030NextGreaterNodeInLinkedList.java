@@ -5,6 +5,7 @@ import public_class.ListNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
+import java.util.Stack;
 
 public class Q1030NextGreaterNodeInLinkedList {
 
@@ -69,6 +70,28 @@ public class Q1030NextGreaterNodeInLinkedList {
                 res[pq.poll()] = list.get(i);
             }
             pq.offer(i);
+        }
+        return res;
+    }
+
+    /*
+    Solution 2:
+    Similar but stack is enough, set indices that smaller than A[i] once and delete (by pop)
+
+    Time: O(n)
+    Space: O(n)
+     */
+
+    public int[] nextLargerNodes2(ListNode head) {
+        ArrayList<Integer> A = new ArrayList<>();
+        for (ListNode node = head; node != null; node = node.next)
+            A.add(node.val);
+        int[] res = new int[A.size()];
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < A.size(); ++i) {
+            while (!stack.isEmpty() && A.get(stack.peek()) < A.get(i))
+                res[stack.pop()] = A.get(i);
+            stack.push(i);
         }
         return res;
     }
