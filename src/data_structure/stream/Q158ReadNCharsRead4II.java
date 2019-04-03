@@ -2,6 +2,7 @@ package data_structure.stream;
 
 public class Q158ReadNCharsRead4II {
 
+    //Difficulty: hard
     //TAG: Google
     //TAG: Facebook
     //TAG: Data structure
@@ -18,7 +19,7 @@ public class Q158ReadNCharsRead4II {
      * The read function may be called multiple times.
      */
 
-    /**
+    /*
      * Solution:
      * be aware that n may smaller than 4 or larger than 4, need diff operations
      * The key point to read char[] multiple times, is keep the visited index where current index at, after previous
@@ -34,6 +35,8 @@ public class Q158ReadNCharsRead4II {
         while (ptr < n) {
             //If index == 0 means all chars already read from temp char[] to result char[] and need read next4 to index
             if (index == 0) count = read4(curBuff);
+            //If buf is all read, then count could be 0, do not keep going otherwise will infinite loop
+            if (count == 0) break;
             //Use condition that min(chars actual read, n), read from temp buff to res buff
             while (ptr < n && index < count) {
                 buf[ptr++] = curBuff[index++];
