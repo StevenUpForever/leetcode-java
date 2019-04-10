@@ -28,7 +28,7 @@ public class Q616AddBoldTagInString {
 
     /*
     Solution:
-    1. convert dict from array to set
+    1. prepare a boolean array that represent if current index will be finally add a <b>
     2. loop string i
         1. loop from j = i, j >= 0 j--
         2. if the substring(j, i) is in the set, try to update start and end with curStart, curEnd if curStart <= end
@@ -41,6 +41,7 @@ public class Q616AddBoldTagInString {
         for (int i = 0, end = 0; i < s.length(); i++) {
             for (String word : dict) {
                 if (s.startsWith(word, i)) {
+                    //i + word.length for last valid char fit end > i
                     end = Math.max(end, i + word.length());
                 }
             }

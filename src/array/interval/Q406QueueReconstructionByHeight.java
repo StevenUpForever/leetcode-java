@@ -29,7 +29,7 @@ public class Q406QueueReconstructionByHeight {
      [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
      */
 
-    /**
+    /*
      * Solution:
      * If the array need sort by multiple factors, like this need consider about h and k,
      * similar to time interval problems, fix one factor and consider about others

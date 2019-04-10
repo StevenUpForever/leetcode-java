@@ -1,5 +1,7 @@
 package array.interval;
 
+import public_class.Interval;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -67,12 +69,4 @@ public class Q763PartitionLabels {
         return res;
     }
 
-}
-
-class Interval {
-    int start, end;
-    Interval(int start, int end) {
-        this.start = start;
-        this.end = end;
-    }
 }
