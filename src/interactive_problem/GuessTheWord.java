@@ -1,4 +1,4 @@
-package InteractiveProblem;
+package interactive_problem;
 
 import java.util.ArrayList;
 import java.util.List;
