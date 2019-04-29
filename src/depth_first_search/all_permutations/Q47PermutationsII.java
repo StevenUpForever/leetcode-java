@@ -65,4 +65,39 @@ public class Q47PermutationsII {
         list.set(b, temp);
     }
 
+    /*
+    Solution 2:
+    use visited[] filter dfs
+    sort the array, use visited[] filter dups, due to if use set, will not try other dup even once, will add nothing in
+    the final array
+     */
+
+    public List<List<Integer>> permuteUnique2(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        dfs(res, new boolean[nums.length], new ArrayList<>(), nums);
+        return res;
+    }
+
+    private void dfs(List<List<Integer>> res, boolean[] visited, List<Integer> list, int[] nums) {
+        if (list.size() == nums.length) {
+            res.add(new ArrayList<>(list));
+            return;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            /*
+            1. skip if visited[i]
+            2. if current is not visited, duplicated with before and before not visited, skip, reason: if cur is
+            dup with pre, but pre is visited, that's the first time add all these dups, cannot skip otherwise will add
+            nothing in the list even once
+             */
+            if (visited[i] || (i > 0 && nums[i - 1] == nums[i] && !visited[i - 1])) continue;
+            visited[i] = true;
+            list.add(nums[i]);
+            dfs(res, visited, list, nums);
+            visited[i] = false;
+            list.remove(list.size() - 1);
+        }
+    }
+
 }
