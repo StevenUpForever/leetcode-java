@@ -1,4 +1,4 @@
-package tree.bst;
+package tree.bst.in_order;
 
 import public_class.TreeNode;
 
