@@ -1,12 +1,12 @@
 package depth_first_search.parentheses;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Q301RemoveInvalidParentheses {
 
     //TAG: Facebook
     //TAG: DFS
+    //TAG: BFS
     //Difficulty: Hard
 
     /**
@@ -23,8 +23,9 @@ public class Q301RemoveInvalidParentheses {
      Special thanks to @hpplayer for adding this problem and creating all test cases.
      */
 
-    /**
+    /*
      * Solution:
+     * DFS
      * Similar to use stack filter (), and give all solutions, use DFS
      *
      * key point is when find more ) than (, try to delete every one ) before this valid string scope
@@ -76,6 +77,48 @@ public class Q301RemoveInvalidParentheses {
         if (chars[0] == '(')
             remove(res, reverse, 0, 0, new char[]{')', '('});
         else res.add(reverse);
+    }
+
+    /*
+    Solution 2: BFS
+
+    similar as find min steps, modify any characters in string and add to queue
+
+    Time: O(n^n)
+    Space: O(n)
+     */
+
+    public List<String> removeInvalidParentheses2(String s) {
+        List<String> res = new ArrayList<>();
+        Queue<String> queue = new LinkedList<>();
+        Set<String> set = new HashSet<>();
+        queue.offer(s);
+        set.add(s);
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            while (size-- > 0) {
+                String poll = queue.poll();
+                if (validPrentheses(poll)) res.add(poll);
+                for (int i = 0; i < poll.length(); i++) {
+                    String str = (i == 0 ? "" : poll.substring(0, i)) +
+                            (i == poll.length() - 1 ? "" : poll.substring(i + 1));
+                    if (set.add(str)) queue.offer(str);
+                }
+            }
+            if (res.size() > 0) break;
+        }
+        return res;
+    }
+
+    private boolean validPrentheses(String s) {
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') count++;
+            else if (c == ')') count--;
+            if (count < 0) return false;
+        }
+        return count == 0;
     }
 
 }
