@@ -2,9 +2,9 @@ package binary_search;
 
 public class Q278FirstBadVersion {
 
+    //Difficulty: Easy
     //TAG: Facebook
     //TAG: Binary search
-    //Difficulty: Easy
 
     /**
      * 278. First Bad Version
@@ -15,7 +15,7 @@ public class Q278FirstBadVersion {
      * You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
      */
 
-    /**
+    /*
      * Solution:
      * 1 - n is continuous number which in ascending order, use binary search will be fast and reduce API call
      * It's find the first occurrence number problem, so when isBadVersion need move right = mid, which
@@ -27,14 +27,13 @@ public class Q278FirstBadVersion {
 
     public int firstBadVersion(int n) {
         int l = 1, r = n;
-        while (l < r - 1) {
+        while (l < r) {
             int mid = l + (r - l)/2;
             if (isBadVersion(mid)) r = mid;
-            else l = mid;
+            else l = mid + 1;
         }
         //First try to check l, and if l and r are all not bad, no bad version and return 0
-        if (isBadVersion(l)) return l;
-        return isBadVersion(r) ? r : 0;
+        return  isBadVersion(l) ? l : r;
     }
 
     boolean isBadVersion(int version) {
