@@ -9,7 +9,6 @@ public class Q317ShortestDistanceFromAllBuildings {
 
     //Difficulty: hard
     //TAG: Facebook
-    //TAG: DFS
     //TAG: BFS
 
     /**
@@ -107,11 +106,5 @@ public class Q317ShortestDistanceFromAllBuildings {
             step++;
         }
     }
-
-    /*
-    Solution:
-
-    DFS similar
-     */
 
 }
