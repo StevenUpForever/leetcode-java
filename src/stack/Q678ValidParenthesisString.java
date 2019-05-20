@@ -44,7 +44,6 @@ public class Q678ValidParenthesisString {
      */
 
     public boolean checkValidString(String s) {
-        int star = 0, count = 0;
         Stack<Integer> stack = new Stack<>(), starStack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
