@@ -1,6 +1,6 @@
 package string;
 
-public class Add_Binary {
+public class Q67AddBinary {
 
     //TAG: Facebook
     //TAG: String
@@ -16,7 +16,7 @@ public class Add_Binary {
      Return "100".
      */
 
-    /**
+    /*
      * Solution:
      * Add bits of a and b from the end to start
      * Keep a carry of the current result
