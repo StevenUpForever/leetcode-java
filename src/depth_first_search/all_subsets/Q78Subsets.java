@@ -12,7 +12,7 @@ public class Q78Subsets {
     //Difficulty: Medium
 
     /**
-     * 78. Q78Subsets
+     * 78. Subsets
      * Given a set of distinct integers, nums, return all possible subsets.
 
      Note: The solution set must not contain duplicate subsets.
