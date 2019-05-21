@@ -105,6 +105,44 @@ public class Q297SerializeAndDeserializeBinaryTree {
         }
     }
 
+    /*
+    Solution 2: pre order traversal
+     */
+
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        StringBuilder builder = new StringBuilder();
+        dfs(root, builder);
+        return builder.toString();
+    }
+
+    private void dfs(TreeNode root, StringBuilder builder) {
+        if (root == null) {
+            builder.append("null,");
+            return;
+        }
+        builder.append(root.val);
+        builder.append(",");
+        dfs(root.left, builder);
+        dfs(root.right, builder);
+    }
+
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        int[] index = new int[]{0};
+        return rebuild(index, data.split(","));
+    }
+
+    private TreeNode rebuild(int[] index, String[] strs) {
+        if (index[0] >= strs.length) return null;
+        String cur = strs[index[0]++];
+        if (cur.equals("null")) return null;
+        TreeNode node = new TreeNode(Integer.valueOf(cur));
+        node.left = rebuild(index, strs);
+        node.right = rebuild(index, strs);
+        return node;
+    }
+
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
 // codec.deserialize(codec.serialize(root));
