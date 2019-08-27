@@ -1,4 +1,4 @@
-package string.frequency;
+package string.count_array;
 
 import java.util.Arrays;
 
