@@ -1,6 +1,6 @@
 package dynamic_programming.two_d_dp;
 
-public class WildcardMatching {
+public class Q44WildcardMatching {
 
     //TAG: Google
     //TAG: Facebook
@@ -28,7 +28,7 @@ public class WildcardMatching {
      isMatch("aab", "c*a*b") → false
      */
 
-    /**
+    /*
      * Solution:
      * DP problem, 2 dimensional dp problem, set a matrix(s.len + 1, p.len + 1) include which when no characher in s or p
      * Base case: M[0][0] = true, "" and "" matches

@@ -32,7 +32,10 @@ public class Q329LongestIncreasingPathInAMatrix {
 
     /*
     Solution:
+    DFS find the longest increasing path and update the max
 
+    Time: O(mn*mn)
+    Space: O(mn)
      */
 
     private int[][] directions = new int[][]{{-1, 0}, {1, 0}, {0, -1}, {0, 1}};

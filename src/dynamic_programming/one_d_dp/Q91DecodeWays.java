@@ -1,6 +1,6 @@
 package dynamic_programming.one_d_dp;
 
-public class DecodeWays {
+public class Q91DecodeWays {
 
     //TAG: Facebook
     //TAG: Uber
@@ -39,7 +39,7 @@ public class DecodeWays {
      * Space: O(n) recursion tree levels
      */
 
-    /**
+    /*
      * Solution 2: DP
      * M[i] represent the max decode ways for substring to i (due to number, from back then start)
      * Base case:

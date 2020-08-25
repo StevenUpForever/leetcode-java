@@ -29,7 +29,7 @@ public class Q102BinaryTreeLevelOrderTraversal {
      ]
      */
 
-    /**
+    /*
      * Solution 1:
      * Use a FIFO structure (queue) to push and pop numbers, the push order will be left -> right, then pop order is left -> right too
      * for every time, record a current length of current queue (which is the length of nodes on current level), add them to a list and begin next loop
