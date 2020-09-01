@@ -2,7 +2,7 @@ package stack;
 
 import java.util.Stack;
 
-public class MinStack {
+public class Q155MinStack {
 
     //TAG: Google
     //TAG: Uber
@@ -19,7 +19,7 @@ public class MinStack {
      top() -- Get the top element.
      getMin() -- Retrieve the minimum element in the stack.
      Example:
-     stack.MinStack minStack = new stack.MinStack();
+     stack.Q155MinStack minStack = new stack.Q155MinStack();
      minStack.push(-2);
      minStack.push(0);
      minStack.push(-3);
@@ -28,8 +28,8 @@ public class MinStack {
      minStack.top();      --> Returns 0.
      minStack.getMin();   --> Returns -2.
 
-     * Your stack.MinStack object will be instantiated and called as such:
-     * stack.MinStack obj = new stack.MinStack();
+     * Your stack.Q155MinStack object will be instantiated and called as such:
+     * stack.Q155MinStack obj = new stack.Q155MinStack();
      * obj.push(x);
      * obj.pop();
      * int param_3 = obj.top();
@@ -49,7 +49,7 @@ public class MinStack {
     private Stack<Integer> stack1, stack2;
 
     /** initialize your data structure here. */
-    public MinStack() {
+    public Q155MinStack() {
         stack1 = new Stack<>();
         stack2 = new Stack<>();
     }

@@ -3,7 +3,7 @@ package map_set;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MaximumSizeSubarraySumEqualsK {
+public class Q325MaximumSizeSubarraySumEqualsK {
 
     //TAG: Facebook
     //TAG: map_set
@@ -30,7 +30,7 @@ public class MaximumSizeSubarraySumEqualsK {
      Can you do it in O(n) time?
      */
 
-    /**
+    /*
      * Solution:
      * Use pre sum array
      * *** similar to two sum ***
