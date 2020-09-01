@@ -2,7 +2,7 @@ package linkedlist;
 
 import public_class.ListNode;
 
-public class AddTwoNumbers {
+public class Q2AddTwoNumbers {
 
     //TAG: Microsoft
     //TAG: Amazon

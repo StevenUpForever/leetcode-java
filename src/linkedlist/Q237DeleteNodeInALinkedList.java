@@ -2,7 +2,7 @@ package linkedlist;
 
 import public_class.ListNode;
 
-public class DeleteNodeInALinkedList {
+public class Q237DeleteNodeInALinkedList {
 
     //TAG: Microsoft
     //TAG: Apple
