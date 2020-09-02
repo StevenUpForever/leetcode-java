@@ -2,7 +2,7 @@ package string.anagram;
 
 import java.util.*;
 
-public class GroupAnagrams {
+public class Q49GroupAnagrams {
 
     //TAG: Facebook
     //TAG: Amazon

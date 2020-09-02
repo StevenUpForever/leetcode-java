@@ -1,6 +1,6 @@
 package string.palindrome;
 
-public class ValidPalindrome {
+public class Q125ValidPalindrome {
 
     //TAG: Facebook
     //TAG: Microsoft
@@ -23,7 +23,7 @@ public class ValidPalindrome {
      For the purpose of this problem, we define empty string as valid palindrome.
      */
 
-    /**
+    /*
      * Solution:
      * Time: O(n)
      * Space: O(1)

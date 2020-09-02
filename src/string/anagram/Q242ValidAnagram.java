@@ -1,6 +1,6 @@
 package string.anagram;
 
-public class ValidAnagram {
+public class Q242ValidAnagram {
 
     //TAG: Uber
     //TAG: Apple
