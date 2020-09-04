@@ -62,32 +62,19 @@ public class Q76MinimumWindowSubstring {
                 if (cur == 1) count++;
                 map.put(charsS[i], cur - 1);
             }
-            //If all matches update right index
-            if (count == map.size() && min > i - tempLeft + 1) {
-                min = i - tempLeft + 1;
-                right = i;
-            }
             //Short the valid length as much as possible
             while (count == map.size()) {
                 if (map.containsKey(charsS[tempLeft])) {
+                    //At this time, even count-- already, but tempLeft haven't ++, so tempLeft is still a valid left index,
+                    // try to update left and also right if min could updated
+                    if (min > i - tempLeft + 1) {
+                        min = i - tempLeft + 1;
+                        left = tempLeft;
+                        right = i;
+                    }
                     int cur = map.get(charsS[tempLeft]);
                     if (cur == 0) count--;
                     map.put(charsS[tempLeft], cur + 1);
-                }
-                //At this time, even count-- already, but tempLeft haven't ++, so tempLeft is still a valid left index,
-                // try to update left and also right if min could updated
-                if (min > i - tempLeft + 1) {
-                    min = i - tempLeft + 1;
-                    left = tempLeft;
-                    /*
-                    The reason why update right too when only move tempLeft
-                    When move tempLeft until count != map.size(),
-                    i need to move right to supply this character from right side
-                    When find one, the hashMap is updated to count != map.size(),
-                    but right not updated (while loop will not end depends on if left < right,
-                    so will not move to next for loop to update right)
-                     */
-                    right = i;
                 }
                 tempLeft++;
             }
