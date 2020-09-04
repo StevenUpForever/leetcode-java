@@ -1,6 +1,6 @@
 package string.reverse;
 
-public class ReverseString {
+public class Q344ReverseString {
 
     //Difficulty: Easy
     //TAG: Apple

@@ -1,6 +1,6 @@
 package string.reverse;
 
-public class ReverseVowelsOfAString {
+public class Q345ReverseVowelsOfAString {
 
     //TAG: Google
     //TAG: string

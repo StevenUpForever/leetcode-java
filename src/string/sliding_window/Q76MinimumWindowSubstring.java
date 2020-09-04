@@ -2,7 +2,7 @@ package string.sliding_window;
 
 import java.util.HashMap;
 
-public class MinimumWindowSubstring {
+public class Q76MinimumWindowSubstring {
 
     //Difficulty: Hard
     //TAG: Facebook
@@ -33,7 +33,8 @@ public class MinimumWindowSubstring {
      * Solution:
      * Sliding window problem
      * Keep a global min length
-     * Keep a sliding window length of t, keep record the characters occurrence, increase right side of window, when all characters appeared in the window, keep update the global min length
+     * Keep a sliding window length of t, keep record the characters occurrence, increase right side of window,
+     * when all characters appeared in the window, keep update the global min length
      * Move left side while all characters appear at least once in the window, keep updating the global min
      *      if some characters out of window, move right until new same character in the window
      *
@@ -73,14 +74,18 @@ public class MinimumWindowSubstring {
                     if (cur == 0) count--;
                     map.put(charsS[tempLeft], cur + 1);
                 }
-                //At this time, even count-- already, but tempLeft haven't ++, so tempLeft is still a valid left index, try to update left and also right if min could updated
+                //At this time, even count-- already, but tempLeft haven't ++, so tempLeft is still a valid left index,
+                // try to update left and also right if min could updated
                 if (min > i - tempLeft + 1) {
                     min = i - tempLeft + 1;
                     left = tempLeft;
                     /*
                     The reason why update right too when only move tempLeft
-                    When tempLeft moves so count != map.size(), i need to move right to supply this character from right side
-                    When find one, the hashMap is updated to count != map.size(), but right not updated (while loop will not end depends on if left < right, so will not move to next for loop to update right)
+                    When move tempLeft until count != map.size(),
+                    i need to move right to supply this character from right side
+                    When find one, the hashMap is updated to count != map.size(),
+                    but right not updated (while loop will not end depends on if left < right,
+                    so will not move to next for loop to update right)
                      */
                     right = i;
                 }
